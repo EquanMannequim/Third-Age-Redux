@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_Imladris"
+      texturefile = "gfx/interface/goals/IML/lotr_Imladris.dds"
+    }
+}

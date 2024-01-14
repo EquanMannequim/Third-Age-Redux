@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_Gundabad"
+      texturefile = "gfx/interface/goals/GND/lotr_Gundabad.dds"
+    }
+}

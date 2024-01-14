@@ -1,0 +1,43 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Scouring_of_Ithilian"
+      texturefile = "gfx/interface/goals/EUC/lotr_The_Scouring_of_Ithilian.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Rangers_of_Ithilian"
+      texturefile = "gfx/interface/goals/EUC/lotr_The_Rangers_of_Ithilian.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Request_Reinforcements_From_The_Steward"
+      texturefile = "gfx/interface/goals/EUC/lotr_Request_Reinforcements_From_The_Steward.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Rebuild_Inner_Osgiliath"
+      texturefile = "gfx/interface/goals/EUC/lotr_Rebuild_Inner_Osgiliath.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Reinforce_The_Old_Osgiliath_Walls"
+      texturefile = "gfx/interface/goals/EUC/lotr_Reinforce_The_Old_Osgiliath_Walls.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Bring_In_New_Swordsmiths"
+      texturefile = "gfx/interface/goals/EUC/lotr_Bring_In_New_Swordsmiths.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Local_Recruits"
+      texturefile = "gfx/interface/goals/EUC/lotr_Seek_Local_Recruits.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Conscript_Remaining_Citizens"
+      texturefile = "gfx/interface/goals/EUC/lotr_Conscript_Remaining_Citizens.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Ask_The_Rohirim_For_Reinforcements"
+      texturefile = "gfx/interface/goals/EUC/lotr_Ask_The_Rohirim_For_Reinforcements.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Aid_From_The_Other_Fiefdoms"
+      texturefile = "gfx/interface/goals/EUC/lotr_Seek_Aid_From_The_Other_Fiefdoms.dds"
+    }
+	
+}

@@ -1,0 +1,193 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_Isengard_Basic"
+      texturefile = "gfx/interface/goals/ISN/lotr_Isengard_Basic.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Five_Istari"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Five_Istari.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_ISN_The_White_Wizard"
+      texturefile = "gfx/interface/goals/ISN/lotr_ISN_The_White_Wizard.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Men_of_Dunland"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Men_of_Dunland.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_A_New_Breed_of_Ork"
+      texturefile = "gfx/interface/goals/ISN/lotr_A_New_Breed_of_Ork.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Raid_West_March"
+      texturefile = "gfx/interface/goals/ISN/lotr_Raid_West_March.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Contact_Mordor"
+      texturefile = "gfx/interface/goals/ISN/lotr_Contact_Mordor.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Expand_Isengard_Control"
+      texturefile = "gfx/interface/goals/ISN/lotr_Expand_Isengard_Control.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Subjugate_The_Clans_of_Laur"
+      texturefile = "gfx/interface/goals/ISN/lotr_Subjugate_The_Clans_of_Laur.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Expand_Into_Enedwaith"
+      texturefile = "gfx/interface/goals/ISN/lotr_Expand_Into_Enedwaith.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Dominate_The_Middle_Men"
+      texturefile = "gfx/interface/goals/ISN/lotr_Dominate_The_Middle_Men.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Influence_The_Men_of_Dunland"
+      texturefile = "gfx/interface/goals/ISN/lotr_Influence_The_Men_of_Dunland.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Influence_The_Men_of_Enedwaith"
+      texturefile = "gfx/interface/goals/ISN/lotr_Influence_The_Men_of_Enedwaith.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_White_Hand"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_White_Hand.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Orthanc_Palantir"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Orthanc_Palantir.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Eyes_of_Orthanc"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Eyes_of_Orthanc.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Crows_of_Saruman"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Crows_of_Saruman.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Spies_Saruman"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Spies_Saruman.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Peoples_of_Rohan"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Peoples_of_Rohan.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Raid_Into_Westfold"
+      texturefile = "gfx/interface/goals/ISN/lotr_Raid_Into_Westfold.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Raid_Into_The_Riddermark"
+      texturefile = "gfx/interface/goals/ISN/lotr_Raid_Into_The_Riddermark.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Unleash_The_Fighting_Urukhai"
+      texturefile = "gfx/interface/goals/ISN/lotr_Unleash_The_Fighting_Urukhai.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Burn_Down_The_Fangorn_Forest"
+      texturefile = "gfx/interface/goals/ISN/lotr_Burn_Down_The_Fangorn_Forest.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Dunlending"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Dunlending.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Stir_Up_Animosity_Towards_Rohan"
+      texturefile = "gfx/interface/goals/ISN/lotr_Stir_Up_Animosity_Towards_Rohan.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Find_A_Loyal_Dunleanding"
+      texturefile = "gfx/interface/goals/ISN/lotr_Find_A_Loyal_Dunleanding.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Instill_Loyalty_Into_Dunlend"
+      texturefile = "gfx/interface/goals/ISN/lotr_Instill_Loyalty_Into_Dunlend.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Puppet_The_Loyal_Tribe"
+      texturefile = "gfx/interface/goals/ISN/lotr_Puppet_The_Loyal_Tribe.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Destroy_Rohan"
+      texturefile = "gfx/interface/goals/ISN/lotr_Destroy_Rohan.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Fires_of_Industry"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Fires_of_Industry.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Orc_Workshops"
+      texturefile = "gfx/interface/goals/ISN/lotr_Orc_Workshops.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Orc_Forges"
+      texturefile = "gfx/interface/goals/ISN/lotr_Orc_Forges.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Uruk_Forges"
+      texturefile = "gfx/interface/goals/ISN/lotr_Uruk_Forges.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Uruk_Workshops"
+      texturefile = "gfx/interface/goals/ISN/lotr_Uruk_Workshops.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_Expand_Orthanc_Roads"
+      texturefile = "gfx/interface/goals/ISN/lotr_Expand_Orthanc_Roads.dds"
+    }
+	    SpriteType = {
+      name = "GFX_goal_lotr_The_Walls_of_Orthanc"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Walls_of_Orthanc.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Fortify_The_Isengard_Gap"
+      texturefile = "gfx/interface/goals/ISN/lotr_Fortify_The_Isengard_Gap.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Secrets_of_Saruman"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Secrets_of_Saruman.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Build_An_Army_Worthy_of_Mordor"
+      texturefile = "gfx/interface/goals/ISN/lotr_Build_An_Army_Worthy_of_Mordor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepare_Uruk_Breeding_Grounds"
+      texturefile = "gfx/interface/goals/ISN/lotr_Prepare_Uruk_Breeding_Grounds.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Orks_From_Mordor"
+      texturefile = "gfx/interface/goals/ISN/lotr_Orks_From_Mordor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Weapons_of_The_UrukHai"
+      texturefile = "gfx/interface/goals/ISN/lotr_Weapons_of_The_UrukHai.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Crossbows_of_The_UrukHai"
+      texturefile = "gfx/interface/goals/ISN/lotr_Crossbows_of_The_UrukHai.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Mordor_Siege_Weapons"
+      texturefile = "gfx/interface/goals/ISN/lotr_Mordor_Siege_Weapons.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_UrukHai_Plate_Armor"
+      texturefile = "gfx/interface/goals/ISN/lotr_UrukHai_Plate_Armor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Mordor_Scrap_Armor"
+      texturefile = "gfx/interface/goals/ISN/lotr_Mordor_Scrap_Armor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_An_Explosive_Idea"
+      texturefile = "gfx/interface/goals/ISN/lotr_An_Explosive_Idea.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Kingdom_of_Rohan"
+      texturefile = "gfx/interface/goals/ISN/lotr_The_Kingdom_of_Rohan.dds"
+    }

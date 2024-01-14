@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_sauron"
+		textureFile = "gfx/leaders/MRD/Portrait_sauron.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_the_witch_king"
+		textureFile = "gfx/leaders/MRD/Portrait_the_witch_king.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_khamul_the_easterling"
+		textureFile = "gfx/leaders/MRD/Portrait_khamul_the_easterling.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_dendra_dwar"
+		textureFile = "gfx/leaders/MRD/Portrait_dendra_dwar.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ji_amaav"
+		textureFile = "gfx/leaders/MRD/Portrait_ji_amaav.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_akhorahil"
+		textureFile = "gfx/leaders/MRD/Portrait_akhorahil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_adunaphel"
+		textureFile = "gfx/leaders/MRD/Portrait_adunaphel.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_al_khey_sart"
+		textureFile = "gfx/leaders/MRD/Portrait_al_khey_sart.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_uvathe_achef"
+		textureFile = "gfx/leaders/MRD/Portrait_uvathe_achef.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Gothmog"
+		textureFile = "gfx/leaders/MRD/Portrait_Gothmog.dds"
+	}
+}

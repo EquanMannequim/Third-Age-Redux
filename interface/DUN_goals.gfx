@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Dunedain"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Dunedain.dds"
+    }
+}

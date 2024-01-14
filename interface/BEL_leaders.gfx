@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_imrahil"
+		textureFile = "gfx/leaders/BEL/Portrait_imrahil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_alphbeleg"
+		textureFile = "gfx/leaders/BEL/Portrait_alphbeleg.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_alphaear"
+		textureFile = "gfx/leaders/BEL/Portrait_alphaear.dds"
+	}
+}

@@ -1,0 +1,232 @@
+spriteTypes = {
+	SpriteType = {
+      name = "GFX_goal_lotr_Kings_Men_Icon"
+      texturefile = "gfx/interface/goals/UMA/lotr_Kings_Men_Icon.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_umbar_big_left"
+      texturefile = "gfx/interface/goals/UMA/umbar_big_left.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_umbar_big_right"
+      texturefile = "gfx/interface/goals/UMA/umbar_big_right.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_castamirs_failure"
+      texturefile = "gfx/interface/goals/UMA/lotr_castamirs_failure.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_the_sack_of_umbar"
+      texturefile = "gfx/interface/goals/UMA/lotr_the_sack_of_umbar.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Enemy_to_our_North"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_Enemy_to_our_North.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Pirate_Fleet"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_Pirate_Fleet.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Numenorian_Armada"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_Numenorian_Armada.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Find_The_Infamous_Sea_Dogs"
+      texturefile = "gfx/interface/goals/UMA/lotr_Find_The_Infamous_Sea_Dogs.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Visitor_From_Mordor"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_Visitor_From_Mordor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Enemy_to_our_South"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_Enemy_to_our_South.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Mountain_Training"
+      texturefile = "gfx/interface/goals/UMA/lotr_Mountain_Training.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Desert_Training"
+      texturefile = "gfx/interface/goals/UMA/lotr_Desert_Training.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Numenorian_Training_Methods"
+      texturefile = "gfx/interface/goals/UMA/lotr_Numenorian_Training_Methods.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_New_Class_of_Officer"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_New_Class_of_Officer.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Loyal_General"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_Loyal_General.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Visitor_from_the_South"
+      texturefile = "gfx/interface/goals/UMA/lotr_A_Visitor_from_the_South.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Secure_The_Southern_Coast"
+      texturefile = "gfx/interface/goals/UMA/lotr_Secure_The_Southern_Coast.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Conquer_Harondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Conquer_Harondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_the_haven_of_umbar"
+      texturefile = "gfx/interface/goals/UMA/lotr_the_haven_of_umbar.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Corsair_Armories"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_Corsair_Armories.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Umbar_Trade_Market"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_Umbar_Trade_Market.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Corsair_Fleet"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_Corsair_Fleet.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Increased_Trade_With_Harad"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_Increased_Trade_With_Harad.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Trade_Routes_South"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_Trade_Routes_South.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Send_a_Delegation_to_Gondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Send_a_Delegation_to_Gondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Appeasment_With_Gondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_Appeasment_With_Gondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Integrate_Harondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Integrate_Harondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Integrate_The_Coast"
+      texturefile = "gfx/interface/goals/UMA/lotr_Integrate_The_Coast.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Form_An_Alliance_Against_Mordor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Form_An_Alliance_Against_Mordor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepare_For_War_With_Gondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Prepare_For_War_With_Gondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepare_The_Armada"
+      texturefile = "gfx/interface/goals/UMA/lotr_Prepare_The_Armada.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Rally_The_KINGS_Men"
+      texturefile = "gfx/interface/goals/UMA/lotr_Rally_The_KINGS_Men.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Form_A_Royal_Guard"
+      texturefile = "gfx/interface/goals/UMA/lotr_Form_A_Royal_Guard.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepare_To_Storm_The_Ethir_Anduin"
+      texturefile = "gfx/interface/goals/UMA/lotr_Prepare_To_Storm_The_Ethir_Anduin.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Lighting_Raid_Anduin"
+      texturefile = "gfx/interface/goals/UMA/lotr_Lighting_Raid_Anduin.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Lighting_Raid_Tolfalas"
+      texturefile = "gfx/interface/goals/UMA/lotr_Lighting_Raid_Tolfalas.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_War_With_Dol_Amroth"
+      texturefile = "gfx/interface/goals/UMA/lotr_War_With_Dol_Amroth.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_The_Dark_Lords_Favor"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_The_Dark_Lords_Favor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Rally_Corsairs"
+      texturefile = "gfx/interface/goals/UMA/lotr_Rally_Corsairs.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Hire_Haradrim_Mercenaries"
+      texturefile = "gfx/interface/goals/UMA/lotr_Hire_Haradrim_Mercenaries.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepare_The_Great_Corsair_Fleet"
+      texturefile = "gfx/interface/goals/UMA/lotr_Prepare_The_Great_Corsair_Fleet.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Request_Mordor_Forces"
+      texturefile = "gfx/interface/goals/UMA/lotr_Request_Mordor_Forces.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Confinscate_Horondor_Trade_Vessels"
+      texturefile = "gfx/interface/goals/UMA/lotr_Confinscate_Horondor_Trade_Vessels.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_The_Oliphant_Lords"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_The_Oliphant_Lords.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_War_With_Gondor"
+      texturefile = "gfx/interface/goals/UMA/lotr_War_With_Gondor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Conquer_Haradwaith"
+      texturefile = "gfx/interface/goals/UMA/lotr_Conquer_Haradwaith.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Conquer_Southern_Haronder"
+      texturefile = "gfx/interface/goals/UMA/lotr_Conquer_Southern_Haronder.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Deal_With_The_Disloyal_Numenorians"
+      texturefile = "gfx/interface/goals/UMA/lotr_Deal_With_The_Disloyal_Numenorians.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Deal_With_The_Disloyal_Corsairs"
+      texturefile = "gfx/interface/goals/UMA/lotr_Deal_With_The_Disloyal_Corsairs.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_True_Threat_To_Mankind"
+      texturefile = "gfx/interface/goals/UMA/lotr_The_True_Threat_To_Mankind.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Send_a_Delegation_to_Dol_Amroth"
+      texturefile = "gfx/interface/goals/UMA/lotr_Send_a_Delegation_to_Dol_Amroth.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Seek_Appeasment_With_Dol_Amroth"
+      texturefile = "gfx/interface/goals/UMA/lotr_Seek_Appeasment_With_Dol_Amroth.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Numenorian_Equipment"
+      texturefile = "gfx/interface/goals/UMA/lotr_Numenorian_Equipment.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Numenorian_Bow_Designs"
+      texturefile = "gfx/interface/goals/UMA/lotr_Numenorian_Bow_Designs.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Corsair_Screening_Vessels"
+      texturefile = "gfx/interface/goals/UMA/lotr_Corsair_Screening_Vessels.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Corsair_Capital_Ships"
+      texturefile = "gfx/interface/goals/UMA/lotr_Corsair_Capital_Ships.dds"
+    }
+	
+}
+    

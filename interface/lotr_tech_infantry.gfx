@@ -1,0 +1,1160 @@
+spriteTypes = {
+
+    SpriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_0_orc.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/weapons_in_barrel.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_infantry_weapons1_bonus_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/banner.dds"
+	}
+
+    SpriteType = {
+        name = "GFX_infantry_weapons1_bonus2_medium"
+        texturefile = "gfx/interface/technologies/infantry_equipment_small/banner.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_gondor.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_highly_sophisticated_infantry_weapons2_medium"
+        texturefile = "gfx/interface/technologies/infantry_equipment_small/whetstone.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_gondor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_rohan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_gondor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_rohan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_gondor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_rohan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_s3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_gondor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_rohan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_ss_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_cheap_highly_sophisticated_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_cc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_cheap_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c1_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_cheap_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c2_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_cheap_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c3_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_cheap_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_c4_men.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_gondor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_dwarf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_elf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_orc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_rohan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_universal_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/infantry_equipment_sc_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/anvil.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/axe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_highly_sophisticated_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/armor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cheap_highly_sophisticated_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/weapons_in_barrel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/point.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/point2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/dwarven_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/dwarven_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/ROH_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GON_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/GON_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROH_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/ROH_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GON_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/GON_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ERE_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/dwarven_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOA_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/dwarven_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RIV_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LTH_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MIR_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/elven_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MOR_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ISE_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/orc_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GON_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/GON_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RHU_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HAR_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KND_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PEL_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UMB_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/rhun_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/support_weapons4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GON_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/GON_support_weapons4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_night_vision_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/night_vision.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/night_vision2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_bonus_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/padding1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_bonus2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/padding2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_partisan_suppresion_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/guerilla_warfare_debuff.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_partisan_suppresion2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/guerilla_warfare_debuff.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_partisan_support_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/guerilla_warfare.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_partisan_support2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/guerilla_warfare.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/art1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery1_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/art2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery4_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/art3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/crossbow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment/crossbow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/sinew.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/bow2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/bow3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery5_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/bow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rocket_artillery2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/xbow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rocket_artillery3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_small/xbow2.dds"
+	}
+
+    SpriteType = {
+        name = "GFX_tech_mountaineers3_medium"
+        texturefile = "gfx/interface/technologies/mountain3.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_tech_mountaineers2_medium"
+        texturefile = "gfx/interface/technologies/mountain2.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_tech_mountaineers_medium"
+        texturefile = "gfx/interface/technologies/mountain.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_marines3_medium"
+        texturefile = "gfx/interface/technologies/marines3.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_marines2_medium"
+        texturefile = "gfx/interface/technologies/marines2.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_marines_medium"
+        texturefile = "gfx/interface/technologies/marines.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_paratroopers3_medium"
+        texturefile = "gfx/interface/technologies/infantry_equipment_small/heavy_infantry_3.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_paratroopers2_medium"
+        texturefile = "gfx/interface/technologies/infantry_equipment_small/heavy_infantry_2.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_paratroopers_medium"
+        texturefile = "gfx/interface/technologies/infantry_equipment_small/heavy_infantry_1.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_tech_special_forces_medium"
+        texturefile = "gfx/interface/technologies/tech_special_forces.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_advanced_special_forces_medium"
+        texturefile = "gfx/interface/technologies/tech_advanced_special_forces_training.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_improved_special_forces_medium"
+        texturefile = "gfx/interface/technologies/tech_improved_special_forces.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_survival_training_medium"
+        texturefile = "gfx/interface/technologies/tech_survival_training.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_elite_forces_medium"
+        texturefile = "gfx/interface/technologies/tech_elite_forces.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_extreme_environment_training_medium"
+        texturefile = "gfx/interface/technologies/tech_extreme_environment_training.dds"
+    }
+
+	#helpertoken
+
+}
