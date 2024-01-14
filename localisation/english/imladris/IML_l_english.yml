@@ -1,0 +1,122 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ 
+ IML_The_Fall_of_Eregion:0 "The Fall of Eregion"
+ IML_The_Fall_of_Eregion_desc:0 "Centuries have passed since the Fall of Eregion to Sauron but Rivendell still stands"
+ 
+ IML_The_Fall_of_Gilgalad:0 "The Fall of Gilgalad"
+ IML_The_Fall_of_Gilgalad_desc:0 "Gilgalad the last High King of the High Elves died at the hands of Sauron in the wanning days of the The Last Alliance"
+ 
+ IML_The_Call_of_Valinor:0 "The Call of Valinor"
+ IML_The_Call_of_Valinor_desc:0 "All Elves hear the Call of Valinor and dream of setting foot in the Undying lands many fear the world is to far gone and leave Middle Earth everyday and never look back"
+ 
+ IML_Fortify_The_Southern_Border:0 "Fortify The Southern Border"
+ IML_Fortify_The_Southern_Border_desc:0 "The Orcs of Eregion have long pushed our borders further and further back now with our backs to the river we must hold our ground."
+ 
+ IML_Fortify_The_River:0 "Fortify The River"
+ IML_Fortify_The_River_desc:0 "The Orcs of Eregion have long pushed our borders further and further back now with our backs to the river we must hold the river line at all cost."
+ 
+ IML_Mobilize_The_Remaining_Elves:0 "Mobilize The Remaining Elves"
+ IML_Mobilize_The_Remaining_Elves_desc:0 "The last of the Noldor live in Rivendell, warriors who have lived centuries we will need all the help we can get to stop the orcs once and for all."
+ 
+ IML_The_Orcs_of_Eregion:0 "The Orcs of Eregion"
+ IML_The_Orcs_of_Eregion_desc:0 "It's time to strike out against the Orcs we will no longer retreat away today we fight."
+ 
+ IML_The_Kingdom_Eregion_Reborn:0 "The Kingdom Eregion Reborn"
+ IML_The_Kingdom_Eregion_Reborn_desc:0 "Thousands of years have passed since the Noldor stepped foot in our ancient lands. This time we hold it to the death."
+ 
+ IML_The_Elven_Workshops:0 "The Elven Workshops"
+ IML_The_Elven_Workshops_desc:0 ""
+ 
+ IML_Ancient_Elven_Techniques:0 "Ancient Elven Techniques"
+ IML_Ancient_Elven_Techniques_desc:0 ""
+ 
+ IML_Ancient_Elven_Smiths:0 "Ancient Elven Smiths"
+ IML_Ancient_Elven_Smiths_desc:0 ""
+ 
+ IML_The_Elven_Forges:0 "The Elven Forges"
+ IML_The_Elven_Forges_desc:0 ""
+ 
+ IML_Ancient_Elven_Swordsmiths:0 "Ancient Elven Swordsmiths"
+ IML_Ancient_Elven_Swordsmiths_desc:0 ""
+ 
+ IML_The_New_King_of_The_High_Elves:0 "The New King of The High_Elves"
+ IML_The_New_King_of_The_High_Elves_desc:0 "With the backing of the rest of the Noldor and our brothers in Lindon Lord Elrond has been proclaimed High King of the Noldor and Sindarin Elves."
+ 
+ IML_Protect_All_of_Eriador:0 "Protect All of Eriador"
+ IML_Protect_All_of_Eriador_desc:0 "We must protect Eriador just as we protect our homes in Rivendell."
+ 
+ IML_Protect_Rivendell:0 "Protect Rivendell"
+ IML_Protect_Rivendell_desc:0 "The jsut aren't enough Elves left on Middle Earth to have open battle against the Darkness not since the losses suffered during The Last Alliance."
+ 
+ IML_The_Death_of_The_Dunedain:0 "The Death of The Dunedain"
+ IML_The_Death_of_The_Dunedain_desc:0 "With the Rangers wiped out by Angmar we must secure our own borders and wait for an oppurtunity to strike back."
+ 
+ IML_One_Final_Battle:0 "One Final Battle"
+ IML_One_Final_Battle_desc:0 "This is the last battle of the Noldor we do not have the strength to hold back the Darkness forever today WE WIN OR WE DIE!"
+ 
+ IML_Victory_over_Angmar:0 "Victory Over Angmar"
+ IML_Victory_over_Angmar_desc:0 "With Victory in Eriador many of the Elves feel a glimmer of hope is still left and have decided to stay in Middle Earth."
+ 
+################################### IDEAS                       \n      §H§!
+ IML_The_Fallen_Kingdom:0 "The Fallen Kingdom"
+
+ IML_The_Last_King_of_The_Noldor:0 "The Last King of The Noldor"
+
+ IML_The_Call_of_Valinor:0 "The Call of Valinor"
+
+ IML_The_Reborn_Kingdom:0 "The Reborn Kingdom"
+
+ IML_The_New_King_of_The_Elves:0 "The New King of The Elves"
+
+ IML_Self_Preservation:0 "Self Preservation"
+
+
+
+
+################################### DECISIONS                   \n      §H§! 
+ 
+
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ 
+ 
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!
