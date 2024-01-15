@@ -15,7 +15,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 0 y = 0 }
@@ -24,7 +24,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
-			modifier = { factor = 2 date > "3020.1.1" }
+			modifier = { factor = 2 date > "3016.1.1" }
 		}
 
 		categories = {
@@ -41,7 +41,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3020
+		start_year = 3016
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 4 }
@@ -50,7 +50,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
-			modifier = { factor = 2 date > "3022.1.1" }
+			modifier = { factor = 2 date > "3018.1.1" }
 		}
 
         categories = {
@@ -63,7 +63,7 @@ technologies = {
         foreign_subversive_activites = -0.2
 
         research_cost = 1
-        start_year = 3022
+        start_year = 3018
         folder = {
             name = dwarves_special_folder
             position = { x = 2 y = 8 }
@@ -72,7 +72,7 @@ technologies = {
         ai_will_do = {
 			factor = 1
 		
-			modifier = { factor = 2 date > "3024.1.1" }
+			modifier = { factor = 2 date > "3020.1.1" }
 		}
 
         categories = {
@@ -85,7 +85,7 @@ technologies = {
         navy_leader_start_level = 2
 
 		research_cost = 1
-		start_year = 3020
+		start_year = 3016
 		folder = {
 			name = dwarves_special_folder
 			position = { x = -2 y = 4 }
@@ -94,7 +94,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
-			modifier = { factor = 2 date > "3022.1.1" }
+			modifier = { factor = 2 date > "3018.1.1" }
 		}
 
         categories = {
@@ -112,7 +112,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 0 }
@@ -123,7 +123,7 @@ technologies = {
 		
 			modifier = { factor = 5.0 OR = { rubber > 0 tungsten > 0 steel > 0 chromium > 0 } }
 		
-			modifier = { factor = 2 date > "3018.1.1" } modifier = { factor = 3 date > "3019.1.1" } modifier = { factor = 5 date > "3020.1.1" }
+			modifier = { factor = 2 date > "3014.1.1" } modifier = { factor = 3 date > "3015.1.1" } modifier = { factor = 5 date > "3016.1.1" }
 		}
 
         categories = {
@@ -140,7 +140,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3020
+		start_year = 3016
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 4 }
@@ -151,7 +151,7 @@ technologies = {
 		
 			modifier = { factor = 5.0 OR = { rubber > 0 tungsten > 0 steel > 0 chromium > 0 } }
 		
-			modifier = { factor = 2 date > "3020.1.1" } modifier = { factor = 3 date > "3021.1.1" } modifier = { factor = 5 date > "3022.1.1" }
+			modifier = { factor = 2 date > "3016.1.1" } modifier = { factor = 3 date > "3017.1.1" } modifier = { factor = 5 date > "3018.1.1" }
 		}
 
         categories = {
@@ -163,7 +163,7 @@ technologies = {
         local_resources_factor = 0.1
 
 		research_cost = 1.5
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 8 }
@@ -174,7 +174,7 @@ technologies = {
 		
 			modifier = { factor = 5.0 OR = { rubber > 0 tungsten > 0 steel > 0 chromium > 0 } }
 		
-			modifier = { factor = 2 date > "3022.1.1" } modifier = { factor = 3 date > "3023.1.1" } modifier = { factor = 5 date > "3024.1.1" }
+			modifier = { factor = 2 date > "3018.1.1" } modifier = { factor = 3 date > "3019.1.1" } modifier = { factor = 5 date > "3020.1.1" }
 		}
 
         categories = {
@@ -191,7 +191,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 0 }
@@ -200,7 +200,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		
-			modifier = { factor = 2 date > "3018.1.1" } modifier = { factor = 3 date > "3019.1.1" } modifier = { factor = 5 date > "3020.1.1" }
+			modifier = { factor = 2 date > "3014.1.1" } modifier = { factor = 3 date > "3015.1.1" } modifier = { factor = 5 date > "3016.1.1" }
 		}
 
         categories = {
@@ -234,7 +234,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3020
+		start_year = 3016
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 4 }
@@ -243,7 +243,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		
-			modifier = { factor = 25 date > "3020.1.1" }
+			modifier = { factor = 25 date > "3016.1.1" }
 		}
 
         categories = {
@@ -278,7 +278,7 @@ technologies = {
 		}
 
         research_cost = 2
-        start_year = 3022
+        start_year = 3018
         folder = {
             name = dwarves_special_folder
             position = { x = 2 y = 8 }
@@ -287,7 +287,7 @@ technologies = {
         ai_will_do = {
 			factor = 10
 		
-			modifier = { factor = 25 date > "3022.1.1" }
+			modifier = { factor = 25 date > "3018.1.1" }
 		}
 
         categories = {
@@ -317,7 +317,7 @@ technologies = {
         }
 
         research_cost = 2
-        start_year = 3024
+        start_year = 3020
         folder = {
             name = dwarves_special_folder
             position = { x = 2 y = 12 }
@@ -326,7 +326,7 @@ technologies = {
         ai_will_do = {
 			factor = 10
 		
-			modifier = { factor = 25 date > "3024.1.1" }
+			modifier = { factor = 25 date > "3020.1.1" }
 		}
 
         categories = {
@@ -350,7 +350,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3020
+		start_year = 3016
 		folder = {
 			name = dwarves_special_folder
 			position = { x = 2 y = 4 }
@@ -376,7 +376,7 @@ technologies = {
 		}
 
         research_cost = 1.5
-        start_year = 3024
+        start_year = 3020
         folder = {
             name = dwarves_special_folder
             position = { x = 2 y = 12 }

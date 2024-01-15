@@ -2123,7 +2123,7 @@ on_actions = {
 							}
 						}
 						ROOT = {
-							original_tag = DRG
+							original_tag = RDU
 						}
 					}
 					
@@ -2321,7 +2321,7 @@ on_actions = {
 					set_global_flag = skip_default_capitulation
 				}
 
-				if = { # AMR defeats URU
+				if = { # ANR defeats URU
 					limit = {
 						FROM = {
 							original_tag = ANR
@@ -2455,6 +2455,10 @@ on_actions = {
 								OR = {
 									original_tag = DUN
 									is_in_faction_with = DUN
+									NOT = {
+										original_tag = STE
+										is_subject_of = STE
+									}
 								}
 							}
 							NOT = {
@@ -2519,7 +2523,8 @@ on_actions = {
 							}
 						}
 						DUN = {
-							transfer_state =
+							transfer_state = 107
+							transfer_state = 110
 						}
 						annex_country = {
 							target = MRD
@@ -2585,81 +2590,98 @@ on_actions = {
 				if = { # War of the Ring # Stewards Defeated # King's Path # Umbar did it
 					limit = {
 						FROM = {
-							original_tag = UMA
-							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
-						}
-						ROOT = {
-							original_tag = STE
-						}
-					}
-					every_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						white_peace = ROOT
-					}
-					FROM = {
-						annex_country = {
-							target = STE
-							transfer_troops = no
-						}
-						annex_country = {
-							target = BEL
-							transfer_troops = no
-						}
-						transfer_state = 15
-					}
-					MRD = {
-						annex_country = {
-							target = ITL
-							transfer_troops = no
-						}
-					}
-
-					set_global_flag = skip_default_capitulation
-				}
-				if = { # War of the Ring # Stewards Defeated # King's Path # Mordor did it
-					limit = {
-						FROM = {
 							OR = {
+								original_tag = UMA
+								has_country_flag = TA_UMA_Numenorean_Supremacy_Path
 								original_tag = MRD
-								is_in_faction_with = MRD
 							}
 						}
 						ROOT = {
 							original_tag = STE
 						}
+					}
+					if = {
+						limit = { ## Umbar Owns Minas Tirith
+							UMA = {
+								controls_province = 6980
+							}
+						}
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							annex_country = {
+								target = STE
+								transfer_troops = no
+							}
+							annex_country = {
+								target = BEL
+								transfer_troops = no
+							}
+							transfer_state = 15
+						}
+						MRD = {
+							annex_country = {
+								target = ITL
+								transfer_troops = no
+							}
+						}
+					}
+					if = {
+						limit = { ## Mordor Owns Minas Tirith
+							MRD = {
+								controls_province = 6980
+							}
+						}
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							annex_country = {
+								target = STE
+								transfer_troops = no
+							}
+							annex_country = {
+								target = ITL
+								transfer_troops = no
+							}
+						}
 						UMA = {
+							transfer_state = 15
+							transfer_state = 224
+							transfer_state = 223
+							transfer_state = 169
+							transfer_state = 13
+							transfer_state = 170
+							transfer_state = 14
+							transfer_state = 19
+							transfer_state = 176
+							transfer_state = 105
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # Umbar Lost to Gondor Kings Path
+					limit = {
+						FROM = {
+							original_tag = STE
+						}
+						ROOT = {
 							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
 						}
 					}
-					every_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						white_peace = ROOT
-					}
-					FROM = {
+					STE = {
 						annex_country = {
-							target = STE
+							target = UMA
 							transfer_troops = no
 						}
-						annex_country = {
-							target = ITL
-							transfer_troops = no
-						}
-					}
-					UMA = {
-						transfer_state = 15
-						transfer_state = 224
-						transfer_state = 223
-						transfer_state = 169
-						transfer_state = 13
-						transfer_state = 170
-						transfer_state = 14
-						transfer_state = 19
-						transfer_state = 176
-						transfer_state = 105
 					}
 
 					set_global_flag = skip_default_capitulation
@@ -2713,13 +2735,13 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							RED = {
+							CRN = {
 								is_in_faction_with = DUN
 							}
 						}
 						ANR = {
 							annex_country = {
-								target = RED
+								target = CRN
 								transfer_troops = no
 							}
 						}
@@ -2775,6 +2797,19 @@ on_actions = {
 					}
 					FOR = {
 						transfer_state = 57
+					}
+					if = {
+						limit = {
+							URU = {
+								is_subject_of = ANR
+							}
+						}
+						DUN = {
+							annex_country = {
+								target = URU
+								transfer_troops = no
+							}
+						}
 					}
 
 					set_global_flag = skip_default_capitulation

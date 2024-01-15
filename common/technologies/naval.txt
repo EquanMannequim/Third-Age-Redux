@@ -69,7 +69,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -106,7 +106,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = naval_folder
@@ -142,7 +142,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -178,7 +178,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3025
+		start_year = 3021
 
 		folder = {
 			name = naval_folder
@@ -209,7 +209,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3028
+		start_year = 3024
 
 		folder = {
 			name = naval_folder
@@ -248,7 +248,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -292,7 +292,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = naval_folder
@@ -336,7 +336,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -380,7 +380,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = naval_folder
@@ -411,7 +411,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3025
+		start_year = 3021
 
 		folder = {
 			name = naval_folder
@@ -437,7 +437,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3028
+		start_year = 3024
 
 		folder = {
 			name = naval_folder
@@ -473,7 +473,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = naval_folder
@@ -508,7 +508,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -539,7 +539,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = naval_folder
@@ -565,7 +565,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 3028
+		start_year = 3024
 
 		folder = {
 			name = naval_folder
@@ -595,7 +595,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = naval_folder
@@ -620,7 +620,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3028
+		start_year = 3024
 
 		folder = {
 			name = naval_folder
@@ -648,7 +648,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -697,7 +697,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -754,7 +754,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 3028
+		start_year = 3024
 		folder = {
 			name = naval_folder
 			position = { x = -4 y = 22 }
@@ -835,7 +835,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -888,7 +888,7 @@ technologies = {
 		allow = { always = no }
 		allow_branch = { always = no }
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -919,7 +919,7 @@ technologies = {
 		allow = { always = no }
 		allow_branch = { always = no }
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -946,7 +946,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3026
+		start_year = 3022
 
 		folder = {
 			name = naval_folder
@@ -1019,7 +1019,7 @@ technologies = {
 		allow = { always = no }
 		allow_branch = { always = no }
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -1061,7 +1061,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -1099,7 +1099,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3026
+		start_year = 3022
 
 		folder = {
 			name = naval_folder
@@ -1177,7 +1177,7 @@ technologies = {
 		allow = { always = no }
 		allow_branch = { always = no }
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = naval_folder
@@ -1214,7 +1214,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = naval_folder
@@ -1246,7 +1246,7 @@ technologies = {
 		allow_branch = { always = no }
 		research_cost = 2
 
-		start_year = 3026
+		start_year = 3022
 
 		folder = {
 			name = naval_folder
@@ -1278,7 +1278,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		# only from focus!!! #####
 		allow = {

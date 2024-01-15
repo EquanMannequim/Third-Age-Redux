@@ -23,7 +23,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = artillery_folder
@@ -35,7 +35,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3020.1.1" }
+			modifier = { factor = 2 date > "3016.1.1" }
 		}
 
 		categories = {
@@ -67,7 +67,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3019
+		start_year = 3015
 
 		folder = {
 			name = artillery_folder
@@ -79,7 +79,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3021.1.1" }
+			modifier = { factor = 2 date > "3017.1.1" }
 		}
 
 		categories = {
@@ -106,7 +106,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = artillery_folder
@@ -118,7 +118,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3022.1.1" }
+			modifier = { factor = 2 date > "3018.1.1" }
 		}
 
 		categories = {
@@ -152,7 +152,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3021
+		start_year = 3017
 
 		folder = {
 			name = artillery_folder
@@ -164,7 +164,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3023.1.1" }
+			modifier = { factor = 2 date > "3019.1.1" }
 		}
 
 		categories = {
@@ -198,7 +198,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3023
+		start_year = 3019
 
 		folder = {
 			name = artillery_folder
@@ -210,7 +210,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3025.1.1" }
+			modifier = { factor = 2 date > "3021.1.1" }
 		}
 
 		categories = {
@@ -227,7 +227,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = artillery_folder
@@ -239,7 +239,7 @@ technologies = {
 
 			modifier = { factor = 10 any_enemy_country = { ROOT = { estimated_intel_max_armor = { tag = PREV value > 30 } } } }
 
-			modifier = { factor = 2 date > "3026.1.1" }
+			modifier = { factor = 2 date > "3022.1.1" }
 		}
 
 		categories = {
@@ -267,7 +267,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 3019
+		start_year = 3015
 
 		folder = {
 			name = artillery_folder
@@ -277,7 +277,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3021.1.1" }
+			modifier = { factor = 2 date > "3017.1.1" }
 		}
 
 		categories = {
@@ -305,7 +305,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = artillery_folder
@@ -315,7 +315,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3022.1.1" }
+			modifier = { factor = 2 date > "3018.1.1" }
 		}
 
 		categories = {
@@ -340,7 +340,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3021
+		start_year = 3017
 
 		folder = {
 			name = artillery_folder
@@ -350,7 +350,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3023.1.1" }
+			modifier = { factor = 2 date > "3019.1.1" }
 		}
 
 		categories = {
@@ -382,7 +382,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = artillery_folder
@@ -392,7 +392,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3024.1.1" }
+			modifier = { factor = 2 date > "3020.1.1" }
 		}
 
 		categories = {
@@ -420,7 +420,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3023
+		start_year = 3019
 
 		folder = {
 			name = artillery_folder
@@ -430,7 +430,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3025.1.1" }
+			modifier = { factor = 2 date > "3021.1.1" }
 		}
 
 		categories = {
@@ -450,7 +450,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = artillery_folder
@@ -460,7 +460,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { factor = 2 date > "3026.1.1" }
+			modifier = { factor = 2 date > "3022.1.1" }
 		}
 
 		categories = {
@@ -578,7 +578,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3019
+		start_year = 3015
 
 		folder = {
 			name = artillery_folder
@@ -636,7 +636,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = artillery_folder
@@ -666,7 +666,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = artillery_folder
@@ -691,7 +691,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 3024
+		start_year = 3020
 
 		folder = {
 			name = artillery_folder
@@ -720,7 +720,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 3023
+		start_year = 3019
 		folder = {
 			name = artillery_folder
 			position = { x = 6 y = 10 }
@@ -750,7 +750,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -773,7 +773,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -795,7 +795,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -814,7 +814,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -833,7 +833,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -852,7 +852,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -899,7 +899,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3023
+		start_year = 3019
 
 		ai_will_do = {
 			factor = 0
@@ -927,7 +927,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3023
+		start_year = 3019
 
 		ai_will_do = {
 			factor = 0

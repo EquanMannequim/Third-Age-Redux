@@ -65,7 +65,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 
-			modifier = { factor = 2 date > "3016.1.1" } modifier = { factor = 3 date > "3017.1.1" } modifier = { factor = 5 date > "3018.1.1" }
+			modifier = { factor = 2 date > "3016.1.1" } modifier = { factor = 3 date > "3017.1.1" } modifier = { factor = 5 date > "3014.1.1" }
 		}
 	}
 
@@ -94,7 +94,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3020
+		start_year = 3016
 
 		ai_will_do = {
 			factor = 1
@@ -120,7 +120,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3024
+		start_year = 3020
 
 		ai_will_do = {
 			factor = 1
@@ -155,7 +155,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3019
+		start_year = 3015
 		folder = {
 			name = armour_folder
 			position = { x = 2 y = 6 }
@@ -188,7 +188,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = armour_folder
 			position = { x = 2 y = 12 }
@@ -217,7 +217,7 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 3024
+		start_year = 3020
 		folder = {
 			name = armour_folder
 			position = { x = 2 y = 16 }
@@ -242,7 +242,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 4 }
@@ -266,7 +266,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.2
-				date > "3020.1.1"
+				date > "3016.1.1"
 			}
 		}
 	}
@@ -278,7 +278,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3021
+		start_year = 3017
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 10 }
@@ -294,7 +294,7 @@ technologies = {
 
 			modifier = {
 				factor = 0
-				date < "3021.1.1"
+				date < "3017.1.1"
 			}
 
 			modifier = {
@@ -427,7 +427,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 2 }
@@ -450,7 +450,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3023
+		start_year = 3019
 		folder = {
 			name = armour_folder
 			position = { x = 2 y = 12 }
@@ -478,7 +478,7 @@ technologies = {
 			soft_attack = 0.15
 		}
 		research_cost = 2
-		start_year = 3024
+		start_year = 3020
 		folder = {
 			name = armour_folder
 			position = { x = 2 y = 14 }
@@ -515,7 +515,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3020
+		start_year = 3016
 
 		ai_will_do = {
 			factor = 0
@@ -546,7 +546,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3021
+		start_year = 3017
 
 		ai_will_do = {
 			factor = 0
@@ -583,7 +583,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3021
+		start_year = 3017
 
 		ai_will_do = {
 			factor = 0
@@ -635,7 +635,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3021
+		start_year = 3017
 
 		folder = {
 			name = armour_folder
@@ -670,7 +670,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3023
+		start_year = 3019
 
 		ai_will_do = {
 			factor = 0
@@ -695,7 +695,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 3023
+		start_year = 3019
 
 		path = {
 			leads_to_tech = advanced_light_art
@@ -720,7 +720,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3025
+		start_year = 3021
 
 		folder = {
 			name = armour_folder
@@ -745,7 +745,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3025
+		start_year = 3021
 
 		folder = {
 			name = armour_folder
@@ -775,7 +775,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -805,7 +805,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3020
+		start_year = 3016
 
 		folder = {
 			name = armour_folder
@@ -838,7 +838,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3021
+		start_year = 3017
 
 		folder = {
 			name = armour_folder
@@ -869,7 +869,7 @@ technologies = {
 
 
 		research_cost = 2
-		start_year = 3023
+		start_year = 3019
 
 		folder = {
 			name = armour_folder
@@ -894,7 +894,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 3025
+		start_year = 3021
 
 		folder = {
 			name = armour_folder
@@ -931,7 +931,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3023
+		start_year = 3019
 
 		categories = {
 			motorized_equipment
@@ -955,7 +955,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3025
+		start_year = 3021
 
 		categories = {
 			motorized_equipment
@@ -1051,7 +1051,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3018
+		start_year = 3014
 
 		ai_will_do = {
 			factor = 0
@@ -1092,7 +1092,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 
 		ai_will_do = {
 			factor = 0.5
@@ -1125,7 +1125,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3024
+		start_year = 3020
 
 		ai_will_do = {
 			factor = 0.5
@@ -1181,7 +1181,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3021
+		start_year = 3017
 
 
 		ai_will_do = {
@@ -1198,7 +1198,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3022.1.1"
+				date > "3018.1.1"
 			}
 
 			modifier = {
@@ -1208,7 +1208,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3024.1.1"
+				date > "3020.1.1"
 			}
 		}
 
@@ -1229,7 +1229,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3021
+		start_year = 3017
 
 		ai_will_do = {
 			factor = 1
@@ -1245,7 +1245,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3022.1.1"
+				date > "3018.1.1"
 			}
 
 			modifier = {
@@ -1255,7 +1255,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3024.1.1"
+				date > "3020.1.1"
 			}
 		}
 
@@ -1276,7 +1276,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3021
+		start_year = 3017
 
 		ai_will_do = {
 			factor = 1
@@ -1337,17 +1337,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3024.1.1"
+				date > "3020.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3025.1.1"
+				date > "3021.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 		}
 
@@ -1383,17 +1383,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.1
-				date > "3024.1.1"
+				date > "3020.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3025.1.1"
+				date > "3021.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 		}
 
@@ -1459,17 +1459,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "3019.1.1"
+				date > "3015.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3020.1.1"
+				date > "3016.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3021.1.1"
+				date > "3017.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -1491,7 +1491,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 
 		categories = {
 			motorized_equipment
@@ -1503,17 +1503,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "3019.1.1"
+				date > "3015.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3020.1.1"
+				date > "3016.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3021.1.1"
+				date > "3017.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -1530,7 +1530,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3024
+		start_year = 3020
 
 		categories = {
 			motorized_equipment
@@ -1546,17 +1546,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "3019.1.1"
+				date > "3015.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3020.1.1"
+				date > "3016.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3021.1.1"
+				date > "3017.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -1573,7 +1573,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1
-		start_year = 3024
+		start_year = 3020
 		sub_tech_index = 1
 
 		categories = {
@@ -1586,17 +1586,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "3019.1.1"
+				date > "3015.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3020.1.1"
+				date > "3016.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3021.1.1"
+				date > "3017.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -1613,7 +1613,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 1
@@ -1645,17 +1645,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3027.1.1"
+				date > "3023.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3028.1.1"
+				date > "3024.1.1"
 			}
 		}
 
@@ -1672,7 +1672,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 1
@@ -1692,17 +1692,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3027.1.1"
+				date > "3023.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "3028.1.1"
+				date > "3024.1.1"
 			}
 		}
 
@@ -1719,7 +1719,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3025
+		start_year = 3021
 
 		ai_will_do = {
 			factor = 0
@@ -1763,17 +1763,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "3028.1.1"
+				date > "3024.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3029.1.1"
+				date > "3025.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3030.1.1"
+				date > "3026.1.1"
 			}
 		}
 
@@ -1795,24 +1795,24 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3027
+		start_year = 3023
 
 		ai_will_do = {
 			factor = 1
 
 			modifier = {
 				factor = 2
-				date > "3028.1.1"
+				date > "3024.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3029.1.1"
+				date > "3025.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3030.1.1"
+				date > "3026.1.1"
 			}
 		}
 
@@ -1833,24 +1833,24 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3027
+		start_year = 3023
 
 		ai_will_do = {
 			factor = 1
 
 			modifier = {
 				factor = 2
-				date > "3028.1.1"
+				date > "3024.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3029.1.1"
+				date > "3025.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "3030.1.1"
+				date > "3026.1.1"
 			}
 		}
 
@@ -1871,7 +1871,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 0.5
-		start_year = 3027
+		start_year = 3023
 
 		ai_will_do = {
 			factor = 0

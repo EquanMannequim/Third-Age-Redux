@@ -226,22 +226,36 @@ technology_folders = {
 	}
 	orcs_special_folder = {
 		available = {
-			is_orcs = yes
+			OR = {
+				is_uruk_hai = yes
+				is_black_uruk = yes
+			}
 		}
 	}
 	elves_special_folder = {
 		available = {
-			is_elves = yes
+			OR = {
+				is_noldor = yes
+				is_sindar = yes
+				is_silvan = yes
+			}
 		}
 	}
 	dwarves_special_folder = {
 		available = {
-			is_dwarves = yes
+			OR = {
+				is_firebeard = yes
+				is_broadbeam = yes
+				is_longbeard = yes
+			}
 		}
 	}
 	men_special_folder = {
 		available = {
-			is_men = yes
+			OR = {
+				is_dunedain = yes
+				is_edain = yes
+			}
 		}
 	}
 }
