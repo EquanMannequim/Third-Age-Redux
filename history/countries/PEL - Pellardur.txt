@@ -1,0 +1,22 @@
+capital = 112
+
+set_research_slots = 2
+
+recruit_character = PEL_wutbath
+recruit_character = PEL_haakrad
+recruit_character = PEL_bishath
+
+
+set_politics = {
+	ruling_party = unaligned
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cooperative = 15
+	belligerent = 30
+	revolutionary = 0
+	unaligned = 55
+}

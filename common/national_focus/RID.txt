@@ -1,0 +1,1409 @@
+ focus_tree = {
+id = 'rohan'
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		tag = RID
+	}
+}
+
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+	focus = {
+		id = The_Men_of_Rhovonian
+		icon = GFX_goal_mor_wargoal_rohan
+		ai_will_do = { factor = 40 }
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = RID.1
+			add_ideas = RID_Horse_Lords
+		}
+	}
+	focus = {
+		id = The_Kingdom_of_Rohan
+		icon = GFX_goal_lotr_The_Kingdom_of_Rohan
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Men_of_Rhovonian}
+		relative_position_id = The_Men_of_Rhovonian
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = RID.2
+			add_ideas = RID_The_House_of_Eorl
+		}
+	}
+	focus = {
+		id = A_Kingdom_Divided
+		icon = GFX_goal_lotr_A_Kingdom_Divided
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Kingdom_of_Rohan}
+		relative_position_id = The_Kingdom_of_Rohan
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		  hidden_effect = { RID_theoden1 = { retire = yes } }
+			
+			country_event = RID.3
+			add_ideas = RID_The_Kings_Madness
+		}
+	}
+	focus = {
+		id = The_Westfold
+		icon = GFX_goal_lotr_The_Westfold
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = A_Kingdom_Divided}
+		relative_position_id = A_Kingdom_Divided
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.1
+			RID = {
+				add_opinion_modifier = { target = WST modifier = medium_increase }
+				}
+		}
+	}
+	focus = {
+		id = The_Eastmark
+		icon = GFX_goal_lotr_The_Eastmark
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = A_Kingdom_Divided}
+		relative_position_id = A_Kingdom_Divided
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			RID = {
+				add_opinion_modifier = { target = EAS modifier = medium_increase }
+				}
+		}
+	}
+	focus = {
+		id = The_Disaster_at_the_Fords_of_Isen
+		icon = GFX_goal_lotr_The_Disaster_at_the_Fords_of_Isen
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Westfold}
+		prerequisite = { focus = The_Eastmark}
+		relative_position_id = The_Westfold
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = RID.4
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.05
+				}
+		}
+	}
+	focus = {
+		id = The_Eastmark_Industry
+		icon = GFX_goal_lotr_The_Eastmark_Industry
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Disaster_at_the_Fords_of_Isen}
+		relative_position_id = The_Disaster_at_the_Fords_of_Isen
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			27	= {
+				add_extra_state_shared_building_slots = 1
+				}
+			30	= {
+				add_extra_state_shared_building_slots = 1
+				}
+			177	= {
+				add_extra_state_shared_building_slots = 1
+				}
+			add_tech_bonus = {
+			name = special_bonus
+			bonus = 0.5
+			uses = 1
+			category = lotr_labour_construction_industry
+				}
+			}
+		}
+	focus = {
+		id = Develop_Eastmark
+		icon = GFX_goal_lotr_Develop_Eastmark
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Eastmark_Industry}
+		relative_position_id = The_Eastmark_Industry
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		27	= {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+					add_ideas = RID_Eastmark_Industry
+		}
+	}
+	focus = {
+		id = Aid_Eastmark_Villages
+		icon = GFX_goal_lotr_Aid_Eastmark_Villages
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Develop_Eastmark}
+		relative_position_id = Develop_Eastmark
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		27	= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Expand_Eastmark_Roads
+		icon = GFX_goal_lotr_Expand_Eastmark_Roads
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Develop_Eastmark}
+		relative_position_id = Develop_Eastmark
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			177	= {
+			add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+			27	= {
+			add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+				182	= {
+			add_building_construction = {	type = infrastructure level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = Finish_Developing_Eastmark
+		icon = GFX_goal_lotr_Finish_Developing_Eastmark
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Expand_Eastmark_Roads}
+		prerequisite = { focus = Aid_Eastmark_Villages}
+		relative_position_id = Expand_Eastmark_Roads
+		x = 1
+		y = 1
+		cost = 4
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = RID_Eastmark_Industry
+					add_idea = RID_Developed_Eastmark_Industry
+				}
+			}
+		}
+	focus = {
+		id = The_Westfold_Industry
+		icon = GFX_goal_lotr_The_Westfold_Industry
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Disaster_at_the_Fords_of_Isen}
+		relative_position_id = The_Disaster_at_the_Fords_of_Isen
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			184	= {
+				add_extra_state_shared_building_slots = 1
+				}
+			26	= {
+				add_extra_state_shared_building_slots = 1
+				}
+			28	= {
+				add_extra_state_shared_building_slots = 1
+				}
+				add_tech_bonus = {
+			name = special_bonus
+			bonus = 0.75
+			uses = 1
+			technology = concentrated_industry2
+		}
+		
+			}
+		}
+	focus = {
+		id = Develop_Westfold
+		icon = GFX_goal_lotr_Develop_Westfold
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Westfold_Industry}
+		relative_position_id = The_Westfold_Industry
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		184	= {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_ideas = RID_Westfold_Industry
+		}
+	}
+	focus = {
+		id = Help_Westfold_Villages
+		icon = GFX_goal_lotr_Help_Westfold_Villages
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Develop_Westfold}
+		relative_position_id = Develop_Westfold
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		184 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Expand_Westfold_Roads
+		icon = GFX_goal_lotr_Expand_Eastmark_Roads
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Develop_Westfold}
+		relative_position_id = Develop_Westfold
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			28	= {
+			add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+			26	= {
+			add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+		}
+	}
+	focus = {
+		id = Finish_Developing_Westfold
+		icon = GFX_goal_lotr_Finish_Developing_Westfold
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Help_Westfold_Villages}
+		prerequisite = { focus = Expand_Westfold_Roads}
+		relative_position_id = Expand_Westfold_Roads
+		x = -1
+		y = 1
+		cost = 4
+		available = {
+			not = {
+				has_completed_focus = The_Prince_Lives
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_ideas = RID_Developed_Westfold_Industry
+		}
+	}
+	focus = {
+		id = A_Dunedain_From_The_North
+		icon = GFX_goal_lotr_A_Dunedain_From_The_North
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Disaster_at_the_Fords_of_Isen}
+		relative_position_id = The_Disaster_at_the_Fords_of_Isen
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+			ideology = cooperative
+			popularity = 0.02
+				}
+		}
+	}
+	focus = {
+		id = Search_The_Westfold
+		icon = GFX_goal_lotr_Search_The_Westfold
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = A_Dunedain_From_The_North}
+		relative_position_id = A_Dunedain_From_The_North
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = Search_The_Eastmark
+		icon = GFX_goal_lotr_Search_The_Eastmark
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Search_The_Westfold}
+		relative_position_id = Search_The_Westfold
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = The_Prince_Lives
+		icon = GFX_goal_lotr_The_Prince_Lives
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Search_The_Eastmark}
+		mutually_exclusive = {focus = A_Day_of_Sorrow }
+		relative_position_id = Search_The_Eastmark
+		x = -1
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = RID.5
+			add_popularity = {
+			ideology = cooperative
+			popularity = 0.05
+				}
+		}
+	}
+	focus = {
+		id = A_Day_of_Sorrow
+		icon = GFX_goal_lotr_A_Day_of_Sorrow
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Search_The_Eastmark}
+		mutually_exclusive = {focus = The_Prince_Lives }
+		relative_position_id = Search_The_Eastmark
+		x = 1
+		y = 1
+		cost = 1
+		available = {  }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = RID.6
+			RID_theodred = { retire = yes }
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.12
+				}
+
+		}
+	}
+	focus = {
+		id = The_Marshal_of_Eastmark
+		icon = GFX_goal_lotr_The_Marshal_of_Eastmark
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = The_Prince_Lives focus = A_Day_of_Sorrow }
+		relative_position_id = The_Prince_Lives
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_popularity = {
+			ideology = cooperative
+			popularity = 0.03
+				}
+			}
+		}
+	focus = {
+		id = The_Rohan_Infantry
+		icon = GFX_goal_lotr_The_Rohan_Infantry
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Marshal_of_Eastmark }
+		relative_position_id = The_Marshal_of_Eastmark
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = lotr_infantry_weapons
+				}
+		}
+	}
+	focus = {
+		id = The_Rohan_Militia
+		icon = GFX_goal_lotr_The_Rohan_Militia
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Rohan_Infantry }
+		relative_position_id = The_Rohan_Infantry
+		x = -3
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = Recruit_Local_Hunters
+		icon = GFX_goal_lotr_Recruit_Local_Hunters
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Rohan_Militia }
+		relative_position_id = The_Rohan_Militia
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+				name = ROH_artillery_modernisation
+				bonus = 0.50
+				uses = 1
+				category = lotr_infantry_archery
+			}
+		}
+	}
+	focus = {
+		id = Recruit_Village_Guards
+		icon = GFX_goal_lotr_Recruit_Village_Guards
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Rohan_Militia }
+		relative_position_id = The_Rohan_Militia
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+			name = special_bonus
+			bonus = 0.5
+			uses = 1
+			category = hospital_tech
+			}
+		}
+	}
+	focus = {
+		id = A_Infantry_Core
+		icon = GFX_goal_lotr_A_Infantry_Core
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Recruit_Local_Hunters }
+		prerequisite = { focus = Recruit_Village_Guards }
+		relative_position_id = Recruit_Local_Hunters
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = RID_The_Rohan_Infantry
+		}
+	}
+	focus = {
+		id = The_Rohan_Cavalry
+		icon = GFX_goal_lotr_The_Rohan_Cavalry
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Marshal_of_Eastmark }
+		relative_position_id = The_Marshal_of_Eastmark
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+				name = calvery_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_cavalry_light
+			}
+		}
+	}
+	focus = {
+		id = The_Rohirrim_of_Rohan
+		icon = GFX_goal_lotr_The_Rohirrim_of_Rohan
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Rohan_Cavalry }
+		relative_position_id = The_Rohan_Cavalry
+		x = 3
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = Archer_Cavalry
+		icon = GFX_goal_lotr_Archer_Cavalry
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Rohirrim_of_Rohan }
+		relative_position_id = The_Rohirrim_of_Rohan
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+				name = calvery_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_cavalry_archers
+			}
+		}
+	}
+	focus = {
+		id = Heavy_Cavalry
+		icon = GFX_goal_lotr_Heavy_Cavalry
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Rohirrim_of_Rohan }
+		relative_position_id = The_Rohirrim_of_Rohan
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_tech_bonus = {
+				name = calvery_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_cavalry_heavy
+			}
+		}
+	}
+	focus = {
+		id = A_Cavalry_Core
+		icon = GFX_goal_lotr_A_Cavalry_Core
+		ai_will_do = { factor = 35 }
+		prerequisite = { focus = Archer_Cavalry }
+		prerequisite = { focus = Heavy_Cavalry }
+		relative_position_id = Archer_Cavalry
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_Heir_Apparent
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = RID_The_Rohirrim_of_Rohan
+		}
+	}
+	focus = {
+		id = A_Personal_Host_of_Rohirrm
+		icon = GFX_goal_lotr_A_Personal_Host_of_Rohirrm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Marshal_of_Eastmark }
+		relative_position_id = The_Marshal_of_Eastmark
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_popularity = {
+			ideology = cooperative
+			popularity = 0.05
+				}
+		}
+	}
+	focus = {
+		id = The_Edoras_City_Guard
+		icon = GFX_goal_lotr_The_Edoras_City_Guard
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = A_Personal_Host_of_Rohirrm }
+		relative_position_id = A_Personal_Host_of_Rohirrm
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.02
+				}
+			}
+		}
+	focus = {
+		id = The_Palace_Guards
+		icon = GFX_goal_lotr_The_Palace_Guards
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Edoras_City_Guard }
+		relative_position_id = The_Edoras_City_Guard
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_popularity = {
+			ideology = belligerent
+			popularity = 0.03
+				}
+		}
+	}
+	focus = {
+		id = The_Heir_Apparent
+		icon = GFX_goal_lotr_The_Heir_Apparent
+		ai_will_do = { factor = 35 }
+		prerequisite = { focus = The_Palace_Guards }
+		mutually_exclusive = {focus = The_Forsaken_Heir }
+		relative_position_id = The_Palace_Guards
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = { EAS = { annex_country = { target = LEO transfer_troops = no } } }
+			annex_country = { target = EAS transfer_troops = yes }
+			add_state_core = 181
+			add_state_core = 182
+			add_state_core = 177
+			add_state_core = 27
+			add_state_core = 30
+			add_state_core = 178
+			add_corps_commander_role = {
+			Character = RID_eomer
+			traits={ panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			visible = {}
+					}
+			country_event = RID.7
+			add_popularity = {
+			ideology = cooperative
+			popularity = 0.05
+				}
+			}
+		}
+	focus = {
+		id = The_Forsaken_Heir
+		icon = GFX_goal_lotr_The_Forsaken_Heir
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = The_Palace_Guards }
+		mutually_exclusive = {focus = The_Heir_Apparent }
+		relative_position_id = The_Palace_Guards
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = { EAS = { annex_country = { target = LEO transfer_troops = no } } }
+			set_autonomy = {
+			target = EAS
+			autonomy_state = autonomy_free
+			}
+			remove_from_faction = EAS
+
+			EAS = {
+				add_opinion_modifier = { target = RID modifier = large_decrease }
+				}
+				add_popularity = {
+				ideology = belligerent
+				popularity = 0.15
+				}
+			}
+		}
+	focus = {
+		id = The_Chief_Advisor
+		icon = GFX_goal_lotr_The_Chief_Advisor
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = The_Heir_Apparent focus = The_Forsaken_Heir }
+		relative_position_id = The_Heir_Apparent
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_popularity = {
+			ideology = belligerent
+			popularity = 0.08
+				}
+			}
+		}
+	focus = {
+		id = The_Threat_From_Isenguard
+		icon = GFX_goal_lotr_The_Threat_From_Isenguard
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Chief_Advisor }
+		relative_position_id = The_Chief_Advisor
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ISN = {
+				add_opinion_modifier = { target = RID modifier = large_decrease }
+				}
+		}
+	}
+	focus = {
+		id = Final_Defenses
+		icon = GFX_goal_lotr_Final_Defenses
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Threat_From_Isenguard }
+		relative_position_id = The_Threat_From_Isenguard
+		x = -4
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = RID_Final_Defenses
+		}
+	}
+	focus = {
+		id = Build_Fortifications_In_The_Gap
+		icon = GFX_goal_lotr_Build_Fortifications_In_The_Gap
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Final_Defenses }
+		relative_position_id = Final_Defenses
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			24 = {
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 5079 }
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 6649 }
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 1519 }
+				}
+			}
+		}
+	focus = {
+		id = Outer_Helms_Deep_Fortifications
+		icon = GFX_goal_lotr_Build_Fortifications_In_The_Gap
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Final_Defenses }
+		relative_position_id = Final_Defenses
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		184 = {
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 2483 }
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6762 }
+				}
+			}
+		}
+	focus = {
+		id = Defend_The_River_Isen
+		icon = GFX_goal_lotr_Build_Fortifications_In_The_Gap
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Final_Defenses }
+		relative_position_id = Final_Defenses
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			24 = {
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6623 }
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6641 }
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6673 }
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 3711 }
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 3114 }
+				}
+		}
+	}
+	focus = {
+		id = Build_Forges_Close_To_The_Border
+		icon = GFX_goal_lotr_Build_Forges_Close_To_The_Border
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Defend_The_River_Isen }
+		prerequisite = { focus = Build_Fortifications_In_The_Gap }
+		relative_position_id = Defend_The_River_Isen
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			26 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Send_Swordsmiths_To_Helms_Deep
+		icon = GFX_goal_lotr_Send_Swordsmiths_To_Helms_Deep
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Defend_The_River_Isen }
+		prerequisite = { focus = Outer_Helms_Deep_Fortifications }
+		relative_position_id = Defend_The_River_Isen
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			184 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Prepared_Defenses
+		icon = GFX_goal_lotr_Prepared_Defenses
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Send_Swordsmiths_To_Helms_Deep }
+		prerequisite = { focus = Build_Forges_Close_To_The_Border }
+		prerequisite = { focus = Defend_The_River_Isen }
+		relative_position_id = Send_Swordsmiths_To_Helms_Deep
+		x = -1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		swap_ideas = {
+					remove_idea = RID_Final_Defenses
+					add_idea = RID_Prepared_Defenses
+				}
+		}
+	}
+	focus = {
+		id = Counter_Isengard_Influence
+		icon = GFX_goal_lotr_Counter_Isengard_Influence
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Chief_Advisor }
+		relative_position_id = The_Chief_Advisor
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = The_White_Wizards_Voice
+		icon = GFX_goal_lotr_The_White_Wizards_Voice
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Counter_Isengard_Influence }
+		relative_position_id = Counter_Isengard_Influence
+		x = 4
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = RID_Rohan_Royal_Guard
+		}
+	}
+	focus = {
+		id = The_Citizens_of_Enedwaith
+		icon = GFX_goal_lotr_The_Citizens_of_Enedwaith
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_White_Wizards_Voice }
+		relative_position_id = The_White_Wizards_Voice
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = The_Citizens_of_Rohan
+		icon = GFX_goal_lotr_The_Citizens_of_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_White_Wizards_Voice }
+		relative_position_id = The_White_Wizards_Voice
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = The_Dunlending_Barbarians
+		icon = GFX_goal_lotr_The_Dunlending_Barbarians
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_White_Wizards_Voice }
+		relative_position_id = The_White_Wizards_Voice
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = A_Common_Cause
+		icon = GFX_goal_lotr_A_Common_Cause
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Citizens_of_Enedwaith }
+		prerequisite = { focus = The_Citizens_of_Rohan }
+		relative_position_id = The_Citizens_of_Enedwaith
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = Ask_Gondor_For_Aid
+		icon = GFX_goal_lotr_Ask_Gondor_For_Aid
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Dunlending_Barbarians }
+		prerequisite = { focus = The_Citizens_of_Rohan }
+		relative_position_id = The_Citizens_of_Enedwaith
+		x = 3
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = A_Prepared_People
+		icon = GFX_goal_lotr_A_Prepared_People
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Ask_Gondor_For_Aid }
+		prerequisite = { focus = A_Common_Cause }
+		relative_position_id = A_Common_Cause
+		x = 1
+		y = 1
+		cost = 3
+		available = {
+			not = {
+				has_completed_focus = The_White_Wizard
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RID_Rohan_Royal_Guard
+				add_idea = RID_Rohan_Royal_Army
+				}
+			}
+		}
+	focus = {
+		id = The_Snake_in_The_Palace
+		icon = GFX_goal_lotr_The_Snake_in_The_Palace
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Chief_Advisor }
+		relative_position_id = The_Chief_Advisor
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.05
+				}	
+			}
+		}
+	focus = {
+		id = A_Servant_of_The_King
+		icon = GFX_goal_lotr_A_Servant_of_The_King
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Snake_in_The_Palace }
+		relative_position_id = The_Snake_in_The_Palace
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.05
+				}	
+			}
+		}
+	focus = {
+		id = An_Agent_of_The_White_hand
+		icon = GFX_goal_lotr_An_Agent_of_The_White_hand
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = A_Servant_of_The_King }
+		relative_position_id = A_Servant_of_The_King
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.05
+				}	
+			}
+		}
+	focus = {
+		id = RID_The_White_Wizard
+		icon = GFX_goal_lotr_RID_The_White_Wizard
+		ai_will_do = { factor = 38 }
+		prerequisite = { focus = An_Agent_of_The_White_hand }
+		mutually_exclusive = {focus = RID_An_Arranged_Marriage }
+		relative_position_id = An_Agent_of_The_White_hand
+		x = -1
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = RID_The_Kings_Madness
+					add_idea = RID_King_Theodens_Return
+				}
+		   hidden_effect = { RID_theoden_old = { retire = yes } }
+		 add_field_marshal_role = {
+			Character = RID_theoden2
+			traits={ fast_planner inspirational_leader }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=3
+		}
+		annex_country = { target = WST transfer_troops = yes }
+			add_state_core = 23
+			add_state_core = 184
+			add_state_core = 24
+			add_state_core = 28
+			add_state_core = 26
+			country_event = RID.8
+			set_cosmetic_tag = RON
+			add_popularity = { ideology = cooperative popularity = 0.2 }
+			
+			annex_country = { target = EAS transfer_troops = no }
+			add_state_core = 181
+			add_state_core = 182
+			add_state_core = 177
+			add_state_core = 27
+			add_state_core = 30
+			add_state_core = 178
+			if = { limit = { has_completed_focus = The_Forsaken_Heir}
+			add_corps_commander_role = {
+			Character = RID_eomer
+			traits={ panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			visible = {}
+					}
+				}
+			}
+		}
+	focus = {
+		id = RID_An_Arranged_Marriage
+		icon = GFX_goal_lotr_RID_An_Arranged_Marriage
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = An_Agent_of_The_White_hand }
+		mutually_exclusive = {focus = RID_The_White_Wizard }
+		relative_position_id = An_Agent_of_The_White_hand
+		x = 1
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		remove_ideas = RID_The_Kings_Madness
+		hidden_effect = { RID_theoden2 = { retire = yes } }
+		RID_theoden_old = { retire = yes }
+		RID_theodred = { retire = yes }
+		add_field_marshal_role = {
+			Character = RID_grima
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+		set_autonomy = {
+			target = WST
+			autonomy_state = autonomy_free
+			}
+			remove_from_faction = WST
+			country_event = RID.9
+			add_popularity = {
+			ideology = belligerent
+			popularity = 0.2
+				}
+			set_politics = {
+			ruling_party = belligerent
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+					}
+			WST = {
+				add_opinion_modifier = { target = RID modifier = large_decrease }
+				}
+			}
+		}
+	focus = {
+		id = The_Traitor_In_Orthanc
+		icon = GFX_goal_lotr_An_Agent_of_The_White_hand
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = RID_The_White_Wizard }
+		relative_position_id = RID_The_White_Wizard
+		x = -1
+		y = 1
+		cost = 5
+		available = { date > 3019.1.1 }
+		available_if_capitulated = yes
+		will_lead_to_war_with = ISN
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ISN }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ISN }
+				}	
+			}
+		}
+		focus = {
+		id = Aid_Gondor_Against_Mordor
+		icon = GFX_goal_lotr_Ask_Gondor_For_Aid
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = RID_The_White_Wizard }
+		relative_position_id = RID_The_White_Wizard
+		x = -1
+		y = 1
+		cost = 5
+		available = { ISN = { exists = no } }
+		available_if_capitulated = yes
+		will_lead_to_war_with = ISN
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		if = { limit = { STE = { is_in_faction_with = DUN } }
+			DUN = { add_to_faction = RID } }
+			else = { STE = { add_to_faction = RID } }
+			
+				}	
+			}
+		}
+	}
+}

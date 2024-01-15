@@ -1,0 +1,73 @@
+characters={
+	ENT_treebeard={
+		name="Treebeard"
+		portraits={
+			army={
+				large="GFX_portrait_entwood_treebeard"
+				small = "GFX_idea_portrait_entwood_treebeard"
+			}
+		}
+		country_leader={
+			ideology=federative
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=isolationist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	ENT_fladrif={
+		name="Fladrif"
+		portraits={
+			army={
+				large="GFX_portrait_entwood_fladrif"
+				small = "GFX_idea_portrait_entwood_fladrif"
+			}
+		}
+		country_leader={
+			ideology=domineering
+			expire="1980.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ jungle_rat ranger  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	ENT_birchseed={
+		name="Birchseed"
+		portraits={
+			army={
+				large="GFX_portrait_entwood_birchseed"
+				small = "GFX_idea_portrait_entwood_birchseed"
+			}
+		}
+		country_leader={
+			ideology=collectivist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+}

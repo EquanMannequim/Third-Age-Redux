@@ -1,0 +1,199 @@
+###########################
+# Rhun Events
+###########################
+
+add_namespace = DRA
+
+	country_event = {
+	id = DRA.1
+	title = DRA.1.t
+	desc = DRA.1.d
+	picture = GFX_report_event_numenor
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "Rhun Shall Rise Again"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = DRA.2
+	title = DRA.2.t
+	desc = DRA.2.d
+	picture = GFX_report_event_fight
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "The Easterling People Shall Be United Once Again"
+		ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = DRA.3
+	title = DRA.3.t
+	desc = DRA.3.d
+	picture = GFX_report_event_peasant_revolt2
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let There Be WAR!!!"
+		ai_chance = { base = 5 }
+			URG = { country_event = DRA.4 }
+			ASD = { country_event = DRA.4 }
+			SAG = { country_event = DRA.4 } }
+		}
+	country_event = {
+	id = DRA.4
+	title = DRA.4.t
+	desc = DRA.4.d
+	picture = GFX_report_event_generic_king
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = { original_tag = DRA } 
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = ASD }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = URG }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = ASD }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = ASD }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = SAG }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = ASD } }
+			}
+		}
+	country_event = {
+	id = DRA.5
+	title = DRA.5.t
+	desc = DRA.5.d
+	picture = GFX_report_event_negotiations
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "I'd rather not."
+			 ai_chance = { base = 5 }
+				add_political_power = 150
+		}
+		
+		option = {
+			name = "I accept ."
+			 ai_chance = { base = 0 }
+				add_ideas = DRA_the_crown_of_numenor
+			}
+		}
+		country_event = {
+	id = DRA.6
+	title = DRA.6.t
+	desc = DRA.6.d
+	picture = GFX_report_event_sauron_eye
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "I'd rather not."
+			ai_chance = { base = 1 }
+				add_political_power = 150
+		}
+		
+		option = {
+			name = "I humbly accept."
+				ai_chance = { base = 5 }
+				add_ideas = DRA_the_gift_from_mordor
+			}
+		}
+		country_event = {
+	id = DRA.7
+	title = DRA.7.t
+	desc = DRA.7.d
+	picture = GFX_report_event_rangers
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Welcome abourd Admiral."
+				ai_chance = { base = 5 }
+				add_political_power = 75
+			}
+		}
+		country_event = {
+	id = DRA.8
+	title = DRA.8.t
+	desc = DRA.8.d
+	picture = DRA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Execute Order of Battle 66"
+			 ai_chance = { base = 5 }
+				add_political_power = 75
+				 DRA_Balkubar = { retire = yes }
+			}
+		}
+			country_event = {
+	id = DRA.9
+	title = DRA.9.t
+	desc = DRA.9.d
+	picture = DRA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Execute Order of Battle 66"
+			 ai_chance = { base = 5 }
+				add_political_power = 75
+				  DRA_Corrupted_Balkubar = { retire = yes }
+			}
+		}
+		country_event = {
+	id = DRA.10
+	title = DRA.10.t
+	desc = DRA.10.d
+	picture = DRA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "The Kingdoms of Men must stand together to face the Darkness."
+			 ai_chance = { base = 5 }
+			 add_political_power = 15
+				STE = {
+					add_to_faction = DRA
+					}
+				}
+			option = {
+			name = "How can we trust them after the century's of WAR!!"
+			 ai_chance = { base = 5 }
+				add_political_power = 45
+			}
+		}

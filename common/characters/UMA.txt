@@ -1,0 +1,245 @@
+characters = {
+    UMA_Balkubar = {
+		name = "Ar-Balkubâr"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Balkubar
+			}
+			army = {
+				large = GFX_Portrait_Balkubar
+			}
+		}
+		country_leader = {
+			desc = Balkubar_DESC
+			ideology = melkorist
+			expire = "3000.01.01.01"
+			traits = { warmonger rearmer }
+			visible = {
+				NOT = { has_completed_focus = The_Corsair_Stronghold
+				}
+			}
+		}
+		country_leader = {
+			desc = Balkubar_DESC
+			ideology = protective
+			expire = "3000.01.01.01"
+			traits = { rearmer }
+			visible = {
+				NOT = { has_completed_focus = The_Corsair_Stronghold
+				}
+			}
+		}
+		field_marshal = {
+			traits = {
+				urban_assault_specialist
+				commando
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 27770
+			visible = {
+				NOT = { has_completed_focus = The_Corsair_Stronghold
+				}
+			}
+		}
+	}
+	UMA_Corrupted_Balkubar = {
+		name = "Ar-Balkubâr the Great"
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Corrupted_Balkubar
+			}
+			army = {
+				large = GFX_Portrait_Corrupted_Balkubar
+			}
+		}
+	}
+	UMA_Sakalkhor = {
+		name = "Captain Sakalkhor"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Sakalkhor
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=-1
+			}
+		}
+	UMA_Gimilzagar = {
+		name = "General Gimilzagar"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Gimilzagar_Golden
+			}
+		}
+		corps_commander = {
+			traits = { urban_assault_specialist desert_fox  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=-1
+			visible = { has_completed_focus = A_Loyal_General }
+				NOT = {
+				}
+			}
+		}
+	UMA_erchirion={
+		name="Prince Erchirion"
+		portraits={
+			civilian={
+				large="GFX_Portrait_alphbeleg"
+				small="GFX_Portrait_alphbeleg"
+			}
+		}
+		
+		corps_commander={
+			traits={ thorough_planner }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			visible = { has_completed_focus = UMA_The_Dol_Amroth_Nobility }
+		}
+	}
+	UMA_elphir ={
+		name="Prince Elphir"
+		portraits={
+			civilian={
+				large="GFX_Portrait_alphaear"
+				small="GFX_Portrait_alphaear"
+			}
+		}
+		
+		corps_commander={
+			traits={ panzer_leader commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Dol_Amroth_Nobility }
+		}
+	}
+	UMA_Hirluin = {
+		name="Hirluin"
+		portraits={
+			army={
+				large="GFX_Portrait_Hirluin"
+				small="GFX_Portrait_Hirluin"
+			}
+		}
+		corps_commander={
+			traits={  panzer_leader }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+		UMA_Corinir = {
+		name="Corinir"
+		portraits={
+			army={
+				large="GFX_Portrait_Corinir"
+				small="GFX_Portrait_Corinir"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+	UMA_Forlong = {
+		name="Forlong The Fat"
+		portraits={
+			army={
+				large="GFX_Portrait_Forlong"
+				small="GFX_Portrait_Forlong"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+	UMA_Angbor={
+		name="Angbor"
+		portraits={
+			army={
+				large="GFX_Portrait_Angbor"
+				small="GFX_Portrait_Angbor"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+	UMA_Golasgil = {
+		name="Golasgil"
+		portraits={
+			army={
+				large="GFX_Portrait_Golasgil"
+				small="GFX_Portrait_Golasgil"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+	UMA_duinhir = {
+		name="Duinhir"
+		portraits={
+			army={
+				large="GFX_Portrait_Duinhir"
+				small="GFX_Portrait_Duinhir"
+			}
+		}
+		corps_commander={
+			traits={ swamp_fox }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			visible = { has_completed_focus = UMA_The_Gondorian_Nobility }
+			}
+		}
+	}

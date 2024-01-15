@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		HRD_The_Southern_Desert = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ea_resolution_icon_hegemony
+
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.25
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				conscription_factor = 0.12
+				mobilization_speed = 0.02
+			}
+		}
+		HRD_The_Haradrim = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				land_night_attack = 0.05
+				acclimatization_hot_climate_gain_factor = 0.15
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		HRD_The_Mumakill_Riders = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = swan_knights
+			modifier = {
+				army_speed_factor = 0.08
+				breakthrough_factor = 0.05
+				army_core_attack_factor = 0.02
+				war_support_factor = 0.10
+			}
+		}
+	}

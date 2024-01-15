@@ -1,0 +1,19 @@
+
+ISN_cat = {
+	ISN_The_Ents_March_To_War = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = { has_completed_focus = Burn_Down_The_Fangorn_Forest }
+		available = { FAN = { exists = no } }
+		days_mission_timeout = 200
+		timeout_effect = {
+			FAN = {
+			create_wargoal = { type = annex_everything target = ISN }
+			if = { limit = { FAN = { is_ai = yes } }
+			declare_war_on = { type = annex_everything    target = ISN }
+		}
+		complete_effect = {
+			}
+		}
+	}

@@ -1,0 +1,611 @@
+## NOTE: 'sprite = x' sets the icon as a frame within gfx/interface/ideas/idea_traits_strip.dds
+## The icons are as follows:
+#1 : plane
+#2 : researcher flask
+#3 : anchor
+#4 : architect tool
+#5 : infantry helmet
+#6 : fuel cannister
+#7 : sword
+#8 : chief researcher hat
+#9 : shield
+#10: stack of coins
+#11: nothing
+#12: crown
+#13: political building
+#14: theorist gears
+#15: eye
+#16: artillery
+#17: horse
+#18: chief of army star
+
+
+# Command Power costs:
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+
+leader_traits = {
+
+    steward_of_gondor_denethor = {
+        random = no
+        sprite = 12
+
+        political_power_factor = -0.10
+        stability_factor = 0.05
+        offensive_war_stability_factor = -0.05
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    steward_of_gondor_boromir = {
+        random = no
+        sprite = 12
+
+        political_power_factor = 0.05
+        stability_factor = 0.10
+        army_infantry_attack_factor = 0.05
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    steward_of_gondor_faramir = {
+        random = no
+        sprite = 12
+
+        political_power_factor = 0.02
+        army_artillery_attack_factor = 0.10
+        decryption_factor = 0.05
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    steward_of_gondor_imrahil = {
+        random = no
+        sprite = 12
+
+        stability_factor = 0.15
+        army_speed_factor = 0.10
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    forlong_the_fat_treasurer_advisor = {
+        random = no
+        sprite = 10
+
+        chief_researcher_cost_factor = -0.30
+        architect_cost_factor = -0.30
+        theorist_cost_factor = -0.30
+        research_advisor_cost_factor = -0.30
+        army_chief_cost_factor = -0.30
+        cavalry_chief_cost_factor = -0.30
+        navy_chief_cost_factor = -0.30
+        high_command_cost_factor = -0.30
+        political_power_factor = 0.25
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    imladir_captain_of_tumladen_advisor = {
+        random = no
+        sprite = 15
+
+        crypto_strength = 0.05
+        encryption_factor = 0.10
+        decryption_factor = 0.05
+        operative_slot = 1
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    hand_of_castamir_advisor = {
+        random = no
+        sprite = 13
+
+        encryption_factor = -0.05
+        decryption_factor = -0.05
+        army_infantry_attack_factor = -0.06
+        political_power_factor = 0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lord_of_blackroot_vale_advisor = {
+        random = no
+        sprite = 13
+
+        conscription_factor = 0.06
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lord_of_lamedon_advisor = {
+        random = no
+        sprite = 13
+
+        production_factory_efficiency_gain_factor = 0.10
+        production_factory_max_efficiency_factor = 0.10
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    paranoid_defender_advisor = {
+        random = no
+        sprite = 14
+
+        production_speed_bunker_factor = 0.05
+        production_speed_infrastructure_factor = 0.05
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    servant_of_the_stewards_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    ithilien_smithsman_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lord_regent_of_pelargir_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    ranger_captain_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    captain_of_the_white_tower_advisor = {
+        random = no
+        sprite = 18
+
+        army_defence_factor = 0.05
+        land_doctrine_cost_factor = 0.10
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    captain_of_the_rangers_advisor = {
+        random = no
+        sprite = 18
+
+        artillery_attack_factor = 0.05
+        land_doctrine_cost_factor = 0.10
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lord_of_pinnath_gelin_advisor = {
+        random = no
+        sprite = 17
+
+        army_armor_speed_factor = 0.05
+        army_armor_attack_factor = 0.05
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    courtier_of_belfalas_advisor = {
+        random = no
+        sprite = 3
+
+        amphibious_invasion_defence = 0.10
+        amphibious_invasion = 0.10
+        naval_invasion_capacity = 10
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    shipmaiden_of_dol_amroth_advisor = {
+        random = no
+        sprite = 3
+
+        naval_damage_factor = 0.10
+        naval_defense_factor = 0.05
+        industrial_capacity_dockyard = 0.10
+        political_power_factor = 0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    guard_of_the_citadel_advisor = {
+        random = no
+        sprite = 5
+
+        army_core_defence_factor = 0.05
+        army_speed_factor = 0.02
+        army_core_attack_factor = 0.04
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    captain_of_the_citadel_advisor = {
+        random = no
+        sprite = 5
+
+        army_core_defence_factor = 0.02
+        army_defence_factor = 0.10
+        production_factory_max_efficiency_factor = 0.10
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lord_of_anfalas_advisor = {
+        random = no
+        sprite = 5
+
+        army_attack_factor = 0.05
+        army_speed_factor = 0.05
+        army_defence_factor = 0.03
+        political_power_gain = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    lord_of_the_nazgul_advisor = {
+        random = no
+        sprite = 12
+
+        war_support_factor = 0.10
+        stability_factor = 0.05
+        army_speed_factor  = 0.10
+        decryption_factor = 0.03        
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lieutenant_of_barad_dur_advisor = {
+        random = no
+        sprite = 12
+
+        stability_factor = 0.15
+        conscription_factor = 0.04
+        political_power_factor = 0.25
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    the_deciever_advisor = {
+        random = no
+        sprite = 12
+
+        stability_factor = 0.20
+        war_support_factor = 0.50
+        army_attack_factor = 0.30
+        army_core_defence_factor = 0.15
+        decryption_factor = 0.10
+        political_power_factor = 0.50
+        research_speed_factor = 0.25
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    cirith_ungol_quartermaster_advisor = {
+        random = no
+        sprite = 12
+
+        political_power_factor = 0.10
+        consumer_goods_factor = -0.20
+        production_speed_industrial_complex_factor = 0.15
+        production_speed_arms_factory_factor = 0.15
+        stability_factor = -0.10
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    agent_of_sauron_advisor = {
+        random = no
+        sprite = 10
+
+        new_operative_slot_bonus = 2
+        decryption_factor = 0.15
+        encryption_factor = 0.15
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    lieutenant_of_morgul_advisor = {
+        random = no
+        sprite = 15
+
+        resistance_activity = -0.25
+        compliance_growth_on_our_occupied_states = 0.20
+        resistance_growth_on_our_occupied_states = -0.30
+        required_garrison_factor = 0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    messenger_of_sauron_advisor = {
+        random = no
+        sprite = 13
+
+        war_support_factor = 0.10
+        conscription_factor = 0.03
+        political_power_factor = 0.10
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    the_easterling_advisor = {
+        random = no
+        sprite = 13
+
+        chief_researcher_cost_factor = -0.30
+        architect_cost_factor = -0.30
+        theorist_cost_factor = -0.30
+        research_advisor_cost_factor = -0.30
+        army_chief_cost_factor = -0.30
+        cavalry_chief_cost_factor = -0.30
+        navy_chief_cost_factor = -0.30
+        high_command_cost_factor = -0.30
+        consumer_goods_factor = -0.10
+        production_speed_buildings_factor = 0.10
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    the_white_advisor = {
+        random = no
+        sprite = 13
+
+        political_power_factor = 0.10
+        targeted_modifier = {
+            tag = RID
+            attack_bonus_against = 0.10
+            defense_bonus_against = 0.10
+        }
+        targeted_modifier = {
+            tag = STE
+            attack_bonus_against = 0.10
+            defense_bonus_against = 0.10
+        }
+        encryption_factor = 0.05
+        decryption_factor = 0.05
+        political_power_gain = 0.50
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    uruk_captain_advisor = {
+        random = no
+        sprite = 14
+
+        political_power_factor = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    master_of_caves_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    goblin_captain_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    crazed_wizard_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    traditionalist_advisor = {
+        random = no
+        sprite = 18
+
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    sauron_incarnate_advisor = {
+        random = no
+        sprite = 18
+
+        army_defence_factor = 0.05
+        land_doctrine_cost_factor = 0.10
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    the_black_captain_advisor = {
+        random = no
+        sprite = 13
+
+        naval_invasion_prep_speed = 0.10
+        army_morale_factor = 0.10
+        army_attack_factor = 0.08
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    servant_of_the_eye_advisor = {
+        random = no
+        sprite = 14
+
+        army_core_attack_factor = 0.10
+        supply_consumption_factor = -0.08
+        land_bunker_effectiveness_factor = 0.10
+        political_power_factor = -0.20
+
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    cataphract_of_the_east_advisor = {
+        random = no
+        sprite = 18
+
+        army_armor_attack_factor = 0.06
+        army_armor_defence_factor = 0.06
+        army_armor_speed_factor = 0.06
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    envoy_of_umbar_advisor = {
+        random = no
+        sprite = 18
+
+        naval_invasion_capacity = 0.10
+        naval_invasion_capacity = 0.10
+        naval_invasion_planning_bonus_speed = 0.05
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    great_chief_advisor = {
+        random = no
+        sprite = 18
+
+        special_forces_cap = 0.15
+        special_forces_attack_factor = 0.05
+        special_forces_defence_factor = 0.10
+        special_forces_training_time_factor = -0.02
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    captain_of_mordor_advisor = {
+        random = no
+        sprite = 18
+
+        army_attack_factor = 0.05
+        army_defence_factor = 0.02
+        army_infantry_attack_factor = 0.07
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    warband_leader_advisor = {
+        random = no
+        sprite = 18
+
+        army_speed_factor = 0.20
+        initiative_factor = 0.15
+        breakthrough_factor = 0.05
+        political_power_gain = -0.20
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+}

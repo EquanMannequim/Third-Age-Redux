@@ -1,0 +1,16 @@
+
+ITL_cat = {
+	ITL_Ithilian_Victory = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = { MRG = { has_completed_focus = Sieze_The_Eastern_Anduin } }
+		available = { MRG = { exists = no } }
+		days_mission_timeout = 365
+		timeout_effect = {
+			ITL = { white_peace = MRG }
+		complete_effect = {
+			
+			}
+		}
+	}

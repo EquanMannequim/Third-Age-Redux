@@ -1,0 +1,1477 @@
+focus_tree = {
+id = dunedain
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = DUN
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = DUN_The_War_of_The_Last_Alliance
+		icon = GFX_goal_arnor
+		ai_will_do = { factor = 100 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = DUN.1
+			add_ideas = DUN_war_of_the_last_alliance
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id =  DUN_The_Time_of_Three_Kings
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_The_War_of_The_Last_Alliance }
+		relative_position_id = DUN_The_War_of_The_Last_Alliance
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.2
+			add_ideas = DUN_shattered_kingdom
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = DUN_The_War_In_The_North
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_The_Time_of_Three_Kings }
+		relative_position_id = DUN_The_Time_of_Three_Kings
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.3
+			add_ideas = DUN_last_of_the_dunedain
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = DUN_The_Shirefolk
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_The_War_In_The_North }
+		relative_position_id = DUN_The_War_In_The_North
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUN = {add_to_faction = SHR }
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Elves_of_Rivendell
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = DUN_The_War_In_The_North }
+		relative_position_id = DUN_The_War_In_The_North
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			65 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = DUN_The_Free_Peoples_of_Bree
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_The_War_In_The_North }
+		relative_position_id = DUN_The_War_In_The_North
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUN = {add_to_faction = BRE }
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			149 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Halbarads_Mission
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Elves_of_Rivendell }
+		relative_position_id = DUN_The_Elves_of_Rivendell
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support  = 0.05
+			add_stability  = 0.04
+			DUN = {add_to_faction = CRN }
+			country_event = DUN.4
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = DUN_Equip_Halbarads_Forces
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 15 }
+		prerequisite = { focus = DUN_Halbarads_Mission }
+		relative_position_id = DUN_Halbarads_Mission
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			CRN = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+					}
+				}
+			CRN = { add_opinion_modifier = { target = DUN modifier = small_increase } }
+		}
+	}
+	focus = {
+		id = DUN_Send_Swordsmiths_To_Halbarad
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 15 }
+		prerequisite = { focus = DUN_Halbarads_Mission }
+		relative_position_id = DUN_Halbarads_Mission
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			145 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			CRN = { add_opinion_modifier = { target = DUN modifier = small_increase } }
+		}
+	}
+	focus = {
+		id = DUN_The_Red_Hill_Raiders
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = DUN_Equip_Halbarads_Forces }
+		prerequisite = { focus = DUN_Send_Swordsmiths_To_Halbarad }
+		relative_position_id = DUN_Equip_Halbarads_Forces
+		x = 1
+		y = 1
+		cost = 5
+		available = { DUN = { has_war = { no } } } 
+		will_lead_to_war_with = RED
+		completion_reward = {
+			hiden_effect = { RED = { declare_war_on = { type = annex_everything    target = BRE } } }
+			BRE = { add_state_claim = 150 add_state_core = 150 }
+			create_wargoal = { type = annex_everything target = RED }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = RED }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Transfer_Administation_To_Bree
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_The_Red_Hill_Raiders }
+		relative_position_id = DUN_The_Red_Hill_Raiders
+		x = -1
+		y = 1
+		cost = 5
+		available = { BRE = { exists = yes } }
+		available = { owns_state = 150 }
+		completion_reward = {
+			BRE = { transfer_state = 150  }
+			add_political_power = 100
+			}
+		}
+	focus = {
+		id = DUN_Aid_Elladan_and_Elrohir
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Elves_of_Rivendell }
+		relative_position_id = DUN_The_Elves_of_Rivendell
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.5
+			add_manpower = 5000
+			add_war_support  = 0.05
+		}
+	}
+	focus = {
+		id = DUN_Send_Aid_To_Rivendell
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Aid_Elladan_and_Elrohir }
+		relative_position_id = DUN_Aid_Elladan_and_Elrohir
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			IML = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+					}
+				}
+			IML = {
+				add_opinion_modifier = { target = DUN modifier = small_increase }
+				}
+		}
+	}
+	focus = {
+		id = DUN_Rivendell_Swordmiths
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Aid_Elladan_and_Elrohir }
+		relative_position_id = DUN_Aid_Elladan_and_Elrohir
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			65 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			IML = { add_opinion_modifier = { target = DUN modifier = small_increase } }
+		}
+	}
+	focus = {
+		id = DUN_Orcs_Across_The_Gwathlo
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_Send_Aid_To_Rivendell }
+		prerequisite = { focus = DUN_Rivendell_Swordmiths }
+		relative_position_id = DUN_Send_Aid_To_Rivendell
+		x = 1
+		y = 1
+		cost = 5
+		will_lead_to_war_with = ERG
+		available = { IML = { has_war_with = ERG } }
+		bypass = {
+			or = {
+			ERG = { exists = no } 
+			ERG = { NOT = { has_government = belligerent } } }
+		}
+		completion_reward = {
+		create_wargoal = { type = annex_everything target = ERG }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ERG }
+				}
+			}
+		}
+	focus = {
+		id = DUN_Transfer_Control_To_Rivendell
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
+		relative_position_id = DUN_Orcs_Across_The_Gwathlo
+		x = 1
+		y = 1
+		cost = 5
+		available = { ERG = { exists = no }}
+		available = { 
+			or = { 
+				DUN = { owns_state = 202  }
+				DUN = { owns_state = 201  }
+				DUN = { owns_state = 200  }
+				DUN = { owns_state = 67  }
+				DUN = { owns_state = 66  } } }
+		completion_reward = {
+			IML = { transfer_state = 202 transfer_state = 201 transfer_state = 200 transfer_state = 67 transfer_state = 66  }
+			}
+		}
+	focus = {
+		id = DUN_Expell_The_Darkness_In_Cardolan
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		will_lead_to_war_with = FAR
+		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
+		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
+		mutually_exclusive = { focus = DUN_Ignore_The_Cardolan_Wights }
+		relative_position_id = DUN_The_Red_Hill_Raiders
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUN = { add_state_claim = 144 }
+			create_wargoal = { type = take_state_focus target = FAR generator = { 144 } }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = FAR }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Ignore_The_Cardolan_Wights
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
+		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
+		mutually_exclusive = { focus = DUN_Expell_The_Darkness_In_Cardolan }
+		relative_position_id = DUN_The_Red_Hill_Raiders
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 7000
+		}
+	}
+	focus = {
+		id = DUN_Whispers_Of_An_Old_Threat
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
+		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
+		prerequisite = { focus = DUN_Ignore_The_Cardolan_Wights focus = DUN_Expell_The_Darkness_In_Cardolan }
+		relative_position_id = DUN_The_Red_Hill_Raiders
+		x = 3
+		y = 2
+		cost = 5
+		completion_reward = {
+			hidden_effect = { if = { limit = { FAR = has_government = cooperative } }annex_country = { target = FAR transfer_troops = no } }
+			country_event = DUN.6
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = DUN_Recall_Halbarad_Home
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 75 }
+		prerequisite = { focus = DUN_Whispers_Of_An_Old_Threat }
+		mutually_exclusive = { focus = DUN_Leave_Halbarad_In_Weatherhills }
+		relative_position_id = DUN_Whispers_Of_An_Old_Threat
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_corps_commander_role = {
+			Character = DUN_halbarad
+			traits={ ranger commando }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+			army_experience = 10
+			annex_country = { target = CRN transfer_troops = yes }
+			add_state_core = 145
+			}
+		}
+	focus = {
+		id = DUN_Leave_Halbarad_In_Weatherhills
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Whispers_Of_An_Old_Threat }
+		mutually_exclusive = { focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Whispers_Of_An_Old_Threat
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUN = { puppet = CRN }
+			add_political_power = 200
+			add_manpower = 7000 
+		}
+	}
+	focus = {
+		id = DUN_Call_Forth_The_Dunedain
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		hidden_effect = { LND = { annex_country = { target = FRL transfer_troops = yes } } }
+			country_event = DUN.7
+			load_oob = DUN_Dunedain_Rangers
+			add_manpower = 15000
+			swap_ideas = {
+					remove_idea = DUN_shattered_kingdom
+					add_idea = DUN_ranger_kingdom
+				}
+			}
+		}
+		focus = {
+		id = DUN_Rhudar_Defenses
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 3259}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6088}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 4469}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6056}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6058}
+						}
+			145 = {
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 1100}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 451}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 2276}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 4838}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 1310}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 4701}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 5931}
+				}
+			}
+		}
+		focus = {
+		id = DUN_Rally_The_Locals
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 15000
+			}
+		}
+	focus = {
+		id = DUN_Reclaim_The_Ancient_Fortress_of_Fornost
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
+		relative_position_id = DUN_Call_Forth_The_Dunedain
+		x = 2
+		y = 1
+		cost = 5
+		available = { DUN = { has_war = { no } } }
+		will_lead_to_war_with = FRN
+		completion_reward = {
+			DUN = { add_state_claim = 148 }
+			create_wargoal = { type = take_state_focus target = FRN generator = { 148 } }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = FRN }
+				}
+			}
+	}
+	focus = {
+		id = DUN_Fortify_Fornost
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40  }
+		prerequisite = { focus = DUN_Reclaim_The_Ancient_Fortress_of_Fornost }
+		prerequisite = { focus = DUN_Restore_The_Cardolan_Armorys }
+		relative_position_id = DUN_Reclaim_The_Ancient_Fortress_of_Fornost
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			or = {
+				FRN = { exists = no }
+				FRN = { has_government = cooperative } } }
+		completion_reward = {
+			add_war_support  = 0.08
+			add_stability  = 0.04
+		hidden_effect = { if = { FRN = { exist = yes } annex_country = { target = FRN transfer_troops = no } } }
+			add_state_core = 148
+			148 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			}
+		}
+	focus = {
+		id = DUN_Reclaim_The_Old_Capital_of_Annuminas
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
+		relative_position_id = DUN_Call_Forth_The_Dunedain
+		x = -2
+		y = 1
+		cost = 5
+		available = { DUN = { has_war = { no } } } 
+		will_lead_to_war_with = ANU
+		completion_reward = {
+			DUN = { add_state_claim = 146 }
+			create_wargoal = { type = take_state_focus target = ANU generator = { 146 } }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ANU }
+				}
+			}
+	}
+	focus = {
+		id = DUN_Restore_Annuminas
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Reclaim_The_Old_Capital_of_Annuminas }
+		prerequisite = { focus = DUN_Build_Bridges_Across_The_Rivers }
+		relative_position_id = DUN_Reclaim_The_Old_Capital_of_Annuminas
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			or = {
+				ANU = { exists = no }
+				ANU = { has_government = cooperative } } }
+		completion_reward = {
+			add_war_support  = 0.04
+			add_stability  = 0.08
+		hidden_effect = { if = { ANU = { exist = yes } annex_country = { target = ANU transfer_troops = no } } }
+			add_state_core = 146
+			146 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Build_Makeshift_Workshops
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Rebuild_Roads_Along_The_Greenroad
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Build_Makeshift_Workshops }
+		relative_position_id = DUN_Build_Makeshift_Workshops
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = { add_building_construction = { 	type = infrastructure level = 1 	instant_build = yes } }
+			145 = { add_building_construction = {	type = infrastructure level = 1 	instant_build = yes } }
+			if = { limit = { DUN = { owns_state = 148 } }
+				148 = { add_building_construction = {	type = infrastructure level = 1 	instant_build = yes } } }
+			if = { limit = { DUN = { owns_state = 146 } }
+				146 = { add_building_construction = {	type = infrastructure level = 1 	instant_build = yes } } }
+			}
+		}
+	focus = {
+		id = DUN_Build_Bridges_Across_The_Rivers
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Build_Makeshift_Workshops }
+		relative_position_id = DUN_Build_Makeshift_Workshops
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = { add_building_construction = {	type = infrastructure level = 1 	instant_build = yes } }
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Restored_Civillian_Infastructure
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Rebuild_Roads_Along_The_Greenroad }
+		prerequisite = { focus = DUN_Build_Bridges_Across_The_Rivers }
+		relative_position_id = DUN_Rebuild_Roads_Along_The_Greenroad
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_restored_civillan_industry
+		}
+	}
+	focus = {
+		id = DUN_Build_Makeshift_Forges
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
+		relative_position_id = DUN_Recall_Halbarad_Home
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Restore_The_Cardolan_Armorys
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Build_Makeshift_Forges }
+		relative_position_id = DUN_Build_Makeshift_Forges
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Restore_The_Cardolan_Archery_Ranges
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Build_Makeshift_Forges }
+		relative_position_id = DUN_Build_Makeshift_Forges
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Restored_Military_Buildings
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Restore_The_Cardolan_Archery_Ranges }
+		prerequisite = { focus = DUN_Restore_The_Cardolan_Armorys }
+		relative_position_id = DUN_Restore_The_Cardolan_Armorys
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_restored_military_industry
+		}
+	}
+	focus = {
+		id = DUN_The_Threat_From_The_Cold_North
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
+		relative_position_id = DUN_Call_Forth_The_Dunedain
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_war_support  = 0.05
+			country_event = DUN.8
+		}
+	}
+	focus = {
+		id = DUN_Man_The_Defenses
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = DUN_The_Threat_From_The_Cold_North }
+		mutually_exclusive = { focus = DUN_Prepare_To_March_North }
+		relative_position_id = DUN_The_Threat_From_The_Cold_North
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_angmar_defenses
+		}
+	}
+	focus = {
+		id = DUN_Prepare_To_March_North
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_The_Threat_From_The_Cold_North }
+		mutually_exclusive = { focus = DUN_Man_The_Defenses }
+		relative_position_id = DUN_The_Threat_From_The_Cold_North
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_angmar_offensive
+		}
+	}
+	focus = {
+		id = DUN_Destroy_Angmar_Once_and_For_All
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Prepare_To_March_North focus = DUN_Man_The_Defenses }
+		relative_position_id = DUN_Man_The_Defenses
+		x = 1
+		y = 1
+		cost = 5
+		bypass = {
+			OR = { 
+				ANR = { exists = no } 
+				ANR = { has_government = cooperative }
+			}
+		}
+		available = { DUN = { is_neighbor_of = ANR } }
+		will_lead_to_war_with = ANR
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ANR }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ANR }
+			}
+		}
+	}
+	focus = {
+		id = DUN_Send_Rangers_To_The_Shire	
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = DUN_Destroy_Angmar_Once_and_For_All }
+		relative_position_id = DUN_Destroy_Angmar_Once_and_For_All
+		x = -2
+		y = 1
+		cost = 5
+		available = { DUN = {	has_war_with = ANR } }
+		completion_reward = {
+			SHR = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Take_Direct_Control_of_The_Shire	
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = DUN_Send_Rangers_To_The_Shire }
+		mutually_exclusive = { focus = DUN_Increase_Influence_In_The_Shire }
+		relative_position_id = DUN_Send_Rangers_To_The_Shire
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			SHR = { country_event = DUN.10 }
+			add_war_support  = -0.10
+			add_stability  = -0.05
+		}
+	}
+	focus = {
+		id = DUN_Increase_Influence_In_The_Shire
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Send_Rangers_To_The_Shire }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_The_Shire }
+		relative_position_id = DUN_Send_Rangers_To_The_Shire
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			SHR = {
+			country_event = DUN.9
+			add_war_support  = 0.10
+			add_stability  = 0.15
+			}
+		}
+	}
+	focus = {
+		id = DUN_Send_Rangers_To_Bree
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Destroy_Angmar_Once_and_For_All }
+		relative_position_id = DUN_Destroy_Angmar_Once_and_For_All
+		x = 2
+		y = 1
+		cost = 5
+		available = { DUN = {	has_war_with = ANR } }
+		completion_reward = {
+			BRE = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Take_Direct_Control_of_Bree
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Bree }
+		mutually_exclusive = { focus = DUN_Increase_Influence_In_Bree }
+		relative_position_id = DUN_Send_Rangers_To_Bree
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			BRE = { country_event = DUN.10 }
+			add_war_support  = -0.02
+			add_stability  = -0.05
+		}
+	}
+	focus = {
+		id = DUN_Increase_Influence_In_Bree
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Bree }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Bree }
+		relative_position_id = DUN_Send_Rangers_To_Bree
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			BRE = {
+			country_event = DUN.9
+			add_war_support  = 0.05
+			add_stability  = 0.05
+			}
+		}
+	}
+	focus = {
+		id = DUN_Seek_Influence_In_Southern_Arnor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Increase_Influence_In_Bree focus = DUN_Take_Direct_Control_of_Bree }
+		prerequisite = { focus = DUN_Increase_Influence_In_The_Shire focus = DUN_Take_Direct_Control_of_The_Shire }
+		relative_position_id = DUN_Increase_Influence_In_The_Shire
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			OR = { 
+				ANR = { exists = no }
+				ANR = { has_government = cooperative }
+			}
+		}
+		completion_reward = {
+			DUN = {
+				add_state_core = 46 
+				add_state_core = 143 
+				add_state_core = 151 
+				add_state_core = 62 
+				add_state_core = 34 
+				add_state_core = 63
+				add_state_core = 147
+				add_state_core = 41
+				add_state_core = 46
+				add_state_core = 143
+				add_state_core = 144				}
+			CRL = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Send_Rangers_To_Sirgale
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
+		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
+		x = -6
+		y = 1
+		cost = 5
+		completion_reward = {
+			SIR = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Take_Direct_Control_of_Sirgale
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Sirgale }
+		mutually_exclusive = { focus = DUN_Increase_Influence_In_Sirgale }
+		relative_position_id = DUN_Send_Rangers_To_Sirgale
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			SIR = { country_event = DUN.10 }
+		}
+	}
+	focus = {
+		id = DUN_Increase_Influence_In_Sirgale
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Sirgale }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Sirgale }
+		relative_position_id = DUN_Send_Rangers_To_Sirgale
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			SIR = { country_event = DUN.9 }
+		}
+	}
+	focus = {
+		id = DUN_Send_Rangers_To_Girithlin
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
+		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			GIR = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Take_Direct_Control_of_Girithlin
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Girithlin }
+		mutually_exclusive = { focus = DUN_Increase_Influence_In_Girithlin }
+		relative_position_id = DUN_Send_Rangers_To_Girithlin
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+		GIR = { country_event = DUN.10 }
+			hidden_effect = { add_manpower = 25000}
+		}
+	}
+	focus = {
+		id = DUN_Increase_Influence_In_Girithlin
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Girithlin }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Girithlin }
+		relative_position_id = DUN_Send_Rangers_To_Girithlin
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		GIR = { country_event = DUN.9 }
+			hidden_effect = { add_manpower = 25000}
+		}
+	}
+	focus = {
+		id = DUN_Send_Rangers_To_Enedwaith
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
+		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			CRL = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DUN_Take_Direct_Control_of_Enedwaith
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
+		mutually_exclusive = { focus = DUN_Ally_With_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
+		relative_position_id = DUN_Send_Rangers_To_Enedwaith
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+		CRL = { country_event = DUN.11 }
+			hidden_effect = { add_manpower = 25000}
+		}
+	}
+	focus = {
+		id = DUN_Ally_With_Enedwaith
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
+		relative_position_id = DUN_Send_Rangers_To_Enedwaith
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		CRL = { country_event = DUN.12 }
+		}
+	}
+	focus = {
+		id = DUN_Increase_Influence_In_Enedwaith
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
+		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Ally_With_Enedwaith }
+		relative_position_id = DUN_Send_Rangers_To_Enedwaith
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			CRL = { country_event = DUN.13 }
+		}
+	}
+	focus = {
+		id = DUN_The_Kingdom_of_Arnor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 100 }
+		prerequisite = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Ally_With_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
+		prerequisite = { focus = DUN_Take_Direct_Control_of_Sirgale focus = DUN_Increase_Influence_In_Sirgale }
+		prerequisite = { focus = DUN_Take_Direct_Control_of_Girithlin focus = DUN_Increase_Influence_In_Girithlin }
+		relative_position_id = DUN_Ally_With_Enedwaith
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		swap_ideas = { remove_idea = DUN_ranger_kingdom add_idea = DUN_arnor_reborn }
+			set_cosmetic_tag = ARN
+			if = { limit = { STE = { has_completed_focus = A_Stewardship_of_a_Thousand_Years } }
+			retire_character = DUN_aragorn
+			add_country_leader_role = {
+				character = DUN_king_elessar
+				promote_leader = yes
+				country_leader={
+				ideology=protective
+				expire="1980.1.1.1"
+				id=-1
+				traits = {  humble indomitable_perseverance }
+					}
+				}
+			add_field_marshal_role = {
+				character = DUN_king_elessar
+				skill=7
+				attack_skill=6
+				defense_skill=7
+				planning_skill=5
+				traits={ inspirational_leader logistics_wizard }
+					}
+				}
+			}
+		}
+	focus = {
+		id = DUN_Rebuilding_Arnor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		x = 15
+		y = 21
+		cost = 5
+		available = { has_completed_focus = DUN_The_Kingdom_of_Arnor }
+		available_if_capitulated = yes
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = DUN_The_Arnorian_Military
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Rebuilding_Arnor }
+		relative_position_id = DUN_Rebuilding_Arnor
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = lotr_infantry_weapons
+				}
+		}
+	}
+	focus = {
+		id = DUN_The_Arnorian_Cavalry
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Military }
+		relative_position_id = DUN_The_Arnorian_Military
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			if = { limit = { basic_medium_tank = 0 } set_technology = { basic_medium_tank = 1 } }
+			add_tech_bonus = {
+				name = medium_tank_equipment_1
+				bonus = 0.50
+				uses = 1
+				category = lotr_cavalry
+				}
+				add_tech_bonus = {
+				name = medium_tank_equipment_1
+				bonus = 0.50
+				uses = 1
+				category = lotr_cavalry_heavy
+				}
+			}
+		}
+	focus = {
+		id = DUN_Arnorian_Heavy_Cavalry
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Cavalry }
+		mutually_exclusive = { focus = DUN_Arnorian_Light_Cavalry }
+		relative_position_id = DUN_The_Arnorian_Cavalry
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+				name = medium_tank_equipment_1
+				bonus = 0.70
+				uses = 2
+				category = lotr_cavalry_heavy
+				}
+			}
+		}
+	focus = {
+		id = DUN_Arnorian_Light_Cavalry
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Cavalry }
+		mutually_exclusive = { focus = DUN_Arnorian_Heavy_Cavalry }
+		relative_position_id = DUN_The_Arnorian_Cavalry
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+				name = medium_tank_equipment_1
+				bonus = 0.70
+				uses = 2
+				category = lotr_cavalry
+				}
+			}
+		}
+	focus = {
+		id = DUN_The_Arnorian_Infantry
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Military }
+		relative_position_id = DUN_The_Arnorian_Military
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 2
+				category = lotr_infantry_weapons
+				}
+			add_tech_bonus = {
+				name = ROH_artillery_modernisation
+				bonus = 0.75
+				uses = 2
+				category = lotr_infantry_archery
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Arnorian_Navy
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Military }
+		relative_position_id = DUN_The_Arnorian_Military
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_sailing_sailingship
+			}
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_sailing_longship
+				}
+			}
+		}
+	focus = {
+		id = DUN_Arnorian_Screening_Vessels
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Navy }
+		mutually_exclusive = { focus = DUN_Arnorian_Capital_Ships }
+		relative_position_id = DUN_The_Arnorian_Navy
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.70
+				uses = 2
+				category = lotr_sailing_longship
+				}
+			}
+		}	
+	focus = {
+		id = DUN_Arnorian_Capital_Ships
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Arnorian_Navy }
+		mutually_exclusive = { focus = DUN_Arnorian_Screening_Vessels }
+		relative_position_id = DUN_The_Arnorian_Navy
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.70
+				uses = 2
+				category = lotr_sailing_sailingship
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Threats_of_Middle_Earth
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 22
+		cost = 5
+		available = { has_completed_focus = DUN_The_Kingdom_of_Arnor }
+		available_if_capitulated = yes
+		completion_reward = {
+		DUN = { add_manpower = 50000 }
+		}
+	}
+	focus = {
+		id = DUN_The_Traitor_In_Orthanc
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Threats_of_Middle_Earth }
+		relative_position_id = DUN_The_Threats_of_Middle_Earth
+		x = -2
+		y = 1
+		cost = 5
+		will_lead_to_war_with = ISN
+		completion_reward = {
+			DUN = { add_state_claim = 31 }
+			create_wargoal = { type = annex_everything target = ISN }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ISN }
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Barbarians_of_Dunland
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Threats_of_Middle_Earth }
+		relative_position_id = DUN_The_Threats_of_Middle_Earth
+		x = 0
+		y = 1
+		cost = 5
+		will_lead_to_war_with = EUC
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = EUC }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = EUC }
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Dark_Lord_of_Mordor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Threats_of_Middle_Earth }
+		relative_position_id = DUN_The_Threats_of_Middle_Earth
+		x = 2
+		y = 1
+		cost = 5
+		will_lead_to_war_with = MRD
+		completion_reward = {
+			DUN = { add_state_core = 5 }
+			create_wargoal = { type = annex_everything target = MRD }
+				if = { limit = { DUN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRD }
+			}
+		}
+	}
+	focus = {
+		id = DUN_The_Southern_Kingdom
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		x = 35
+		y = 21
+		cost = 5
+		bypass = { STE = { has_completed_focus = The_Return_of_The_King} }
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		available_if_capitulated = yes
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = DUN_Send_Arnorian_Envoys
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_The_Southern_Kingdom }
+		relative_position_id = DUN_The_Southern_Kingdom
+		x = 2
+		y = 1
+		cost = 5
+		bypass = { STE = { has_completed_focus = The_Return_of_The_King} }
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		completion_reward = {
+			DUN = { add_opinion_modifier = { target = STE modifier = large_increase } }
+			STE = { add_opinion_modifier = { target = DUN modifier = large_increase } }
+		}
+	}
+	focus = {
+		id = DUN_Send_Military_Advisors
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Envoys }
+		relative_position_id = DUN_Send_Arnorian_Envoys
+		x = -2
+		y = 1
+		cost = 5
+		bypass = { STE = { has_completed_focus = The_Return_of_The_King} }
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		completion_reward = {
+			STE = { add_manpower = 5000 }
+		}
+	}
+	focus = {
+		id = DUN_Prepare_Intervention_Forces
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Envoys }
+		relative_position_id = DUN_Send_Aid_to_Gondor
+		x = -2
+		y = 0
+		cost = 5
+		bypass = { STE = { has_completed_focus = The_Return_of_The_King} }
+		aavailable = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = DUN_Send_Aid_to_Gondor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Envoys }
+		relative_position_id = DUN_Send_Arnorian_Envoys
+		x = 2
+		y = 1
+		cost = 5
+		bypass = { STE = { has_completed_focus = The_Return_of_The_King} }
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		completion_reward = {
+			STE = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 5500
+					}
+				}
+		}
+	}
+	focus = {
+		id = DUN_Two_Kingdoms_One_Peoples
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Military_Advisors }
+		prerequisite = { focus = DUN_Send_Aid_to_Gondor }
+		prerequisite = { focus = DUN_Prepare_Intervention_Forces }
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		relative_position_id = DUN_Prepare_Intervention_Forces
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DUN_Send_Arnorian_Reinforcements
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Two_Kingdoms_One_Peoples }
+		relative_position_id = DUN_Two_Kingdoms_One_Peoples
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			STE = { load_oob = DUN_Arnorian_Infantry }
+		}
+	}
+	focus = {
+		id = DUN_Send_Ranger_Reinforcements 
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Two_Kingdoms_One_Peoples }
+		relative_position_id = DUN_Two_Kingdoms_One_Peoples
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			STE = { load_oob = DUN_Arnorian_Rangers }
+		}
+	}
+	focus = {
+		id = DUN_Propose_Uniting_The_Two_Kingdoms
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Reinforcements }
+		prerequisite = { focus = DUN_Send_Ranger_Reinforcements }
+		mutually_exclusive = { focus = DUN_Propose_A_Formal_Alliance focus = DUN_Arnorian_Dominion_Over_Gondor }
+		relative_position_id = DUN_Send_Arnorian_Reinforcements
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.14
+			}
+		}
+	focus = {
+		id = DUN_Propose_A_Formal_Alliance
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Reinforcements }
+		prerequisite = { focus = DUN_Send_Ranger_Reinforcements }
+		mutually_exclusive = { focus = DUN_Propose_Uniting_The_Two_Kingdoms focus = DUN_Arnorian_Dominion_Over_Gondor }
+		relative_position_id = DUN_Send_Arnorian_Reinforcements
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.15
+			}
+		}
+	focus = {
+		id = DUN_Arnorian_Dominion_Over_Gondor
+		icon = GFX_goal_lotr_The_Dunedain
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUN_Send_Arnorian_Reinforcements }
+		prerequisite = { focus = DUN_Send_Ranger_Reinforcements }
+		mutually_exclusive = { focus = DUN_Propose_A_Formal_Alliance focus = DUN_Propose_Uniting_The_Two_Kingdoms }
+		relative_position_id = DUN_Send_Arnorian_Reinforcements
+		available = { root = { has_completed_focus = DUN_The_Kingdom_of_Arnor } }
+		available = { DUN = { has_war = no } }
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = DUN.16
+			}
+		}
+	}
+}

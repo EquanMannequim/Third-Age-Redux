@@ -1,0 +1,244 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ The_Tower_of_Orthanc:0 "The Tower of Orthanc"
+ The_Tower_of_Orthanc_desc:0 ""
+ 
+ The_Five_Istari:0 "The Five Istari"
+ The_Five_Istari_desc:0 ""
+ 
+ ISN_The_White_Wizard:0 "The White Wizard"
+ ISN_The_White_Wizard_desc:0 ""
+ 
+ The_Men_of_Dunland:0 "The Men of Dunland"
+ The_Men_of_Dunland_desc:0 ""
+ 
+ A_New_Breed_of_Orc:0 "A New Breed of Orc"
+ A_New_Breed_of_Orc_desc:0 ""
+ 
+ Raid_West_March:0 "Raid West March"
+ Raid_West_March_desc:0 ""
+ 
+ Contact_Mordor:0 "Contact Mordor"
+ Contact_Mordor_desc:0 ""
+ 
+ The_Fires_of_Industry:0 "The Fires of Industry"
+ The_Fires_of_Industry_desc:0 ""
+ 
+ Orc_Forges:0 "Orc Forges"
+ Orc_Forges_desc:0 ""
+ 
+ Orc_Workshops:0 "Orc Workshops"
+ Orc_Workshops_desc:0 ""
+ 
+ Uruk_Forges:0 "Uruk Forges"
+ Uruk_Forges_desc:0 ""
+ 
+ Expand_Orthanc_Roads:0 "Expand Orthanc Roads"
+ Expand_Orthanc_Roads_desc:0 ""
+ 
+ Uruk_Workshops:0 "Uruk Workshops"
+ Uruk_Workshops_desc:0 ""
+ 
+ The_Walls_of_Orthanc:0 "The Walls of_ rthanc"
+ The_Walls_of_Orthanc_desc:0 ""
+ 
+ Fortify_The_Isengard_Gap:0 "Fortify The Isengard Gap"
+ Fortify_The_Isengard_Gap_desc:0 ""
+ 
+ The_Secrets_of_Saruman:0 "The Secrets of Saruman"
+ The_Secrets_of_Saruman_desc:0 ""
+  
+ Expand_Isengard_Control:0 "Expand Isengard Control"
+ Expand_Isengard_Control_desc:0 ""
+ 
+ Subjugate_The_Clans_of_Laur:0 "Subjugate The Clans of Laur"
+ Subjugate_The_Clans_of_Laur_desc:0 ""
+ 
+ Expand_Into_Enedwaith:0 "Expand Into Enedwaith"
+ Expand_Into_Enedwaith_desc:0 ""
+ 
+ Dominate_The_Middle_Men:0 "Dominate The Middle Men"
+ Dominate_The_Middle_Men_desc:0 ""
+ 
+ Influence_The_Men_of_Dunland:0 "Influence The Men of Dunland"
+ Influence_The_Men_of_Dunland_desc:0 ""
+ 
+ Influence_The_Men_of_Enedwaith:0 "Influence The Men of Enedwaith"
+ Influence_The_Men_of_Enedwaith_desc:0 ""
+ 
+ The_White_Hand:0 "The White Hand"
+ The_White_Hand_desc:0 ""
+  
+ The_Eyes_of_Orthanc:0 "The Eyes of Orthanc"
+ The_Eyes_of_Orthanc_desc:0 ""
+ 
+ The_Crows_of_Saruman:0 "The Crows of Saruman"
+ The_Crows_of_Saruman_desc:0 ""
+ 
+ The_Spies_Saruman:0 "The Spies of Saruman"
+ The_Spies_Saruman_desc:0 ""
+ 
+ The_Orthanc_Palantir:0 "The Orthanc Palantir"
+ The_Orthanc_Palantir_desc:0 ""
+ 
+ The_Dunlending:0 "The Dunlending"
+ The_Dunlending_desc:0 ""
+ 
+ Stir_Up_Animosity_Towards_Rohan:0 "Stir Up Animosity Towards Rohan"
+ Stir_Up_Animosity_Towards_Rohan_desc:0 ""
+ 
+ Find_Dunleanding_Loyalist:0 "Find Dunleanding Loyalist"
+ Find_Dunleanding_Loyalist_desc:0 ""
+ 
+ Instill_Loyalty_Into_Dunlend:0 "Instill Loyalty Into Dunlend"
+ Instill_Loyalty_Into_Dunlend_desc:0 ""
+ 
+ Puppet_The_Loyal_Tribe:0 "Puppet The Loyal Tribe"
+ Puppet_The_Loyal_Tribe_desc:0 ""
+ 
+ The_Peoples_of_Rohan:0 "The Peoples of Rohan"
+ The_Peoples_of_Rohan_desc:0 ""
+ 
+ Raid_Into_Westfold:0 "Raid Into Westfold"
+ Raid_Into_Westfold_desc:0 ""
+ 
+ Raid_Into_The_Riddermark:0 "Raid Into The Riddermark"
+ Raid_Into_The_Riddermark_desc:0 ""
+ 
+ Unleash_The_Fighting_Urukhai:0 "Unleash The Fighting Urukhai"
+ Unleash_The_Fighting_Urukhai_desc:0 ""
+  
+ Burn_Down_The_Fangorn_Forest:0 "Burn Down The Fangorn Forest"
+ Burn_Down_The_Fangorn_Forest_desc:0 ""
+  
+ Destroy_Rohan:0 "Destroy Rohan"
+ Destroy_Rohan_desc:0 ""
+  
+ ISN_Grimas_Success:0 "Grimas Success"
+ ISN_Grimas_Success_desc:0 ""
+  
+ Subjagate_The_Rohirim:0 "Subjagate The Rohirim"
+ Subjagate_The_Rohirim_desc:0 ""
+  
+ Burn_Down_The_Rest_of_Fangorn:0 "Burn Down The Rest of Fangorn"
+ Burn_Down_The_Rest_of_Fangorn_desc:0 ""
+  
+ Destroy_The_Gondorians:0 "Destroy The Gondorians"
+ Destroy_The_Gondorians_desc:0 ""
+  
+ Build_An_Army_Worthy_of_Mordor:0 "Build An Army Worthy of Mordor"
+ Build_An_Army_Worthy_of_Mordor_desc:0 ""
+  
+ Prepare_Uruk_Breeding_Grounds:0 "Prepare Uruk Breeding Grounds"
+ Prepare_Uruk_Breeding_Grounds_desc:0 ""
+  
+ Weapons_of_The_UrukHai:0 "Weapons of The UrukHai"
+ Weapons_of_The_UrukHai_desc:0 ""
+  
+ Crossbows_of_The_UrukHai:0 "Crossbows of The UrukHai"
+ Crossbows_of_The_UrukHai_desc:0 ""
+  
+ Orks_From_Mordor:0 "Orks From Mordor"
+ Orks_From_Mordor_desc:0 ""
+   
+ Mordor_Siege_Weapons:0 "Mordor Siege Weapons"
+ Mordor_Siege_Weapons_desc:0 ""
+   
+ UrukHai_Plate_Armor:0 "UrukHai Plate Armor"
+ UrukHai_Plate_Armor_desc:0 ""
+   
+ Mordor_Scrap_Armor:0 "Mordor Scrap Armor"
+ Mordor_Scrap_Armor_desc:0 ""
+   
+ An_Explosive_Idea:0 "An Explosive Idea"
+ An_Explosive_Idea_desc:0 ""
+   
+################################### IDEAS                       \n      §H§!
+ ISN_The_Orthanc_Citadel:0 "The Orthanc Citadel"
+
+ ISN_The_Chief_of_The_Istari:0 "The Chief of The Istari"
+
+ ISN_The_White_Wizard:0 "The White Wizard"
+
+ ISN_Expanding_Control:0 "Expanding Control"
+
+ ISN_Plate_Armor:0 "Plate Armor"
+
+ ISN_Scrap_Armor:0 "Scrap Armor"
+
+ ISN_The_Eyes_of_Orthanc:0 "The Eyes of Orthanc"
+
+ ISN_The_Eyes_of_Orthanc2:0 "The Eyes of Orthanc"
+
+ ISN_The_Eyes_of_Orthanc3:0 "The Eyes of Orthanc"
+
+ ISN_The_Eyes_of_Orthanc4:0 "The Eyes of Orthanc"
+
+ ISN_Isengard_Support:0 "Isengard Support"
+
+ ISN_Isengard_Pillaging:0 "Isengard Pillaging"
+
+ ISN_Isengard_Unleashed:0 "Isengard Unleashed"
+
+################################### DECISIONS                   \n      §H§! 
+ 
+
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ ISN.1.t:0 "The Black Tower Of Orthanc"
+ ISN.1.d:0 "Orthanc was the black, impenetrable tower of Isengard built by the Dúnedain. By the Great Years and the War of the Ring, it was the seat of power of the Wizard Saruman. It stood in the center of the Ring of Isengard, a daunting defensive wall built by the early Men of Gondor. "
+ 
+ ISN.2.t:0 "The Five Istari"
+ ISN.2.d:0 "The Order of Istari were a group of Maiar sent to Middle-earth by the Valar in the Third Age. They were embodied as elderly Men and entrusted to aid the Free Peoples against the threat of Sauron's conquest by lending them their wisdom and counsel. "
+ 
+ ISN.3.t:0 "Saruman The White"
+ ISN.3.d:0 "Saruman the White, was first of the Istari, the emissaries of the Valar sent to Middle-earth in the Third Age to help in countering the returned Sauron. He was originally the order's chief, and was head of the White Council that for a time opposed the Dark Lord."
+ 
+ ISN.4.t:0 "Ambush Theodred in the Westfold"
+ ISN.4.d:0 ""Go forth and My Uruk-hai and raid and pillage as you see fit, go forth and spread the word that white hand comes for all.""
+ 
+ ISN.5.t:0 "Orders From The Dark Lord"
+ ISN.5.d:0 "BUILD ME AN ARMY WORTHY OF MORDOR!!!"
+ 
+ ISN.6.t:0 "Prove Your Loyalty to Isengard"
+ ISN.6.d:0 "Isengard demands Submission"
+ 
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!

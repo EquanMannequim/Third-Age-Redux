@@ -1,0 +1,110 @@
+ideas = {
+
+	country = {
+
+		DUN_war_of_the_last_alliance = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				conscription_factor = -0.25
+				mobilization_speed = -0.15
+				
+			}
+		}
+
+		DUN_shattered_kingdom = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				stability_factor = -0.10
+				local_resources_factor = -0.10
+				conscription_factor = -0.25
+				mobilization_speed = -0.15
+				army_morale = -0.03
+				political_power_factor = -0.10
+				conscription_law_cost_factor = 1.5
+				mercenary_law_cost_factor = 1.5
+				trade_law_cost_factor = 0.5
+				taxation_law_cost_factor = 1.5
+			}
+		}
+
+		DUN_last_of_the_dunedain = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				political_power_factor = 0.05
+				army_core_defence_factor = 0.10
+				army_org_factor = 0.05
+				special_forces_min = 60
+				special_forces_cap = 0.20
+			}
+		}
+		DUN_ranger_kingdom = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		
+		DUN_arnor_reborn = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.20
+				political_power_factor = 0.20
+				war_support_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		DUN_restored_civillan_industry = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		DUN_restored_military_industry = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		DUN_angmar_defenses = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			targeted_modifier = { tag = ANR defense_bonus_against = 0.10 }
+		}
+
+		DUN_angmar_offensive = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			targeted_modifier = { tag = ANR attack_bonus_against = 0.10 }
+		}
+	}

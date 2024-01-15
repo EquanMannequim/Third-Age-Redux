@@ -1,0 +1,25 @@
+characters={
+	GND_udduc = {
+		name = "Udduc"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_udduc
+			}
+		}
+		country_leader={
+			ideology=sauronite
+			expire="1980.1.1.1"
+			id=-1
+			traits = {  }
+		}
+		field_marshal={
+			traits = { winter_specialist }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

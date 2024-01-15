@@ -1,0 +1,283 @@
+focus_tree = {
+id = Dunland
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = EUC
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = EUC_The_Tribes_of_Dunland
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = EUC_The_Tribesmen_of_Dunland
+		}
+	}
+
+	focus = {
+		id = EUC_The_Straw_Heads_of_Rohan
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Tribes_of_Dunland }
+		relative_position_id = EUC_The_Tribes_of_Dunland
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = EUC_The_Rohirim_Colonizers
+		}
+	}
+	focus = {
+		id = EUC_A_Changing_Times
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Straw_Heads_of_Rohan }
+		relative_position_id = EUC_The_Straw_Heads_of_Rohan
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = EUC_A_Time_of_Change
+		}
+	}
+	focus = {
+		id = EUC_The_Other_Tribes
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_A_Changing_Times }
+		relative_position_id = EUC_A_Changing_Times
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			add_stability  = 0.05
+			}
+		}
+	focus = {
+		id = EUC_The_Southern_Tribes
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Other_Tribes }
+		relative_position_id = EUC_The_Other_Tribes
+		x = 0
+		y = 1
+		cost = 10
+		will_lead_to_war_with = COR
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = COR }
+				if = { limit = { EUC = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = COR }
+				}
+			}
+		}
+	focus = {
+		id = EUC_Our_Southern_Kin
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Southern_Tribes }
+		relative_position_id = EUC_The_Southern_Tribes
+		x = 0
+		y = 1
+		cost = 10
+		available = { owns_state = 78 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			78 = { add_compliance = 35 }
+			78 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			78 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = EUC_The_Northern_Tribe
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_Our_Southern_Kin }
+		relative_position_id = EUC_Our_Southern_Kin
+		x = 0
+		y = 1
+		cost = 10
+		will_lead_to_war_with = MUR
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EUC = { add_state_claim = 154 }
+			create_wargoal = { type = annex_everything target = MUR }
+				if = { limit = { EUC = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MUR }
+				}
+			}
+	}
+	focus = {
+		id = EUC_Our_Northern_Kin
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Northern_Tribe }
+		relative_position_id = EUC_The_Northern_Tribe
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			owns_state = 154
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			154 = { add_compliance = 35 }
+			154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = EUC_The_Fishermen_of_Enedwaith
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_A_Changing_Times }
+		relative_position_id = EUC_A_Changing_Times
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			add_stability  = 0.05
+		}
+	}
+	focus = {
+		id = EUC_The_Village_of_Dun_Larach
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Fishermen_of_Enedwaith }
+		relative_position_id = EUC_The_Fishermen_of_Enedwaith
+		x = 0
+		y = 1
+		cost = 10
+		will_lead_to_war_with = TRE
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = TRE }
+				if = { limit = { EUC = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = TRE }
+				}
+			}
+	}
+	focus = {
+		id = EUC_Move_Our_People_Into_Dun_Larach
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Village_of_Dun_Larach }
+		relative_position_id = EUC_The_Village_of_Dun_Larach
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			owns_state = 79
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			79 = { add_compliance = 35 }
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+	will_lead_to_war_with = DRG
+		id = EUC_The_Village_of_Undrond
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_Move_Our_People_Into_Dun_Larach }
+		relative_position_id = EUC_Move_Our_People_Into_Dun_Larach
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EUC = { add_state_claim = 37 add_state_claim = 157 }
+			create_wargoal = { type = annex_everything target = DRG }
+				if = { limit = { EUC = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DRG }
+				}
+			}
+		}
+	focus = {
+		id = EUC_Move_Our_People_Into_Undrond
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_The_Village_of_Undrond }
+		relative_position_id = EUC_The_Village_of_Undrond
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			owns_state = 37
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			37 = { add_compliance = 35 }
+			157 = { add_compliance = 35 }
+			37 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			37 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = EUC_The_Kingdom_of_Dunland
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = EUC_Our_Northern_Kin }
+		prerequisite = { focus = EUC_Move_Our_People_Into_Undrond }
+		relative_position_id = EUC_Our_Northern_Kin
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_state_core = 37
+			add_state_core = 154
+			add_state_core = 157
+			add_state_core = 79
+			add_state_core = 78
+			set_cosmetic_tag = DNL
+			set_capital = 78
+		}
+	}

@@ -1,0 +1,27 @@
+
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		chromium=20.000
+	}
+
+	history={
+		owner = FAN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = FAN
+
+	}
+
+	provinces={
+		1832 3936 4312 4907 6439 6465 
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

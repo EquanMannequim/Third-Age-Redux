@@ -1,0 +1,87 @@
+ideas = {
+
+	country = {
+	
+		MRG_Minas_Morgul = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ea_resolution_icon_hegemony
+
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+			}
+		}
+		
+		MRG_Leader_of_The_Nine= {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.03
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				political_power_factor = 0.20
+			}
+		}
+		
+		MRG_Looting_and_Pillaging_Ithilian = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = swan_knights
+
+			modifier = {
+				conscription_factor = 0.15
+				mobilization_speed = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		
+		MRG_A_Final_offensive = {
+			allowed = { lways = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = swan_knights
+			targeted_modifier = { tag = ITL attack_bonus_against = 0.35 }
+		}
+		
+		MRG_The_Age_of_The_Orc = {
+			allowed = { lways = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = swan_knights
+			targeted_modifier = {
+				tag = ITL attack_bonus_against = 0.25 defense_bonus_against = 0.25 }
+			modifier = {
+				supply_consumption_factor = -0.80
+				out_of_supply_factor = -0.80
+				}
+			}
+			
+		MRG_The_Sorcery_of_The_Witch_King = {
+			allowed = { lways = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = swan_knights
+			targeted_modifier = { tag = ITL attack_bonus_against = 0.55 defense_bonus_against = 0.55 }
+			}
+		}
+	}

@@ -1,0 +1,137 @@
+ideas = {
+	chief_researcher = {
+		designer = yes
+
+		MRD_uruk_captain_advisor = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_servant_of_the_steward_advisor
+
+			modifier = {
+				research_speed_factor = 0.02
+				research_bonus = {
+					infantry = 0.10
+					industry = 
+				}
+			}
+
+			traits = {
+				servant_of_the_stewards_advisor
+			}
+		}
+
+	}
+	architect = {
+		designer = yes
+
+		MRD_master_of_caves_advisor = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_ithilien_smithsman_advisor
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor  = 0.10
+			}
+
+			traits = {
+				ithilien_smithsman_advisor
+			}
+		}
+	}
+	research_advisor = {
+		designer = yes
+
+		MRD_crazed_wizard_advisor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+				hidden_trigger = {
+					country_exists = ISN
+				}
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_lord_regent_of_pelargir_advisor
+
+			modifier = {
+				research_speed_factor = 0.05	
+				research_bonus = {
+					industry = 0.10
+				}		
+			}
+
+			traits = {
+				lord_regent_of_pelargir_advisor
+			}
+		}
+		MRD_traditionalist_advisor = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_ranger_captain_advisor
+
+			modifier = {
+				research_speed_factor = 0.02
+				research_bonus = {
+					infantry = 0.10
+				}		
+			}
+
+			traits = {
+				ranger_captain_advisor
+			}
+		}
+		MRD_sauron_incarnate = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_ranger_captain_advisor
+
+			modifier = {
+				research_speed_factor = 0.02
+				research_bonus = {
+					infantry = 0.10
+				}		
+			}
+
+			traits = {
+				ranger_captain_advisor
+			}
+		}
+	}
+}

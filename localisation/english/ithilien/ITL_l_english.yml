@@ -1,0 +1,86 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ 
+ ITL_The_Fall_of_Minas_Ithil:0 "The Fall of Minas Ithil"
+ ITL_The_Fall_of_Minas_Ithil_desc:0 ""
+ 
+ ITL_The_Scouring_of_Ithilian:0 "The Scouring of Ithilian"
+ ITL_The_Scouring_of_Ithilian_desc:0 ""
+ 
+ ITL_The_Rangers_of_Ithilian:0 "The Rangers of Ithilian"
+ ITL_The_Rangers_of_Ithilian_desc:0 ""
+ 
+ ITL_Request_Reinforcements_From_The_Steward:0 "Request Reinforcements From The Steward"
+ ITL_Request_Reinforcements_From_The_Steward_desc:0 ""
+ 
+ ITL_Seek_Aid_From_The_Other_Fiefdoms:0 "Seek Aid From The Other Fiefdoms"
+ ITL_Seek_Aid_From_The_Other_Fiefdoms_desc:0 ""
+ 
+ ITL_Ask_The_Rohirim_For_Reinforcements:0 "Ask The Rohirim For Reinforcements"
+ ITL_Ask_The_Rohirim_For_Reinforcements_desc:0 ""
+ 
+ ITL_Conscript_Remaining_Citizens:0 "Conscript Remaining Citizens"
+ ITL_Conscript_Remaining_Citizens_desc:0 ""
+ 
+ ITL_Rebuild_Inner_Osgiliath:0 "Rebuild Inner Osgiliath"
+ ITL_Rebuild_Inner_Osgiliath_desc:0 ""
+ 
+ ITL_Reinforce_The_Old_Osgiliath_Walls:0 "Reinforce The Old Osgiliath Walls"
+ ITL_Seek_Aid_From_The_Other_Fiefdoms_desc:0 ""
+ 
+ ITL_Bring_In_New_Swordsmiths:0 "Bring In New Swordsmiths"
+ ITL_Bring_In_New_Swordsmiths_desc:0 ""
+ 
+ ITL_Seek_Local_Recruits:0 "Seek Local Recruits"
+ ITL_Seek_Local_Recruits_desc:0 ""
+################################### IDEAS                       \n      §H§!
+ANR_the_war_in_the_north:0 "The War In The North"
+
+
+################################### DECISIONS                   \n      §H§! 
+ 
+
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ ANR.1.t:0 "The War In The North"
+ ANR.1.d:0 "Around 1330 T.A the Nazgul known only as The Witch King came North on orders of Sauron with a mission to destroy the Dunedain Kingdom of Arnor. During this time he rallied many of the northern orcs and corrupted the Men of Rhudar. By T.A 1409 a large army from Angmar invaded Cardolan and besieged Weathertop. The forces of Angmar defeated the Dúnedain, killed King Arveleg I and burned and destroyed the Tower of Amon Sûl, which stood on Weathertop.\n\n In T.A. 1974 Angmar had recovered to it's full strength and invaded Arthedain from the north before the end of the winter. The Witch-king overran Arthedain and conquered the capital of Fornost before the end of the year and drove away the remaining Dúnedain"
+
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!

@@ -1,0 +1,26 @@
+
+UMA_cat = {
+	UMA_Raid_Gondor = {
+		icon = military_operation
+		fire_only_once = NO
+		priority = 30
+		fire_only_once = no
+		days_re_enable = 180
+		cost = 100
+		activation = { NOT = { has_completed_focus = The_True_Threat_To_Mankind } }
+		available = { has_completed_focus = Heirs_of_Numenor }
+		complete_effect = { STE = { add_timed_idea = { days = 120 idea = UMA_umbar_pirate_raid } } }
+		}
+		
+	UMA_Raid_Dol_Amroth = {
+		icon = military_operation
+		fire_only_once = NO
+		priority = 30
+		fire_only_once = no
+		days_re_enable = 180
+		cost = 100
+		activation = { NOT = { has_completed_focus = The_True_Threat_To_Mankind } }
+		available = { has_completed_focus = Heirs_of_Numenor }
+		complete_effect = { BEL = { add_timed_idea = { days = 120 idea = UMA_umbar_pirate_raid } } }
+		}
+	}

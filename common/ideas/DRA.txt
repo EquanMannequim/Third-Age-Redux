@@ -1,0 +1,301 @@
+ideas = {
+
+	country = {
+		DRA_A_Kingdom_In_Collapse = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.15
+				political_power_factor = -0.35
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		DRA_A_Kingdom_In_Ruin = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				political_power_factor = -0.10
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		DRA_The_Kingdom_of_Rhun = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.15
+				political_power_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		DRA_Men_of_The_East = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			modifier = {
+				war_support_factor = 0.05
+				army_defence_factor = -0.03
+				army_attack_factor = 0.02
+				conscription_factor = 0.05
+				
+			}
+		}
+		DRA_Rhunic_Civil_War = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			modifier = {
+				war_support_factor = -0.15
+				army_defence_factor = -0.10
+				army_attack_factor = -0.10
+				conscription_factor = -0.25
+				political_power_factor = -0.10
+				production_speed_buildings_factor = -0.25
+				
+			}
+		}
+		DRA_The_Golden_Army = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.12
+				mobilization_speed = 0.12
+				
+			}
+		}
+		STE_realm_in_exile = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_UMA_heir_of_numenor
+
+			modifier = {
+				war_support_factor = 0.05
+				army_morale_factor = 0.03
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+
+		STE_victory_of_the_last_alliance = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+
+			modifier = {
+				conscription_factor = -0.15
+				political_power_factor = 0.10
+			}
+		}
+
+		STE_a_kingless_kingdom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_UMA_sack_of_umbar 				
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				land_bunker_effectiveness_factor = -0.5
+				production_speed_bunker_factor = -0.5
+			}
+		}
+		STE_alone_against_the_darkness = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_UMA_heir_of_numenor
+
+			modifier = {
+				war_support_factor = -0.05
+				army_morale_factor = -0.03
+				army_defence_factor = 0.09
+			}
+		}
+		STE_bastion_of_freedom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_UMA_heir_of_numenor
+
+			modifier = {
+				war_support_factor = 0.05
+				army_defence_factor = 0.10
+			}
+		}
+
+		STE_the_ithilian_crisis = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				army_morale = -0.10
+			}
+		}
+
+		STE_the_gondorian_heavy_infantry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_UMA_numenorian_training
+
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		STE_gondorian_rangers = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.03
+				army_morale = 0.10
+				army_core_defence_factor = 0.08
+			}
+		}
+		
+		STE_the_return_of_the_king = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_UMA_sack_of_umbar 				
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		STE_prepared_defenses = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.08
+				army_core_defence_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = MRD
+				defense_bonus_against = 0.10
+		}
+	}
+		
+		STE_prepared_for_the_offense = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = MRD
+				attack_bonus_against = 0.10
+		}
+	}
+	STE_Professional_Navy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_the_london_naval_treaty
+
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.06
+				experience_gain_destroyer_training_factor = 0.06
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,222 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Kingdom_of_Rohan"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Kingdom_of_Rohan.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Kingdom_Divided"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Kingdom_Divided.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Eastmark"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Eastmark.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Westfold"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Westfold.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Disaster_at_the_Fords_of_Isen"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Disaster_at_the_Fords_of_Isen.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Eastmark_Industry"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Eastmark_Industry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Westfold_Industry"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Westfold_Industry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Develop_Westfold"
+      texturefile = "gfx/interface/goals/RID/lotr_Develop_Westfold.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Develop_Eastmark"
+      texturefile = "gfx/interface/goals/RID/lotr_Develop_Eastmark.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Expand_Eastmark_Roads"
+      texturefile = "gfx/interface/goals/RID/lotr_Expand_Eastmark_Roads.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Aid_Eastmark_Villages"
+      texturefile = "gfx/interface/goals/RID/lotr_Aid_Eastmark_Villages.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Help_Westfold_Villages"
+      texturefile = "gfx/interface/goals/RID/lotr_Help_Westfold_Villages.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Dunedain_From_The_North"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Dunedain_From_The_North.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Finish_Developing_Westfold"
+      texturefile = "gfx/interface/goals/RID/lotr_Finish_Developing_Westfold.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Finish_Developing_Eastmark"
+      texturefile = "gfx/interface/goals/RID/lotr_Finish_Developing_Eastmark.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Search_The_Westfold"
+      texturefile = "gfx/interface/goals/RID/lotr_Search_The_Westfold.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Search_The_Eastmark"
+      texturefile = "gfx/interface/goals/RID/lotr_Search_The_Eastmark.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Prince_Lives"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Prince_Lives.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Day_of_Sorrow"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Day_of_Sorrow.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Marshal_of_Eastmark"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Marshal_of_Eastmark.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Rohan_Cavalry"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Rohan_Cavalry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Rohan_Infantry"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Rohan_Infantry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Edoras_City_Guard"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Edoras_City_Guard.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Personal_Host_of_Rohirrm"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Personal_Host_of_Rohirrm.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Palace_Guards"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Palace_Guards.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Heir_Apparent"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Heir_Apparent.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Forsaken_Heir"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Forsaken_Heir.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Rohan_Militia"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Rohan_Militia.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Recruit_Village_Guards"
+      texturefile = "gfx/interface/goals/RID/lotr_Recruit_Village_Guards.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Recruit_Local_Hunters"
+      texturefile = "gfx/interface/goals/RID/lotr_Recruit_Local_Hunters.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Infantry_Core"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Infantry_Core.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Rohirrim_of_Rohan"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Rohirrim_of_Rohan.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Archer_Cavalry"
+      texturefile = "gfx/interface/goals/RID/lotr_Archer_Cavalry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Heavy_Cavalry"
+      texturefile = "gfx/interface/goals/RID/lotr_Heavy_Cavalry.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Cavalry_Core"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Cavalry_Core.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Chief_Advisor"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Chief_Advisor.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Snake_in_The_Palace"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Snake_in_The_Palace.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Servant_of_The_King"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Servant_of_The_King.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_An_Agent_of_The_White_hand"
+      texturefile = "gfx/interface/goals/RID/lotr_An_Agent_of_The_White_hand.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Threat_From_Isenguard"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Threat_From_Isenguard.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Final_Defenses"
+      texturefile = "gfx/interface/goals/RID/lotr_Final_Defenses.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Build_Fortifications_In_The_Gap"
+      texturefile = "gfx/interface/goals/RID/lotr_Build_Fortifications_In_The_Gap.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Build_Forges_Close_To_The_Border"
+      texturefile = "gfx/interface/goals/RID/lotr_Build_Forges_Close_To_The_Border.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Send_Swordsmiths_To_Helms_Deep"
+      texturefile = "gfx/interface/goals/RID/lotr_Send_Swordsmiths_To_Helms_Deep.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Prepared_Defenses"
+      texturefile = "gfx/interface/goals/RID/lotr_Prepared_Defenses.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Counter_Isengard_Influence"
+      texturefile = "gfx/interface/goals/RID/lotr_Counter_Isengard_Influence.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_White_Wizards_Voice"
+      texturefile = "gfx/interface/goals/RID/lotr_The_White_Wizards_Voice.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Citizens_of_Enedwaith"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Citizens_of_Enedwaith.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Citizens_of_Rohan"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Citizens_of_Rohan.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_The_Dunlending_Barbarians"
+      texturefile = "gfx/interface/goals/RID/lotr_The_Dunlending_Barbarians.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Common_Cause"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Common_Cause.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_Ask_Gondor_For_Aid"
+      texturefile = "gfx/interface/goals/RID/lotr_Ask_Gondor_For_Aid.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_A_Prepared_People"
+      texturefile = "gfx/interface/goals/RID/lotr_A_Prepared_People.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_RID_The_White_Wizard"
+      texturefile = "gfx/interface/goals/RID/lotr_RID_The_White_Wizard.dds"
+    }
+	SpriteType = {
+      name = "GFX_goal_lotr_RID_An_Arranged_Marriage"
+      texturefile = "gfx/interface/goals/RID/lotr_RID_An_Arranged_Marriage.dds"
+    }
+}

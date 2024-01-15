@@ -1,0 +1,663 @@
+characters={
+	STE_denethor = {
+		name="Denethor II"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Denethor"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = { }
+		}
+		country_leader={
+			ideology=isolationist
+			expire="1980.1.1.1"
+			id=-1
+			traits = {}
+		}
+		field_marshal={
+			traits={ thorough_planner  }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+		}
+	}
+	STE_king_elessar = {
+		name="King Elessar"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Aragorn_King"
+				small="GFX_Portrait_Aragorn_King"
+			}
+		}
+	}
+	STE_boromir = {
+		name="Boromir"
+		portraits={
+			army={
+				large="GFX_Portrait_Boromir"
+				small="GFX_Portrait_Boromir"
+			}
+		}
+		corps_commander={
+			traits={ commando urban_assault_specialist }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			visible = {
+				NOT = {  }
+			}
+		}
+		advisor = {
+			idea_token = STE_boromir
+			slot = chief_advisor
+			cost = 150
+			traits = { captain_of_the_tower_guard }
+			available = {
+				NOT = { has_government = revolutionary }
+			}
+			visible = {
+				NOT = { has_government = revolutionary }
+			}
+		}
+	}
+	STE_faramir = {
+		name="Faramir"
+		portraits={
+			army={
+				large="GFX_Portrait_Faramir"
+				small="GFX_Portrait_Faramir"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			visible = { has_completed_focus = Integrate_The_Ithilian_Rangers }
+		}
+	}
+	STE_Hirluin = {
+		name="Hirluin"
+		portraits={
+			army={
+				large="GFX_Portrait_Hirluin"
+				small="GFX_Portrait_Hirluin"
+			}
+		}
+		corps_commander={
+			traits= {  panzer_leader }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = Integrate_The_West }
+		}
+	}
+	STE_Corinir = {
+		name="Corinir"
+		portraits={
+			army={
+				large="GFX_Portrait_Corinir"
+				small="GFX_Portrait_Corinir"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			visible = { has_completed_focus = Integrate_Lebennin }
+		}
+	}
+	STE_Folong = {
+		name="Forlong The Fat"
+		portraits={
+			army={
+				large="GFX_Portrait_Forlong"
+				small="GFX_Portrait_Forlong"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = {
+				NOT = { }
+			}
+		}
+	}
+	STE_Angbor={
+		name="Angbor"
+		portraits={
+			army={
+				large="GFX_Portrait_Angbor"
+				small="GFX_Portrait_Angbor"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = Integrate_Lamedon }
+		}
+	}
+	STE_Golasgil = {
+		name="Golasgil"
+		portraits={
+			army={
+				large="GFX_Portrait_Golasgil"
+				small="GFX_Portrait_Golasgil"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { has_completed_focus = Integrate_The_West }
+		}
+	}
+	STE_duinhir = {
+		name="Duinhir"
+		portraits={
+			army={
+				large="GFX_Portrait_Duinhir"
+				small="GFX_Portrait_Duinhir"
+			}
+		}
+		corps_commander={
+			traits={ swamp_fox }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			visible = { has_completed_focus = Integrate_The_West }
+		}
+	}
+	STE_hirgorn = {
+		name="Hirgorn"
+		portraits={
+			army={
+				large="GFX_portrait_men_generic_156"
+				small="GFX_idea_portrait_men_generic_156"
+			}
+		}
+		advisor = {
+			idea_token = STE_hirgorn
+			slot = political_advisor
+			cost = 150
+			traits = { rohan_ambassador }
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_dervorin={
+		name="Dervorin"
+		portraits={
+			army={
+				large="GFX_Portrait_gondor_dervorin"
+				small="GFX_idea_portrait_gondor_dervorin"
+			}
+		}
+		field_marshal={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = STE_dervorin
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_old_guard }
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_bronwen = {
+		name="Bronwen"
+		portraits={
+			army={
+				large="GFX_portrait_men_generic_85"
+				small = "GFX_idea_portrait_men_generic_85"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 3
+		    defense_skill = 1
+		    maneuvering_skill = 4
+		    coordination_skill = 3
+		    traits = { fleet_protector }
+		}
+		advisor = {
+			idea_token = STE_bronwen
+			slot = navy_chief 
+			cost = 150
+			traits = { navy_chief_maneuver_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_creighton = {
+		name="Creighton"
+		portraits={
+			army={
+				large="GFX_portrait_men_generic_83"
+				small = "GFX_idea_portrait_men_generic_83"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 3
+		    defense_skill = 4
+		    maneuvering_skill = 2
+		    coordination_skill = 3
+		    traits = { ironside }
+		}
+		advisor = {
+			idea_token = STE_creighton
+			slot = navy_chief 
+			cost = 150
+			traits = { navy_chief_old_guard }
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_normand = {
+		name="Normand"
+		portraits={
+			army={
+				large="GFX_portrait_men_generic_84"
+				small = "GFX_idea_portrait_men_generic_84"
+			}
+		}
+		navy_leader = {
+		    skill = 4
+		    attack_skill = 2
+		    defense_skill = 3
+		    maneuvering_skill = 3
+		    coordination_skill = 2
+		    traits = { bold }
+		}
+		advisor = {
+			idea_token = STE_normand
+			slot = navy_chief 
+			cost = 150
+			traits = { navy_chief_decisive_battle_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Denethor = {
+		name="Denethor II"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Denethor"
+				small = "GFX_STE_Advisor_Denethor"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Denethor_Token
+			slot = chief_advisor 
+			cost = 200
+			traits = { 
+				steward_of_gondor_denethor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Boromir = {
+		name="Boromir"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Boromir"
+				small = "GFX_STE_Advisor_Boromir"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Boromir_Chief_Token
+			slot = chief_advisor 
+			cost = 200
+			traits = { 
+				steward_of_gondor_boromir 
+			}
+			available = {
+				always = no
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Boromir_Chief_Token
+			slot = army_chief 
+			cost = 200
+			traits = { 
+				captain_of_the_white_tower_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Faramir = {
+		name="Faramir"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Faramir"
+				small = "GFX_STE_Advisor_Faramir"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Faramir_Chief_Token
+			slot = army_chief 
+			cost = 200
+			traits = { 
+				steward_of_gondor_faramir 
+			}
+			available = {
+				always = no
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Faramir_Chief_Token
+			slot = army_chief 
+			cost = 200
+			traits = { 
+				captain_of_the_rangers_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Imrahil = {
+		name="Imrahil"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Imrahil"
+				small = "GFX_STE_Advisor_Imrahil"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Imrahil_Token
+			slot = chief_advisor 
+			cost = 200
+			traits = { 
+				steward_of_gondor_imrahil 
+			}
+			available = {
+				always = no
+			}
+		}
+	}
+	STE_Advisor_Forlong = {
+		name="Forlong the Fat"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Forlong"
+				small = "GFX_STE_Advisor_Forlong"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Forlong_Token
+			slot = treasurer 
+			cost = 200
+			traits = { 
+				forlong_the_fat_treasurer_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Imladir = {
+		name="Imladir"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Imladir"
+				small = "GFX_STE_Advisor_Imladir"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Imladir_Token
+			slot = spymaster 
+			cost = 200
+			traits = { 
+				imladir_captain_of_tumladen_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Hand_of_Castamir = {
+		name="Hand of Castamir"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Hand_Of_Castamir"
+				small = "GFX_STE_Advisor_Hand_Of_Castamir"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Hand_Of_Castamir_Token
+			slot = political_advisor 
+			cost = 200
+			traits = { 
+				hand_of_castamir_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Duinhir = {
+		name="Duinhir"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Duinhir"
+				small = "GFX_STE_Advisor_Duinhir"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Duinhir_Token
+			slot = political_advisor 
+			cost = 200
+			traits = { 
+				lord_of_blackroot_vale_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Angmbor = {
+		name="Angmbor"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Angmbor"
+				small = "GFX_STE_Advisor_Angmbor"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Angmbor_Token
+			slot = political_advisor 
+			cost = 200
+			traits = { 
+				lord_of_lamedon_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Damrod = {
+		name="Damrod"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Damrod"
+				small = "GFX_STE_Advisor_Damrod"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Angmbor_Token
+			slot = political_advisor 
+			cost = 200
+			traits = { 
+				paranoid_defender_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Hirluin = {
+		name="Hirluin"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Hirluin"
+				small = "GFX_STE_Advisor_Hirluin"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Hirluin_Token
+			slot = cavalry_chief 
+			cost = 200
+			traits = { 
+				lord_of_pinnath_gelin_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Avordur = {
+		name="Avordur"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Avordur"
+				small = "GFX_STE_Advisor_Avordur"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Avordur_Token
+			slot = navy_chief 
+			cost = 200
+			traits = { 
+				courtier_of_belfalas_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Golusel = {
+		name="Golusel"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Golusel"
+				small = "GFX_STE_Advisor_Golusel"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Golusel_Token
+			slot = navy_chief 
+			cost = 200
+			traits = { 
+				shipmaiden_of_dol_amroth_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Beregond = {
+		name="Beregond"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Beregond"
+				small = "GFX_STE_Advisor_Beregond"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Beregond_Token
+			slot = high_command 
+			cost = 200
+			traits = { 
+				guard_of_the_citadel_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Ormatar = {
+		name="Ormatar"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Ormatar"
+				small = "GFX_STE_Advisor_Ormatar"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Ormatar_Token
+			slot = high_command 
+			cost = 200
+			traits = { 
+				captain_of_the_citadel_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+	STE_Advisor_Golasgil = {
+		name="Golasgil"
+		portraits={
+			army={
+				large = "GFX_STE_Advisor_Golasgil"
+				small = "GFX_STE_Advisor_Golasgil"
+			}
+		}
+		advisor = {
+			idea_token = STE_Advisor_Golasgil_Token
+			slot = high_command 
+			cost = 200
+			traits = { 
+				lord_of_anfalas_advisor 
+			}
+			available = {
+				always = yes
+			}
+		}
+	}
+}

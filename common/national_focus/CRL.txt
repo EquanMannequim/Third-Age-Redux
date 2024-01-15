@@ -1,0 +1,211 @@
+focus_tree = {
+id = Enedwaith
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = CRL
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = CRL_The_Tribes_of_Enedwaith
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = CRL_The_Riverfolk_of_Enedwaith
+		}
+	}
+
+	focus = {
+		id = CRL_The_City_of_Lond_Daer
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_The_Tribes_of_Enedwaith }
+		relative_position_id = CRL_The_Tribes_of_Enedwaith
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = CRL_The_Ancient_City_of_Lond_Daer
+		}
+	}
+	focus = {
+		id = CRL_The_Riverfolk_of_The_Gwathlo
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_The_City_of_Lond_Daer }
+		relative_position_id = CRL_The_City_of_Lond_Daer
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = CRL_The_Gwathlo_Riverfolk
+		}
+	}
+	focus = {
+		id = CRL_Makeshift_Weapon_Forges
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_The_Riverfolk_of_The_Gwathlo }
+		relative_position_id = CRL_The_Riverfolk_of_The_Gwathlo
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = CRL_Makeshift_Workshops
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_The_Riverfolk_of_The_Gwathlo }
+		relative_position_id = CRL_The_Riverfolk_of_The_Gwathlo
+		x = 1
+		y = 1
+		cost = 10
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = CRL_The_Tribes_of_Ariantig
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_Makeshift_Weapon_Forges }
+		prerequisite = { focus = CRL_Makeshift_Workshops }
+		relative_position_id = CRL_Makeshift_Weapon_Forges
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		create_faction = "Enedwaith Federation"
+			CRL = { add_to_faction = ARI }
+			}
+		}
+	focus = {
+		id = CRL_Ariantig_Riverfolk
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_The_Tribes_of_Ariantig }
+		relative_position_id = CRL_The_Tribes_of_Ariantig
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			add_stability  = 0.05
+			}
+		}
+	focus = {
+		id = CRL_The_Evil_Men_of_Cardolan
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = CRL_Ariantig_Riverfolk }
+		relative_position_id = CRL_Ariantig_Riverfolk
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ARD }
+					declare_war_on = { type = annex_everything    target = ARD }
+				}
+			}
+	focus = {
+		id = CRL_Free_The_People_of_Southern_Cardolan
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = CRL_The_Evil_Men_of_Cardolan }
+		relative_position_id = CRL_The_Evil_Men_of_Cardolan
+		x = -1
+		y = 1
+		cost = 10
+		available = { if = { CRL = { has_war = no } } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			CRL = { add_to_faction = ARD }
+			add_manpower = 10000
+			add_stability  = 0.05
+			}
+		}
+	focus = {
+		id = CRL_Brothers_In_Suduri
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_Ariantig_Riverfolk }
+		relative_position_id = CRL_Ariantig_Riverfolk
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			CRL = { add_to_faction = DRU }
+			}
+		}
+	focus = {
+		id = CRL_Two_Clans_One_Peoples
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = CRL_Brothers_In_Suduri }
+		relative_position_id = CRL_Brothers_In_Suduri
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			add_stability  = 0.05
+			}
+		}
+	focus = {
+		id = CRL_Unite_The_Riverfolk_Peoples
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 90 }
+		prerequisite = { focus = CRL_Free_The_People_of_Southern_Cardolan }
+		prerequisite = { focus = CRL_Two_Clans_One_Peoples }
+		relative_position_id = CRL_Free_The_People_of_Southern_Cardolan
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			annex_country = { target = ARI transfer_troops = yes }
+			annex_country = { target = DRU transfer_troops = yes }
+			annex_country = { target = ARD transfer_troops = yes }
+			add_state_core = 33
+			add_state_core = 34
+			add_state_core = 35
+			add_state_core = 155
+			set_cosmetic_tag = ENR
+			}
+		}
+		

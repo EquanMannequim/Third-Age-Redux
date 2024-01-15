@@ -1,0 +1,176 @@
+###########################
+# Umbar Events
+###########################
+
+add_namespace = UMA
+
+	country_event = {
+	id = UMA.1
+	title = UMA.1.t
+	desc = UMA.1.d
+	picture = GFX_report_event_numenor
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "A Story as Old as Time"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = UMA.2
+	title = UMA.2.t
+	desc = UMA.2.d
+	picture = GFX_report_event_fight
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "The Blood of Numenor Run's Thin"
+		ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = UMA.3
+	title = UMA.3.t
+	desc = UMA.3.d
+	picture = GFX_report_event_peasant_revolt2
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "The Third Kingdom of Men will RISE."
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = UMA.4
+	title = UMA.4.t
+	desc = UMA.4.d
+	picture = GFX_report_event_generic_king
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Welcome to the Fold Gimilzagar."
+			ai_chance = { base = 5 }
+			recruit_character = UMA_Gimilzagar
+			add_corps_commander_role = {
+			Character = UMA_Gimilzagar
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {  }
+				}
+			}
+		}
+	country_event = {
+	id = UMA.5
+	title = UMA.5.t
+	desc = UMA.5.d
+	picture = GFX_report_event_negotiations
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "I'd rather not."
+			 ai_chance = { base = 5 }
+				add_political_power = 150
+		}
+		
+		option = {
+			name = "I accept ."
+			 ai_chance = { base = 0 }
+				add_ideas = UMA_the_crown_of_numenor
+				add_manpower = 75000
+				load_oob = UMA_Kings_Men_Remnants
+			}
+		}
+		country_event = {
+	id = UMA.6
+	title = UMA.6.t
+	desc = UMA.6.d
+	picture = GFX_report_event_sauron_eye
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "I'd rather not."
+			ai_chance = { base = 5 }
+				add_political_power = 150
+		}
+		
+		option = {
+			name = "I humbly accept."
+				ai_chance = { base = 200 }
+				add_ideas = UMA_the_gift_from_mordor
+			}
+		}
+		country_event = {
+	id = UMA.7
+	title = UMA.7.t
+	desc = UMA.7.d
+	picture = GFX_report_event_rangers
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Welcome abourd Admiral."
+				ai_chance = { base = 5 }
+				add_political_power = 75
+			}
+		}
+		country_event = {
+	id = UMA.8
+	title = UMA.8.t
+	desc = UMA.8.d
+	picture = UMA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Execute Order of Battle 66"
+			 ai_chance = { base = 5 }
+				add_political_power = 75
+				 UMA_Balkubar = { retire = yes }
+			}
+		}
+			country_event = {
+	id = UMA.9
+	title = UMA.9.t
+	desc = UMA.9.d
+	picture = UMA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Execute Order of Battle 66"
+			 ai_chance = { base = 5 }
+				add_political_power = 75
+				  UMA_Corrupted_Balkubar = { retire = yes }
+			}
+		}
+		country_event = {
+	id = UMA.10
+	title = UMA.10.t
+	desc = UMA.10.d
+	picture = UMA_the_crown_of_numenor
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "The Kingdoms of Men must stand together to face the Darkness."
+			 ai_chance = { base = 900 }
+			 add_political_power = 15
+				STE = {
+					add_to_faction = UMA
+					}
+				}
+			option = {
+			name = "How can we trust them after the century's of WAR!!"
+			 ai_chance = { base = 0 }
+				add_political_power = 45
+			}
+		}

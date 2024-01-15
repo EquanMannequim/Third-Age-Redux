@@ -1,0 +1,39 @@
+spriteTypes = { 
+    ## Generic ideas
+    SpriteType = { 
+        name = "GFX_idea_UMA_thin_blood_of_numenor" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_thin_blood_of_numenor.dds"
+    }
+    SpriteType = { 
+        name = "GFX_idea_UMA_heir_of_numenor" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_heir_of_numenor.dds"
+    }
+    SpriteType = { 
+        name = "GFX_idea_UMA_sack_of_umbar" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_sack_of_umbar.dds"
+    }
+    SpriteType = { 
+        name = "GFX_idea_UMA_the_umbar_trade_fleet" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_the_umbar_trade_fleet.dds"
+    }
+	 SpriteType = { 
+        name = "GFX_idea_UMA_restored_blood_of_numenor" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_restored_blood_of_numenor.dds"
+    }
+	 SpriteType = { 
+        name = "GFX_idea_UMA_black_numenorians" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_black_numenorians.dds"
+    }
+	 SpriteType = { 
+        name = "GFX_idea_UMA_the_gift_from_mordor" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_the_gift_from_mordor.dds"
+    }
+	 SpriteType = { 
+        name = "GFX_idea_UMA_the_crown_of_numenor" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_the_crown_of_numenor.dds"
+    }
+	 SpriteType = { 
+        name = "GFX_idea_UMA_numenorian_training" 
+        texturefile = "gfx/interface/ideas/UMA/UMA_numenorian_training.dds"
+    }
+ }

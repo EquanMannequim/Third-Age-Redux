@@ -1,0 +1,181 @@
+﻿focus_tree = {
+id = morgul
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = MRG
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = The_Conquest_of_Minas_Ithil
+		icon = GFX_goal_burn_fangorn_forest
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = MRG_Minas_Morgul
+			5 = {
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 6967 }
+				}
+			}
+		}
+	focus = {
+		id = The_Head_of_The_Nine
+		icon = GFX_goal_lotr_The_Head_of_The_Nine
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Conquest_of_Minas_Ithil }
+		relative_position_id = The_Conquest_of_Minas_Ithil
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = MRG_Leader_of_The_Nine
+		}
+	}
+	focus = {
+		id = A_Conquest_Fit_For_A_King
+		icon = GFX_goal_lotr_A_Conquest_Fit_For_A_King
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Head_of_The_Nine }
+		relative_position_id = The_Head_of_The_Nine
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = MRG_Looting_and_Pillaging_Ithilian
+		}
+	}
+	focus = {
+		id = Request_Reinforcements_From_Mordor
+		icon = GFX_goal_lotr_Request_Reinforcements_From_Mordor
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = A_Conquest_Fit_For_A_King }
+		relative_position_id = A_Conquest_Fit_For_A_King
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			MRD = {
+				country_event = MRG.1
+			}
+		}
+	}
+	focus = {
+		id = Loot_and_Pillage_For_Weapons
+		icon = GFX_goal_lotr_Loot_and_Pillage_For_Weapons
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Request_Reinforcements_From_Mordor }
+		relative_position_id = Request_Reinforcements_From_Mordor
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			5 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+		}
+	}
+	focus = {
+		id = Reinforce_The_Morgul_Gap
+		icon = GFX_goal_lotr_Reinforce_The_Morgul_Gap
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = A_Conquest_Fit_For_A_King }
+		relative_position_id = A_Conquest_Fit_For_A_King
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			5 = {
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 2663 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 6967 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 4660 }
+				}
+			}
+		}
+	focus = {
+		id = Send_Out_More_Looting_Parties
+		icon = GFX_goal_lotr_Send_Out_More_Looting_Parties
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Reinforce_The_Morgul_Gap }
+		relative_position_id = Reinforce_The_Morgul_Gap
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			5 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+		}
+	}
+	focus = {
+		id = Sieze_The_Eastern_Anduin
+		icon = GFX_goal_lotr_Sieze_The_Eastern_Anduin
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Send_Out_More_Looting_Parties }
+		prerequisite = { focus = Loot_and_Pillage_For_Weapons }
+		relative_position_id = Send_Out_More_Looting_Parties
+		x = -1
+		y = 1
+		cost = 10
+		will_lead_to_war_with = ITL
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = { 
+				if = { limit = { MRG = { is_ai = yes } } add_timed_idea = { days = 200 idea = MRG_The_Age_of_The_Orc } }
+					}
+				MRG = { country_event = MRG.2 }
+				MRD = { country_event = MRG.2 }
+				STE = { country_event = MRG.2 }
+				ITL = { country_event = MRG.2 }
+				}
+			}
+	focus = {
+		id = Requst_More_Orks_From_Barad_Dur
+		icon = GFX_goal_lotr_Requst_More_Orks_From_Barad_Dur
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Sieze_The_Eastern_Anduin }
+		relative_position_id = Sieze_The_Eastern_Anduin
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = { 
+				if = { limit = { MRG = { is_ai = yes } } add_timed_idea = { days = 200 idea = MRG_The_Sorcery_of_The_Witch_King } } }
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = A_Final_Offensive
+		icon = GFX_goal_lotr_A_Final_Offensive
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Sieze_The_Eastern_Anduin }
+		relative_position_id = Sieze_The_Eastern_Anduin
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = { days = 120 idea = MRG_A_Final_offensive }
+		}
+	}
+}

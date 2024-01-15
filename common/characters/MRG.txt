@@ -1,0 +1,53 @@
+characters={
+	MRG_Gothmog={
+		name="Gothmog"
+		portraits={
+			army={
+				large="GFX_Portrait_Gothmog"
+				small="GFX_Portrait_Gothmog"
+			}
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	MRG_Witch_king = {
+		name = "Witch King"
+		portraits={
+			army={
+				large="GFX_Portrait_the_witch_king"
+				small="GFX_idea_portrait_mordor_witch"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = { }
+			id=-1
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor = {
+			idea_token = MRD_Witch_king
+			slot = chief_advisor 
+			cost = 150
+			traits = { lord_of_the_nazgul }
+			available = {
+				always = yes
+			}
+		}
+	}
+}

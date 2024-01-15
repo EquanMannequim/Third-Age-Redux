@@ -1,0 +1,32 @@
+characters={
+	ITL_faramir={
+		name="Faramir"
+		portraits={
+			army={
+				large="GFX_portrait_gondor_faramir"
+				small="GFX_idea_portrait_gondor_faramir"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = { }
+		}
+		country_leader={
+			ideology=isolationist
+			expire="1980.1.1.1"
+			id=-1
+			traits = {}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+
+		}
+	}
+}

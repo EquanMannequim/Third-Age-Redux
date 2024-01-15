@@ -1,0 +1,32 @@
+
+state={
+	id=31
+	name="STATE_31"
+	resources={
+		steel=48.000
+	}
+
+	history={
+		owner = ISN
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			arms_factory = 5
+			industrial_complex = 3
+
+		}
+		add_core_of = ISN
+		victory_points = {
+			6610 80 
+		}
+
+	}
+
+	provinces={
+		1437 1485 6610 6659 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=darkground
+	local_supplies=0.000
+}

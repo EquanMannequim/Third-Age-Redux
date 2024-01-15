@@ -1,0 +1,23 @@
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+navy = {
+		name = "Silver Swan Fleet"
+		base = 4079
+		location = 4079
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GON } } }
+		}
+	}

@@ -1,0 +1,122 @@
+characters={
+	DRA_Baisheuin={
+		name="King Baisheuin"
+		portraits={
+			army={
+				large="GFX_Portrait_Baisheuin"
+				small="GFX_idea_Portrait_Baisheuin"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = {  }
+			id=-1
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+		}
+		
+	}
+	DRA_Rurzaur={
+		name="Warlord Rurzaur"
+		portraits={
+			army={
+				large="GFX_Portrait_Rurzaur"
+				small="GFX_idea_Portrait_Rurzaur"
+			}
+		}
+	}
+	DRA_Calintz={
+		name="Calintz"
+		portraits={
+			army={
+				large="GFX_Portrait_Calintz"
+				small="GFX_idea_Portrait_Calintz"
+			}
+		}
+	}
+	DRA_Borthan={
+		name="Borthan"
+		portraits={
+			army={
+				large="GFX_Portrait_Borthan"
+				small="GFX_idea_Portrait_Borthan"
+			}
+		}
+	}
+	SAG_Rurzaur={
+		name="Warlord Rurzaur"
+		portraits={
+			army={
+				large="GFX_Portrait_Rurzaur"
+				small="GFX_idea_Portrait_Rurzaur"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = {  }
+			id=-1
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	URG_Calintz={
+		name="Calintz"
+		portraits={
+			army={
+				large="GFX_Portrait_Calintz"
+				small="GFX_idea_Portrait_Calintz"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = {  }
+			id=-1
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ASD_Borthan={
+		name="Borthan"
+		portraits={
+			army={
+				large="GFX_Portrait_Borthan"
+				small="GFX_idea_Portrait_Borthan"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = {  }
+			id=-1
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+}

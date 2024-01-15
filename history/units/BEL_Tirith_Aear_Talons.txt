@@ -1,0 +1,39 @@
+##### Division Templates #####
+division_template = {
+	name = "Tirith Aear Talons"
+	regiments = {
+		light_tank_destroyer_brigade = { x = 0 y = 0 }
+		light_tank_destroyer_brigade = { x = 0 y = 1 }
+		light_tank_destroyer_brigade = { x = 0 y = 2 }
+		light_tank_destroyer_brigade = { x = 1 y = 0 }
+		light_tank_destroyer_brigade = { x = 1 y = 1}
+		light_tank_destroyer_brigade = { x = 1 y = 2}
+		light_tank_destroyer_brigade = { x = 2 y = 1}
+		light_tank_destroyer_brigade = { x = 2 y = 2}
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Tirith Aear Talons"
+		location = 3570
+		division_template = "Tirith Aear Talons"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Tirith Aear Talons"
+		location = 3570
+		division_template = "Tirith Aear Talons"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Tirith Aear Talons"
+		location = 3570
+		division_template = "Tirith Aear Talons"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+}

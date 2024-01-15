@@ -1,0 +1,56 @@
+capital = 12
+
+oob = "MRD_3015"
+
+set_research_slots = 4
+
+recruit_character = MRD_sauron_eye
+recruit_character = MRD_gothmog
+recruit_character = MRD_muzgash
+recruit_character = MRD_shagrat
+recruit_character = MRD_grishnakh
+recruit_character = MRD_gorbag
+recruit_character = MRD_mouth_of_sauron
+recruit_character = MRD_acrif
+## The nine nazguls
+recruit_character = MRD_Witch_king
+recruit_character = MRD_Khamul
+recruit_character = MRD_Al_Khey_Sart
+recruit_character = MRD_Dendra_Dwar
+recruit_character = MRD_Adunaphel
+recruit_character = MRD_Akhorahil
+recruit_character = MRD_Ji_Indur
+recruit_character = MRD_Uvathe_Achef
+
+create_faction = "The Dark Pact"
+add_to_faction = MRG
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	motorised_infantry = 1
+	convoy_tech = 1
+	transport = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = belligerent
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cooperative = 0
+	belligerent = 100
+}

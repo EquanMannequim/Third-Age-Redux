@@ -1,0 +1,67 @@
+##### Division Templates #####
+division_template = {
+	name = "Dunland Scout's"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Dunland Scouting Company"
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company"
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company "
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company "
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company "
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company "
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dunland Scouting Company "
+		location = 1437
+		division_template = "Dunland Scout's"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}

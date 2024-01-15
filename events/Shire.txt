@@ -1,0 +1,151 @@
+﻿###########################
+# Shire Events
+###########################
+
+add_namespace = shire
+
+# Bilbo disappears
+country_event = {
+	id = shire.1
+	title = shire.1.t
+	desc = shire.1.d
+	picture = GFX_report_event_hobbit_party
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SHI
+		date > 3018.6.1 
+	}
+
+	mean_time_to_happen = {
+		days = 10	
+	}
+	
+	option = { 
+		name = shire.1.a
+		hidden_effect = {
+			news_event = { hours = 24 id = news.331 }
+
+			# Begin ring event-chain
+			execute_fs_commence = yes
+		}
+	}
+	
+}
+
+
+# Shire Mutual Protection Pact
+country_event = {
+	id = shire.2
+	title = shire.2.t
+	desc = shire.2.d
+	picture = GFX_report_event_elven_alliance
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = shire.2.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = { target = SHI value > 30 }
+				add = 30
+			}
+			modifier = {
+				has_opinion = { target = SHI value > 50 }
+				add = 50
+			}
+		}
+		THIS = { give_guarantee = SHI }
+		SHI = { give_guarantee = PREV }
+	}
+	option = { #Refuse
+		name = shire.2.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 100
+				has_government = belligerent
+			}
+		}
+	}
+}
+
+# Shire Demands Independence
+country_event = {
+	id = shire.3
+	title = shire.3.t
+	desc = shire.3.d
+	picture = GFX_report_event_paper
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = shire.3.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = { target = SHI value > 0 }
+				add = 20
+			}
+		}
+		ART = { end_puppet = SHI }
+	}
+	option = { #Refuse
+		name = shire.3.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_government = belligerent
+			}
+			modifier = {
+				add = 100
+				strength_ratio = { tag = SHI ratio > 1.0 }
+			}
+		}
+		ART = { end_puppet = SHI }
+		ART = { declare_war_on = { target = SHI type = annex_everything } }
+	}
+}
+
+# The Shire asks for help
+country_event = {
+	id = shire.4
+	title = shire.4.t
+	desc = shire.4.d
+	picture = GFX_report_event_elven_alliance
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = shire.4.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = { target = SHI value > 30 }
+				add = 30
+			}
+			modifier = {
+				has_opinion = { target = SHI value > 90 }
+				add = 30
+			}
+			modifier = {
+				has_opinion = { target = ART value < -50 }
+				add = 30
+			}
+		}
+		add_to_war = { targeted_alliance = SHI enemy = ART } 
+	}
+	option = { #Refuse
+		name = shire.4.b
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = 200
+				strength_ratio = { tag = ART ratio < 0.5 }
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+### UMA ###
+units = {
+	navy = {
+		name = "The Sea Dogs"
+		base = 1248
+		location = 1248
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+		ship = { definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = GON} } }
+	}
+}

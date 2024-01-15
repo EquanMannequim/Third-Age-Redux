@@ -1,0 +1,800 @@
+focus_tree = {
+id = angmar
+country = {
+	factor=0
+	modifier = {
+		add = 20
+		original_tag = ANR
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+	
+	focus = {
+		id = ANR_The_War_In_The_North
+		icon = GFX_goal_arnor
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+			country_event = ANR.1
+			add_ideas = ANR_the_war_in_the_north
+		}
+	}
+
+	focus = {
+		id =  ANR_The_Fall_of_Angmar
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = ANR_The_War_In_The_North }
+		relative_position_id = ANR_The_War_In_The_North
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = ANR.2
+			add_ideas = ANR_the_fall_angmar
+		}
+	}
+	focus = {
+		id = ANR_The_Rise_of_Agandur
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = ANR_The_Fall_of_Angmar }
+		relative_position_id = ANR_The_Fall_of_Angmar
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = ANR.3
+			add_ideas = ANR_the_numenorian_sorcerer
+		}
+	}
+	focus = {
+		id = ANR_The_Morkail_Uruks
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = -2
+		y = 1
+		cost = 5
+		will_lead_to_war_with = MRK
+		available = { ANR = { has_war = { no } } } 
+		completion_reward = {
+			ANR = { add_state_claim = 59 }
+			create_wargoal = { type = annex_everything target = MRK }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRK }
+				}
+			}
+	}
+	focus = {
+		id = ANR_Integrate_The_Uruks
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = ANR_The_Morkail_Uruks }
+		relative_position_id = ANR_The_Morkail_Uruks
+		x = 1
+		y = 1
+		cost = 5
+		available = { MRK = { exists = no } }
+		available = { owns_state = 59 }
+		completion_reward = {
+			add_state_core = 59
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = ANR_The_Litash_Warbands
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = 2
+		y = 1
+		cost = 5
+		available = { ANR = { has_war = { no } } } 
+		completion_reward = {
+			ANR = { add_state_claim = 153 }
+			create_wargoal = { type = annex_everything target = LIT }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = LIT }
+				}
+			}
+	}
+	focus = {
+		id = ANR_Integrate_The_Orcs
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = ANR_The_Litash_Warbands }
+		relative_position_id = ANR_The_Litash_Warbands
+		x = -1
+		y = 1
+		cost = 5
+		available = { LIT = { exists = no } }
+		available = { owns_state = 153 }
+		completion_reward = {
+			add_state_core = 153
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = ANR_The_People_of_Forochel
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = ANR_Integrate_The_Uruks }
+		prerequisite = { focus = ANR_Integrate_The_Orcs }
+		relative_position_id = ANR_Integrate_The_Uruks
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 35
+			transfer_state = 57
+			add_state_core = 57
+		}
+	}
+	focus = {
+		id = ANR_The_Rhudarian_Clans
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = ANR_The_People_of_Forochel }
+		relative_position_id = ANR_The_People_of_Forochel
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ANR_A_Lifetime_Of_Service
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = ANR_The_Rhudarian_Clans }
+		mutually_exclusive = { focus = ANR_Conquer_The_Traitors }
+		relative_position_id = ANR_The_Rhudarian_Clans
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			RDU = { country_event = ANR.4 }
+			RDU = { load_oob = RDU_Angmar_Soldiers }
+		}
+	}
+	focus = {
+		id = ANR_Conquer_The_Traitors
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = ANR_The_Rhudarian_Clans }
+		mutually_exclusive = { focus = ANR_A_Lifetime_Of_Service }
+		relative_position_id = ANR_The_Rhudarian_Clans
+		x = -1
+		y = 1
+		cost = 5
+		will_lead_to_war_with = RDU
+		completion_reward = {
+			add_state_core = 62
+			ANR = { add_state_claim = 62 add_state_claim = 63 add_state_claim = 151 }
+			create_wargoal = { type = annex_everything target = RDU }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = RDU }
+				}
+			}
+	}
+	focus = {
+		id = ANR_The_Kingdom_of_Angmar_Reborn
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = ANR_A_Lifetime_Of_Service focus = ANR_Conquer_The_Traitors }
+		relative_position_id = ANR_A_Lifetime_Of_Service
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			or = { if = { RDU = { exists = no } } if = { RDU = { is_subject_of = ANR } } } }
+		completion_reward = {
+			hidden_effect = { URU = { add_state_claim = 46 }
+			create_wargoal = { type = take_state_focus target = FRN generator = { 46 } }
+				if = { limit = { URU = { is_ai = yes } }
+					URU = { declare_war_on = { type = annex_everything    target = CRC } }  }
+					}
+			swap_ideas = {
+					remove_idea = ANR_the_fall_angmar
+					add_idea = ANR_angmar_reborn
+				}
+			set_cosmetic_tag = ANG
+		}
+	}
+	focus = {
+		id = ANR_Subjugate_The_Ashkai_Tribes
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Kingdom_of_Angmar_Reborn }
+		relative_position_id = ANR_The_Kingdom_of_Angmar_Reborn
+		x = -4
+		y = 1
+		cost = 5
+		will_lead_to_war_with = ASH
+		completion_reward = {
+			ANR = { add_state_claim = 147 }
+			create_wargoal = { type = annex_everything target = ASH }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ASH }
+				}
+			}
+	}
+	focus = {
+		id = ANR_The_Iron_Crown_Infantry
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Subjugate_The_Ashkai_Tribes }
+		relative_position_id = ANR_Subjugate_The_Ashkai_Tribes
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = ANR_Iron_Crown_Infantry
+		}
+	}
+	focus = {
+		id = ANR_Integrate_The_Ashkai_Tribes
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Subjugate_The_Ashkai_Tribes }
+		relative_position_id = ANR_Subjugate_The_Ashkai_Tribes
+		x = 1
+		y = 1
+		cost = 5
+		available = { ASH = { exists = no } }
+		available = { owns_state = 147 }
+		completion_reward = {
+			add_state_core = 147
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = ANR_Athilin_Infastructure
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Integrate_The_Ashkai_Tribes }
+		relative_position_id = ANR_Integrate_The_Ashkai_Tribes
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		147 = { add_building_construction = { 	type = infrastructure level = 2	instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ANR_Subjugate_The_Fualgurum_Orcs
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Kingdom_of_Angmar_Reborn }
+		relative_position_id = ANR_The_Kingdom_of_Angmar_Reborn
+		x = 4
+		y = 1
+		cost = 5
+		will_lead_to_war_with = FAL
+		completion_reward = {
+			ANR = { add_state_claim = 41 }
+			create_wargoal = { type = annex_everything target = FAL }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = FAL }
+				}
+			}
+	}
+	focus = {
+		id = ANR_Integrate_The_Fualgurum_Orcs
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Subjugate_The_Fualgurum_Orcs }
+		relative_position_id = ANR_Subjugate_The_Fualgurum_Orcs
+		x = -1
+		y = 1
+		cost = 5
+		available = { FAL = { exists = no } }
+		available = { owns_state = 41 }
+		completion_reward = {
+			add_state_core = 41
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = ANR_Emyn_Uial_Infastructure
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Integrate_The_Fualgurum_Orcs }
+		relative_position_id = ANR_Integrate_The_Fualgurum_Orcs
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			41 = { add_building_construction = { 	type = infrastructure level = 2 	instant_build = yes } }
+		}
+	}
+	focus = {
+		id = Destroy_The_Arnorian_Remnants
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Athilin_Infastructure }
+		prerequisite = { focus = ANR_Emyn_Uial_Infastructure }
+		available = { ANR = { is_neighbor_of = DUN } }
+		bypass = {
+			or = {
+			DUN = { exists = no }
+			DUN = { NOT = { has_government = cooperative } } }
+		}
+		relative_position_id = ANR_Athilin_Infastructure
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			ANR = { puppet = URU }
+			create_wargoal = { type = annex_everything target = DUN }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DUN }
+				}	
+			}
+		}
+	focus = {
+		id = The_Return_of_The_Witch_King
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Destroy_The_Arnorian_Remnants }
+		available = { ANR = { is_neighbor_of = DUN } }
+		relative_position_id = Destroy_The_Arnorian_Remnants
+		x = 0
+		y = 1
+		cost = 5
+		available = { owns_state = 146 owns_state = 148 }
+		completion_reward = {
+			MRD = { puppet = ANR }
+			add_field_marshal_role = {
+				Character = ANR_witch_king_of_angmar
+				traits={ offensive_doctrine }
+				skill=6
+				attack_skill=6
+				defense_skill=5
+				planning_skill=4
+				logistics_skill=4
+					}
+			add_country_leader_role = {
+				character = ANR_witch_king_of_angmar
+				promote_leader = yes
+				country_leader={
+				ideology=melkorist
+				expire="1980.1.1.1"
+				id=-1
+				traits = { }
+					}
+				}
+			}
+		}
+	focus = {
+		id = ANR_The_Wargs_of_The_North
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Subjugate_The_Fualgurum_Orcs }
+		relative_position_id = ANR_Subjugate_The_Fualgurum_Orcs
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = ANR_The_Wargs_of_The_North
+		}
+	}
+	focus = {
+		id = ANR_The_Northern_Industry
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = -5
+		y = 1
+		cost = 5
+		completion_reward = {
+		152 = { add_building_construction = {	type = infrastructure level = 2 instant_build = yes } }
+		152 = { add_extra_state_shared_building_slots = 2 }
+		60 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+	focus = {
+		id = ANR_The_Frozen_Workshops
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Northern_Industry }
+		relative_position_id = ANR_The_Northern_Industry
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+		152 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Iron_Workshops
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Frozen_Workshops }
+		relative_position_id = ANR_The_Frozen_Workshops
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_Northern_Innovations
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Northern_Industry }
+		relative_position_id = ANR_The_Northern_Industry
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.55
+				uses = 2
+				category = lotr_labour_construction
+			}
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = lotr_labour_construction_industry
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Cold_Forges
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Northern_Industry }
+		relative_position_id = ANR_The_Northern_Industry
+		x =2
+		y = 1
+		cost = 5
+		completion_reward = {
+		152 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Iron_Forges
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_The_Cold_Forges }
+		relative_position_id = ANR_The_Cold_Forges
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+		152 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Carn_Dum_Industry
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_Northern_Innovations }
+		prerequisite = { focus = ANR_The_Iron_Workshops }
+		prerequisite = { focus = ANR_The_Iron_Forges }
+		relative_position_id = ANR_The_Iron_Workshops
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ANR_The_Peoples_of_The_Far_North
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 9999 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = lotr_infantry
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = lotr_support_tech
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Men_of_The_Far_North
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 9999 }
+		prerequisite = { focus = ANR_The_Peoples_of_The_Far_North }
+		relative_position_id = ANR_The_Peoples_of_The_Far_North
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 70
+			load_oob = ANR_men_of_the_far_north
+		}
+	}
+	focus = {
+		id = ANR_The_Rhudar_Exiles
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_The_Men_of_The_Far_North }
+		relative_position_id = ANR_The_Men_of_The_Far_North
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 30000
+		}
+	}
+	focus = {
+		id = ANR_Knowledge_of_The_Northern_Peoples
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_The_Peoples_of_The_Far_North }
+		relative_position_id = ANR_The_Peoples_of_The_Far_North
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROH_anti_tank_guns
+				bonus = 0.75
+				uses = 2
+				category = lotr_machines_ballista
+			}
+		}
+	}
+	focus = {
+		id = ANR_The_Orcs_of_The_Far_North
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 9999 }
+		prerequisite = { focus = ANR_The_Peoples_of_The_Far_North }
+		relative_position_id = ANR_The_Peoples_of_The_Far_North
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 15
+			load_oob = ANR_orcs_of_the_far_north
+		}
+	}
+	focus = {
+		id = ANR_The_Uruks_Of_The_Frozen_Wastes
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_The_Orcs_of_The_Far_North }
+		relative_position_id = ANR_The_Orcs_of_The_Far_North
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 30000
+		}
+	}
+	focus = {
+		id = ANR_The_Northern_Peoples
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_Knowledge_of_The_Northern_Peoples } 
+		prerequisite = { focus = ANR_The_Rhudar_Exiles }
+		prerequisite = { focus = ANR_The_Uruks_Of_The_Frozen_Wastes }
+		relative_position_id = ANR_The_Uruks_Of_The_Frozen_Wastes
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ANR_The_Frozen_Eye_of_The_North
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = -11
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = ANR_Northmen_Recruits
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_The_Frozen_Eye_of_The_North }
+		relative_position_id = ANR_The_Frozen_Eye_of_The_North
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = ANR_The_Eye_of_Mordor
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = ANR_The_Frozen_Eye_of_The_North }
+		relative_position_id = ANR_The_Frozen_Eye_of_The_North
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = ANR_The_Fortress_of_Gundabad
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = ANR_The_Rise_of_Agandur }
+		relative_position_id = ANR_The_Rise_of_Agandur
+		x = 11
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+			61 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 4824 } }
+			152 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 306 } }
+			152 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			61 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_Joint_Industrial_Effort
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = ANR_The_Fortress_of_Gundabad }
+		relative_position_id = ANR_The_Fortress_of_Gundabad
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			60 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			61 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ANR_United_Supply_Lines
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = ANR_The_Fortress_of_Gundabad }
+		relative_position_id = ANR_The_Fortress_of_Gundabad
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			60 = {
+				add_building_construction = {	type = infrastructure level = 2 instant_build = yes }
+			61 = {
+				add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+
+				}
+			}
+		}
+	}
+	focus = {
+		id = ANR_Conquer_Eriador
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 15
+		cost = 5
+		available = { owns_state = 146 }
+		available = { owns_state = 148 }
+		available = { LND = { has_war = { yes } } }
+		available_if_capitulated = yes
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = ANR_Conquer_The_Blue_Mountains
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Conquer_Eriador }
+		relative_position_id = ANR_Conquer_Eriador
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BUZ }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = BUZ }
+			}
+			create_wargoal = { type = annex_everything target = LND }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = LND }
+			}
+			create_wargoal = { type = annex_everything target = GRE }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = GRE }
+			}
+			create_wargoal = { type = annex_everything target = KZA }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = KZA }
+			}
+		}
+	}
+	focus = {
+		id = ANR_Conquer_Forochel
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Conquer_Eriador }
+		relative_position_id = ANR_Conquer_Eriador
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = FOR }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = FOR }
+			}
+		}
+	}
+	focus = {
+		id = ANR_Conquer_Southern_Eriador
+		icon = GFX_goal_lotr_Angmar
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = ANR_Conquer_Eriador }
+		relative_position_id = ANR_Conquer_Eriador
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SIR }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = SIR }
+			}
+			create_wargoal = { type = annex_everything target = GIR }
+				if = { limit = { ANR = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = GIR }
+			}
+		}
+	}
+}

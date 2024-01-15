@@ -1,0 +1,1063 @@
+focus_tree = {
+id = isengard
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		tag = ISN
+	}
+}
+
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+	focus = {
+		id = The_Tower_of_Orthanc
+		icon = GFX_goal_orthanc_destroyed
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = ISN.1
+			add_ideas = ISN_The_Orthanc_Citadel
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = The_Five_Istari
+		icon = GFX_goal_lotr_The_Five_Istari
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Tower_of_Orthanc}
+		relative_position_id = The_Tower_of_Orthanc
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = ISN.2
+			add_ideas = ISN_The_Chief_of_The_Istari
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = ISN_The_White_Wizard
+		icon = GFX_goal_lotr_ISN_The_White_Wizard
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Five_Istari}
+		relative_position_id = The_Five_Istari
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = ISN.3
+			add_ideas = ISN_The_White_Wizard
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = The_Men_of_Dunland
+		icon = GFX_goal_lotr_The_Men_of_Dunland
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ISN_The_White_Wizard}
+		relative_position_id = ISN_The_White_Wizard
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 10
+			load_oob = ISN_Dunlendings
+		}
+	}
+	focus = {
+		id = A_New_Breed_of_Orc
+		icon = GFX_goal_lotr_A_New_Breed_of_Ork
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ISN_The_White_Wizard}
+		relative_position_id = ISN_The_White_Wizard
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 15
+			load_oob = ISN_The_Uruk-Hai
+		}
+	}
+	focus = {
+		id = Raid_West_March
+		icon = GFX_goal_lotr_Raid_West_March
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Men_of_Dunland}
+		prerequisite = { focus = A_New_Breed_of_Orc}
+		relative_position_id = The_Men_of_Dunland
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = -2500
+			transfer_state = 23
+			RID = {
+				country_event = ISN.4
+				add_opinion_modifier = { target = ISN modifier = large_decrease }
+				}
+		}
+	}
+	focus = {
+		id = Contact_Mordor
+		icon = GFX_goal_lotr_Contact_Mordor
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Raid_West_March}
+		relative_position_id = Raid_West_March
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = ISN.5
+			add_manpower = 20000
+			load_oob = ISN_Mordor_Orcs
+		}
+	}
+	focus = {
+		id = The_Fires_of_Industry
+		icon = GFX_goal_lotr_The_Fires_of_Industry
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Contact_Mordor}
+		relative_position_id = Contact_Mordor
+		x = -5
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = lotr_labour_construction_industry
+			}
+			31 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			31 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Orc_Forges
+		icon = GFX_goal_lotr_Orc_Forges
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Fires_of_Industry}
+		relative_position_id = The_Fires_of_Industry
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Orc_Workshops
+		icon = GFX_goal_lotr_Orc_Workshops
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Fires_of_Industry}
+		relative_position_id = The_Fires_of_Industry
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Uruk_Forges
+		icon = GFX_goal_lotr_Uruk_Forges
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Orc_Forges}
+		relative_position_id = Orc_Forges
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Expand_Orthanc_Roads
+		icon = GFX_goal_lotr_Expand_Orthanc_Roads
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Orc_Forges}
+		prerequisite = { focus = Orc_Workshops}
+		relative_position_id = Orc_Forges
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31	= {
+				add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+				158	= {
+				add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+				159	= {
+				add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				}
+		}
+	}
+	focus = {
+		id = Uruk_Workshops
+		icon = GFX_goal_lotr_Uruk_Workshops
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Orc_Workshops}
+		prerequisite = { focus = Expand_Orthanc_Roads}
+		relative_position_id = Orc_Workshops
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Walls_of_Orthanc
+		icon = GFX_goal_lotr_The_Walls_of_Orthanc
+		ai_will_do = { factor = 3 }
+		mutually_exclusive = { focus = Fortify_The_Isengard_Gap }
+		prerequisite = { focus = Expand_Orthanc_Roads}
+		prerequisite = { focus = Uruk_Workshops}
+		relative_position_id = Uruk_Workshops
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+					add_building_construction = {type = bunker level = 9 instant_build = yes province = 6610 }
+				}
+			31 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Fortify_The_Isengard_Gap
+		icon = GFX_goal_lotr_Fortify_The_Isengard_Gap
+		ai_will_do = { factor = 3 }
+		mutually_exclusive = { focus = The_Walls_of_Orthanc }
+		prerequisite = { focus = Uruk_Forges}
+		prerequisite = { focus = Expand_Orthanc_Roads}
+		relative_position_id = Uruk_Forges
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			31 = {
+					add_building_construction = {type = bunker level = 5 instant_build = yes province = 6659 }
+					add_building_construction = {type = bunker level = 5 instant_build = yes province = 1437 }
+				}
+			158 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Secrets_of_Saruman
+		icon = GFX_goal_lotr_The_Secrets_of_Saruman
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Fortify_The_Isengard_Gap focus = The_Walls_of_Orthanc }
+		relative_position_id = Fortify_The_Isengard_Gap
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = Expand_Isengard_Control
+		icon = GFX_goal_lotr_Expand_Isengard_Control
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Contact_Mordor}
+		relative_position_id = Contact_Mordor
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = { days = 180 idea = ISN_Expanding_Control }
+		}
+	}
+	focus = {
+		id = Subjugate_The_Clans_of_Laur
+		icon = GFX_goal_lotr_Subjugate_The_Clans_of_Laur
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Expand_Isengard_Control}
+		relative_position_id = Expand_Isengard_Control
+		x = -1
+		y = 1
+		cost = 5
+		available = { ISN = { has_war = no } }
+		available_if_capitulated = yes
+		will_lead_to_war_with = LAU
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ISN = { add_state_claim = 20 add_state_claim = 136 }
+			create_wargoal = { type = annex_everything target = LAU }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = LAU }
+				}
+			}
+		}
+	focus = {
+		id = Expand_Into_Enedwaith
+		icon = GFX_goal_lotr_Expand_Into_Enedwaith
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Expand_Isengard_Control}
+		relative_position_id = Expand_Isengard_Control
+		x = 1
+		y = 1
+		cost = 5
+		available = { ISN = { has_war = no } }
+		available_if_capitulated = yes
+		will_lead_to_war_with = LAU
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = CAI }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = CAI }
+				}
+			}
+	}
+	focus = {
+		id = Dominate_The_Middle_Men
+		icon = GFX_goal_lotr_Dominate_The_Middle_Men
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Subjugate_The_Clans_of_Laur}
+		prerequisite = { focus = Expand_Into_Enedwaith}
+		relative_position_id = Subjugate_The_Clans_of_Laur
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_state_core = 23
+			add_state_core = 77
+			add_state_core = 20
+			add_state_core = 136
+			add_political_power = 100
+			77 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			77 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			136 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			20 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Influence_The_Men_of_Dunland
+		icon = GFX_goal_lotr_Influence_The_Men_of_Dunland
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Dominate_The_Middle_Men}
+		relative_position_id = Dominate_The_Middle_Men
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 7500
+			COR = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			EUC = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			MUR = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			}
+		}
+	focus = {
+		id = Influence_The_Men_of_Enedwaith
+		icon = GFX_goal_lotr_Influence_The_Men_of_Enedwaith
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Dominate_The_Middle_Men}
+		relative_position_id = Dominate_The_Middle_Men
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 7500
+			CRL = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			ARI = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			TRE = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			DRG = {
+				add_popularity = { ideology = belligerent popularity = 0.15 }
+				}
+			}
+		}
+	focus = {
+		id = The_White_Hand
+		icon = GFX_goal_lotr_The_White_Hand
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Influence_The_Men_of_Dunland}
+		prerequisite = { focus = Influence_The_Men_of_Enedwaith}
+		relative_position_id = Influence_The_Men_of_Dunland
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_faction = "The White Hand"
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = The_Eyes_of_Orthanc
+		icon = GFX_goal_lotr_The_Eyes_of_Orthanc
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Secrets_of_Saruman}
+		prerequisite = { focus = The_White_Hand}
+		relative_position_id = The_White_Hand
+		x = 0
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ISN_The_Eyes_of_Orthanc
+		}
+	}
+	focus = {
+		id = The_Crows_of_Saruman
+		icon = GFX_goal_lotr_The_Crows_of_Saruman
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Eyes_of_Orthanc}
+		relative_position_id = The_Eyes_of_Orthanc
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = { has_idea = ISN_The_Eyes_of_Orthanc }
+				swap_ideas = {
+				remove_idea = ISN_The_Eyes_of_Orthanc
+				add_idea = ISN_The_Eyes_of_Orthanc2
+					}
+				}
+			else = {
+				limit = { has_idea = ISN_The_Eyes_of_Orthanc2 }
+				swap_ideas = {
+				remove_idea = ISN_The_Eyes_of_Orthanc2
+				add_idea = ISN_The_Eyes_of_Orthanc3
+					}
+				}
+			}
+		}
+	focus = {
+		id = The_Spies_Saruman
+		icon = GFX_goal_lotr_The_Spies_Saruman
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Eyes_of_Orthanc}
+		relative_position_id = The_Eyes_of_Orthanc
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = { has_idea = ISN_The_Eyes_of_Orthanc }
+				swap_ideas = {
+				remove_idea = ISN_The_Eyes_of_Orthanc
+				add_idea = ISN_The_Eyes_of_Orthanc2
+					}
+				}
+			else = {
+				limit = { has_idea = ISN_The_Eyes_of_Orthanc2 }
+				swap_ideas = {
+				remove_idea = ISN_The_Eyes_of_Orthanc2
+				add_idea = ISN_The_Eyes_of_Orthanc3
+					}
+				}
+			}
+		}
+	focus = {
+		id = The_Orthanc_Palantir
+		icon = GFX_goal_lotr_The_Orthanc_Palantir
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Crows_of_Saruman}
+		prerequisite = { focus = The_Spies_Saruman}
+		relative_position_id = The_Crows_of_Saruman
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ISN_The_Eyes_of_Orthanc3
+				add_idea = ISN_The_Eyes_of_Orthanc4
+			}
+		}
+	}
+	focus = {
+		id = The_Dunlending
+		icon = GFX_goal_lotr_The_Dunlending
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Secrets_of_Saruman}
+		prerequisite = { focus = The_White_Hand}
+		relative_position_id = The_White_Hand
+		x = 3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EUC = { add_ideas = ISN_Isengard_Support }
+			EUC = {
+				add_opinion_modifier = { target = ISN modifier = medium_increase }
+				}
+		}
+	}
+	focus = {
+		id = Stir_Up_Animosity_Towards_Rohan
+		icon = GFX_goal_lotr_Stir_Up_Animosity_Towards_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Dunlending}
+		relative_position_id = The_Dunlending
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EUC = {
+				add_opinion_modifier = { target = RID modifier = large_decrease }
+				}
+			}
+		}
+	focus = {
+		id = Find_Dunleanding_Loyalist
+		icon = GFX_goal_lotr_Find_A_Loyal_Dunleanding
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Dunlending}
+		relative_position_id = The_Dunlending
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = Instill_Loyalty_Into_Dunlend
+		icon = GFX_goal_lotr_Instill_Loyalty_Into_Dunlend
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Find_Dunleanding_Loyalist}
+		prerequisite = { focus = Stir_Up_Animosity_Towards_Rohan}
+		relative_position_id = Find_Dunleanding_Loyalist
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		EUC = { add_opinion_modifier = { target = ISN modifier = large_increase } }
+		ISN = { add_opinion_modifier = { target = EUC modifier = large_increase } }
+
+		}
+	}
+	focus = {
+		id = Puppet_The_Loyal_Tribe
+		icon = GFX_goal_lotr_Puppet_The_Loyal_Tribe
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Instill_Loyalty_Into_Dunlend}
+		relative_position_id = Instill_Loyalty_Into_Dunlend
+		x = -1
+		y = 1
+		cost = 5
+		available = { EUC = { has_war = no } }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EUC = { country_event = ISN.6 }
+		}
+	}
+	focus = {
+		id = The_Peoples_of_Rohan
+		icon = GFX_goal_lotr_The_Peoples_of_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_White_Hand}
+		prerequisite = { focus = An_Explosive_Idea}
+		relative_position_id = The_White_Hand
+		x = -3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = Raid_Into_Westfold
+		icon = GFX_goal_lotr_Raid_Into_Westfold
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Peoples_of_Rohan}
+		relative_position_id = The_Peoples_of_Rohan
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			WST = {
+				add_timed_idea = { days = 180 idea = ISN_Isengard_Pillaging }
+				}
+			}
+		}
+	focus = {
+		id = Raid_Into_The_Riddermark
+		icon = GFX_goal_lotr_Raid_Into_The_Riddermark
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = The_Peoples_of_Rohan}
+		relative_position_id = The_Peoples_of_Rohan
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			RID = {
+				add_timed_idea = { days = 180 idea = ISN_Isengard_Pillaging }
+			}
+		}
+	}
+	focus = {
+		id = Unleash_The_Fighting_Urukhai
+		icon = GFX_goal_lotr_Unleash_The_Fighting_Urukhai
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Raid_Into_Westfold}
+		prerequisite = { focus = Raid_Into_The_Riddermark}
+		relative_position_id = Raid_Into_Westfold
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ISN_Isengard_Unleashed
+		}
+	}
+	focus = {
+		id = Burn_Down_The_Fangorn_Forest
+		icon = GFX_goal_lotr_Burn_Down_The_Fangorn_Forest
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Unleash_The_Fighting_Urukhai}
+		relative_position_id = Unleash_The_Fighting_Urukhai
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		158 = { add_resource = { type = chromium amount = 48 }
+			}
+		}
+	}
+	focus = {
+		id = Destroy_Rohan
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Burn_Down_The_Fangorn_Forest}
+		prerequisite = { focus = Puppet_The_Loyal_Tribe}
+		mutually_exclusive = { focus = ISN_Grimas_Success }
+		relative_position_id = Burn_Down_The_Fangorn_Forest
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		will_lead_to_war_with = LAU
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		create_wargoal = { type = annex_everything target = RID }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = RID }
+			}
+		}
+	}
+	
+	focus = {
+		id = ISN_Grimas_Success
+		icon = GFX_goal_lotr_An_Explosive_Idea
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Burn_Down_The_Fangorn_Forest}
+		prerequisite = { focus = Puppet_The_Loyal_Tribe}
+		mutually_exclusive = { focus = Destroy_Rohan }
+		relative_position_id = Burn_Down_The_Fangorn_Forest
+		x = 3
+		y = 1
+		cost = 5
+		available = { if = { RID = { has_government = belligerent } } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			annex_country = { target = RID transfer_troops = yes }
+			if = { limit = { WST = { exists = yes } } declare_war_on = { type = annex_everything target = WST } }
+			if = { limit = { EAS = { exists = yes } } declare_war_on = { type = annex_everything    target = EAS } }
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = Subjagate_The_Rohirim
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Destroy_Rohan focus = ISN_Grimas_Success }
+		relative_position_id = Destroy_Rohan
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		available = { ISN = { has_war = { no } } } 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_state_core = 24
+			add_state_core = 28
+			add_state_core = 184
+			add_state_core = 183
+			add_state_core = 26
+			25 = { add_compliance = 35 }
+			181 = { add_compliance = 35 }
+			182 = { add_compliance = 35 }
+			177 = { add_compliance = 35 }
+			27 = { add_compliance = 35 }
+			30 = { add_compliance = 35 }
+			178 = { add_compliance = 35 }
+		}
+	}
+	focus = {
+		id = Burn_Down_The_Rest_of_Fangorn
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Destroy_Rohan focus = ISN_Grimas_Success }
+		relative_position_id = Destroy_Rohan
+		x = 3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		available = { ISN = { has_war = { no } } } 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			29 = { add_compliance = 35 }
+			161 = { add_compliance = 35 }
+		}
+	}
+	focus = {
+		id = Destroy_The_Gondorians
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Subjagate_The_Rohirim}
+		prerequisite = { focus = Burn_Down_The_Rest_of_Fangorn}
+		will_lead_to_war_with = STE
+		relative_position_id = Subjagate_The_Rohirim
+		x = 2
+		y = 1
+		cost = 5
+		bypass = {
+			OR = {
+				STE = { exists = no } 
+				STE = { has_government = belligerent }
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ISN = { add_state_claim = 167 add_state_claim = 16 }
+			if = { limit = { 163 = { is_owned_by = STE } }
+				create_wargoal = { type = annex_everything target = STE }
+					if = { limit = { ISN = { is_ai = yes } }
+						declare_war_on = { type = annex_everything    target = STE } }
+			}
+			if = { limit = { 163 = { is_owned_by = DUN } }
+				create_wargoal = { type = annex_everything target = DUN }
+					if = { limit = { ISN = { is_ai = yes } }
+						declare_war_on = { type = annex_everything    target = DUN } }
+			}
+		}
+	}
+	focus = {
+		id = A_Servant_of_Sauron
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Destroy_The_Gondorians}
+		mutually_exclusive = { focus = One_Maiar_To_Rule_Them_All }
+		available = { ISN = { has_war = no } }
+		relative_position_id = Destroy_The_Gondorians
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = { limit = { EUC = { is_subject_of = ISN } } MRD = { puppet = EUC } }
+			MRD = { puppet = ISN }
+		}
+	}
+	focus = {
+		id = One_Maiar_To_Rule_Them_All
+		icon = GFX_goal_lotr_Destroy_Rohan
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Destroy_The_Gondorians}
+		mutually_exclusive = { focus = A_Servant_of_Sauron }
+		available = { ISN = { has_war = no } }
+		will_lead_to_war_with = MRD
+		relative_position_id = Destroy_The_Gondorians
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ISN = { add_state_claim = 163 add_state_claim = 5 }
+			create_wargoal = { type = annex_everything target = MRD }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRD }
+			}
+		}
+	}
+	focus = {
+		id = Build_An_Army_Worthy_of_Mordor
+		icon = GFX_goal_lotr_Build_An_Army_Worthy_of_Mordor
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Contact_Mordor}
+		relative_position_id = Contact_Mordor
+		x = 5
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = lotr_infantry
+			}
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = Prepare_Uruk_Breeding_Grounds
+		icon = GFX_goal_lotr_Prepare_Uruk_Breeding_Grounds
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Build_An_Army_Worthy_of_Mordor}
+		relative_position_id = Build_An_Army_Worthy_of_Mordor
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_manpower = 35000
+		}
+	}
+	focus = {
+		id = Weapons_of_The_UrukHai
+		icon = GFX_goal_lotr_Weapons_of_The_UrukHai
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Prepare_Uruk_Breeding_Grounds}
+		relative_position_id = Prepare_Uruk_Breeding_Grounds
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 8000
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.90
+				uses = 1
+				category = lotr_infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = Crossbows_of_The_UrukHai
+		icon = GFX_goal_lotr_Crossbows_of_The_UrukHai
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Prepare_Uruk_Breeding_Grounds}
+		prerequisite = { focus = Orks_From_Mordor}
+		relative_position_id = Prepare_Uruk_Breeding_Grounds
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 8000
+			add_tech_bonus = {
+				name = ROH_artillery_modernisation
+				bonus = 0.90
+				uses = 1
+				category = lotr_infantry_archery
+			}
+		}
+	}
+	focus = {
+		id = Orks_From_Mordor
+		icon = GFX_goal_lotr_Orks_From_Mordor
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Build_An_Army_Worthy_of_Mordor}
+		relative_position_id = Build_An_Army_Worthy_of_Mordor
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_manpower = 60000
+		}
+	}
+	focus = {
+		id = Mordor_Siege_Weapons
+		icon = GFX_goal_lotr_Mordor_Siege_Weapons
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Orks_From_Mordor}
+		relative_position_id = Orks_From_Mordor
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 8000
+			add_tech_bonus = {
+				name = basic_heavy_tank
+				bonus = 0.90
+				uses = 1
+				category = lotr_machines_siege_equipment
+			}
+		}
+	}
+	focus = {
+		id = UrukHai_Plate_Armor
+		icon = GFX_goal_lotr_UrukHai_Plate_Armor
+		ai_will_do = { factor = 3 }
+		mutually_exclusive = { focus = Mordor_Scrap_Armor }
+		prerequisite = { focus = Weapons_of_The_UrukHai}
+		prerequisite = { focus = Crossbows_of_The_UrukHai}
+		relative_position_id = Weapons_of_The_UrukHai
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ISN_Plate_Armor
+		}
+	}
+	focus = {
+		id = Mordor_Scrap_Armor
+		icon = GFX_goal_lotr_Mordor_Scrap_Armor
+		ai_will_do = { factor = 3 }
+		mutually_exclusive = { focus = UrukHai_Plate_Armor }
+		prerequisite = { focus = Mordor_Siege_Weapons}
+		prerequisite = { focus = Crossbows_of_The_UrukHai}
+		relative_position_id = Crossbows_of_The_UrukHai
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ISN_Scrap_Armor
+		}
+	}
+	focus = {
+		id = An_Explosive_Idea
+		icon = GFX_goal_lotr_An_Explosive_Idea
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = Mordor_Scrap_Armor focus = UrukHai_Plate_Armor }
+		relative_position_id = Mordor_Scrap_Armor
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+}

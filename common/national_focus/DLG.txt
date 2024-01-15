@@ -1,0 +1,320 @@
+focus_tree = {
+id = dolguldor
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = DLG
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = DLG_Hill_of_Dark_Sorcery
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+			add_ideas = DUN_hill_of_dark_sorcery
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = DLG_The_Necromancer
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Hill_of_Dark_Sorcery }
+		relative_position_id = DLG_Hill_of_Dark_Sorcery
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_the_necromancer
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = DLG_Khamul_The_Easterling
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Necromancer }
+		relative_position_id = DLG_The_Necromancer
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DUN_one_of_the_nine
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = DLG_The_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Khamul_The_Easterling }
+		relative_position_id = DLG_Khamul_The_Easterling
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			87 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					}
+		}
+	}
+	focus = {
+
+		id = DLG_Annex_South_Western_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Mirkwood }
+		relative_position_id = DLG_The_Mirkwood
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 5000	
+			DLG = { transfer_state = 190 }
+			DLG = { add_state_core = 190 }
+		}
+	}
+	focus = {
+		id = DLG_Annex_South_Eastern_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Mirkwood }
+		relative_position_id = DLG_The_Mirkwood
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 5000	
+			DLG = { transfer_state = 86 }
+			DLG = { add_state_core = 86 }
+		}
+	}
+	focus = {
+		id = DLG_Annex_The_Heart_of_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Annex_South_Western_Mirkwood }
+		prerequisite = { focus = DLG_Annex_South_Eastern_Mirkwood }
+		relative_position_id = DLG_Annex_South_Western_Mirkwood
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000	
+			DLG = { transfer_state = 85 }
+			DLG = { add_state_core = 85 }
+				}
+		}
+	focus = {
+		id = DLG_The_Marshlands
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Khamul_The_Easterling }
+		relative_position_id = DLG_Khamul_The_Easterling
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			DLG = { transfer_state = 206 transfer_state = 205 }
+			DLG = { add_state_core = 206 add_state_core = 205 }
+		}
+			87 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+					}
+	}
+	focus = {
+		id = DLG_Supplys_From_Mordor
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Marshlands }
+		relative_position_id = DLG_The_Marshlands
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			87 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = DLG_Reinforcements_From_Mordor
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Marshlands }
+		relative_position_id = DLG_The_Marshlands
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000	
+		}
+	}
+	focus = {
+		id = DLG_Men_of_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Reinforcements_From_Mordor }
+		prerequisite = { focus = DLG_Supplys_From_Mordor }
+		relative_position_id = DLG_Reinforcements_From_Mordor
+		x = 1
+		y = 1
+		cost = 5
+		available = { DLG = { has_war = no } }
+		will_lead_to_war_with = AST
+		completion_reward = {
+			add_state_core = 99
+			create_wargoal = { type = annex_everything target = AST }
+				if = { limit = { DLG = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = AST }
+			}
+		}
+	}
+	focus = {
+		id = DLG_The_Mirkwood_Forges
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Annex_The_Heart_of_Mirkwood }
+		relative_position_id = DLG_Annex_The_Heart_of_Mirkwood
+		x = -1
+		y = 1
+		cost = 5
+			completion_reward = {
+			87 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					}
+				}
+			}
+	focus = {
+		id = DLG_The_Men_of_The_Vale
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 999 }
+		prerequisite = { focus = DLG_Annex_The_Heart_of_Mirkwood }
+		prerequisite = { focus = DLG_Men_of_Mirkwood }
+		relative_position_id = DLG_Annex_The_Heart_of_Mirkwood
+		x = 1
+		y = 1
+		cost = 10
+		available = { DLG = { has_war = no } }
+		will_lead_to_war_with = WOD
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = WOD }
+				if = { limit = { DLG = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = WOD }
+			}
+		}
+	}
+	focus = {
+		id = DLG_The_Beornings_of_The_Vale
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DLG_Annex_The_Heart_of_Mirkwood }
+		prerequisite = { focus = DLG_Men_of_Mirkwood }
+		relative_position_id = DLG_Annex_The_Heart_of_Mirkwood
+		x = 3
+		y = 1
+		cost = 10
+		available = { DLG = { has_war = no } }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BEO }
+				if = { limit = { DLG = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = BEO }
+			}
+		}
+	}
+	focus = {
+		id = DLG_The_Marshland_Smiths
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Men_of_Mirkwood }
+		relative_position_id = DLG_Men_of_Mirkwood
+		x = 1
+		y = 1
+		cost = 5
+			completion_reward = {
+				87 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+					}
+				}
+			}
+	focus = {
+		id = DLG_The_Darkness_In_Mirkwood
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Men_of_The_Vale }
+		prerequisite = { focus = DLG_The_Beornings_of_The_Vale }
+		relative_position_id = DLG_The_Men_of_The_Vale
+		x = 1
+		y = 1
+		cost = 5
+		available = { DLG = { has_war = { no } } }
+		completion_reward = {
+			MRD = { puppet = DLG }
+			add_ideas = DUN_the_darkness_in_mirkwood
+		}
+	}
+	focus = {
+		id = DLG_Plan_The_Attack_On_Lothlorian
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Darkness_In_Mirkwood }
+		relative_position_id = DLG_The_Darkness_In_Mirkwood
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DLG_lothlorian_offensive
+		}
+	}
+	focus = {
+		id = DLG_Plan_The_Attack_On_The_Woodland_Realm
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_The_Darkness_In_Mirkwood }
+		relative_position_id = DLG_The_Darkness_In_Mirkwood
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = DLG_woodland_realm_offensive
+		}
+	}
+	focus = {
+		id = DLG_Destroy_The_Silvan_Elves
+		icon = GFX_goal_lotr_Dol_Guldor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DLG_Plan_The_Attack_On_Lothlorian }
+		prerequisite = { focus = DLG_Plan_The_Attack_On_The_Woodland_Realm }
+		relative_position_id = DLG_Plan_The_Attack_On_Lothlorian
+		x = 1
+		y = 1
+		cost = 10
+		available = { or = { MRD = { has_war_with = STE } MRD = { has_war_with = DUN } }
+		will_lead_to_war_with = CRS
+		will_lead_to_war_with = WDR
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = CRS }
+			declare_war_on = { type = annex_everything    target = CRS }
+			create_wargoal = { type = annex_everything target = WDR }
+			declare_war_on = { type = annex_everything    target = WDR }
+		}
+	}
+}

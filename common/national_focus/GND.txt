@@ -1,0 +1,394 @@
+focus_tree = {
+id = gundabad
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = GND
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = GND_Cold_Fotress_of_The_North
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+			add_ideas = GND_fortress_of_gundabad
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = GND_The_War_of_Dwarves_and_Orcs
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Cold_Fotress_of_The_North }
+		relative_position_id = GND_Cold_Fotress_of_The_North
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = GND_the_dwarven_onslaught
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = GND_The_Battle_of_The_Five_Armies
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_War_of_Dwarves_and_Orcs }
+		relative_position_id = GND_The_War_of_Dwarves_and_Orcs
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = GND_the_great_disaster
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = GND_Our_Allies_In_Angmar
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Battle_of_The_Five_Armies }
+		relative_position_id = GND_The_Battle_of_The_Five_Armies
+		x = -6
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			152 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = GND_Support_Angmar_With_Weapons
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Our_Allies_In_Angmar }
+		relative_position_id = GND_Our_Allies_In_Angmar
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GND_Support_Angmar_Experienced_Orcs
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Our_Allies_In_Angmar }
+		relative_position_id = GND_Our_Allies_In_Angmar
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GND_Offer_Angmar_Volunteers
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Support_Angmar_With_Weapons }
+		prerequisite = { focus = GND_Support_Angmar_Experienced_Orcs }
+		relative_position_id = GND_Support_Angmar_With_Weapons
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GND_The_Iron_Fortress_of_Gundabad
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Battle_of_The_Five_Armies }
+		relative_position_id = GND_The_Battle_of_The_Five_Armies
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+					add_building_construction = {type = bunker level = 4 instant_build = yes province = 4824 }
+				}
+		}
+	}
+	focus = {
+		id = GND_The_Gundabad_Workshops
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Iron_Fortress_of_Gundabad }
+		relative_position_id = GND_The_Iron_Fortress_of_Gundabad
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = GND_The_Gundabad_Forges
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Iron_Fortress_of_Gundabad }
+		relative_position_id = GND_The_Iron_Fortress_of_Gundabad
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = GND_The_Beornings_of_The_North
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Gundabad_Workshops }
+		prerequisite = { focus = GND_The_Gundabad_Forges }
+		relative_position_id = GND_The_Gundabad_Workshops
+		x = 1
+		y = 1
+		cost = 10
+		available = { GND = { has_war = no } }
+		will_lead_to_war_with = GND
+		completion_reward = {
+			GND = { add_state_claim = 68 }
+			create_wargoal = { type = annex_everything target = BGR }
+				if = { limit = { GND = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = BGR }
+				}
+			}
+	}
+	focus = {
+		id = GND_The_Orcs_of_The_North
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Battle_of_The_Five_Armies }
+		relative_position_id = GND_The_Battle_of_The_Five_Armies
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = GND_The_Orcs_of_The_Frozen_Waste
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Orcs_of_The_North }
+		relative_position_id = GND_The_Orcs_of_The_North
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = GND_The_Orcs_of_The_Misty_Mountains
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Orcs_of_The_North }
+		relative_position_id = GND_The_Orcs_of_The_North
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = GND_The_Peoples_Of_Esterwas
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 999 }
+		prerequisite = { focus = GND_The_Orcs_of_The_Frozen_Waste }
+		prerequisite = { focus = GND_The_Orcs_of_The_Misty_Mountains }
+		relative_position_id = GND_The_Orcs_of_The_Frozen_Waste
+		x = 1
+		y = 1
+		cost = 10
+		available = { GND = { has_war = no } }
+		will_lead_to_war_with = EST
+		completion_reward = {
+			GND = { add_state_claim = 196 }
+			create_wargoal = { type = annex_everything target = EST }
+				if = { limit = { GND = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = EST }
+				}
+			}
+		}
+	focus = {
+		id = GND_The_Last_Days_of_The_Dwarves
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Beornings_of_The_North }
+		prerequisite = { focus = GND_The_Peoples_Of_Esterwas }
+		relative_position_id = GND_The_Beornings_of_The_North
+		x = 2
+		y = 1
+		cost = 10
+		available = { GND = { has_war = no } }
+		will_lead_to_war_with = DUR
+		completion_reward = {
+			GND = { add_state_claim = 193 }
+			create_wargoal = { type = annex_everything target = DUR }
+				if = { limit = { GND = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DUR }
+				}
+			}
+		}
+		focus = {
+		id = GND_Our_Eternal_Master
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Last_Days_of_The_Dwarves }
+		relative_position_id = GND_The_Last_Days_of_The_Dwarves
+		x = 0
+		y = 1
+		cost = 10
+		available = { GND = { has_war = no } }
+		will_lead_to_war_with = DUR
+		completion_reward = {
+			MRD = { puppet = GND }
+			}
+		}
+	focus = {
+		id = GND_Our_Allies_In_Dol_Guldor
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_The_Battle_of_The_Five_Armies }
+		relative_position_id = GND_The_Battle_of_The_Five_Armies
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			87 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = GND_Prepare_For_War_Together
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Our_Allies_In_Dol_Guldor }
+		mutually_exclusive = {focus = GND_Prepare_For_War_Alone }
+		relative_position_id = GND_Our_Allies_In_Dol_Guldor
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			DLG = { add_manpower = 20000 }
+			add_opinion_modifier = { target = DLG modifier = large_increase }
+			DLG = { add_opinion_modifier = { target = GND modifier = large_increase } }
+			}
+	}
+	focus = {
+		id = GND_Joint_Industrys
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Prepare_For_War_Together }
+		relative_position_id = GND_Prepare_For_War_Together
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			87 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = GND_Ask_For_The_The_High_Pass
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Joint_Industrys }
+		relative_position_id = GND_Joint_Industrys
+		x = 0
+		y = 1
+		cost = 5
+		available = { BEO = { exists = no } }
+		completion_reward = {
+			GND = { transfer_state = 197 }
+		}
+	}
+	focus = {
+		id = GND_Prepare_For_War_Alone
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Our_Allies_In_Dol_Guldor }
+		mutually_exclusive = {focus = GND_Prepare_For_War_Together }
+		relative_position_id = GND_Our_Allies_In_Dol_Guldor
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_manpower = 30000
+			add_opinion_modifier = { target = DLG modifier = medium_decrease }
+			DLG = { add_opinion_modifier = { target = GND modifier = medium_decrease } }
+			}
+	}
+	focus = {
+		id = GND_Gundabad_Forges
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Prepare_For_War_Alone }
+		relative_position_id = GND_Prepare_For_War_Alone
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = GND_Seize_The_The_High_Pass
+		icon = GFX_goal_lotr_Gundabad
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = GND_Gundabad_Forges }
+		relative_position_id = GND_Gundabad_Forges
+		x = 0
+		y = 1
+		cost = 5
+		available = { BEO = { exists = no } }
+		completion_reward = {
+			GND = { transfer_state = 197 }
+		}
+	}
+}

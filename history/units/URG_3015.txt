@@ -1,0 +1,172 @@
+##### Division Templates #####
+division_template = {
+	name = "Lôke-Innas Rim"
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "Lôke-Scion Rim"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 5190
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 1984
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 5190
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 1984
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 5190
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 1984
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-Innas Rim"
+		location = 4872
+		division_template = "Lôke-Innas Rim"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3746
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 3312
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3746
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 3312
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3746
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 3312
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3746
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 3312
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3746
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 3312
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RHU"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "RHU"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 50
+	}
+}

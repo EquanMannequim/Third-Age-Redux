@@ -1,0 +1,546 @@
+focus_tree = {
+id = Rhun
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = DRA
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = DRA_The_Eastern_Kingdom
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = DRA_A_Kingdom_In_Collapse
+			country_event = DRA.1
+		}
+	}
+
+	focus = {
+		id = DRA_The_Men_of_The_East
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Eastern_Kingdom }
+		relative_position_id = DRA_The_Eastern_Kingdom
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRA_Men_of_The_East
+			country_event = DRA.2
+		}
+	}
+	focus = {
+		id = DRA_The_Rhunic_Civil_War
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Men_of_The_East }
+		relative_position_id = DRA_The_Men_of_The_East
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRA_Rhunic_Civil_War
+			country_event = DRA.3
+			
+		}
+	}
+	focus = {
+		id = DRA_The_Dragon_Scale_Forges
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Rhunic_Civil_War }
+		relative_position_id = DRA_The_Rhunic_Civil_War
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			128 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = DRA_The_Dragon_Workshops
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Rhunic_Civil_War }
+		relative_position_id = DRA_The_Rhunic_Civil_War
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			128 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = DRA_The_Axemen_of_Sagath
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Dragon_Scale_Forges }
+		relative_position_id = DRA_The_Dragon_Scale_Forges
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			or = {
+				DRA = { owns_state = 104 }
+				SAG = {
+                    is_subject_of = DRA
+						}
+					}
+				}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_corps_commander_role = {
+			Character = DRA_Rurzaur
+			traits={ urban_assault_specialist }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = {}
+			}	
+		if = {
+			limit = { SAG = { exists = yes } }
+				annex_country = { target = SAG } }
+				load_oob = DRA_Loke-Flag_Rim
+				}
+			}
+	focus = {
+		id = DRA_The_Cataphracts_of_Urgath
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Dragon_Workshops }
+		relative_position_id = DRA_The_Dragon_Workshops
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			or = {
+				DRA = { owns_state = 130 owns_state = 132 }
+				URG = {
+                    is_subject_of = DRA
+						}
+					}
+				}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_corps_commander_role = {
+			Character = DRA_Calintz
+			traits={ fast_planner }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			visible = {
+			}
+		}
+		if = {
+			limit = { URG = { exists = yes } }
+				annex_country = { target = URG } }
+				load_oob = DRA_Loke_Innas_Rim
+				}
+		}
+	focus = {
+		id = DRA_The_Wainriders_of_Asdriag
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Rhunic_Civil_War }
+		prerequisite = { focus = DRA_The_Dragon_Scale_Forges }
+		prerequisite = { focus = DRA_The_Dragon_Workshops }
+		relative_position_id = DRA_The_Rhunic_Civil_War
+		x = 0
+		y = 2
+		cost = 5
+		available = {
+			or = {
+				DRA = { owns_state = 131 owns_state = 124 }
+				ASD = {
+                    is_subject_of = DRA
+						}
+					}
+				}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_corps_commander_role = {
+			Character = DRA_Borthan
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = {
+			}
+		}
+		if = {
+			limit = { ASD = { exists = yes } }
+				annex_country = { target = ASD } }
+				load_oob = DRA_Rhunic_Wainriders
+				}
+		}
+	focus = {
+		id = DRA_The_Rhunic_Infantry
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Wainriders_of_Asdriag }
+		prerequisite = { focus = DRA_The_Axemen_of_Sagath }
+		relative_position_id = DRA_The_Wainriders_of_Asdriag
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_manpower = 9000
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = lotr_infantry_weapons
+				}
+			}
+		}
+	focus = {
+		id = DRA_The_Rhunic_Heavy_Cavalry
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Wainriders_of_Asdriag }
+		prerequisite = { focus = DRA_The_Cataphracts_of_Urgath }
+		relative_position_id = DRA_The_Wainriders_of_Asdriag
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 5000
+			add_tech_bonus = {
+				name = calvery_bonus
+				bonus = 0.50
+				uses = 2
+				category = lotr_cavalry_light
+				}
+			}
+		}
+	focus = {
+		id = DRA_The_Glittering_Host_of_The_Loke_Rim
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Rhunic_Infantry }
+		prerequisite = { focus = DRA_The_Rhunic_Heavy_Cavalry }
+		relative_position_id = DRA_The_Rhunic_Infantry
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRA_The_Golden_Army
+			}
+		}
+	focus = {
+		id = DRA_The_Kingdom_of_Rhun
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Glittering_Host_of_The_Loke_Rim }
+		relative_position_id = DRA_The_Glittering_Host_of_The_Loke_Rim
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		remove_ideas = DRA_Rhunic_Civil_War
+		swap_ideas = {
+			remove_idea = DRA_A_Kingdom_In_Collapse
+			add_idea = DRA_A_Kingdom_In_Ruin
+				}
+			add_state_core = 130
+			add_state_core = 132
+			add_state_core = 131
+			add_state_core = 104
+			add_state_core = 104
+			set_cosmetic_tag = RHN
+			}
+		}
+	focus = {
+		id = DRA_Rebuild_The_West
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Kingdom_of_Rhun }
+		relative_position_id = DRA_The_Kingdom_of_Rhun
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			104 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				add_building_construction = { type = Infrastructure level = 2 instant_build = yes }
+				}
+				124 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = Infrastructure level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = DRA_Rebuild_The_East
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Kingdom_of_Rhun }
+		relative_position_id = DRA_The_Kingdom_of_Rhun
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			132 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				add_building_construction = { type = Infrastructure level = 1 instant_build = yes }
+				}
+			130 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = Infrastructure level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = DRA_Westwards_Expansion
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Rebuild_The_West }
+		relative_position_id = DRA_Rebuild_The_West
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			DRW = { add_opinion_modifier = { target = DRA modifier = medium_decrease } }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = DRA_Map_The_Brownland_Marshes
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Westwards_Expansion }
+		relative_position_id = DRA_Westwards_Expansion
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		DRA = { transfer_state = 100
+		add_manpower = -1000
+			}
+		}
+	}
+	focus = {
+		id = DRA_Map_The_Dagorlad_Marshes
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Westwards_Expansion }
+		relative_position_id = DRA_Westwards_Expansion
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		DRA = { transfer_state = 203
+		add_manpower = -1000
+			}
+		}
+	}
+	focus = {
+		id = DRA_Formerly_Integrate_The_Marshlands
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Map_The_Brownland_Marshes }
+		prerequisite = { focus = DRA_Map_The_Dagorlad_Marshes }
+		relative_position_id = DRA_Map_The_Brownland_Marshes
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		hidden_effect = {
+		DRW = { add_state_core = 97 add_state_core = 96 transfer_state = 97 transfer_state = 96 } }
+		DRA = {
+		add_state_core = 203
+		add_state_core = 100
+				}
+			}
+		}
+	focus = {
+		id = DRA_The_Last_Tribe
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Rebuild_The_East }
+		relative_position_id = DRA_Rebuild_The_East
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		DRA = { add_opinion_modifier = { target = LOG modifier = large_increase } }
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = DRA_Integrate_The_Closest_Tribe
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Last_Tribe }
+		relative_position_id = DRA_The_Last_Tribe
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			DRA = {
+			transfer_state = 126
+			add_state_core = 126
+			add_manpower = 6500
+			}
+		}
+	}
+	focus = {
+		id = DRA_Send_Forth_Messengers
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Last_Tribe }
+		relative_position_id = DRA_The_Last_Tribe
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		DRA = { add_opinion_modifier = { target = LOG modifier = large_increase } }
+		DRA = { give_guarantee = LOG }
+		}
+	}
+	focus = {
+		id = DRA_Integrate_The_Final_Tribe
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Integrate_The_Closest_Tribe }
+		prerequisite = { focus = DRA_Send_Forth_Messengers }
+		relative_position_id = DRA_Integrate_The_Closest_Tribe
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		annex_country = { target = LOG transfer_troops = yes }
+		swap_ideas = {
+			remove_idea = DRA_A_Kingdom_In_Ruin
+			add_idea = DRA_The_Kingdom_of_Rhun
+				}
+				add_state_core = 207
+				add_state_core = 102
+				add_state_core = 125
+			}
+		}
+	focus = {
+		id = DRA_The_Winemakers_of_Dorwinion
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Formerly_Integrate_The_Marshlands }
+		prerequisite = { focus = DRA_Integrate_The_Final_Tribe }
+		relative_position_id = DRA_Formerly_Integrate_The_Marshlands
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		DRA = {
+		 add_state_claim = 137 add_state_claim = 208 add_state_claim = 103
+		 add_state_claim = 97 add_state_claim = 96 }
+			create_wargoal = { type = annex_everything target = DRW }
+				if = { limit = { DRA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DRW }
+				}
+			}
+	}
+	focus = {
+		id = DRA_Personal_Cupbearers
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Winemakers_of_Dorwinion }
+		relative_position_id = DRA_The_Winemakers_of_Dorwinion
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			208 = { add_compliance = 35 }
+			137 = { add_compliance = 35 }
+			103 = { add_compliance = 35 }
+			96 = { add_compliance = 35 }
+			97 = { add_compliance = 35 }
+			
+		}
+	}
+	focus = {
+		id = DRA_Reinforcements_From_The_East
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_The_Winemakers_of_Dorwinion }
+		relative_position_id = DRA_The_Winemakers_of_Dorwinion
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			load_oob = DRA_Eastern_Reinforcements
+		}
+	}
+	focus = {
+		id = DRA_War_With_Erebor
+		icon = GFX_goal_support_belligerent
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = DRA_Personal_Cupbearers }
+		prerequisite = { focus = DRA_Reinforcements_From_The_East }
+		relative_position_id = DRA_Personal_Cupbearers
+		x = 1
+		y = 1
+		cost = 5
+		available = { DRW = { exists = no } }
+		available = { or = { MRD = { has_war_with = STE } MRD = { has_war_with = DUN } } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = DRW
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = DUR }
+				if = { limit = { DRA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DUR }
+				}
+			}
+		}
+	}

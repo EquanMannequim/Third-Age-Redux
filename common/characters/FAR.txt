@@ -1,0 +1,25 @@
+characters={
+	FAR_karsh={
+		name="Karsh the Whisperer"
+		portraits={
+			civilian={
+				large="GFX_Portrait_karsh"
+				small="GFX_Portrait_karsh"
+			}
+		}
+		country_leader={
+			ideology = melkorist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+}

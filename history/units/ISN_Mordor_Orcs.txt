@@ -1,0 +1,79 @@
+##### Division Templates #####
+division_template = {
+	name = "Orc Brigade"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Brigade"
+		location = 6610
+		division_template = "Orc Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+}

@@ -1,0 +1,173 @@
+characters={
+	ART_aranarth={
+		name="Chieftain Aranarth"
+		portraits={
+			civilian={
+				large="GFX_portrait_arthedain_aranarth"
+			}
+			army = {
+				large="GFX_portrait_arthedain_aranarth"
+				small="GFX_idea_portrait_arthedain_aranarth"
+			}
+		}
+		country_leader={
+			ideology=survivalist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	ART_ferthn={
+		name="Ferthn"
+		portraits={
+			civilian={
+				large="GFX_portrait_arthedain_ferthn"
+			}
+			army = {
+				large="GFX_portrait_arthedain_ferthn"
+				small="GFX_idea_portrait_arthedain_ferthn"
+			}
+		}
+		country_leader={
+			ideology=expansionist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ART_thefeld={
+		name="Thefeld"
+		portraits={
+			civilian={
+				large="GFX_portrait_arthedain_thefeld"
+			}
+			army = {
+				large="GFX_portrait_arthedain_thefeld"
+				small="GFX_idea_portrait_arthedain_thefeld"
+			}
+		}
+		advisor = {
+			idea_token = ART_thefeld
+			slot = treasurer
+			cost = 150
+			traits = { popular_crowdfunder }
+			available = {
+				always = yes
+			}
+		}
+		country_leader={
+			ideology=collectivist
+			expire="1980.1.1.1"
+			id=-1
+		}
+	}
+
+	ART_eransorn={
+		name="Eransorn"
+		portraits={
+			civilian={
+				large="GFX_portrait_men_generic_8"
+			}
+			army = {
+				large="GFX_portrait_men_generic_8"
+				small="GFX_idea_portrait_men_generic_8"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+	ART_treoard={
+		name="Treoard"
+		portraits={
+			civilian={
+				large="GFX_portrait_men_generic_16"
+			}
+			army = {
+				large="GFX_portrait_men_generic_16"
+				small="GFX_idea_portrait_men_generic_16"
+			}
+		}
+		advisor = {
+			idea_token = ART_treoard
+			slot = high_command
+			cost = 150
+			traits = { army_infantry_1 }
+			available = {
+				always = yes
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ART_treomoth={
+		name="Treomoth"
+		portraits={
+			civilian={
+				large="GFX_portrait_men_generic_12"
+			}
+			army = {
+				large="GFX_portrait_men_generic_12"
+				small="GFX_idea_portrait_men_generic_12"
+			}
+		}
+		advisor = {
+			idea_token = ART_treomoth
+			slot = political_advisor
+			cost = 150
+			traits = { arnor_unification_advocate }
+			available = {
+				always = yes
+			}
+		}
+	}
+
+	ART_alliser = {
+		name="Alliser"
+		portraits={
+			army={
+				large="GFX_portrait_men_generic_98"
+				small = "GFX_idea_portrait_men_generic_98"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 3
+		    defense_skill = 5
+		    maneuvering_skill = 2
+		    coordination_skill = 2
+		}
+	}
+}

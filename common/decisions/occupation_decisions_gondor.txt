@@ -1,0 +1,477 @@
+occupation_decisions_gondor = {
+
+	STE_UMA_Occupation = { # Umbar Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				119 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				112 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				58 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				108 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				225 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				119 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				112 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				58 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				108 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				225 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_UMA_Occupation"
+			country_event = lotrsteoccupation.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_UMA_Occupation"
+			country_event = lotrsteoccupation.1
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_HAS_Occupation = { # Haernendor Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				106 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				107 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				110 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				106 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				107 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				110 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_HAS_Occupation"
+			country_event = lotrsteoccupation.2
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_HAS_Occupation"
+			country_event = lotrsteoccupation.2
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_MRD_Occupation = { # Mordor Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				188 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				186 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				12 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				4 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				10 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				5 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				189 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				6 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				188 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				118 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				186 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				12 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				4 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				10 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				5 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				189 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				6 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_MRD_Occupation"
+			country_event = lotrsteoccupation.3
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_MRD_Occupation"
+			country_event = lotrsteoccupation.3
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_MRG_Occupation = { # Watch on Mordor Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				204 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				2 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				204 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				2 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_MRG_Occupation"
+			country_event = lotrsteoccupation.4
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_MRG_Occupation"
+			country_event = lotrsteoccupation.4
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_SAG_Occupation = { # Sagath Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				203 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				104 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				208 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				203 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				104 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				208 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_SAG_Occupation"
+			country_event = lotrsteoccupation.5
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_SAG_Occupation"
+			country_event = lotrsteoccupation.5
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_ASD_Occupation = { # Asdriag Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				124 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				131 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				124 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				131 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_ASD_Occupation"
+			country_event = lotrsteoccupation.6
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_ASD_Occupation"
+			country_event = lotrsteoccupation.6
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_DRA_Occupation = { # Urgath Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				128 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				129 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				130 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				128 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				129 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				130 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_URG_Occupation"
+			country_event = lotrsteoccupation.7
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_URG_Occupation"
+			country_event = lotrsteoccupation.7
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_DRW_Occupation = { # Dorwinion Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				137 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				103 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				137 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				103 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_DRW_Occupation"
+			country_event = lotrsteoccupation.8
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_DRW_Occupation"
+			country_event = lotrsteoccupation.8
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	STE_MET_Occupation = { # Methir Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+		}
+		activation = {
+			tag = STE
+			STE = {
+				105 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				105 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_MET_Occupation"
+			country_event = lotrsteoccupation.9
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_MET_Occupation"
+			country_event = lotrsteoccupation.9
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

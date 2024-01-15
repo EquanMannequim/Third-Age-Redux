@@ -1,0 +1,156 @@
+ideas = {
+
+	country = {
+		UMA_heir_of_numenor = {
+			allowed = {	always = no	}
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				war_support_factor = 0.05
+				army_morale_factor = 0.03
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+
+		UMA_thin_blood_of_numenor = {
+			allowed = {	always = no}
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				conscription_factor = -0.65
+				political_power_factor = -0.10
+				conscription_law_cost_factor = 1.5
+				mercenary_law_cost_factor = 1.5
+				trade_law_cost_factor = 0.5
+				taxation_law_cost_factor = 1.5
+			}
+		}
+
+		UMA_sack_of_umbar = {
+			allowed = {	always = no }
+			picture = GFX_idea_UMA_sack_of_umbar 				
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		UMA_the_umbar_trade_fleet = {
+			allowed = { always = no	}
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				local_resources_factor = 0.1
+				experience_gain_navy_factor = 0.15
+				naval_accidents_chance = -0.65
+				trade_law_cost_factor = -0.25 				
+			}
+		}
+
+		UMA_numenorian_training = {
+			allowed = { always = no }
+			picture = GFX_idea_UMA_numenorian_training
+			modifier = {
+				war_support_factor = 0.15
+				army_morale = 0.10
+				army_core_defence_factor = 0.10
+				army_org_factor = 0.05
+			}
+		}
+
+		UMA_the_crown_of_numenor = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = 0.20
+				war_support_factor = 0.05
+			}
+		}
+
+		UMA_the_gift_from_mordor = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.40
+				war_support_factor = 0.25
+			}
+		}
+		
+		UMA_restored_blood_of_numenor = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_restored_blood_of_numenor
+			modifier = {
+				conscription_factor = 0.35
+				army_morale = 0.05
+				army_org_factor = 0.05
+		}
+	}
+	UMA_umbar_pirate_raid = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_restored_blood_of_numenor
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				army_morale = -0.2
+				mobilization_speed = -0.15
+		}
+		targeted_modifier = {
+				tag = UMA
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.15
+			}
+	}
+	
+	UMA_tolfalas_raided = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_restored_blood_of_numenor
+			modifier = {
+				conscription_factor = 0.15
+				army_morale = 0.1
+				mobilization_speed = 0.15
+		}
+		targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+	}
+	UMA_belfalas_raided = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_restored_blood_of_numenor
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.10
+		}
+		targeted_modifier = {
+				tag = STE
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		UMA_black_numenorians = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_black_numenorians
+			modifier = {
+				conscription_factor = 0.55
+			}
+		}
+		
+		UMA_mordor_advisors = {
+			allowed = {always = no }
+			picture = GFX_idea_UMA_restored_blood_of_numenor
+			modifier = {
+				conscription_factor = 0.10
+				army_org_factor = -0.02
+				army_morale = -0.03
+			}
+		}
+	}
+}

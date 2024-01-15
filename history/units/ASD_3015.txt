@@ -1,0 +1,172 @@
+##### Division Templates #####
+division_template = {
+	name = "Wainriders"		# Motor Rifle Division
+											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns)
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Lôke-Scion Rim"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Rhunic Wainriders"
+		location = 4627
+		division_template = "Wainriders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Rhunic Wainriders"
+		location = 2512
+		division_template = "Wainriders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Rhunic Wainriders"
+		location = 6678
+		division_template = "Wainriders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Rhunic Wainriders"
+		location = 6678
+		division_template = "Wainriders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Western Scouting Division"
+		location = 663
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Western Scouting Division"
+		location = 663
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 3480
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Western Scouting Division"
+		location = 663
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RHU"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}

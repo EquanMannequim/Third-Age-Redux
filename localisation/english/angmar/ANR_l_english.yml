@@ -1,0 +1,197 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ 
+ ANR_The_War_In_The_North:0 "The War In The North"
+ ANR_The_War_In_The_North_desc:0 ""
+ 
+ ANR_The_Fall_of_Angmar:0 "The Fall of Angmar"
+ ANR_The_Fall_of_Angmar_desc:0 ""
+ 
+ ANR_The_Rise_of_Agandur:0 "The Rise of Agandur"
+ ANR_The_Rise_of_Agandur_desc:0 ""
+ 
+ ANR_The_Morkail_Uruks:0 "he Morkail Uruks"
+ ANR_The_Morkail_Uruks_desc:0 ""
+ 
+ ANR_Integrate_The_Uruks:0 "Integrate The Uruks"
+ ANR_Integrate_The_Uruks_desc:0 ""
+ 
+ ANR_The_Litash_Warbands:0 "The Litash Warbands"
+ ANR_The_Litash_Warbands_desc:0 ""
+ 
+ ANR_Integrate_The_Orcs:0 "Integrate The Orcs"
+ ANR_Integrate_The_Orcs_desc:0 ""
+ 
+ ANR_The_People_of_Forochel:0 "The People of Forochel"
+ ANR_The_People_of_Forochel_desc:0 ""
+ 
+ ANR_The_Rhudarian_Clans:0 "The Rhudarian Clans"
+ ANR_The_Rhudarian_Clans_desc:0 ""
+ 
+ ANR_A_Lifetime_Of_Service:0 "A Lifetime Of Service"
+ ANR_A_Lifetime_Of_Service_desc:0 ""
+ 
+ ANR_Conquer_The_Traitors:0 "Conquer The Traitors"
+ ANR_Conquer_The_Traitors_desc:0 ""
+ 
+ ANR_The_Kingdom_of_Angmar_Reborn:0 "The Kingdom of Angmar Reborn"
+ ANR_The_Kingdom_of_Angmar_Reborn_desc:0 ""
+ 
+ ANR_Subjugate_The_Ashkai_Tribes:0 "Subjugate The Ashkai Tribes"
+ ANR_Subjugate_The_Ashkai_Tribes_desc:0 ""
+ 
+ ANR_The_Iron_Crown_Infantry:0 "The Iron Crown Infantry"
+ ANR_The_Iron_Crown_Infantry_desc:0 ""
+ 
+ ANR_Integrate_The_Ashkai_Tribes:0 "Integrate The Ashkai Tribes"
+ ANR_Integrate_The_Ashkai_Tribes_desc:0 ""
+ 
+ ANR_Athilin_Infastructure:0 "Athilin Infastructure"
+ ANR_Athilin_Infastructure_desc:0 ""
+ 
+ ANR_Subjugate_The_Fualgurum_Orcs:0 "Subjugate The Fualgurum_Orcs"
+ ANR_Subjugate_The_Fualgurum_Orcs_desc:0 ""
+ 
+ ANR_Integrate_The_Fualgurum_Orcs:0 "Integrate The Fualgurum Orcs"
+ ANR_Integrate_The_Fualgurum_Orcs_desc:0 ""
+ 
+ ANR_Emyn_Uial_Infastructure:0 "Emyn Uial Infastructure"
+ ANR_Emyn_Uial_Infastructure_desc:0 ""
+ 
+ Destroy_The_Arnorian_Remnants:0 "Destroy The Arnorian Remnants"
+ Destroy_The_Arnorian_Remnants_desc:0 ""
+ 
+ The_Return_of_The_Witch_King:0 "The Return of The Witch King"
+ The_Return_of_The_Witch_King_desc:0 ""
+ 
+ ANR_The_Wargs_of_The_North:0 "The Wargs of The North"
+ ANR_The_Wargs_of_The_North_desc:0 ""
+ 
+ ANR_The_Northern_Industry:0 "The Northern Industry"
+ ANR_The_Northern_Industry_desc:0 ""
+ 
+ ANR_The_Frozen_Workshops:0 "The FrozenWorkshops"
+ ANR_The_Frozen_Workshops_desc:0 ""
+ 
+ ANR_The_Iron_Workshops:0 "The Iron Workshops"
+ ANR_The_Iron_Workshops_desc:0 ""
+ 
+ ANR_Northern_Innovations:0 "Northern Innovations"
+ ANR_Northern_Innovations_desc:0 ""
+ 
+ ANR_The_Cold_Forges:0 "The Cold Forges"
+ ANR_The_Cold_Forges_desc:0 ""
+ 
+ ANR_The_Iron_Forges:0 "The Iron Forges"
+ ANR_The_Iron_Forges_desc:0 ""
+ 
+ ANR_The_Carn_Dum_Industry:0 "The Carn Dum Industry"
+ ANR_The_Carn_Dum_Industry_desc:0 ""
+ 
+ ANR_The_Peoples_of_The_Far_North:0 "The Peoples of The Far North"
+ ANR_The_Peoples_of_The_Far_North_desc:0 ""
+ 
+ ANR_The_Men_of_The_Far_North:0 "The Men of The Far North"
+ ANR_The_Men_of_The_Far_North_desc:0 ""
+ 
+ ANR_The_Rhudar_Exiles:0 "The Rhudar Exiles"
+ ANR_The_Rhudar_Exiles_desc:0 ""
+ 
+ ANR_Knowledge_of_The_Northern_Peoples:0 "Knowledge of The Northern Peoples"
+ ANR_Knowledge_of_The_Northern_Peoples_desc:0 ""
+ 
+ ANR_The_Orcs_of_The_Far_North:0 "The Orcs of The Far North"
+ ANR_The_Orcs_of_The_Far_North_desc:0 ""
+ 
+ ANR_The_Uruks_Of_The_Frozen_Wastes:0 "The Uruks Of The Frozen Wastes"
+ ANR_The_Uruks_Of_The_Frozen_Wastes_desc:0 ""
+ 
+ ANR_The_Northern_Peoples:0 "The Northern Peoples"
+ ANR_The_Northern_Peoples_desc:0 ""
+ 
+ ANR_The_Fortress_of_Gundabad:0 "The Fortress of Gundabad"
+ ANR_The_Fortress_of_Gundabad_desc:0 ""
+ 
+ ANR_Joint_Industrial_Effort:0 "Joint Industrial Effort"
+ ANR_Joint_Industrial_Effort_desc:0 ""
+ 
+ ANR_United_Supply_Lines:0 "United Supply Lines"
+ ANR_United_Supply_Lines_desc:0 ""
+ 
+ ANR_Conquer_Eriador:0 "Conquer Eriador"
+ ANR_Conquer_Eriador_desc:0 ""
+ 
+ ANR_Conquer_The_Blue_Mountains:0 "Conquer The Blue Mountains"
+ ANR_Conquer_The_Blue_Mountains_desc:0 ""
+ 
+ ANR_Conquer_Forochel:0 "Conquer Forochel"
+ ANR_Conquer_Forochel_desc:0 ""
+  
+ ANR_Conquer_Southern_Eriador:0 "Conquer Southern Eriador"
+ ANR_Conquer_Southern_Eriador_desc:0 ""
+  
+ ANR_Conquer_The_Tribes_of_Enedwaith:0 "Conquer The Tribes of Enedwaith"
+ ANR_Conquer_The_Tribes_of_Enedwaith_desc:0 ""
+ 
+################################### IDEAS                       \n      §H§!
+ANR_the_war_in_the_north:0 "The War In The North"
+
+ANR_the_fall_angmar:0 "The Fall Angmar"
+
+ANR_the_numenorian_sorcerer:0 "The Numenorian Sorcerer"
+
+ANR_angmar_reborn:0 "Angmar Reborn"
+
+
+################################### DECISIONS                   \n      §H§! 
+ 
+
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ ANR.1.t:0 "The War In The North"
+ ANR.1.d:0 "Around 1330 T.A the Nazgul known only as The Witch King came North on orders of Sauron with a mission to destroy the Dunedain Kingdom of Arnor. During this time he rallied many of the northern orcs and corrupted the Men of Rhudar. By T.A 1409 a large army from Angmar invaded Cardolan and besieged Weathertop. The forces of Angmar defeated the Dúnedain, killed King Arveleg I and burned and destroyed the Tower of Amon Sûl, which stood on Weathertop.\n\n In T.A. 1974 Angmar had recovered to it's full strength and invaded Arthedain from the north before the end of the winter. The Witch-king overran Arthedain and conquered the capital of Fornost before the end of the year and drove away the remaining Dúnedain"
+ ANR.2.t:0 "The Fall of Angmar"
+ ANR.2.d:0 "In T.A 1975  Prince Eärnur of Gondor arrived with his fleet at the havens of Lindon. He and Círdan gathered a force from Lindon and Gondor and crossed the river Lhûn and marched north. The Witch-king came from Fornost with the forces of Angmar to meet them, but was defeated in a battle on the plain between Lake Evendim and the North Downs. The Witch-king fled northwards with a remnant of his forces in the direction of Angmar, but his forces were overtaken by the cavalry of Gondor and by forces led by the Elf-lord Glorfindel who came north from Rivendell. The Witch-king was able to escape to the north on a black horse, but the realm of Angmar was utterly defeated."
+ ANR.3.t:0 "The Rise of Agandur"
+ ANR.3.d:0 "Now in T.A 3015 the Black Numenorian known as Agandur has taken command of the fortress of Carn Dum with orders from the Witch King to retake former Angmaran teritorys and secure Eriador in the name of Lord Sauron."
+ ANR.4.t:0 ""
+ ANR.4.d:0 ""
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!

@@ -1,0 +1,91 @@
+# Some countries (Isengard / Angmar) switch from human to orc.
+# You can use this effect to give them a couple of generic orc advisors.
+lotr_switch_to_orcs = {
+	
+	custom_effect_tooltip = lotr_switch_to_orcs_tooltip
+
+	hidden_effect = { set_cosmetic_tag = ORCGENERIC } # This gives us orc unit models and generic portraits
+
+	set_country_flag = has_switched_to_orcs # This unlocks the researcher advisors (see ideas/zzz_lotr_advisors_orcs_switcheroo)
+
+}
+
+
+# Mirkwood can switch from elves to spiders.
+# You can use this effect to give them a couple of generic spider advisors.
+lotr_switch_to_spiders = {
+	
+	custom_effect_tooltip = lotr_switch_to_spiders_tooltip
+
+	hidden_effect = { set_cosmetic_tag = SPIDERGENERIC } # This gives us spider names and portraits
+
+	set_country_flag = has_switched_to_spiders
+
+}
+
+
+
+# Update the modifier given by races
+# NOTE: Does NOT remove one if you already have one. Make sure no modifier is already present!
+lotr_apply_race_modifier = {
+	if = {
+		limit = { is_men = yes }
+		add_ideas = idea_race_men_modifier
+	}
+	else_if = {
+		limit = { is_edain = yes }
+		add_ideas = idea_race_edain_modifier
+	}
+	else_if = {
+		limit = { is_noldor = yes }
+		add_ideas = idea_race_noldor_modifier
+	}
+	else_if = {
+		limit = { is_sindar = yes }
+		add_ideas = idea_race_sindar_modifier
+	}
+	else_if = {
+		limit = { is_silvan = yes }
+		add_ideas = idea_race_silvan_modifier
+	}
+	else_if = {
+		limit = { is_entling = yes }
+		add_ideas = idea_race_entling_modifier
+	}
+	else_if = {
+		limit = { is_firebeard = yes }
+		add_ideas = idea_race_firebeard_modifier
+	}
+	else_if = {
+		limit = { is_broadbeam = yes }
+		add_ideas = idea_race_broadbeam_modifier
+	}
+	else_if = {
+		limit = { is_longbeard = yes }
+		add_ideas = idea_race_longbeard_modifier
+	}
+	else_if = {
+		limit = { is_black_uruk = yes }
+		add_ideas = idea_race_black_uruk_modifier
+	}
+	else_if = {
+		limit = { is_hobbitling = yes }
+		add_ideas = idea_race_hobbitling_modifier
+	}
+	else_if = {
+		limit = { is_spiderling = yes }
+		add_ideas = idea_race_spiderling_modifier
+	}
+	else_if = {
+		limit = { is_easterling = yes }
+		add_ideas = idea_race_easterling_modifier
+	}
+	else_if = {
+		limit = { is_uruk_hai = yes }
+		add_ideas = idea_race_uruk_hai_modifier
+	}
+	else_if = {
+		limit = { is_dunedain = yes }
+		add_ideas = idea_race_dunedain_modifier
+	}
+}

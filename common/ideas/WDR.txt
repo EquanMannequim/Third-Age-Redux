@@ -1,0 +1,40 @@
+ideas = {
+
+	country = {
+
+		WRD_the_flight_north = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = -0.10
+				mobilization_speed = -0.05
+				
+			}
+		}
+
+		WDR_the_death_of_king_oropher = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				stability_factor = -0.10
+				army_morale = -0.02
+			}
+		}
+
+		WDR_the_battle_of_five_armies = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				war_support_factor = 0.10
+				political_power_factor = 0.05
+				army_core_defence_factor = 0.10
+				army_org_factor = 0.15
+			}
+		}

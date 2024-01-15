@@ -1,0 +1,21 @@
+##### Division Templates #####
+division_template = {
+	name = "Dunlanding Clansmen"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+}
+
+##### OOB #####
+	units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Dunlanding Clansmen"
+		location = 925
+		division_template = "Dunlanding Clansmen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}

@@ -1,0 +1,67 @@
+characters={
+	WRD_Thranduils={
+		name="King Thranduil"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Thranduil"
+				small="GFX_Portrait_Thranduil"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = {  indomitable_perseverance }
+		}
+		
+		field_marshal={
+			traits={ inspirational_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	WRD_Legolas={
+		name="Legolas"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Legolas"
+				small="GFX_Portrait_Legolas"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	TAU_Legolas={
+		name="King Thranduil"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Legolas"
+				small="GFX_Portrait_Legolas"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = {  indomitable_perseverance }
+		}
+		
+		field_marshal={
+			traits={ inspirational_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+}

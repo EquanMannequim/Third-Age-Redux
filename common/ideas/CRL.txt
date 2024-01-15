@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+		CRL_The_Riverfolk_of_Enedwaith = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ea_resolution_icon_hegemony
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = 0.10
+				conscription_factor = 0.05
+				mobilization_speed = 0.02
+			}
+		}
+		CRL_The_Ancient_City_of_Lond_Daer = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		CRL_The_Gwathlo_Riverfolk = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = swan_knights
+
+			modifier = {
+				war_support_factor = 0.02
+				stability_factor = 0.05
+			}
+		}
+	}

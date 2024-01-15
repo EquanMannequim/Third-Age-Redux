@@ -1,0 +1,1332 @@
+focus_tree = {
+id = umbar
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = UMA
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = Heirs_of_Numenor
+		icon = GFX_goal_the_one_ring
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			UMA = { hidden_effect = { set_country_flag = TA_UMA_Numenorean_Supremacy_Path } }
+			country_event = UMA.1
+			add_ideas = UMA_heir_of_numenor
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = Castamir's_Failure
+		icon = GFX_goal_lotr_castamirs_failure
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Heirs_of_Numenor }
+		relative_position_id = Heirs_of_Numenor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.2
+			add_ideas = UMA_thin_blood_of_numenor
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = The_Sack_of_Umbar
+		icon = GFX_goal_lotr_the_sack_of_umbar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Castamir's_Failure }
+		relative_position_id = Castamir's_Failure
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.3
+			add_ideas = UMA_sack_of_umbar
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = The_Haven_of_Umbar
+		icon = GFX_goal_lotr_the_haven_of_umbar
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Sack_of_Umbar }
+		relative_position_id = The_Sack_of_Umbar
+		x = 0
+		y = 1
+		cost = 7
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = dockyard level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Corsair_Fleet
+		icon = GFX_goal_lotr_The_Corsair_Fleet
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Haven_of_Umbar }
+		relative_position_id = The_Haven_of_Umbar
+		x = -1
+		y = 1
+		cost = 7
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = dockyard level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Corsair_Armories
+		icon = GFX_goal_lotr_The_Corsair_Armories
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Haven_of_Umbar }
+		relative_position_id = The_Haven_of_Umbar
+		x = 1
+		y = 1
+		cost = 7
+		completion_reward = {
+			108 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Umbar_Trade_Market
+		icon = GFX_goal_lotr_The_Umbar_Trade_Market
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Corsair_Armories }
+		prerequisite = { focus = The_Corsair_Fleet }
+		relative_position_id = The_Corsair_Armories
+		x = -1
+		y = 1
+		cost = 7
+		completion_reward = {
+			add_manpower = 10000
+			swap_ideas = {
+				remove_idea = UMA_sack_of_umbar
+				add_idea = UMA_the_umbar_trade_fleet
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			108 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+			108 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+			108 = {
+			add_resource = {
+                type = rubber
+                amount = 9
+				}
+			}
+			
+			108 = {
+			add_resource = {
+                type = chromium
+                amount = 16
+				}
+			}
+		}
+	}
+	focus = {
+		id = Seek_Trade_Routes_South
+		icon = GFX_goal_lotr_Seek_Trade_Routes_South
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Umbar_Trade_Market }
+
+		relative_position_id = The_Umbar_Trade_Market
+		x = -1
+		y = 1
+		cost = 7
+		completion_reward = {
+		108 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		108 = {
+				add_resource = {
+					type = tungsten
+					amount = 18
+				}
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Seek_Increased_Trade_With_Harad
+		icon = GFX_goal_lotr_Seek_Increased_Trade_With_Harad
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Umbar_Trade_Market }
+
+		relative_position_id = The_Umbar_Trade_Market
+		x = 1
+		y = 1
+		cost = 7
+		completion_reward = {
+		108 = {
+			add_resource = {
+                type = rubber
+                amount = 18
+				}
+			}
+			
+		108 = {
+			add_resource = {
+                type = chromium
+                amount = 14
+				}
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = The_Enemy_to_our_South
+		icon = GFX_goal_lotr_The_Enemy_to_our_South
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Sack_of_Umbar }
+		relative_position_id = The_Sack_of_Umbar
+		x = -6
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = A_New_Class_of_Officer
+		icon = GFX_goal_lotr_A_New_Class_of_Officer
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Enemy_to_our_South }
+		relative_position_id = The_Enemy_to_our_South
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 50
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = A_Loyal_General
+		icon = GFX_goal_lotr_A_Loyal_General
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = A_New_Class_of_Officer }
+		prerequisite = { focus = Desert_Training focus = Mountain_Training }
+		relative_position_id = A_New_Class_of_Officer
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.4
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Numenorian_Equipment
+		icon = GFX_goal_lotr_Numenorian_Equipment
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = A_Loyal_General }
+		prerequisite = { focus = Desert_Training focus = Mountain_Training }
+		relative_position_id = A_Loyal_General
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			225 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = lotr_infantry_weapons
+				}
+		}
+	}
+	focus = {
+		id = Numenorian_Training_Methods
+		icon = GFX_goal_lotr_Numenorian_Training_Methods
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Enemy_to_our_South }
+		relative_position_id = The_Enemy_to_our_South
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_ideas = UMA_numenorian_training
+			army_experience = 25
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = A_Visitor_from_the_South
+		icon = GFX_goal_lotr_A_Visitor_from_the_South
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Numenorian_Training_Methods }
+		prerequisite = { focus = Desert_Training focus = Mountain_Training }
+		relative_position_id = Numenorian_Training_Methods
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.5
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Numenorian_Bow_Designs
+		icon = GFX_goal_lotr_Numenorian_Bow_Designs
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = A_Visitor_from_the_South }
+		prerequisite = { focus = Desert_Training focus = Mountain_Training }
+		relative_position_id = A_Visitor_from_the_South
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			225 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_tech_bonus = {
+				name = ROH_artillery_modernisation
+				bonus = 0.75
+				uses = 1
+				category = lotr_infantry_archery
+			}
+		}
+	}
+	
+	focus = {
+		id = Desert_Training
+		icon = GFX_goal_lotr_Desert_Training
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Enemy_to_our_South }
+		mutually_exclusive = {focus = Mountain_Training }
+		relative_position_id = The_Enemy_to_our_South
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_Desert_Training
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Mountain_Training
+		icon = GFX_goal_lotr_Mountain_Training
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Enemy_to_our_South }
+		mutually_exclusive = {focus = Desert_Training }
+		relative_position_id = The_Enemy_to_our_South
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_Mountain_Training
+				add_political_power = 30
+		}
+	}
+	focus = {
+		id = Secure_The_Southern_Coast
+		icon = GFX_goal_lotr_Secure_The_Southern_Coast
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Mountain_Training focus = Desert_Training }
+		prerequisite = { focus = Numenorian_Equipment }
+		prerequisite = { focus = Numenorian_Bow_Designs }
+		relative_position_id = Numenorian_Equipment
+		x = 1
+		y = 1
+		cost = 5
+		available = { UMA = { has_war = no } }
+		will_lead_to_war_with = ANA
+		completion_reward = {
+			108 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 5321
+				}
+			}
+			UMA = { add_state_claim = 112 add_state_claim = 119 add_state_claim = 58 }
+			create_wargoal = { type = annex_everything target = ANA }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ANA }
+				}
+			}
+		}
+	focus = {
+		id = Integrate_The_Coast
+		icon = GFX_goal_lotr_Integrate_The_Coast
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Secure_The_Southern_Coast }
+		relative_position_id = Secure_The_Southern_Coast
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			owns_state = 119
+			owns_state = 112
+			owns_state = 58
+		}
+		completion_reward = {
+			add_manpower = 15000
+			58 = { add_compliance = 35 }
+			112 = { add_compliance = 35 }
+			119 = { add_compliance = 35 }
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			58 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = The_Third_Kingdom_of_Men
+		icon = GFX_goal_umbar_big_left
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Integrate_The_Coast }
+		prerequisite = { focus = Integrate_Harondor }
+		mutually_exclusive = { focus = The_Corsair_Stronghold }
+		relative_position_id = Integrate_The_Coast
+		x = 3
+		y = 1
+		cost = 5
+		available = { has_idea = UMA_the_crown_of_numenor }
+		completion_reward = {
+			hidden_effect = { set_country_flag = TA_UMA_Numenorean_Supremacy_Path }
+			set_cosmetic_tag = ANE
+			add_research_slot = 1
+			if = {
+				limit = {
+					has_idea = UMA_the_gift_from_mordor }
+			start_civil_war = {
+				ideology = belligerent
+					size = 0.3
+					}
+					country_event = UMA.9
+				}
+				else = { add_political_power = 30
+				}
+			}
+
+			add_political_power = 30
+		}
+	focus = {
+		id = Deal_With_The_Disloyal_Corsairs
+		icon = GFX_goal_lotr_Deal_With_The_Disloyal_Corsairs
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Third_Kingdom_of_Men }
+		relative_position_id = The_Third_Kingdom_of_Men
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = -5000
+			add_state_core = 58
+			add_state_core = 112
+			add_state_core = 119
+			add_state_core = 106
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Prepare_For_War_With_Gondor
+		icon = GFX_goal_lotr_Prepare_For_War_With_Gondor
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Deal_With_The_Disloyal_Corsairs }
+		relative_position_id = Deal_With_The_Disloyal_Corsairs
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_faction = "Anadûnê"
+			swap_ideas = {
+				remove_idea = UMA_thin_blood_of_numenor
+				add_idea = UMA_restored_blood_of_numenor
+			}
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Prepare_The_Armada
+		icon = GFX_goal_lotr_Prepare_The_Armada
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Prepare_For_War_With_Gondor }
+		relative_position_id = Prepare_For_War_With_Gondor
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			navy_experience = 25 
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Lighting_Raid_Tolfalas
+		icon = GFX_goal_lotr_Lighting_Raid_Tolfalas
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Prepare_The_Armada }
+		relative_position_id = Prepare_The_Armada
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_timed_idea = { days = 365 idea = UMA_tolfalas_raided }
+		}
+	}
+	focus = {
+		id = Rally_The_KING'S_Men
+		icon = GFX_goal_lotr_Rally_The_KINGS_Men
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Prepare_For_War_With_Gondor }
+		relative_position_id = Prepare_For_War_With_Gondor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 45000
+			add_political_power = 30
+			load_oob = UMA_Kings_Men_Infantry
+		}
+	}
+	focus = {
+		id = Form_A_Royal_Guard
+		icon = GFX_goal_lotr_Form_A_Royal_Guard
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Rally_The_KING'S_Men }
+		relative_position_id = Rally_The_KING'S_Men
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			hidden_effect = {
+			if = { limit = { basic_medium_tank = 0 } set_technology = { basic_medium_tank = 1 }
+				}
+			}
+			load_oob = UMA_Kings_Guard
+			
+
+		}
+	}
+	focus = {
+		id = UMA_Prepare_To_Raid_Lebennin
+		icon = GFX_goal_lotr_Prepare_To_Storm_The_Ethir_Anduin
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Prepare_For_War_With_Gondor }
+		relative_position_id = Prepare_For_War_With_Gondor
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 25
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = UMA_Lighting_Raid_Pelargir
+		icon = GFX_goal_lotr_Lighting_Raid_Anduin
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Prepare_To_Raid_Lebennin }
+		relative_position_id = UMA_Prepare_To_Raid_Lebennin
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_timed_idea = { days = 365 idea = UMA_belfalas_raided }
+		}
+	}
+	focus = {
+		id = UMA_War_With_The_Faithful
+		icon = GFX_goal_lotr_War_With_Dol_Amroth
+		ai_will_do = { factor = 20 }
+		will_lead_to_war_with = MET
+		will_lead_to_war_with = STE
+		will_lead_to_war_with = BEL
+		prerequisite = { focus = Form_A_Royal_Guard }
+		prerequisite = { focus = UMA_Lighting_Raid_Pelargir }
+		prerequisite = { focus = Lighting_Raid_Tolfalas }
+		relative_position_id = Form_A_Royal_Guard
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			UMA = { add_state_claim = 224 
+					add_state_claim = 223 
+					add_state_claim = 13 
+					add_state_claim = 14 
+					add_state_claim = 105 }
+				if = { limit = { MET = { exists = no } }
+			create_wargoal = { type = annex_everything target = BEL }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = BEL } } }
+				else = { create_wargoal = { type = annex_everything target = MET }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MET }
+					}
+				}
+			}
+		}
+	focus = {
+		id = UMA_Raise_The_Banner_Over_Minas_Tirith
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		will_lead_to_war_with = MET
+		available = { UMA = { has_war = no } }
+		available = { UMA = { owns_state = 163 } }
+		prerequisite = { focus = UMA_War_With_The_Faithful }
+		mutually_exclusive = {focus = UMA_Raise_The_Banner_Over_Pelargir }
+		relative_position_id = UMA_War_With_The_Faithful
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			163 = { add_compliance = 55 }
+			167 = { add_compliance = 55 }
+			21 = { add_compliance = 55 }
+			164 = { add_compliance = 55 }
+			19 = { add_compliance = 55 }
+			176 = { add_compliance = 55 }
+			170 = { add_compliance = 55 }
+			13 = { add_compliance = 55 }
+			223 = { add_compliance = 55 }
+			14 = { add_compliance = 55 }
+			224 = { add_compliance = 55 }
+			169 = { add_compliance = 55 }
+			174 = { add_compliance = 55 }
+			171 = { add_compliance = 55 }
+			168 = { add_compliance = 55 }
+			165 = { add_compliance = 55 }
+			16 = { add_compliance = 55 }
+			166 = { add_compliance = 55 }
+			162 = { add_compliance = 55 }
+			15 = { add_compliance = 55 }
+			}
+		}
+	focus = {
+		id = UMA_Raise_The_Banner_Over_Pelargir
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		available = { UMA = { has_war = no } }
+		available = { UMA = { owns_state = 164 } }
+		prerequisite = { focus = UMA_War_With_The_Faithful }
+		mutually_exclusive = {focus = UMA_Raise_The_Banner_Over_Minas_Tirith }
+		relative_position_id = UMA_War_With_The_Faithful
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			164 = { add_compliance = 55 }
+			19 = { add_compliance = 55 }
+			176 = { add_compliance = 55 }
+			170 = { add_compliance = 55 }
+			13 = { add_compliance = 55 }
+			223 = { add_compliance = 55 }
+			14 = { add_compliance = 55 }
+			224 = { add_compliance = 55 }
+			169 = { add_compliance = 55 }
+			105 = { add_compliance = 55 }
+			}
+		}
+	focus = {
+		id = UMA_Rally_The_Dunedain_Against_Mordor
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Raise_The_Banner_Over_Pelargir focus = UMA_Raise_The_Banner_Over_Minas_Tirith }
+		relative_position_id = UMA_Raise_The_Banner_Over_Minas_Tirith
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			if = { limit = { UMA = { has_completed_focus = UMA_Raise_The_Banner_Over_Pelargir } }
+				ROOT = { add_state_core = 164 }
+				ROOT = { add_state_core = 19 }
+				ROOT = { add_state_core = 176 }
+				ROOT = { add_state_core = 170 }
+				ROOT = { add_state_core = 13 }
+				ROOT = { add_state_core = 223 }
+				ROOT = { add_state_core = 14 }
+				ROOT = { add_state_core = 224 }
+				ROOT = { add_state_core = 169 } 
+				ROOT = { add_state_core = 105 } 
+					}
+			else = {
+				ROOT = { add_state_core = 163 }
+				ROOT = { add_state_core = 167 }
+				ROOT = { add_state_core = 21 }
+				ROOT = { add_state_core = 164 }
+				ROOT = { add_state_core = 19 }
+				ROOT = { add_state_core = 176 }
+				ROOT = { add_state_core = 170 }
+				ROOT = { add_state_core = 13 }
+				ROOT = { add_state_core = 223 }
+				ROOT = { add_state_core = 14 }
+				ROOT = { add_state_core = 224 }
+				ROOT = { add_state_core = 169 }
+				ROOT = { add_state_core = 174 }
+				ROOT = { add_state_core = 171 }
+				ROOT = { add_state_core = 168 }
+				ROOT = { add_state_core = 165 }
+				ROOT = { add_state_core = 16 }
+				ROOT = { add_state_core = 166 }
+				ROOT = { add_state_core = 162 }
+				ROOT = { add_state_core = 15 }
+					}
+				}
+			}
+	focus = {
+		id = UMA_Raise_Militia_Battalions
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Rally_The_Dunedain_Against_Mordor }
+		relative_position_id = UMA_Rally_The_Dunedain_Against_Mordor
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000
+			}
+		}
+	focus = {
+		id = UMA_Rally_The_Proffesional_Soldiers
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Rally_The_Dunedain_Against_Mordor }
+		relative_position_id = UMA_Rally_The_Dunedain_Against_Mordor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_Gondorian_Remnants
+			}
+		}
+	focus = {
+		id = UMA_Raise_The_Reserves
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Rally_The_Dunedain_Against_Mordor }
+		relative_position_id = UMA_Rally_The_Dunedain_Against_Mordor
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000
+			}
+		}
+	focus = {
+		id = UMA_The_Dol_Amroth_Nobility
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Raise_Militia_Battalions }
+		relative_position_id = UMA_Raise_Militia_Battalions
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			}
+		}
+	focus = {
+		id = UMA_The_Gondorian_Nobility
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = UMA_Raise_The_Reserves }
+		relative_position_id = UMA_Raise_The_Reserves
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 10000
+			}
+		}
+	focus = {
+		id = UMA_Take_The_Fight_To_Mordor
+		icon = GFX_goal_lotr_Kings_Men_Icon
+		ai_will_do = { factor = 20 }
+		will_lead_to_war_with = MRD
+		prerequisite = { focus = UMA_The_Dol_Amroth_Nobility }
+		prerequisite = { focus = UMA_The_Gondorian_Nobility }
+		relative_position_id = UMA_The_Dol_Amroth_Nobility
+		x = 1
+		y = 1
+		cost = 5
+		will_lead_to_war_with = MRD
+		completion_reward = {
+			UMA = { add_state_claim = 5 }
+			create_wargoal = { type = annex_everything target = MRD }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRD }
+				}
+			}
+		}
+	focus = {
+		id = The_Enemy_to_our_North
+		icon = GFX_goal_lotr_The_Enemy_to_our_North
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Sack_of_Umbar }
+		relative_position_id = The_Sack_of_Umbar
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = The_Enemy_to_our_North
+		icon = GFX_goal_lotr_The_Enemy_to_our_North
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Sack_of_Umbar }
+		relative_position_id = The_Sack_of_Umbar
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 20000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Find_The_Infamous_Sea_Dog's
+		icon = GFX_goal_lotr_Find_The_Infamous_Sea_Dogs
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Enemy_to_our_North }
+		relative_position_id = The_Enemy_to_our_North
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.7
+			load_oob = UMA_The_Sea_Dogs
+		}
+	}
+	focus = {
+		id = A_Visitor_From_Mordor
+		icon = GFX_goal_lotr_A_Visitor_From_Mordor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Find_The_Infamous_Sea_Dog's }
+		prerequisite = { focus = A_Numenorian_Armada focus = A_Pirate_Fleet }
+		relative_position_id = Find_The_Infamous_Sea_Dog's
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = UMA.6
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Corsair_Capital_Ships
+		icon = GFX_goal_lotr_Corsair_Capital_Ships
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = A_Visitor_From_Mordor }
+		prerequisite = { focus = A_Numenorian_Armada focus = A_Pirate_Fleet }
+		relative_position_id = A_Visitor_From_Mordor
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			255 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.5
+				uses = 2
+				category = lotr_sailing_sailingship
+			}
+		}
+	}
+	focus = {
+		id = Prepare_for_War_in_Haronder
+		icon = GFX_goal_lotr_Conquer_Haradwaith
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Enemy_to_our_North }
+		relative_position_id = The_Enemy_to_our_North
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			225 = {
+				add_building_construction = {	type = infrastructure level = 1 instant_build = yes }
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 7536
+				}
+			}
+		}
+	}
+	focus = {
+		id = Conquer_Southern_Haronder
+		icon = GFX_goal_lotr_Conquer_Southern_Haronder
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Prepare_for_War_in_Haronder }
+		prerequisite = { focus = A_Numenorian_Armada focus = A_Pirate_Fleet }
+		relative_position_id = Prepare_for_War_in_Haronder
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			108 = {
+					add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 1248 }
+					add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 491 }
+					add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 4898 }
+					add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 4849 }
+				}
+			}
+		}
+	focus = {
+		id = Corsair_Screening_Vessels
+		icon = GFX_goal_lotr_Corsair_Screening_Vessels
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Conquer_Southern_Haronder }
+		prerequisite = { focus = A_Numenorian_Armada focus = A_Pirate_Fleet }
+		relative_position_id = Conquer_Southern_Haronder
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			255 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.5
+				uses = 2
+				category = lotr_sailing_longship
+				}
+			}
+		}
+	focus = {
+		id = A_Numenorian_Armada
+		icon = GFX_goal_lotr_A_Numenorian_Armada
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Enemy_to_our_North }
+		mutually_exclusive = {focus = A_Pirate_Fleet }
+		relative_position_id = The_Enemy_to_our_North
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_A_Numenorian_Armada
+			navy_experience = 45 
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = A_Pirate_Fleet
+		icon = GFX_goal_lotr_A_Pirate_Fleet
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Enemy_to_our_North }
+		mutually_exclusive = {focus = A_Numenorian_Armada }
+		relative_position_id = The_Enemy_to_our_North
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_A_Pirate_Fleet
+			navy_experience = 25
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Conquer_Harondor
+		icon = GFX_goal_lotr_Conquer_Harondor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = A_Numenorian_Armada focus = A_Pirate_Fleet }
+		prerequisite = { focus = Corsair_Capital_Ships }
+		prerequisite = { focus = Corsair_Screening_Vessels }
+		relative_position_id = Corsair_Capital_Ships
+		x = 1
+		y = 1
+		cost = 5
+		available = { UMA = { has_war = no } }
+		will_lead_to_war_with = HAS
+		completion_reward = {
+			UMA = { add_state_claim = 106 }
+			create_wargoal = { type = annex_everything target = HAS }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = HAS }
+				}
+			}
+		}
+	focus = {
+		id = Integrate_Harondor
+		icon = GFX_goal_lotr_Integrate_Harondor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Conquer_Harondor}
+		relative_position_id = Conquer_Harondor
+		x = -2
+		y = 1
+		cost = 5
+		available = { owns_state = 106 }
+		completion_reward = {
+			add_manpower = 15000
+			106 = { add_compliance = 35 }
+			106 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			106 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = The_Corsair_Stronghold
+		icon = GFX_goal_umbar_big_right
+		ai_will_do = { factor = 80}
+		prerequisite = { focus = Integrate_Harondor}
+		prerequisite = { focus = Integrate_The_Coast }
+		mutually_exclusive = { focus = The_Third_Kingdom_of_Men }
+		relative_position_id = Integrate_Harondor
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = UMA_the_crown_of_numenor }
+			start_civil_war = {
+				ideology = belligerent
+					size = 0.4
+					}
+					UMA_Balkubar = { retire = yes }
+					country_event = UMA.8
+				}
+				else = {
+				UMA_Balkubar = { retire = yes }
+				add_country_leader_role = {
+					character = UMA_Corrupted_Balkubar
+					promote_leader = yes 
+					country_leader = {
+					desc = Corrupted_Balkubar_DESC
+					ideology = sauronite
+					expire = "3000.01.01.01"
+					traits = {
+						}
+					}
+				}
+				add_field_marshal_role = {
+					traits = { urban_assault_specialist desert_fox  }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 1
+					logistics_skill = 2
+					legacy_id=-1
+						}
+					}		
+				}
+			}
+	focus = {
+		id = Deal_With_The_Disloyal_Numenorians
+		icon = GFX_goal_lotr_Deal_With_The_Disloyal_Numenorians
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Corsair_Stronghold}
+		relative_position_id = The_Corsair_Stronghold
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = -5000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Seek_The_Dark_Lords_Favor
+		icon = GFX_goal_lotr_Seek_The_Dark_Lords_Favor
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Deal_With_The_Disloyal_Numenorians}
+		relative_position_id = Deal_With_The_Disloyal_Numenorians
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			MRD   = {add_to_faction = UMA }
+			swap_ideas = {
+				remove_idea = UMA_thin_blood_of_numenor
+				add_idea = UMA_Black_Numenorians
+			}
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Rally_Corsairs
+		icon = GFX_goal_lotr_Rally_Corsairs
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Seek_The_Dark_Lords_Favor}
+		relative_position_id = Seek_The_Dark_Lords_Favor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_manpower = 45000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Request_Mordor_Forces
+		icon = GFX_goal_lotr_Request_Mordor_Forces
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Rally_Corsairs}
+		relative_position_id = Rally_Corsairs
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_manpower = 35000
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Prepare_The_Great_Corsair_Fleet
+		icon = GFX_goal_lotr_Prepare_The_Great_Corsair_Fleet
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Seek_The_Dark_Lords_Favor}
+		relative_position_id = Seek_The_Dark_Lords_Favor
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+		navy_experience = 25 
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Confinscate_Horondor_Trade_Vessels
+		icon = GFX_goal_lotr_Confinscate_Horondor_Trade_Vessels
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Prepare_The_Great_Corsair_Fleet}
+		relative_position_id = Prepare_The_Great_Corsair_Fleet
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = Hire_Haradrim_Mercenaries
+		icon = GFX_goal_lotr_Hire_Haradrim_Mercenaries
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Seek_The_Dark_Lords_Favor}
+		relative_position_id = Seek_The_Dark_Lords_Favor
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = UMA_Harad_Mercenaries
+				add_political_power = 30
+		}
+	}
+	focus = {
+		id = Seek_The_Oliphant_Lords
+		icon = GFX_goal_lotr_Seek_The_Oliphant_Lords
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Hire_Haradrim_Mercenaries}
+		relative_position_id = Hire_Haradrim_Mercenaries
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		load_oob = UMA_Harad_Oliphant
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = War_With_Gondor
+		icon = GFX_goal_lotr_War_With_Gondor
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Confinscate_Horondor_Trade_Vessels }
+		prerequisite = { focus = Request_Mordor_Forces }
+		prerequisite = { focus = Seek_The_Oliphant_Lords }
+		relative_position_id = Request_Mordor_Forces
+		x = 0
+		y = 1
+		cost = 5
+		available = { date > 3019.12.1 }
+		will_lead_to_war_with = STE
+			completion_reward = {
+			MRD = { puppet = UMA }
+			UMA = { add_state_claim = 164 }
+			create_wargoal = { type = annex_everything target = STE }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = STE }
+				}
+				UMA = { add_state_claim = 106 }
+			create_wargoal = { type = annex_everything target = HAS }
+				if = { limit = { UMA = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = HAS }
+				}
+			}
+		}
+	focus = {
+		id = The_True_Threat_To_Mankind
+		icon = GFX_goal_lotr_The_True_Threat_To_Mankind
+		ai_will_do = { factor = 15 }
+		x = 25
+		y = 10
+		cost = 5
+		prerequisite = { focus = Integrate_Harondor }
+		prerequisite = { focus = Integrate_The_Coast }	
+		available = {
+			NOT = {
+				has_idea = UMA_the_crown_of_numenor 
+				has_idea = UMA_the_gift_from_mordor 
+				has_completed_focus = The_Corsair_Stronghold
+				has_completed_focus = The_Third_Kingdom_of_Men }
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = cooperative
+				elections_allowed = no
+				}
+				add_manpower = -10000
+				add_political_power = 30
+				remove_ideas = UMA_thin_blood_of_numenor
+		}
+	}
+	focus = {
+		id = Send_a_Delegation_to_Gondor
+		icon = GFX_goal_lotr_Send_a_Delegation_to_Gondor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_True_Threat_To_Mankind}
+		relative_position_id = The_True_Threat_To_Mankind
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_opinion_modifier = { target = STE modifier = large_increase }
+			BEL = { add_opinion_modifier = { target = UMA modifier = large_increase } }
+			}
+		}
+	focus = {
+		id = Send_a_Delegation_to_Dol_Amroth
+		icon = GFX_goal_lotr_Send_a_Delegation_to_Dol_Amroth
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_True_Threat_To_Mankind}
+		relative_position_id = The_True_Threat_To_Mankind
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_opinion_modifier = { target = BEL modifier = large_increase }
+			BEL = {
+				add_opinion_modifier = { target = UMA modifier = large_increase }
+			}
+		}
+	}
+	focus = {
+		id = Seek_Appeasment_With_Dol_Amroth
+		icon = GFX_goal_lotr_Seek_Appeasment_With_Dol_Amroth
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Send_a_Delegation_to_Dol_Amroth}
+		relative_position_id = Send_a_Delegation_to_Dol_Amroth
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			UMA = {give_guarantee = BEL}
+				BEL = {
+					add_opinion_modifier = { target = UMA modifier = small_increase }
+			}
+		}
+	}
+	focus = {
+		id = Seek_Appeasment_With_Gondor
+		icon = GFX_goal_lotr_Seek_Appeasment_With_Gondor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Send_a_Delegation_to_Gondor}
+		relative_position_id = Send_a_Delegation_to_Gondor
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+		UMA = {give_guarantee = STE}
+		BEL = {
+				add_opinion_modifier = { target = UMA modifier = small_increase }
+			}
+		}
+	}
+	focus = {
+		id = Form_An_Alliance_Against_Mordor
+		icon = GFX_goal_lotr_Form_An_Alliance_Against_Mordor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Seek_Appeasment_With_Gondor}
+		prerequisite = { focus = Seek_Appeasment_With_Dol_Amroth}
+		relative_position_id = Seek_Appeasment_With_Gondor
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			if = { limit = { STE = { exists = yes } }
+				STE = { country_event = UMA.10 } }
+			else = { limit = { STE = { exists = no } }
+				DUN = { country_event = UMA.10 } }
+			}
+		}
+	}

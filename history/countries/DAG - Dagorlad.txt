@@ -1,0 +1,36 @@
+capital = 206
+
+recruit_character = DAG_khamul
+recruit_character = DAG_wight1
+recruit_character = DAG_dead_marshes
+
+set_research_slots = 2
+
+add_ideas = {
+	DAG_uninhabited_swamp
+	no_taxes
+	free_trade
+	no_mercenaries
+	volunteer_service
+	no_centralization
+}
+
+
+set_technology = {
+	infantry_weapons = 1
+	trench_warfare = 1
+}
+
+set_politics = {
+	ruling_party = unaligned
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cooperative = 0
+	belligerent = 10
+	revolutionary = 0
+	unaligned = 90
+}

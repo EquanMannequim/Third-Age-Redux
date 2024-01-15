@@ -1,0 +1,266 @@
+characters={
+	DUN_aragorn={
+		name="Aragorn"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Aragorn"
+				small="GFX_Portrait_Aragorn"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = {  humble indomitable_perseverance GON_isildur_heir }
+		}
+        country_leader={
+			ideology=expansionist
+			expire="1980.1.1.1"
+			traits = { humble indomitable_perseverance }
+			id=-1
+		}
+		
+		field_marshal={
+			traits={ inspirational_leader logistics_wizard  }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+		}
+	}
+	DUN_king_elessar={
+		name="King Elessar"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Aragorn_King"
+				small="GFX_Portrait_Aragorn_King"
+			}
+		}
+	}
+	DUN_halbarad={
+		name="Halbarad"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Halbarad"
+				small="GFX_Portrait_Halbarad"
+			}
+		}
+	}
+	DUN_malenfang={
+		name="Malenfang"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Malenfang"
+				small="GFX_Portrait_Malenfang"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	DUN_bordhreg={
+		name="Bordhreg"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Bordhreg"
+				small="GFX_Portrait_Bordhreg"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	CRN_halbarad={
+		name="Halbarad"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Halbarad"
+				small="GFX_Portrait_Halbarad"
+			}
+		}
+		country_leader={
+			ideology=mercantile
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=federative
+			expire="1980.1.1.1"
+			id=-1
+		}
+        country_leader={
+			ideology=expansionist
+			expire="1980.1.1.1"
+			id=-1
+		}
+        country_leader={
+			ideology=collectivist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		
+		corps_commander={
+			traits={ ranger commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	DUN_boromir = {
+		name="Boromir"
+		portraits={
+			army={
+				large="GFX_Portrait_Boromir"
+				small="GFX_Portrait_Boromir"
+			}
+		}
+		corps_commander={
+			traits={ commando urban_assault_specialist }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			visible = { owns_state = 163 }
+		}
+	}
+	DUN_faramir = {
+		name="Faramir"
+		portraits={
+			army={
+				large="GFX_Portrait_Faramir"
+				small="GFX_Portrait_Faramir"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			visible = { owns_state = 163 }
+			}
+		}
+	DUN_Hirluin = {
+		name="Hirluin"
+		portraits={
+			army={
+				large="GFX_Portrait_Hirluin"
+				small="GFX_Portrait_Hirluin"
+			}
+		}
+		corps_commander={
+			traits={  panzer_leader }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			visible = { owns_state = 163 }
+			}
+		}
+	DUN_Corinir = {
+		name="Corinir"
+		portraits={
+			army={
+				large="GFX_Portrait_Corinir"
+				small="GFX_Portrait_Corinir"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			visible = { owns_state = 163 }
+			}
+		}
+	DUN_Forlong = {
+		name="Forlong The Fat"
+		portraits={
+			army={
+				large="GFX_Portrait_Forlong"
+				small="GFX_Portrait_Forlong"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { owns_state = 163 }
+		}
+	}
+	DUN_Angbor={
+		name="Angbor"
+		portraits={
+			army={
+				large="GFX_Portrait_Angbor"
+				small="GFX_Portrait_Angbor"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { owns_state = 163 }
+			}
+		}
+	DUN_Golasgil = {
+		name="Golasgil"
+		portraits={
+			army={
+				large="GFX_Portrait_Golasgil"
+				small="GFX_Portrait_Golasgil"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			visible = { owns_state = 163 }
+			}
+		}
+	DUN_duinhir = {
+		name="Duinhir"
+		portraits={
+			army={
+				large="GFX_Portrait_Duinhir"
+				small="GFX_Portrait_Duinhir"
+			}
+		}
+		corps_commander={
+			traits={ swamp_fox }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			visible = { owns_state = 163 }
+			}
+		}
+}

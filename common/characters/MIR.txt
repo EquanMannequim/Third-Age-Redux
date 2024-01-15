@@ -1,0 +1,222 @@
+characters={
+	MIR_thranduil={
+		name="Thranduil"
+		portraits={
+			civilian={
+				large="GFX_portrait_mirkwood_thranduil"
+				small = "GFX_idea_portrait_mirkwood_thranduil"
+			}
+			army={
+				large="GFX_portrait_mirkwood_thranduil_marshal"
+				small = "GFX_idea_portrait_mirkwood_thranduil_marshal"
+			}
+		}
+		country_leader={
+			ideology=isolationist
+			expire="1980.1.1.1"
+			traits = { dislikes_erebor }
+			id=-1
+		}
+		country_leader={
+			ideology=collectivist
+			expire="1980.1.1.1"
+			traits = { dislikes_erebor }
+			id=-1
+		}
+		country_leader={
+			ideology=supremacist
+			expire="1980.1.1.1"
+			traits = { dislikes_erebor }
+			id=-1
+		}
+		country_leader={
+			ideology=federative
+			expire="1980.1.1.1"
+			traits = { dislikes_erebor }
+			id=-1
+		}
+		field_marshal={
+			traits = { defensive_doctrine  organisational_leader }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+	MIR_elros={
+		name="Elros"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_elros"
+				small = "GFX_idea_portrait_mirkwood_elros"
+			}
+		}
+		field_marshal={
+			traits = { thorough_planner }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = MIR_elros
+			slot = army_chief
+			cost = 150
+			traits = { army_chief_planning_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MIR_tralos={
+		name="Tralos"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_tralos"
+				small = "GFX_idea_portrait_mirkwood_tralos"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = MIR_tralos
+			slot = high_command
+			cost = 150
+			traits = { army_logistics_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MIR_legolas={
+		name="Legolas"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_legolas"
+				small = "GFX_idea_portrait_mirkwood_legolas"
+			}
+		}
+		corps_commander={
+			traits = { ranger bearer_of_artillery }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = MIR_legolas
+			slot = army_chief
+			cost = 150
+			traits = { army_chief_offensive_2 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MIR_tauriel={
+		name="Tauriel"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_tauriel"
+				small = "GFX_idea_portrait_mirkwood_tauriel"
+			}
+		}
+		corps_commander={
+			traits = { jungle_rat }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+
+		}
+		advisor = {
+			idea_token = MIR_tauriel
+			slot = high_command
+			cost = 150
+			traits = { army_concealment_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MIR_feren={
+		name="Feren"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_feren"
+				small = "GFX_idea_portrait_mirkwood_feren"
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+
+		}
+		advisor = {
+			idea_token = MIR_feren
+			slot = high_command
+			cost = 150
+			traits = { army_entrenchment_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MIR_lethuin={
+		name="Lethuin"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_lethuin"
+				small = "GFX_idea_portrait_mirkwood_lethuin"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+
+		}
+	}
+	MIR_hinnorion = {
+		name="Hinnorion"
+		portraits={
+			army={
+				large="GFX_portrait_elves_generic_85"
+				small = "GFX_idea_portrait_elves_generic_85"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 2
+		    defense_skill = 2
+		    maneuvering_skill = 3
+		    coordination_skill = 3
+		    traits = { superior_tactician }
+		}
+		advisor = {
+			idea_token = MIR_hinnorion
+			slot = navy_chief 
+			cost = 150
+			traits = { navy_chief_maneuver_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+}

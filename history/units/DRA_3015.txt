@@ -1,0 +1,182 @@
+##### Division Templates #####
+division_template = {
+	name = "Lôke-Gamp Rim"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Lôke-In Rim"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Lôke-Scion Rim"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Lôke-In Rim"
+		location = 6215
+		division_template = "Lôke-In Rim"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-In Rim"
+		location = 6215
+		division_template = "Lôke-In Rim"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lôke-In Rim"
+		location = 6215
+		division_template = "Lôke-In Rim"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Kugovad Guardians"
+		location = 6245
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Rhunic Coastal Guards"
+		location = 3175
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Kugovad Guardians"
+		location = 6245
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Rhunic Raiders"
+		location = 3175
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Rhunic Sea Guards"
+		location = 3175
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Rhun Warriors"
+		location = 2007
+		division_template = "Lôke-Gamp Rim"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Eastern Scouting Division"
+		location = 821
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "Western Scouting Division"
+		location = 1673
+		division_template = "Lôke-Scion Rim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RHU"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "RHU"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 50
+	}
+}

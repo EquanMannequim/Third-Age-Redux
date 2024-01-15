@@ -1,0 +1,34 @@
+##### Division Templates #####
+division_template = {
+	name = "Rangers"			# Rifle Division
+
+	regiments = {
+		rangers_infantry = { x = 0 y = 0 }
+		rangers_infantry = { x = 0 y = 1 }
+		rangers_infantry = { x = 1 y = 0 }
+		rangers_infantry = { x = 1 y = 1 }
+		rangers_infantry = { x = 2 y = 0 }
+		rangers_infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Ithilien Rangers"
+		location = 1778
+		division_template = "Rangers"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Ithilien Rangers"
+		location = 1778
+		division_template = "Rangers"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+}

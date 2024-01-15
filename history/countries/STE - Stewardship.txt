@@ -1,0 +1,125 @@
+capital = 163
+
+oob = "STE_3015"
+
+set_research_slots = 4
+
+set_country_flag = TA_MEN_OF_THE_WEST
+
+
+recruit_character = STE_denethor
+recruit_character = STE_king_elessar
+recruit_character = STE_Corinir
+recruit_character = STE_Forlong
+recruit_character = STE_ivriniel
+recruit_character = STE_boromir
+recruit_character = STE_faramir
+recruit_character = STE_Golasgil
+recruit_character = STE_duinhir
+recruit_character = STE_hirluin
+recruit_character = STE_irolas
+recruit_character = STE_ferdand
+recruit_character = STE_hurin
+recruit_character = STE_bered
+recruit_character = STE_angbor
+recruit_character = STE_mablung
+recruit_character = STE_anborn
+recruit_character = STE_hirgorn
+recruit_character = STE_ingold
+recruit_character = STE_bronwen
+recruit_character = STE_creighton
+recruit_character = STE_normand
+
+recruit_character = STE_King_Dead
+
+set_convoys = 50
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	superior_firepower = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_medium_tank = 1
+	convoy_tech = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	transport = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = cooperative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cooperative = 85
+	belligerent = 15
+}
+
+create_faction = "The Kingdom of Gondor"
+add_to_faction = STE
+add_to_faction = LAM
+add_to_faction = LEB
+add_to_faction = DEE
+add_to_faction = ANF
+add_to_faction = BLA
+add_to_faction = PIN
+add_to_faction = BEL
+add_to_faction = ITL
+
+
+if = {
+    limit = {
+        OR = {
+            has_dlc = "Together for Victory"
+            has_dlc = "Man the Guns"
+        }
+    }
+	set_autonomy = {
+        target = LAM
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = LEB
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = DEE
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = ANF
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = BLA
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = PIN
+        autonomous_state = autonomy_fiefdom
+    }
+	set_autonomy = {
+        target = BEL
+        autonomous_state = autonomy_principality
+    }
+    else = {
+        puppet = LAM
+		puppet = LEB
+		puppet = DEE
+		puppet = ANF
+		puppet = BLA
+		puppet = PIN
+		puppet = BEL
+    }
+}

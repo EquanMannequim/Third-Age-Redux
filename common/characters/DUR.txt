@@ -1,0 +1,25 @@
+characters={
+	DUR_dain = {
+		name = "King Dain"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Dain
+			}
+		}
+		country_leader = {
+			ideology = protective
+			expire="1980.1.1.1"
+			traits = { }
+			id=-1
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}
