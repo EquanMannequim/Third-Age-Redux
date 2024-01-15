@@ -1,0 +1,203 @@
+focus_tree = {
+id = ithilian
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = ITL
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = ITL_The_Fall_of_Minas_Ithil
+		icon = GFX_goal_lotr_The_Scouring_of_Ithilian
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = ITL_the_tower_of_The_moon
+		}
+	}
+
+	focus = {
+		id = ITL_The_Scouring_of_Ithilian
+		icon = GFX_goal_lotr_The_Scouring_of_Ithilian
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_The_Fall_of_Minas_Ithil }
+		relative_position_id = ITL_The_Fall_of_Minas_Ithil
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ITL_ITL_The_Scouring_of_Ithilian
+		}
+	}
+	focus = {
+		id = ITL_The_Rangers_of_Ithilian
+		icon = GFX_goal_lotr_The_Rangers_of_Ithilian
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_The_Scouring_of_Ithilian }
+		relative_position_id = ITL_The_Scouring_of_Ithilian
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ITL_ithilian_rangers
+		}
+	}
+	focus = {
+		id = ITL_Request_Reinforcements_From_The_Steward
+		icon = GFX_goal_lotr_Request_Reinforcements_From_The_Steward
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_The_Rangers_of_Ithilian }
+		relative_position_id = ITL_The_Rangers_of_Ithilian
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			STE = {
+				country_event = ITL.1
+				}
+			}
+		}
+	focus = {
+		id = ITL_Seek_Aid_From_The_Other_Fiefdoms
+		icon = GFX_goal_lotr_Seek_Aid_From_The_Other_Fiefdoms
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Request_Reinforcements_From_The_Steward }
+		relative_position_id = ITL_Request_Reinforcements_From_The_Steward
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		BEL = {
+			country_event = ITL.2
+			}
+		LEB = {
+			country_event = ITL.2
+			}
+		LAM = {
+			country_event = ITL.2
+			}
+		ANF = {
+			country_event = ITL.2
+			}
+		PIN = {
+			country_event = ITL.2
+			}
+		BLA = {
+			country_event = ITL.2
+			}
+		}
+	}
+	focus = {
+		id = ITL_Ask_The_Rohirim_For_Reinforcements
+		icon = GFX_goal_lotr_Ask_The_Rohirim_For_Reinforcements
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Seek_Aid_From_The_Other_Fiefdoms }
+		relative_position_id = ITL_Seek_Aid_From_The_Other_Fiefdoms
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			RID = {
+				country_event = ITL.2
+			}
+		}
+	}
+	focus = {
+		id = ITL_Conscript_Remaining_Citizens
+		icon = GFX_goal_lotr_Conscript_Remaining_Citizens
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Ask_The_Rohirim_For_Reinforcements }
+		mutually_exclusive = {focus = ITL_Seek_Local_Recruits }
+		relative_position_id = ITL_Ask_The_Rohirim_For_Reinforcements
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 25000
+			add_stability  = -0.10
+			add_war_support  = -0.10
+		}
+	}
+	focus = {
+		id = ITL_Rebuild_Inner_Osgiliath
+		icon = GFX_goal_lotr_Rebuild_Inner_Osgiliath
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_The_Rangers_of_Ithilian }
+		relative_position_id = ITL_The_Rangers_of_Ithilian
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			173 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = ITL_Reinforce_The_Old_Osgiliath_Walls
+		icon = GFX_goal_lotr_Reinforce_The_Old_Osgiliath_Walls
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Rebuild_Inner_Osgiliath }
+		relative_position_id = ITL_Rebuild_Inner_Osgiliath
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			173 = {
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 9062 }
+			}
+		}
+	}
+	focus = {
+		id = ITL_Bring_In_New_Swordsmiths
+		icon = GFX_goal_lotr_Bring_In_New_Swordsmiths
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Reinforce_The_Old_Osgiliath_Walls }
+		relative_position_id = ITL_Reinforce_The_Old_Osgiliath_Walls
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			173		= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = ITL_Seek_Local_Recruits
+		icon = GFX_goal_lotr_Seek_Local_Recruits
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = ITL_Bring_In_New_Swordsmiths }
+		mutually_exclusive = {focus = ITL_Conscript_Remaining_Citizens }
+		relative_position_id = ITL_Bring_In_New_Swordsmiths
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}

@@ -1,0 +1,26 @@
+characters={
+	DLG_Khamul = {
+		name="Khamûl The Easterling"
+		portraits={
+			army={
+				large="GFX_Portrait_khamul_the_easterling"
+				small="GFX_idea_portrait_mordor_khamul"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = { all_seeing_eye }
+			id=-1
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

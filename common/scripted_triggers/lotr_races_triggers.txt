@@ -1,0 +1,425 @@
+is_other = {
+	custom_trigger_tooltip = {
+		tooltip = "is Other"
+		OR = {
+			original_tag = DAG
+		}
+	}
+}
+
+is_other_init = {
+	OR = {
+		original_tag = DAG
+	}
+}
+
+is_men = {
+	custom_trigger_tooltip = {
+		tooltip = "is Men"
+		NOT = {
+			is_edain = yes
+			is_noldor = yes
+			is_sindar = yes
+			is_silvan = yes
+			is_entling = yes
+			is_firebeard = yes
+			is_broadbeam = yes
+			is_longbeard = yes
+			is_black_uruk = yes
+			is_hobbitling = yes
+			is_spiderling = yes
+			is_easterling = yes
+			is_uruk_hai = yes 
+			is_dunedain = yes 
+		}
+	}
+}
+
+is_men_init = {
+	NOT = {
+		is_edain_init = yes
+		is_noldor_init = yes
+		is_sindar_init = yes
+		is_silvan_init = yes
+		is_entling_init = yes
+		is_firebeard_init = yes
+		is_broadbeam_init = yes
+		is_longbeard_init = yes
+		is_black_uruk_init = yes
+		is_hobbitling_init = yes
+		is_spiderling_init = yes
+		is_easterling_init = yes
+		is_uruk_hai_init = yes 
+		is_dunedain_init = yes 
+	}
+}
+
+
+# SUBMODDED
+
+is_edain_init = {
+	OR = {
+		original_tag = RDU
+		original_tag = EST
+		original_tag = BEO
+		original_tag = DLE
+		original_tag = BGR
+		original_tag = AST
+		original_tag = WOD
+		original_tag = LEO
+		original_tag = EAS
+		original_tag = WST
+		original_tag = RID
+		original_tag = ITL
+		original_tag = LEB
+		original_tag = DEE
+		original_tag = LAM
+		original_tag = ANF
+		original_tag = PIN
+		original_tag = BLA
+		original_tag = AND
+		original_tag = LAU
+		original_tag = CAI
+		original_tag = CRL
+		original_tag = COR
+		original_tag = ARI
+		original_tag = TRE
+		original_tag = DRG
+		original_tag = MUR
+		original_tag = EUC
+		original_tag = DRG
+		original_tag = GIR
+		original_tag = RDU
+		original_tag = ARD
+		original_tag = SIR
+		original_tag = FOR
+		original_tag = BRE
+		original_tag = RED
+		original_tag = CRN
+		original_tag = ANA
+		original_tag = UMA
+		original_tag = HAS
+		original_tag = MET
+		original_tag = DRW
+	}
+}
+
+is_edain = {
+	custom_trigger_tooltip = {
+		tooltip = "is Edain"
+		OR = {
+			original_tag = RDU
+			original_tag = EST
+			original_tag = BEO
+			original_tag = DLE
+			original_tag = BGR
+			original_tag = AST
+			original_tag = WOD
+			original_tag = LEO
+			original_tag = EAS
+			original_tag = WST
+			original_tag = RID
+			original_tag = ITL
+			original_tag = LEB
+			original_tag = DEE
+			original_tag = LAM
+			original_tag = ANF
+			original_tag = PIN
+			original_tag = BLA
+			original_tag = AND
+			original_tag = LAU
+			original_tag = CAI
+			original_tag = CRL
+			original_tag = COR
+			original_tag = ARI
+			original_tag = TRE
+			original_tag = DRG
+			original_tag = MUR
+			original_tag = EUC
+			original_tag = DRG
+			original_tag = GIR
+			original_tag = RDU
+			original_tag = ARD
+			original_tag = SIR
+			original_tag = FOR
+			original_tag = BRE
+			original_tag = RED
+			original_tag = CRN
+			original_tag = ANA
+			original_tag = UMA
+			original_tag = HAS
+			original_tag = MET
+			original_tag = DRW
+		}
+	}
+}
+
+is_noldor_init = {
+	OR = {
+		original_tag = IML
+	}
+}
+
+is_noldor = {
+	custom_trigger_tooltip = {
+		tooltip = "is Noldor"
+		OR = {
+			original_tag = IML
+		}
+	}
+}
+
+is_sindar_init = {
+	OR = {
+			original_tag = FRL
+			original_tag = LND
+			original_tag = CRC
+	}
+}
+
+is_sindar = {
+	custom_trigger_tooltip = {
+		tooltip = "is Sindar"
+		OR = {
+			original_tag = FRL
+			original_tag = LND
+			original_tag = CRC
+		}
+	}
+}
+
+is_entling_init = {
+	OR = {
+		original_tag = FAN
+	}
+}
+
+is_entling = {
+	custom_trigger_tooltip = {
+		tooltip = "is Ent"
+		OR = {
+			original_tag = FAN
+		}
+	}
+}
+
+is_silvan_init = {
+	OR = {
+		original_tag = WDR
+		original_tag = TAU
+		original_tag = CRS
+	}
+}
+
+is_silvan = {
+	custom_trigger_tooltip = {
+		tooltip = "is Silvan"
+		OR = {
+			original_tag = WDR
+			original_tag = TAU
+			original_tag = CRS
+		}
+	}
+}
+
+is_firebeard_init = {
+	OR = {
+		original_tag = BUZ
+	}
+}
+
+is_firebeard = {
+	custom_trigger_tooltip = {
+		tooltip = "is Firebeard"
+		OR = {
+			original_tag = BUZ
+		}
+	}
+}
+
+is_broadbeam_init = {
+	OR = {
+		original_tag = KZA
+	}
+}
+
+is_broadbeam = {
+	custom_trigger_tooltip = {
+		tooltip = "is Broadbeam"
+		OR = {
+			original_tag = KZA
+		}
+	}
+}
+
+is_longbeard_init = {
+	OR = {
+		original_tag = DUR
+		original_tag = IRN
+	}
+}
+
+is_longbeard = {
+	custom_trigger_tooltip = {
+		tooltip = "is Longbeard"
+		OR = {
+			original_tag = DUR
+			original_tag = IRN
+		}
+	}
+}
+
+is_black_uruk_init = {
+	OR = {
+		original_tag = MRD
+		original_tag = MRG
+		original_tag = DLG
+		original_tag = KDU
+		original_tag = ERG
+		original_tag = ANR
+		original_tag = LIT
+		original_tag = MRK
+		original_tag = FAL
+		original_tag = ASH
+		original_tag = URU
+		original_tag = RED
+		original_tag = ANU
+		original_tag = FRN
+		original_tag = FAR
+		original_tag = ARD
+		original_tag = GND
+		original_tag = LOR
+	}
+}
+
+is_black_uruk = {
+	custom_trigger_tooltip = {
+		tooltip = "is Black Uruk"
+		OR = {
+			original_tag = MRD
+			original_tag = MRG
+			original_tag = DLG
+			original_tag = KDU
+			original_tag = ERG
+			original_tag = ANR
+			original_tag = LIT
+			original_tag = MRK
+			original_tag = FAL
+			original_tag = ASH
+			original_tag = URU
+			original_tag = RED
+			original_tag = ANU
+			original_tag = FRN
+			original_tag = FAR
+			original_tag = ARD
+			original_tag = GND
+			original_tag = LOR
+		}
+	}
+}
+
+is_hobbitling_init = {
+	OR = {
+		original_tag = SHR
+		original_tag = TOK
+	}
+}
+
+is_hobbitling = {
+	custom_trigger_tooltip = {
+		tooltip = "is Hobbit"
+		OR = {
+			original_tag = SHR
+			original_tag = TOK
+		}
+	}
+}
+
+is_spiderling_init = {
+	OR = {
+		original_tag = ERD
+		original_tag = SHA
+	}
+}
+
+is_spiderling = {
+	custom_trigger_tooltip = {
+		tooltip = "is Spider"
+		OR = {
+			original_tag = ERD
+			original_tag = SHA
+		}
+	}
+}
+
+is_easterling_init = {
+	OR = {
+		original_tag = HRZ
+		original_tag = ERN
+		original_tag = HRD
+		original_tag = KHA
+		original_tag = NUR
+		original_tag = HRZ
+		original_tag = URG
+		original_tag = ASD
+		original_tag = HRZ
+		original_tag = SAG
+		original_tag = DRA
+		original_tag = LOG
+		original_tag = WAS
+	}
+}
+
+is_easterling = {
+	custom_trigger_tooltip = {
+		tooltip = "is Easterling"
+		OR = {
+			original_tag = HRZ
+			original_tag = ERN
+			original_tag = HRD
+			original_tag = KHA
+			original_tag = NUR
+			original_tag = HRZ
+			original_tag = URG
+			original_tag = ASD
+			original_tag = HRZ
+			original_tag = SAG
+			original_tag = DRA
+			original_tag = LOG
+			original_tag = WAS
+		}
+	}
+}
+
+is_uruk_hai_init = {
+	OR = {
+		original_tag = ISN
+	}
+}
+
+is_uruk_hai = {
+	custom_trigger_tooltip = {
+		tooltip = "is Uruk-Hai"
+		OR = {
+			original_tag = ISN
+		}
+	}
+}
+is_dunedain_init = {
+	OR = {
+		original_tag = DUN
+		original_tag = STE
+		original_tag = BEL
+	}
+}
+
+is_dunedain = {
+	custom_trigger_tooltip = {
+		tooltip = "is Dunedain"
+		OR = {
+			original_tag = DUN
+			original_tag = STE
+			original_tag = BEL
+		}
+	}
+}

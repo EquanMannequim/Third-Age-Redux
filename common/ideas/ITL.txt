@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		ITL_the_tower_of_The_moon = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ea_resolution_icon_hegemony
+
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
+		ITL_ithilian_rangers = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.03
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		ITL_the_scouring_of_ithilian = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = swan_knights
+
+			modifier = {
+				conscription_factor = -0.65
+				mobilization_speed = -0.70
+				war_support_factor = -0.10
+			}
+		}
+	}

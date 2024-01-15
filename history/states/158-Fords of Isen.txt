@@ -1,0 +1,28 @@
+
+state={
+	id=158
+	name="STATE_158"
+	resources={
+		oil=1.000
+		chromium=8.000
+	}
+
+	history={
+		owner = ISN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = ISN
+
+	}
+
+	provinces={
+		549 1604 2318 3652 4614 6653 6672 6688 6708 6720 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,542 @@
+### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = {
+			 Ruthren Anderson Erik Weller Hayden Tomkin Travon Priestley Sherlock Mitchel Samson Kinnell Cory Weber Lind Amsden Ray Daryl Hyatt Norton Marlowe Mills Mansfield Titus Beacher Robbie Carden Nick Harman Arden Seabrook Robbins Ethen Bergen Melvin Rolph Ian Harmon Osmond Gilbert Chapman Branford Michael Brennen Warfield Snowdun Patton Brinley Justin Jessie Adam Marlo Zack Devon Lucas Kirk Elden Frederick Teddie Oxford Zackery Chance Gaven Rab Redgrave Remmy Xzavier Elfred Thorpe Roderick Ryman Gerald Forrest Garrison Welton Nilson Gerald Redford Alfric Rodman Turner Trystan Humphrey Chaz Forrest Lang Manton Scotty Warmond Reading Connor Edward North Danny Jacob Elvin Makepeace Wakefield Jarred
+		}
+		surnames = { "" }
+		callsigns = { }
+	}
+	female = {
+		names = {
+			Manny Hedwig Hailie Arlene Gracie Arantxa Melanie Christine Audrey Jailyn Tracy Robina Audey Desirae Anna Kathleen Sidney Angie Ashlee Ember Dianna Eve Ayanna Carly Danna Manda Tayler Kimble Jolie Kaley Mallory Britney Anita Pyper Cayla Alize Ella Sally Talia Destiny Jasmyn Arantxa Patricia Annabelle Winifred Nya Amber Summer Kira Carolyn Harvine Meaghan Katerina Mya Mistey Alicia Gloria Kimmie Giselle Felicity Fleta Kelsey Aislinn Lyric Allyssa Louella Ivy Belen Ivy Devon Baxter Katelyn Desiree Kelsey Kylee Meghan Arleigh Kelsey Haylie Lizeth Kylie Lucy Adrienne Sharon Ashlee Clara Kimmi Kathy Isabell Kimberley Kimberley Myah Brisa Jillian Maeve Bev Alexus Fleta Gisselle Lauryn
+		}
+		surnames = { "" }
+		callsigns = { }
+	}
+	surnames = { "" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+}
+
+###############################################################
+# Realms of Man
+###############################################################
+### Gondor
+GON = {
+   	male = {
+   		names = {
+			Aleksandre Avtandil Besarion Butchu Datiko Davit Egnate Evgeni Filipp Giorgi Grigol Gulichino Iakob Ioseb Iosef Irakli Kalenike Kale Karlo Lavrenti Mikheil Niko Nikoloz Noe Pavel Polikarp Kandid Radjeb Shalva Semon Sergo Silibistro Tamaz Varlam Valiko Zurab
+       }
+   	}
+   female = {
+       	names = {
+       		Alexandra Ana Ekaterine Ketevan Kato Kristine Ladia Manana Mariam Mariko Maia Marta Nana Natela Natia Nina Nino Sephora Tamar
+        }
+   }
+   surnames = { "" }
+   callsigns = {  }
+}
+### Ithilien - Can likely use Gondorian names
+ITH = {
+	male = {
+		names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond Éamon
+			Edward Ernes Fionán Frank George Harry Jack James John Joseph
+			Kevin Liam Michael Patrick Peter Richard Robert Séan Thomas William
+		  }
+	}
+	female = {
+		names = {
+			Ablach Affraic Euphemia Eva Aileann Agnes Catherine Christina Eleanor Eithne Eithne
+			Eva Euginia Eugenia Finneacht Mary Lucia Lucia Martha Martha Mauda Matilda Mildred Margaret Mona
+			}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Vassal Kingdom of Angmar
+ANG = {
+	male = {
+		names = {
+			Harbrand Thorwulf Jornard Mornrek Aldwald Alngeir Rodgils Sigvar Bothvith Fridbar Grimstyr Heormund Treorek Galkarl Valohd Hrothrath Heorbald Jornald Arangeir Frothac Sigtan Skoltorn Jartar Hrothrek Alnric Lorsel Stigmoth Otwar Iskin Grimkar Lorbold Eranwine Dagvar Erndhor Nardrek Forngrim Nardvith Magwulf Ferhame Skolrath Widhelm Skolhame Rathhere Randvith Barard Valdstin Sigfast Daghar Waldgár Forngrim Mothac Wulwine Galkald Hartwar Magald Neddan Walddan Barvar Sigkar Jarric Rodbert Thorard Magrand Lydald Igor Ernoric Vulgeir Galgils Grimvir Baldor Jaldam Richelm Fridor Jarnbar Otric Wulthorn Lortar Ordvar Eranbold Fridsel Glumwald Norhyrde Harsorn Jornangar Stigwald Fridac Othkin Randmód Alnbold Raegrek Iwor Valbar Lorvith Glumkin Borgdac Harbert Isfast Hrothhame Fridond Gluthfast
+		  }
+	}
+	female = {
+		names = {
+			Ulwyn Lyna Venwyn Ulvindira Lifnwyn Jenhild Birntyn Fastbwyn Grimla WaentinaSigwyn Olaeya Gerthbwyn Aervild Solhild Ovinrlin Aernwyn Ulvinbwyn Ovinowyn GaildoraOviwyn Raenrin Ranbyn Iorfyn Kayvild Bruniaen Waenhelda Diswed Magbina Melfirth Kayhild Lifrun Gudrlin Ilinwyn Gudhild Kayaen Odowyn Ethara Rilgarth Velbyn Dyrwinne Ulvintyn Gaillin Hrimla Brerloth Unalaug Sigwed Ethlaug Ingihild Rhonfirth Ranrlin Kyndis Kaynis Aernwyn Waenwyn Salwild Brunia Dinfirth Hallwyn Iorrin Raenwyn Fynvild Odvera Fastowyn Gelava Katda Kathtyn Hunanda Rilginny Katrun Beorngun Brunielde Eyhelda Lifrlin Dyraen Ingieith Treolin Iorhild Berahild Raenwyn Iswyn Dislaug Grimwyn Amalanda Arinewyn Hallaeya Rileva Ethbwyn Magnwyn Jerntira Berangun Dyrhild Jilwed Oddora Gelaen Kynwyn Velnis Iorwyn Domdora Kayhera Ethda Winthrith Hallhild Isrisa Rangifu Berahild Ranvera Gailwyn Beranhelda Harfast Ovivor Beornelde Linwyn Leotwyn Mageva Bognwyn Isvyn Norbi Isowyn Velfrida
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+### Rohan
+ROH = {
+	male = {
+		names = {
+			Fréadred Goldheort Gárcred Frumthain Folblod Elfmer Hádig Frumgar Guthmer Éadig Fastbeam Déorling Théowine Folmer Fulor Gárnere Dúnca Gram Guthred Déorgar Fulor Hábald Frumwine Guthcred Gléoheort Déorere Théodor Éogar Fulgrim Gléomer Herucred Derntor Léofara Dúndan Fastheort Holdmer Eóere Éadig Háma Haleth Grimdig Gárbald Herubrand Gléomund Fulbeam Wídhelm Dúncanstan Fulgrim Derngar Fengel Herecred Erkenfred Fréafara Fenfa Gléoulf Wídwine Fulda Folca Déorgar Heruthain Wídbrand Erkendig Héoere Guthda Goldman Folmód Léobald Éoblod Herumer Éomód Fulman Goldfred Éadfara Háláf Herefa Heruere Erkenmer Déorthain Frumgar Éomód Grimbald Dernbeam Alnere Háred Goldgrim Elffara Fastmer Dernfara Gamling Folcred Heredred Gléodig Éadthain Grimulf Fenman Eónere Balfred Gárulf Gléothain Wulf
+		}
+	}
+	female = {
+		names = {
+			Gléohild Herewyn Dúndis Elfhild Derewyn Eaburh Cynerid Guthlid Théodwyn Éorhild Derewyn Herurid Héolith Leofryth Frumwyn Léofhild Folcburh Háith Ealwara Eódoina Beynild Héoburh Goldith Derewyn Théolida Éorlith Folcdis Gléodoina Waerwyn Eólid Beydis Waerith Tidhild Herenild Saewyn Goldwell Folchild Léodoina Garwena Cynerith Herudoina Saerith Eólith Dernnild Eadhild Léogyth Cynewen Godith Wídburh Derelida Eawyn Derewen Leofburh Dernhild Eóith Saedis Maerhild Guthgyth Théolith Aldrith Guthgyth Léofwyn Wídhild Herehild Frumwyn Ceolnild Leofryth Waerrith Tiddis Ealida Eódoina Maerwen Háwyn Héowyn Gléowyn Saehild Gamwyn Heruwara Guthith Tidnild Éadburh Ceolhild Saelida Gamlith Somerlid Waerhild Guthryth Frumwyn Cynehild Garrun Tidwena Derewyn Somerrith Ceolith Folcrid Wídhild Gamwen Maetwyn Théodwell Háwyn
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Anduin
+VAL = {
+	male = {
+		names = {
+			Harbrand Thorwulf Jornard Mornrek Aldwald Alngeir Rodgils Sigvar Bothvith Fridbar Grimstyr Heormund Treorek Galkarl Valohd Hrothrath Heorbald Jornald Arangeir Frothac Sigtan Skoltorn Jartar Hrothrek Alnric Lorsel Stigmoth Otwar Iskin Grimkar Lorbold Eranwine Dagvar Erndhor Nardrek Forngrim Nardvith Magwulf Ferhame Skolrath Widhelm Skolhame Rathhere Randvith Barard Valdstin Sigfast Daghar Waldgár Forngrim Mothac Wulwine Galkald Hartwar Magald Neddan Walddan Barvar Sigkar Jarric Rodbert Thorard Magrand Lydald Igor Ernoric Vulgeir Galgils Grimvir Baldor Jaldam Richelm Fridor Jarnbar Otric Wulthorn Lortar Ordvar Eranbold Fridsel Glumwald Norhyrde Harsorn Jornangar Stigwald Fridac Othkin Randmód Alnbold Raegrek Iwor Valbar Lorvith Glumkin Borgdac Harbert Isfast Hrothhame Fridond Gluthfast
+		  }
+	}
+	female = {
+		names = {
+			Ulwyn Lyna Venwyn Ulvindira Lifnwyn Jenhild Birntyn Fastbwyn Grimla WaentinaSigwyn Olaeya Gerthbwyn Aervild Solhild Ovinrlin Aernwyn Ulvinbwyn Ovinowyn GaildoraOviwyn Raenrin Ranbyn Iorfyn Kayvild Bruniaen Waenhelda Diswed Magbina Melfirth Kayhild Lifrun Gudrlin Ilinwyn Gudhild Kayaen Odowyn Ethara Rilgarth Velbyn Dyrwinne Ulvintyn Gaillin Hrimla Brerloth Unalaug Sigwed Ethlaug Ingihild Rhonfirth Ranrlin Kyndis Kaynis Aernwyn Waenwyn Salwild Brunia Dinfirth Hallwyn Iorrin Raenwyn Fynvild Odvera Fastowyn Gelava Katda Kathtyn Hunanda Rilginny Katrun Beorngun Brunielde Eyhelda Lifrlin Dyraen Ingieith Treolin Iorhild Berahild Raenwyn Iswyn Dislaug Grimwyn Amalanda Arinewyn Hallaeya Rileva Ethbwyn Magnwyn Jerntira Berangun Dyrhild Jilwed Oddora Gelaen Kynwyn Velnis Iorwyn Domdora Kayhera Ethda Winthrith Hallhild Isrisa Rangifu Berahild Ranvera Gailwyn Beranhelda Harfast Ovivor Beornelde Linwyn Leotwyn Mageva Bognwyn Isvyn Norbi Isowyn Velfrida
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Dale
+DAL = {
+	male = {
+		names = {
+			Vermunds Askold Bondi Anskar Agdi Arnstein Swain Hamar Arnor Moldan Ardgar Thorburn Borgar Iwar Hamund Varin Ragnald Torwald Anskar Hadding Armod Gunnor Fjolmod Torwald Hermundr Erlingr Malcolm Brander Thorald Magnus Gudrod Gudmundr Bjorn Godord Egil Hallgrim Lif Hromund Ulf Godfrid Vermunds Audr Ulf Arnaldr Glammad Knut Thorir Tore Mani Geirmund Gellir Rutland Sveinn Roald Thorgil Borgar Malcolm Thrandr Valagnar Tate Asbiorn Rutland Brand Friggir Geirrod Eddval Stig Geirolf Avaldr Malcolm Varin Rutland Fjalar Alfr Galmr Erling Solmundr Eilif Dyri Hallgrim Asbiorn Dagr Farulf Hakon Sigmund Eilaf Emund Iwar Storr Godmund Iwar Ingvarr Torwald Farulf Tate Ogmundr Eidr Hamund Bondi Arnkel
+		 }
+	}
+	female = {
+		names = {
+			Thora Lene Ida Kamilla Gerd Amalie Hege Jora Jenny Astrid Kristin Run Ronalda Janne Emilie Katla Thorberta Kirsten Arnora Finna Ingaborg Ingvill Halla Alfhild Ingibjorg Ingileif Johanna Elina Karoline Julie Herdis Ingrior Marte Emma Marthe Gudrun Raghild Raforta Camilla Jora Gerda Marie Hildigunnr Kristina Maria Alfhild Myrun Kirsten Aldis Oda Raforta Martine Nina Karen Cathrine Solweig Agnes Inger Astrid Kelda Inger Marta Cathrine Katla Astrid Karoline Kaolin Dorte Elise Gunnhild Kamilla Kirsten Eona Kaia Ellen Emma Kelda Signy Elise Niobjorg Kari Marit Dalla Katla Cathrine Raforta Halldis Martine Margrete Marte Pernilla Hedda Josefina Matilda Kolgrima Eyja Olava Jenny Bente Heior
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+### Enedwaith
+ENE = {
+	male = {
+		names = {
+			Zoldadoc Dramnodoc Domilt Varmil Drern Haddad Brorladoc Zorlilt Dren Zogridoc Valt Momnodoc Dald Gormont Dant Don Sornodoc Brent Rolmalt Homoc Grant Sagith Cend Zogdarn Cermolt Vadrorn Vond Gronig Zeradoc Grogidoc Cennild Drorladoc Darsal Hent Dorsodoc Rogdild Sannont Vanant Hagralt Coridoc Ronrand Reld Harlil Zadalt Goth Dorn Brorladoc Sonridoc Zelmath Dronnild Heth Relmog Hamint Zersidoc Danridoc Gralmadoc Moldan Hagolt Zond Brond Dennog Hegdadoc Camnin Drelt Ren Vedradoc Marn Drend Geral Rerlil Zerlad Magrold Rormodoc Codal Grerarn Grorladoc Zegoc Drent Demnidoc Menol Droth Vagrild Sadadoc Domoc Holmodoc Grarnodoc Vennorn Godadoc Corsodoc Zornic Gaddidoc Bronroth Vemarn Brelt Zegdarn Grogdadoc Grarmadoc Modoc Gronnodoc Zon
+		}
+	}
+	female = {
+		names = {
+			With Cern Woth Warthadh Bald Heleft Winass Sedirn Base Wonri Manrift Carthe Bodraft Mila Deft Barn Moth Woco Bath Morn Hirha Nocrarf Hold Soth Somic Vomi Doft Sori Dacri Hicold Certho Bord Simres Vecro Virha Nard Wacrarn Merd Conass Cago Hadh Niderd Biridh Bord Bocro Cerf Carn Nard Dirid Vess Mald Hicridh Bidric Codern Bath Woce Barthe Viterd Naserd Narn Coserd Wald Vilen Carthorf Mocon Wigoth Sone Vidh Domnas Mimridh Sacra Bamno Necath Wito Woth Narlaft Hift Sinro Mican Dila Bird Cath Sogodh Bimen Hidh Vomri Somerd Harn Celd Birhis Vidac Wortha Nertho Dirthe Megass Bemre Varthoft Nedh Vatass Dorhess
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+############################# ARTHEDAIN
+### Arthedain
+ART = {
+	male = {
+		names = {
+			Aaron Sherwood Lewis Ozzie Payton Lincoln Jarrett Kinnard Bernie Willard Steven Clay Joey Thurber Newland Brycen Samson Marc Walsh Burne Hunter Nathanial Averill Stockman Wilfrid Bede Bob Welford Marden Hunter Lytton Garett Titus Jay Litton Gray Al Rochester Osbert Radclyf Hallam Wardell Shep Barnie Donavan Stefan Rene Rider Dustin Osborne Stefan Cullen Damien Allard Brody Torold Jerome Brennan Colt Marston Stockman Bruce Walcot Stroud Rubert Sheldon Elmer Aldridge Fred Cade Brand Shelley Quinn Oakley Tanner Marshall Kinnell Arden Ash Ives Elbridge Andrew Terry Harrison Robby Wells Davis Alfred Everett Russell Parry Cromwell Nathanael True Cade Ralston Dominik Newton Henley Robben Sherborne Bailey Norville Rai Leland Titus Rudy Frank Whitmore Priestley Adrian
+		  }
+	}
+	female = {
+		names = {
+			Reese Aliza Eliana Emily Delilah Kacie Denisse Yedda Sofia Edith Melanie Kaylin Holly Alexa Kierra Gail Meagan Bobbie Rylee Holli Elisa Macey Kaley Edi Emmy Leigh Madyson Flo Selby Lillian Stacey Haylie Rylee Alexys Celine Alexia Jacey Mariana Alicia Tilly Marge Abagail Amy Love Pamela Christina Jadyn Gabrielle Carla Kiara Kayley Joyce Katie Cindy Sofia Lilian Maya Ericka Genevieve Amy Sophie Cheyanne Bria Veronica Michelle Kaiya Serena Nia Hattie Carina Shurl Eda Shurlie Rose Reanna Hollee Pyper Harva Aurora Karla Paula Buffy Margarita Jena Marge Myrtie Bailee Caitlyn Chaya Ruth Buffy Anita Ryleigh Karla Kyla Danielle Ashby Brandy Sonia Carley Samantha
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+### Cardolan
+CAR = {
+	male = {
+		names = {
+			Aaron Sherwood Lewis Ozzie Payton Lincoln Jarrett Kinnard Bernie Willard Steven Clay Joey Thurber Newland Brycen Samson Marc Walsh Burne Hunter Nathanial Averill Stockman Wilfrid Bede Bob Welford Marden Hunter Lytton Garett Titus Jay Litton Gray Al Rochester Osbert Radclyf Hallam Wardell Shep Barnie Donavan Stefan Rene Rider Dustin Osborne Stefan Cullen Damien Allard Brody Torold Jerome Brennan Colt Marston Stockman Bruce Walcot Stroud Rubert Sheldon Elmer Aldridge Fred Cade Brand Shelley Quinn Oakley Tanner Marshall Kinnell Arden Ash Ives Elbridge Andrew Terry Harrison Robby Wells Davis Alfred Everett Russell Parry Cromwell Nathanael True Cade Ralston Dominik Newton Henley Robben Sherborne Bailey Norville Rai Leland Titus Rudy Frank Whitmore Priestley Adrian
+		  }
+	}
+	female = {
+		names = {
+			Reese Aliza Eliana Emily Delilah Kacie Denisse Yedda Sofia Edith Melanie Kaylin Holly Alexa Kierra Gail Meagan Bobbie Rylee Holli Elisa Macey Kaley Edi Emmy Leigh Madyson Flo Selby Lillian Stacey Haylie Rylee Alexys Celine Alexia Jacey Mariana Alicia Tilly Marge Abagail Amy Love Pamela Christina Jadyn Gabrielle Carla Kiara Kayley Joyce Katie Cindy Sofia Lilian Maya Ericka Genevieve Amy Sophie Cheyanne Bria Veronica Michelle Kaiya Serena Nia Hattie Carina Shurl Eda Shurlie Rose Reanna Hollee Pyper Harva Aurora Karla Paula Buffy Margarita Jena Marge Myrtie Bailee Caitlyn Chaya Ruth Buffy Anita Ryleigh Karla Kyla Danielle Ashby Brandy Sonia Carley Samantha
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+##### Rhudaur
+RHD = {
+	male = {
+		names = {
+			Aaron Sherwood Lewis Ozzie Payton Lincoln Jarrett Kinnard Bernie Willard Steven Clay Joey Thurber Newland Brycen Samson Marc Walsh Burne Hunter Nathanial Averill Stockman Wilfrid Bede Bob Welford Marden Hunter Lytton Garett Titus Jay Litton Gray Al Rochester Osbert Radclyf Hallam Wardell Shep Barnie Donavan Stefan Rene Rider Dustin Osborne Stefan Cullen Damien Allard Brody Torold Jerome Brennan Colt Marston Stockman Bruce Walcot Stroud Rubert Sheldon Elmer Aldridge Fred Cade Brand Shelley Quinn Oakley Tanner Marshall Kinnell Arden Ash Ives Elbridge Andrew Terry Harrison Robby Wells Davis Alfred Everett Russell Parry Cromwell Nathanael True Cade Ralston Dominik Newton Henley Robben Sherborne Bailey Norville Rai Leland Titus Rudy Frank Whitmore Priestley Adrian
+		  }
+	}
+	female = {
+		names = {
+			Reese Aliza Eliana Emily Delilah Kacie Denisse Yedda Sofia Edith Melanie Kaylin Holly Alexa Kierra Gail Meagan Bobbie Rylee Holli Elisa Macey Kaley Edi Emmy Leigh Madyson Flo Selby Lillian Stacey Haylie Rylee Alexys Celine Alexia Jacey Mariana Alicia Tilly Marge Abagail Amy Love Pamela Christina Jadyn Gabrielle Carla Kiara Kayley Joyce Katie Cindy Sofia Lilian Maya Ericka Genevieve Amy Sophie Cheyanne Bria Veronica Michelle Kaiya Serena Nia Hattie Carina Shurl Eda Shurlie Rose Reanna Hollee Pyper Harva Aurora Karla Paula Buffy Margarita Jena Marge Myrtie Bailee Caitlyn Chaya Ruth Buffy Anita Ryleigh Karla Kyla Danielle Ashby Brandy Sonia Carley Samantha
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+##### Rhun
+RHU = {
+	male = {
+		names = {
+			Nórgönd Broktörth Kölwu Balost Gorlîç Gözîr Mazîl Madgöng Madga Mazik Bórgîk Dórul Dildönd Alwöst Söldün Nostöng Dóstîg Balür Naldan Docad Bölich Yórgund Gilwal Biddöd Bórli Gölfuz Kuddong Selduk Keluz Borlir Bektîch Öltu Kastîg Öldud Bremül Yuzoç Imrarth Bribu Yaddung Burod Kaciç Brilding Yörgîrth Borlo Köloç Mirlüng Sóddüch Guktorth Brimraz Sumrö Yimrich Kódgind Yilwüst Gorgar Söstük Böltîz Sorgürth Dumrök Brarlün Nocong Sözüç Bedgi Northach Bestî Elorth Daktö Budgid Brarlüd Mörlîn Kelwaz Dobul Oltan Módguk Sirgün Yerich Idgüd Bruldî Sorlorth Daldir Bracünd Gólwünd Brarlur Maldog Yaloch Nalfok Nirlurth Górî Brócing Gimüst Nazörth Yaldug Kólich Milförth Braddüg Aböst Surtha Yöldürth Briddiç Kórthîn Sölfoç
+		  }
+	}
+	female = {
+		names = {
+			Tarkag Kanul Îgan Gate Arene Alka Agkiz Rigkun Velkuz Unal Valun Anike Utiz Yarkene Vîrine Ilile Vileg Galule Yuze Gîzi Nurkuz Irun Motike Iniz Kîlike Darkig Ritene Zurig Datal Yugkag Îlike Vîleg Gagkin Vagkal Ugkel Kuzan Kagken Alu Votine Rogan Notene Egkun Olkun Mugken Yigi Îru Kîrkin Nigen Rîlku Golkul Yatin Rilkule Migan Guni Gîlkuge Voran Vîgel Nozun Mane Îtin Zorken Vilkine Iza Karkan Kîrken Yaluge Volkun Mizele Yuguz Igkal Vîgaz Zugiz Vinune Zegen Virkug Gezin Naru Vîlka Mugkun Tarkig Yîgkake Mîriz Rilken Zulke Îlkaz Kone Terine Tînune Yarkan Nurkez Aril Vetage Uzege Kalun Dirkiz Ziteke Gizuge Tizig Tigkike Ugkiz
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+############################# The Southlands
+#### Haradwaith
+HAR = {
+	male = {
+		names = {
+			 Nasah Ghusod Yusoth Sawfath Khishooh A'nob Khu'nam Buson Khadhith Ya'nal Yaabos Badnam Miqayd Dushal Musham Nubroon Khaadhid Mafith Huqqob Khakror Aaldokr Su'nab Liqayd Khatboh Khuwfayh Qazooth Arab Yarwan Huthar Taqqan Warwoth Nasil Yiqal Yuqqa Ghazaab Aqakr Wu'mo Juboh Arokr Athil Sis'an Daqab Khunnam Li'noth Adhaar Niqqab Khuwfod Lawfo Naamri Waabaym Yinnakr Hidno Amrokr Natbor Yamra Jatbaam Bunnah Ta'nool Hunnikr Ghadno Taron Mutbih Bafar Akrid Hizod Nimraah Tiqol Ghutbor Surwayh Yufam La'noth Ubron Hubrakr Nuldakr Annayth Suzol Labokr Li'moos Athih Hiqin Hubookr Lubayn Ditbah Khunnaykr Nidhookr Tithab Quthad Musah Ghadnor Mushon Uwfoh Huwfid Ni'non Yusan Haaqakr Bunnol Daabran Bunim Liqad Lakram
+		 }
+	}
+	female = {
+		names = {
+			Filih Sihar Hurlih Tulaynd Khahan Waldyh Rawlal Yawal Wurrir Nizhayh Musah Tidir Tufal Hunah Ilrynd Gharrad Nisin Mumlar Ruzal Dadhand Ghizid Dallad Yallin Fusrand Ghunhay Rulaah Yunnir Wiwlir Rumlan Sushayn Tildayh Mumlayh Famlih Tuzhah Ghullih Difih Sirlyd Hirih Ghudhih Misah Misi Wannal Falad Izhind Ninnaar Mimlih Nisyd Nulra Ghudar Khahaand Dashah Yizi Khirlaah Sannil Yunal Nulrir Iman Sihal Rilyh Khuwdind Ghurrih Tirrin Nufah Khiwaah Mumlind Sashaad Fallar Hali Tasad Khuwdih Dinar Ghahayn Yarlayh Hamlayh Yushah Unar Wilran Sunaad Izhaah Dadhih Yirlid Yilrind Hiwly Talrih Dimlah Hizhan Firay Yimih Rillil Muwla Rashar Tarrid Surlil Ishayr Rasih Hamad Sazad Rurril Wasri Uzil
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Umbar
+UMB = {
+	male = {
+		names = {
+			 Nasah Ghusod Yusoth Sawfath Khishooh A'nob Khu'nam Buson Khadhith Ya'nal Yaabos Badnam Miqayd Dushal Musham Nubroon Khaadhid Mafith Huqqob Khakror Aaldokr Su'nab Liqayd Khatboh Khuwfayh Qazooth Arab Yarwan Huthar Taqqan Warwoth Nasil Yiqal Yuqqa Ghazaab Aqakr Wu'mo Juboh Arokr Athil Sis'an Daqab Khunnam Li'noth Adhaar Niqqab Khuwfod Lawfo Naamri Waabaym Yinnakr Hidno Amrokr Natbor Yamra Jatbaam Bunnah Ta'nool Hunnikr Ghadno Taron Mutbih Bafar Akrid Hizod Nimraah Tiqol Ghutbor Surwayh Yufam La'noth Ubron Hubrakr Nuldakr Annayth Suzol Labokr Li'moos Athih Hiqin Hubookr Lubayn Ditbah Khunnaykr Nidhookr Tithab Quthad Musah Ghadnor Mushon Uwfoh Huwfid Ni'non Yusan Haaqakr Bunnol Daabran Bunim Liqad Lakram
+		 }
+	}
+	female = {
+		names = {
+			Filih Sihar Hurlih Tulaynd Khahan Waldyh Rawlal Yawal Wurrir Nizhayh Musah Tidir Tufal Hunah Ilrynd Gharrad Nisin Mumlar Ruzal Dadhand Ghizid Dallad Yallin Fusrand Ghunhay Rulaah Yunnir Wiwlir Rumlan Sushayn Tildayh Mumlayh Famlih Tuzhah Ghullih Difih Sirlyd Hirih Ghudhih Misah Misi Wannal Falad Izhind Ninnaar Mimlih Nisyd Nulra Ghudar Khahaand Dashah Yizi Khirlaah Sannil Yunal Nulrir Iman Sihal Rilyh Khuwdind Ghurrih Tirrin Nufah Khiwaah Mumlind Sashaad Fallar Hali Tasad Khuwdih Dinar Ghahayn Yarlayh Hamlayh Yushah Unar Wilran Sunaad Izhaah Dadhih Yirlid Yilrind Hiwly Talrih Dimlah Hizhan Firay Yimih Rillil Muwla Rashar Tarrid Surlil Ishayr Rasih Hamad Sazad Rurril Wasri Uzil
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Pellardur
+PEL = {
+	male = {
+		names = {
+			 Nasah Ghusod Yusoth Sawfath Khishooh A'nob Khu'nam Buson Khadhith Ya'nal Yaabos Badnam Miqayd Dushal Musham Nubroon Khaadhid Mafith Huqqob Khakror Aaldokr Su'nab Liqayd Khatboh Khuwfayh Qazooth Arab Yarwan Huthar Taqqan Warwoth Nasil Yiqal Yuqqa Ghazaab Aqakr Wu'mo Juboh Arokr Athil Sis'an Daqab Khunnam Li'noth Adhaar Niqqab Khuwfod Lawfo Naamri Waabaym Yinnakr Hidno Amrokr Natbor Yamra Jatbaam Bunnah Ta'nool Hunnikr Ghadno Taron Mutbih Bafar Akrid Hizod Nimraah Tiqol Ghutbor Surwayh Yufam La'noth Ubron Hubrakr Nuldakr Annayth Suzol Labokr Li'moos Athih Hiqin Hubookr Lubayn Ditbah Khunnaykr Nidhookr Tithab Quthad Musah Ghadnor Mushon Uwfoh Huwfid Ni'non Yusan Haaqakr Bunnol Daabran Bunim Liqad Lakram
+		 }
+	}
+	female = {
+		names = {
+			Filih Sihar Hurlih Tulaynd Khahan Waldyh Rawlal Yawal Wurrir Nizhayh Musah Tidir Tufal Hunah Ilrynd Gharrad Nisin Mumlar Ruzal Dadhand Ghizid Dallad Yallin Fusrand Ghunhay Rulaah Yunnir Wiwlir Rumlan Sushayn Tildayh Mumlayh Famlih Tuzhah Ghullih Difih Sirlyd Hirih Ghudhih Misah Misi Wannal Falad Izhind Ninnaar Mimlih Nisyd Nulra Ghudar Khahaand Dashah Yizi Khirlaah Sannil Yunal Nulrir Iman Sihal Rilyh Khuwdind Ghurrih Tirrin Nufah Khiwaah Mumlind Sashaad Fallar Hali Tasad Khuwdih Dinar Ghahayn Yarlayh Hamlayh Yushah Unar Wilran Sunaad Izhaah Dadhih Yirlid Yilrind Hiwly Talrih Dimlah Hizhan Firay Yimih Rillil Muwla Rashar Tarrid Surlil Ishayr Rasih Hamad Sazad Rurril Wasri Uzil
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Khand
+KND = {
+	male = {
+		names = {
+			 Nasah Ghusod Yusoth Sawfath Khishooh A'nob Khu'nam Buson Khadhith Ya'nal Yaabos Badnam Miqayd Dushal Musham Nubroon Khaadhid Mafith Huqqob Khakror Aaldokr Su'nab Liqayd Khatboh Khuwfayh Qazooth Arab Yarwan Huthar Taqqan Warwoth Nasil Yiqal Yuqqa Ghazaab Aqakr Wu'mo Juboh Arokr Athil Sis'an Daqab Khunnam Li'noth Adhaar Niqqab Khuwfod Lawfo Naamri Waabaym Yinnakr Hidno Amrokr Natbor Yamra Jatbaam Bunnah Ta'nool Hunnikr Ghadno Taron Mutbih Bafar Akrid Hizod Nimraah Tiqol Ghutbor Surwayh Yufam La'noth Ubron Hubrakr Nuldakr Annayth Suzol Labokr Li'moos Athih Hiqin Hubookr Lubayn Ditbah Khunnaykr Nidhookr Tithab Quthad Musah Ghadnor Mushon Uwfoh Huwfid Ni'non Yusan Haaqakr Bunnol Daabran Bunim Liqad Lakram
+		 }
+	}
+	female = {
+		names = {
+			Filih Sihar Hurlih Tulaynd Khahan Waldyh Rawlal Yawal Wurrir Nizhayh Musah Tidir Tufal Hunah Ilrynd Gharrad Nisin Mumlar Ruzal Dadhand Ghizid Dallad Yallin Fusrand Ghunhay Rulaah Yunnir Wiwlir Rumlan Sushayn Tildayh Mumlayh Famlih Tuzhah Ghullih Difih Sirlyd Hirih Ghudhih Misah Misi Wannal Falad Izhind Ninnaar Mimlih Nisyd Nulra Ghudar Khahaand Dashah Yizi Khirlaah Sannil Yunal Nulrir Iman Sihal Rilyh Khuwdind Ghurrih Tirrin Nufah Khiwaah Mumlind Sashaad Fallar Hali Tasad Khuwdih Dinar Ghahayn Yarlayh Hamlayh Yushah Unar Wilran Sunaad Izhaah Dadhih Yirlid Yilrind Hiwly Talrih Dimlah Hizhan Firay Yimih Rillil Muwla Rashar Tarrid Surlil Ishayr Rasih Hamad Sazad Rurril Wasri Uzil
+		}
+	}
+
+	surnames = { "" }
+}
+
+###############################################################
+# Elves
+###############################################################
+##### Lothlorien
+LTH = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Eryn Lasgalen (Mirkwood)
+MIR = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+##### Rivendell
+RIV = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+##### Lindon
+LIN = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Harlindon
+HLI = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Nanduhirion
+NDH = {
+	male = {
+		names = {
+			Calanon Erumollien Adan Adanion Beinion Glandur Beriadan Idhrenion Glanhelmion Suiadan Ainion Valdaglerion Thorontur Gondien Arbellason Alyan Lithaldoren Vanafindon Rimedur Arandur Maidhfinden Veryamorcon Laermeluion Thalion Morcion Maidhion Lairelandon Landion Landathradon Megildur Baradhamon Beleg Ceberlandon Tawarthion Arphenion Rincavornon Cugedhion Raegbund Veryan Arthion Suiauthon Miuverthon Suiadan Aphaderuiondur Eruaphadion Mornefindon Istuion Taurhassdorien Rhassbaradhon Amonost Rhassdorthion Nedhudir Morfindien Sellion Rissien Vehiron Meldiron Saeldur Erubadhron Tithdaeron Caunidhrenon Meldarion Imrathon Maeron Rhovanion Caunwaithon Bregolien Sadron Caunardhon Morohtar Mornenion Locien Baramaethor Veryamaethon Aearion Aradan Beriogelir Alyameldir Hirnaeranin Melimion Valpanbarion Veassen Caunion Revion Tangadion Eithelonnen Nithron Suiadan Suiadanion Vanafindon Lainadan Sidhenidon Eruadan Herenyonnen Dorsidhion Daermaethor Bercalion Imrathion Suiauthon Daeron Tirithon Carsuithon Mardion Gwetherindolien Bandorion Merilairon Marcaunon Alassien Faeron Sidhion Feredir Barathon Minyadan Lalaithion Eruedraithon Tuilalcaron Orthorien Nestaron Erumeldir Eruaran Airadan Airion Erumaren Erurainon Cugedhion Eruantion Anessen Eruedraith Eglerion Nessimon Faelon Handion Glenndaugion Beinion Maethorion Beinion Beinion Iauron Valanyonnen Talfagoron Talathion Agormenion Lairion Raunien Bellrauthien Lainathion Nethraunien Mithrennon Cundmaethor Tegalad Daeron Cugechilon Suiauthon Eruantien Andaer Cerediron Eraisuithon Lancaeron Antien Eruantien Herion Edenost Turwaithion Heronion Nosteruion Istmaedhon Sidhion Maldor Bellasvalainon Nostarion Nibenon Maeglad Daugobelion Rochendil Miluion Thandraug Bellthandien Erunestian Beridhren Nendir Aranhil Caunion Nibensirien Horthien Bellcaunion Aranion Eleyond Caranion Carandol Aranethon Eruestan Erurainion Lathron Limdur Mordemirdanian Hebion Lairondren Elenion Rinion Roherdiron Alagos Arandur Erynion Eglerion Thandion Castien Eruantien Valpamiucon Maererun Ruscion Menathradon Nechaenion Rainantien Gleinadhorion Minastion Ortherion Authion Turin Athradien Taurvantian Balamaethor Beriohtarion Beriothien Erynion Sidhpantion Edenoston Ovorion Bellsulion
+		}
+	}
+	female = {
+		names = {
+			Aafke Adlanniel Adanessa Faelwen Mirima Alya Maerwen Mellimeldisiel Vendethiel Vanya Caladwen Beriadanwen Tauredhiel Thenidiel Nostariel Alassiel Melda Manwameldiel Huoriel Dessuithiel Valadhiel Aintithenniel Mentathiel Raina Haldaraina Gwirithiel Airedhiel Limbairedhiel Gwaedhiel Lairelithoniel Falathiel Tuarwen Malthenniel Minuialwen Aesuithiel Arasinya Cuiledhwen Aranduriel Alastegiel Gwedhiel Pilindiel Veryamedliel Turtegiel Eruaistaniel Pendecardiel Belleruraina Talathiel Uralimpiel Crabatithenniel Bellethiel Vardainiel Bellasiel Daerwen Nellethiel Amoniel Gwilwilethel Vanya Venessiel Fainauriel Anameleth Melda Bellethiel Aerlinniel Lindethiel Lindariel Verya Menelwen Ithilwen Tanlicumiel Valisilwen Linnadhiel Inimeitiel Dessuithiel Cirelondiel Melda Doredhiel Lostariel Eruaphadriel Limwen Eleniel Iellwen Ellethwen Pandothiel Silima Henaradwen Meldiriel Erunanethiel Elarinya Erubadhriel Verisiel Erdolliel Minuialwen Randiriel Naerwen Rhavaniel Anira Maranwethiel Baudhiel Hyarmenothiel Naerdiel Malthenniel Remethiel Eruanna Cugedhiel Yernadhiel Siladhiel Eruwaedhiel Calathiel Glanlotiel Manathiel Edhelwen Elvellonwen Ardhoniel Caunwen Eleniel Arawen Maersiniathwen Cuilwen Bronwethiel Vanafindiel Silivrenniel Lostithenniel Lothiriel Lostariel Sidhiel Erudessa Nimgarthiel Sidhnanledhiel Miriel Santiel Caunanechiel Tuimadhiel Eruraina Airemana Vanimaista Aglariel Silivrenniel Amaniel Gwetherindoliel Marcauniel Andranniel Gothweniel Caladhiel Ainathiel Amariel Ercassiel Estelwen Nessima Daeralda Eruaistaniel Vanya Nanethiel Sidhiel Ninniachel Lona Eruraina Beriadhwen Idhrenniel Calenmiriel Eruraina Eruraina Filegedhiel Herenya Miriel Nithpantiel Eruraina Rainerudhiel Eruraina Iellwen Anessathiel Alassiel Nessima Faelwen Eccaia Meltithenniel Quanteruanna Manwathiel Manwamahtariel Sairahiniel Eraisuithiel Maethoriel Valpantiel Limoladiel Laesneniel Amonniel Dolledhiel Aragarthiel Caunedhiel Vendethiel Eruaistaniel Liruliniel Caladwen Siladhiel Galedlothia Vanmoriel Yerathiel Mordollwen Lainathiel Indilwen Caladhiel Sidhlairiel Rawodhiel Eruaistaniel Cuilwen Authiel Draugathiel Maetharanel Caladhiel Tegaladwen Ithilwen Narylfiel Vanyalanthiriel Aerlinniel Melima Eruantiel Beinedhiel Minastauriel Eruantienell Thandiel Nanethiel Marilla Saercalwen Aeariel Aeroniel Manwathiel Vanamarilla Saerwen Saeruwaedhiel Taurauthiel Morwen Andaeriel Lothroniel Hannasiel Morwen Belltassiel Medlinniel Aerlinniel Beriaearwen Sabariel Eraisuithiel Validhreniel Arawen Eriathwen Lancaeriel Maerwen Aercalima Estelwen Estelpantiel Raina Onnedhiel Ennostiel Silacaladhiel Caladhiel Velossfaeniel Turwaithiel Vendethiel Nosteruionwen Caladhiel Forvenniel Serethiel Erumara Valiedhiel Cugedhiel Medlinniel Lothiriel Mithrenniel Aegliriell Nostariel Nibenwen Nathronniel Sarnedhiel Daugobelwen Rochendilwen Lassiel Crabanniel Rainarasinya Buieruwen Aranhilwen Hantaliel Aerlinniel Adonnenniel Ethiriel Bellcauniel Celunibeniel Gondtithenniel Gondothiel Merilwen Dolithiel Vanafindiel Minuialwen Aranel Erulastiel Beriadanwen Aranel Ilbrethladwen Carnadhiel Ithilwen Hantadhiel Eruraina Vanya Menelwen Erulaeriel Calairiel Merilwen Eruainantiel Sydney Tanna Tawariell Lathronniel Earenniel Istimiel Idhrenniel Eleniel Riniel Laerwen Anariel Indilwen Nithiel Tolandiel Vancarmiel Rossarinya Meldainiel Tariel Castiel Lostariel Eruanna Valainantiel Gliriel Aranel Eruthiawen Ethiriel Aineldiel Valauthiel Medlinya Melethiel Bellethiel Gwilwileth Melethainiel Mantheniel Helinniel Rodwen Cuilpantiel Nethlhindorniel Helmaninquiel Silivrentoliel Sidhmeldiriel Mainonnenniel Filegethiel Earmaiviel Raina Laisidhiel Minuialwen 
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+###############################################################
+# Dead Marshes, Spiders
+###############################################################
+#### Swamplands
+DAG = { # wtf do I even put here? eeeh, lets just put the spider names lmao
+	male = {
+		names = {
+		 	Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		}
+	}
+	female = {
+		names = {
+			Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		}
+	}
+
+	surnames = { "" }
+}
+#### Spiders of Mirkwood
+SPIDERGENERIC = {
+	male = {
+		names = {
+			Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		  }
+	}
+	female = {
+		names = {
+			Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Spiders of Mirkwood
+SPI = {
+	male = {
+		names = {
+			Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		  }
+	}
+	female = {
+		names = {
+			Nesser Yesrar Ralrod Axod Zrox'ax Chiqzas Srerzo Coqri El'zod Aichakkis Lacaq Lekus Iachil Lozosnaq Qhacir Khezsol Nekuq Qeezor Szicovar Qheqral Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq Yiq'ra Qhat'id Szosu Zon'qal Qis'toq Qhelrid Szarus Zornah Chan'qud Qheerniq
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Northern Wastes
+NEP = {
+	male = {
+		names = { Bhimsen Amar Ranjur Bhakti Jang Renaudip Shamsher "Bir Shamsher" "Deva Shamsher" "Chandra Shamsher" "Bhim Shamsher"  }
+	}
+	female = {
+		names = { Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal }
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+
+###############################################################
+# Dwarves
+###############################################################
+##### Moria
+MOA = {
+	male = {
+		names = {
+			Thifren Bulbik Gomrin Frember Gelbem Gruba Thobo Kano Flina Kignondok Fibom Kirem Danrur Mhifrom Khagu Drodu Nofa Faige Domdwindek Frilbek Grefrun Mholvak Grarvum Thaim Groita Fefi Boil Braite Genim Firem Dafrim Flulbum Mhamam Brule Froib Tebe Dwail Laidu Brofum Krefrim Throlrom Barik Flofren Dogi Febi Flak Khila Nail Dwefrok Drufrim Brolron Glenik Numbik Glig Khon Thaki Flut Thaime Gurvur Thenruk Gafar Nonar Dumbak Bub Fleg Them Fibu Throb Dirlam Frifrem Mirlon Bifum Lembor Thaim Drebo Maini Brone Drail Kifrer Lelrak Meler Dumbar Mhisrik Duke Fran Bagi Flolu Kraite Thrunrok Febuk Nemam Nalvom Kosen Thasrik Gridu Krata Naifo Groime Mheme Tolrir Tombim Nenak Gronrin Flilror Berlen Gralir Lago Khen Beko Meta Framu Nalur Nasron Frosrir Dwolvon Falvan Floim Briga Mhudi Kramo Dwoida Lemak Glonden Fombim
+		  }
+	}
+	female = {
+		names = {
+			Thifren Bulbik Gomrin Frember Gelbem Gruba Thobo Kano Flina Kignondok Fibom Kirem Danrur Mhifrom Khagu Drodu Nofa Faige Domdwindek Frilbek Grefrun Mholvak Grarvum Thaim Groita Fefi Boil Braite Genim Firem Dafrim Flulbum Mhamam Brule Froib Tebe Dwail Laidu Brofum Krefrim Throlrom Barik Flofren Dogi Febi Flak Khila Nail Dwefrok Drufrim Brolron Glenik Numbik Glig Khon Thaki Flut Thaime Gurvur Thenruk Gafar Nonar Dumbak Bub Fleg Them Fibu Throb Dirlam Frifrem Mirlon Bifum Lembor Thaim Drebo Maini Brone Drail Kifrer Lelrak Meler Dumbar Mhisrik Duke Fran Bagi Flolu Kraite Thrunrok Febuk Nemam Nalvom Kosen Thasrik Gridu Krata Naifo Groime Mheme Tolrir Tombim Nenak Gronrin Flilror Berlen Gralir Lago Khen Beko Meta Framu Nalur Nasron Frosrir Dwolvon Falvan Floim Briga Mhudi Kramo Dwoida Lemak Glonden Fombim
+		}
+	}
+
+	surnames = { "" }
+}
+#### Erebor
+ERE = {
+	male = {
+		names = {
+			Thifren Bulbik Gomrin Frember Gelbem Gruba Thobo Kano Flina Kignondok Fibom Kirem Danrur Mhifrom Khagu Drodu Nofa Faige Domdwindek Frilbek Grefrun Mholvak Grarvum Thaim Groita Fefi Boil Braite Genim Firem Dafrim Flulbum Mhamam Brule Froib Tebe Dwail Laidu Brofum Krefrim Throlrom Barik Flofren Dogi Febi Flak Khila Nail Dwefrok Drufrim Brolron Glenik Numbik Glig Khon Thaki Flut Thaime Gurvur Thenruk Gafar Nonar Dumbak Bub Fleg Them Fibu Throb Dirlam Frifrem Mirlon Bifum Lembor Thaim Drebo Maini Brone Drail Kifrer Lelrak Meler Dumbar Mhisrik Duke Fran Bagi Flolu Kraite Thrunrok Febuk Nemam Nalvom Kosen Thasrik Gridu Krata Naifo Groime Mheme Tolrir Tombim Nenak Gronrin Flilror Berlen Gralir Lago Khen Beko Meta Framu Nalur Nasron Frosrir Dwolvon Falvan Floim Briga Mhudi Kramo Dwoida Lemak Glonden Fombim
+		  }
+	}
+	female = {
+		names = {
+			Thifren Bulbik Gomrin Frember Gelbem Gruba Thobo Kano Flina Kignondok Fibom Kirem Danrur Mhifrom Khagu Drodu Nofa Faige Domdwindek Frilbek Grefrun Mholvak Grarvum Thaim Groita Fefi Boil Braite Genim Firem Dafrim Flulbum Mhamam Brule Froib Tebe Dwail Laidu Brofum Krefrim Throlrom Barik Flofren Dogi Febi Flak Khila Nail Dwefrok Drufrim Brolron Glenik Numbik Glig Khon Thaki Flut Thaime Gurvur Thenruk Gafar Nonar Dumbak Bub Fleg Them Fibu Throb Dirlam Frifrem Mirlon Bifum Lembor Thaim Drebo Maini Brone Drail Kifrer Lelrak Meler Dumbar Mhisrik Duke Fran Bagi Flolu Kraite Thrunrok Febuk Nemam Nalvom Kosen Thasrik Gridu Krata Naifo Groime Mheme Tolrir Tombim Nenak Gronrin Flilror Berlen Gralir Lago Khen Beko Meta Framu Nalur Nasron Frosrir Dwolvon Falvan Floim Briga Mhudi Kramo Dwoida Lemak Glonden Fombim
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+###############################################################
+# Hobbits
+###############################################################
+##### Shire
+SHI = {
+	male = {
+		names = { 
+			"Godomar Gamgee" "Gundovald Gawkroger" "Marcomir Rumble" "Lo Brownlock" "Fosco Butcher" "Sago Proudfoot" "Burchard Goodbody" "Ansegisel Gawkroger" "Gozbert Goodenough" "Leodegar Hornblower" "Grimald Greenhand" "Valdemar Whitfoot" "Bob Hogg" "Nordbert Longholes" "Brocard Bophin" "Ingund Hogg" "Sigebert Goodbody" "Bowman Goold" "Badegisel Harfoot" "Ouus Brown" "Grossman Zaragamba" "Bercilac Bracegirdle" "Clothair Boffin" "Badegisel Goold" "Berenger Bracegirdle" "Bob Chubb" "Emmon Bolger" "Thankmar Sandheaver" "Philibert Longholes" "Clodio Hornblower" "Crispus Zaragamba" "Ebrulf Hlothran" "Cyr Maggot" "Hamfast Meadows" "Rathar Clayhanger" "Wilcome Hlothran" "Andica Pott" "Wazo Bophin" "Marcho Longholes" "Pair Hlothran" "Chlodowig Meadows" "Rollo Whitfoot" "Notger Fairbairn" "Cyricus Brandybuck" "Imnachar Hogg" "Fulvus Rumble" "Hagen Galbasi" "Grimbald Brockhouse" "Heribald Stoor" "Isembold Meadows" "Wibert Gammidge" "Orlando Whitfoot" "Fulk Burrowes" "Hartgard Brandybuck" "Herugar Brownlock" "Razo Burrows" "Nick Gardner" "Marmadoc Fallohide" "Lebuin Stoor" "Pacatian Brockhouse" "Emme Chubb" "Childebrand Longhole" "Radigis Baggins" "Laudus Longhole" "Reginald Bolger" "Liudolf Maggot" "Ageric Gawkroger" "Meriadoc Stoor" "Huebald Zaragamba" "Ingund Brandybuck" "Halfast Cotton" "Bilba Gamwich" "Leuthard Underhill" "Marcus Gammidge" "Porro Gamwich" "Clodio Butcher" "Wandregisilus Bracegirdle" "Brocard Goodbody" "Gringamor Galbasi" "Samo Banks" "Willichar Banks" "Cheldric Brandybuck" "Magnus Headstrong" "Adalard Sandheaver" "Frodo Burrowes" "Sichar Greenholm" "Folmar Gamgee" "Tomacca Brownlock" "Bertram Burrows" "Dudo Maggot" "Tassilo Sandyman" "Nithard Mugwort" "Carloman Fallohide" "Nibelung Burrows" "Waiofar Clayhanger" "Agiulf Pott" "Otbert Fallohide" "Adalhard Greenholm" "Conrad Longholes" "Nick Clayhanger" "Meriadoc Hogg" "Halfast Tuk" "Guido Galbasi" "Rathar Butcher" "Enurchus Hayward" "Wilimar Gamgee" "Mansuetus Bunce" "Marco Brownlock" "Chlodwig Brown" "Athanaric Stoor"
+		}
+	}
+	female = {
+		names = {
+			"Heather Fairbairn" "Lily Diggle" "Lavender Maggot" "Canna Headstrong" "Amarylla Galpsi" "Brodia Puddifoot" "Dianthus Maggot" "Jasmina Goldworthy" "Berylla Gamwich" "Esmerelda Roper" "Belba Fallohide" "Camomile Harfoot" "Narcissa Brown" "Chica Stoor" "Angelica Underhill" "Iris Oldbuck" "Eranthis Zaragamba" "Forsythia Galpsi" "Holli Hornblower" "Brodia Gawkroger" "Amaryllis Gardner" "Amaryllis Took" "Begonia Headstrong" "Brunnera Sandheaver" "Melilot Fairbairn" "Sapphire Sandheaver" "Sapphire Goodchild" "Peony Greenholm" "Amarantha Whitfoot" "Rosa Greenholm" "Lila Harfoot" "Elanor Gammidge" "Kalmia Sackville" "Garnette Gawkroger" "Amarantha Cotton" "Rosa Burrowes" "Heliconia Burrows" "Lyla Goold" "Hildibrand Diggle" "Menegilda Boffin" "Daisi Chubb" "Rose Gammidge" "Cleoma Brown" "Bessera Headstrong" "Canna Goodenough" "Beryl Galbasi" "Bell Noaks" "Alyssa Noaks" "Asphodel Longhole" "Lyla Labingi" "Lily Brown" "Ruellia Cotton" "Liatris Longhole" "Clover Diggle" "Laura Longhole" "Gardenia Goodbody" "Dora Butcher" "Ruellia Burrowes" "Daffodil Greenhand" "Lavenda Zaragamba" "Forsythia Cotton" "Gaura Hornblower" "Veronica Sandheaver" "Anagellis Galpsi" "Lalia Headstrong" "Salvia Clayhanger" "Cleoma Brockhouse" "Hildibrand Gardner" "Lunaria Twofoot" "Asphodel Labingi" "Adaldrida Chubb" "Donnamira Mugwort" "Begona Gawkroger" "Camassia Twofoot" "Belba Gardner" "Garnette Puddifoot" "Camella Goodenough" "Gerania Chubb" "Mahonia Sandheaver" "Narcissa Cotton" "Viola Sandheaver" "Clover Gamgee" "Poppy Brandybuck" "Forsythia Brandagamba" "Crocosmia Puddifoot" "Erantha Headstrong" "Pearl Galbasi" "Esmerelda Gammidge" "Primula Smallburrow" "Amarantha Brandybuck" "Lonicera Oldbuck" "Begonia Galbasi" "Coryda Bolger" "Belba Pott" "Gladiola Goodchild" "Myrtle Gamwich" "Hildibrand Gawkroger" "Camellia Boffin" "Emerald Tunnelly" "Gladiola Pott"
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+###############################################################
+# Orcs
+###############################################################
+#### Generic Orc (countries that switch to orc will use this)
+ORCGENERIC = {
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Mordor
+MOR = {
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Orc-Moria
+MOC = {
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	male = {
+		names = {
+			Gaudbegh Gacbagh Kazzoc Shigraurg Shogrigh Addith Addud Odbarg Uzre Urbu Gherbi Bagga Ghehugh Grogau Lolgo Aldedh Ozbu Oddud Urcir Agdat Ledbi Dirca Brirzif Kruhu Serbosh Uzzuc Olcmu Azbokh Afdesh Aurced Ghecru Shazrur Seldur Curdet Rirzit Authrogh Udbit Ogzut Olfikh Orzuf Shucdaush Lacroc Shelcmet Sigzath Bagdidh Ozau Ucrur Ugret Ocruc Ohaurg Rardu Rogboc Crushnu Krucdeg Kraurburg Acrif Oggudh Ahirg Argag Ucbir Sogdidh Shofdif Maurcir Krugro Ghugdekh Ogzed Ugut Auddorg Uggadh Ugzudh Sherdekh Krirgaush Drarduth Grarguth Dezosh Orzir Alcmaurg Ozzud Orbaud Aucrash Kulfil Shegzu Sigeth Cishnish Meshnau Auzbag Audbath Ufthol Ufthagh Olgeg Krauharg Grigba Gagrosh Mezra Macbuth Arcokh Ufthag Olfush Auhush Adburg
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}
+#### Isengard
+ISE = {
+   	male = {
+   		names = {
+			Aleksandre Avtandil Besarion Butchu Datiko Davit Egnate Evgeni Filipp Giorgi Grigol Gulichino Iakob Ioseb Iosef Irakli Kalenike Kale Karlo Lavrenti Mikheil Niko Nikoloz Noe Pavel Polikarp Kandid Radjeb Shalva Semon Sergo Silibistro Tamaz Varlam Valiko Zurab
+       }
+   	}
+   female = {
+       	names = {
+       		Alexandra Ana Ekaterine Ketevan Kato Kristine Ladia Manana Mariam Mariko Maia Marta Nana Natela Natia Nina Nino Sephora Tamar
+        }
+   }
+   surnames = { "" }
+   callsigns = {  }
+}
+###############################################################
+# Ents
+###############################################################
+ENT = {
+	male = {
+		names = {
+			Cruelcypress Quietyew Cedarcrown Aldertip Cherryroot Arener Bucidaema Rhudendor Litallee Hyophorewyn Tenderthorn Alderburn Juniperstalk Shadowsprout Splintoak Palael Gonysallee Corylunith Pausill Casild
+		}
+	}
+	female = {
+		names = {
+			Cruelcypress Quietyew Cedarcrown Aldertip Cherryroot Arener Bucidaema Rhudendor Litallee Hyophorewyn Tenderthorn Alderburn Juniperstalk Shadowsprout Splintoak Palael Gonysallee Corylunith Pausill Casild
+		}
+	}
+	surnames = { "" }
+	callsigns = { }
+}

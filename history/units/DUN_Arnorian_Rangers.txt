@@ -1,0 +1,65 @@
+##### Division Templates #####
+division_template = {
+	name = "Arnorian Rangers"			# Rifle Division
+
+	regiments = {
+		rangers_infantry = { x = 0 y = 0 }
+		rangers_infantry = { x = 0 y = 1 }
+		rangers_infantry = { x = 1 y = 0 }
+		rangers_infantry = { x = 1 y = 1 }
+		rangers_infantry = { x = 2 y = 0 }
+		rangers_infantry = { x = 2 y = 1 }
+
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Arnorian Rangers"
+		location = 6980
+		division_template = "Arnorian Rangers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+}
+### Starting Production ###

@@ -1,0 +1,401 @@
+focus_tree = {
+id = woodlandrealm
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = WDR
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = WDR_The_Move_North
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		x = 25
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = { 
+			add_ideas = WRD_the_flight_north
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = WDR_The_Death_of_King_Oropher
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Move_North }
+		relative_position_id = WDR_The_Move_North
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = WDR_the_death_of_king_oropher
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = WDR_The_Battle_of_Five_Armies
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Death_of_King_Oropher }
+		relative_position_id = WDR_The_Death_of_King_Oropher
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = WDR_the_battle_of_five_armies
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = WDR_Northern_Elves_of_Taudirim
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Battle_of_Five_Armies }
+		relative_position_id = WDR_The_Battle_of_Five_Armies
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			annex_country = { target = TAU transfer_troops = yes }
+			add_state_core = 80
+		}
+	}
+	focus = {
+		id = WDR_Prepare_The_Army
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_Northern_Elves_of_Taudirim }
+		relative_position_id = WDR_Northern_Elves_of_Taudirim
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = WDR_Mobilized_Army
+		}
+	}
+	focus = {
+		id = WDR_Prepare_The_Defenses
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_Northern_Elves_of_Taudirim }
+		relative_position_id = WDR_Northern_Elves_of_Taudirim
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			83 = {
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 4730 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 4506 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 2628 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5876 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 4866 }
+				}
+			81 = {
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5942 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 1314 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5986 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 2209 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5948 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5484 }
+				add_building_construction = {type = bunker level = 2 instant_build = yes province = 5917 }
+				}
+		}
+	}
+	focus = {
+		id = WDR_The_Encroaching_Shadow
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = WDR_Prepare_The_Army }
+		prerequisite = { focus = WDR_Prepare_The_Defenses }
+		relative_position_id = WDR_Prepare_The_Army
+		x = 1
+		y = 1
+		cost = 5
+		will_lead_to_war_with = SHA
+		completion_reward = {
+			WRD = { add_state_claim = 84  add_state_claim = 82 }
+			create_wargoal = { type = annex_everything target = SHA }
+				if = { limit = { WRD = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = SHA }
+				}
+			}
+	}
+	focus = {
+		id = WDR_Deal_With_Dol_Guldor
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = WDR_The_Encroaching_Shadow }
+		prerequisite = { focus = WDR_The_Encroaching_Shadow }
+		mutually_exclusive = {focus = WDR_Prepare_For_The_Inevitable }
+		relative_position_id = WDR_The_Encroaching_Shadow
+		x = -1
+		y = 1
+		cost = 5
+		available = { WRD = { is_neighbor_of = DLG } }
+		available = { date > 3019.7.1 }
+		will_lead_to_war_with = DLG
+		completion_reward = {
+			WRD = { add_state_claim = 85  add_state_claim = 99 }
+			create_wargoal = { type = annex_everything target = DLG }
+				if = { limit = { WRD = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = DLG }
+				}
+			}
+		}
+	focus = {
+		id = WDR_Prepare_For_The_Inevitable
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = WDR_The_Encroaching_Shadow }
+		prerequisite = { focus = WDR_The_Encroaching_Shadow }
+		mutually_exclusive = {focus = WDR_Deal_With_Dol_Guldor }
+		relative_position_id = WDR_The_Encroaching_Shadow
+		x = 1
+		y = 1
+		cost = 5
+		available = { WRD = { is_neighbor_of = DLG } }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = WDR_The_Woodland_Artisians
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Battle_of_Five_Armies }
+		relative_position_id = WDR_The_Battle_of_Five_Armies
+		x = -6
+		y = 1
+		cost = 5
+		completion_reward = {
+			83 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = WDR_The_Woodland_Workshops
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Woodland_Artisians }
+		relative_position_id = WDR_The_Woodland_Artisians
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			83 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = WDR_The_Woodland_Forges
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Woodland_Artisians }
+		relative_position_id = WDR_The_Woodland_Artisians
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			83 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = WDR_The_Kings_Armories
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Woodland_Workshops }
+		relative_position_id = WDR_The_Woodland_Workshops
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			224 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = WDR_The_Kings_Guards
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Woodland_Workshops }
+		prerequisite = { focus = WDR_The_Woodland_Forges }
+		relative_position_id = WDR_The_Woodland_Workshops
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support  = 0.05
+			ROOT = { add_manpower = 15000 }
+		}
+	}
+	focus = {
+		id = WDR_The_Gate_Guards
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Woodland_Forges }
+		relative_position_id = WDR_The_Woodland_Forges
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support  = 0.05
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = WDR_The_Woodland_Army
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Kings_Armories }
+		prerequisite = { focus = WDR_The_Kings_Guards }
+		prerequisite = { focus = WDR_The_Gate_Guards }
+		relative_position_id = WDR_The_Kings_Armories
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			ROOT = { add_manpower = 10000 }
+			add_war_support  = 0.10
+		}
+	}
+	focus = {
+		id = WDR_The_Kingdom_of_Lothlorian
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Battle_of_Five_Armies }
+		relative_position_id = WDR_The_Battle_of_Five_Armies
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_opinion_modifier = { target = CRS modifier = large_increase }
+			CRS = {
+				add_opinion_modifier = { target = WRD modifier = large_increase }
+				}
+			}
+	}
+	focus = {
+		id = WDR_Send_a_Silvan_Emissary
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Kingdom_of_Lothlorian }
+		relative_position_id = WDR_The_Kingdom_of_Lothlorian
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability  = 0.02
+			give_guarantee = CRS 
+			CRS = { add_opinion_modifier = { target = WRD modifier = large_increase } }
+		}
+	}
+	focus = {
+		id = WDR_Open_Trade_Networks
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_The_Kingdom_of_Lothlorian }
+		relative_position_id = WDR_The_Kingdom_of_Lothlorian
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability  = 0.03
+			83 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			75 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+			}
+		}
+	focus = {
+		id = WDR_A_Common_Cause
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_Send_a_Silvan_Emissary }
+		relative_position_id = WDR_Send_a_Silvan_Emissary
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			ROOT = { add_manpower = 40000 }
+			CRS = { add_manpower = 40000 }
+		}
+	}
+	focus = {
+		id = WRD_A_Defensive_Alliance
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_Send_a_Silvan_Emissary }
+		prerequisite = { focus = WDR_Open_Trade_Networks }
+		relative_position_id = WDR_Send_a_Silvan_Emissary
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability  = 0.05
+			CRS = { give_guarantee = ROOT }
+			ROOT = { add_opinion_modifier = { target = CRS modifier = large_increase } }
+		}
+	}
+	focus = {
+		id = WDR_Prepare_A_Royal_Visit
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_Open_Trade_Networks }
+		relative_position_id = WDR_Open_Trade_Networks
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			83 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			75 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+		}
+	}
+	focus = {
+		id = WRD_An_Elven_Alliance
+		icon = GFX_goal_lotr_WoodlandRealm
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = WDR_A_Common_Cause }
+		prerequisite = { focus = WRD_A_Defensive_Alliance }
+		prerequisite = { focus = WDR_Prepare_A_Royal_Visit }
+		relative_position_id = WDR_A_Common_Cause
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_faction = "Alliance of the Silvan Elves"
+			Add_to_faction = CRS
+			add_war_support  = 0.10
+			ROOT = { load_oob = WDR_Silvan_Alliance }
+			CRS = { load_oob = CRS_Silvan_Alliance }
+
+		}
+	}
+}

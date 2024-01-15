@@ -1,0 +1,3452 @@
+on_actions = {
+	#### PEACE/WAR VICTORY ON_CAPITULATION BLOCK ####
+	#### PUT YOUR SHIT HERE
+	# At the end of each global block, set the skip_default_capitulation GLOBAL flag
+	# go away stinky vanilla peace
+
+	# FROM = winner 
+	# ROOT = country being capitulated/loser
+
+	# DO NOT FUCKING TOUCH THIS
+	# I AM DEATHLY FUCKING SERIOUS RIGHT NOW
+	# XOXO - Grestin
+	# Somtimes I wonder if this system is even worth the pain - Bernie
+	# Make sure to space stuff out properly and keep everything neat - Bernie
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = PEACE_DEAL_DISABLED
+					}
+				}
+				#### THIS IS INTENTIONAL DO NOT DELETE
+				log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+				set_global_flag = show_peace_popup_alert
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = {
+						NOT = {
+							ROOT = {
+								has_country_flag = TA_DO_NOT_DELETE_ME # Seriously don't 
+							}
+						}
+					}
+					set_global_flag = war_won
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_country_flag = Rhunic_Civil_War
+						}
+						ROOT = {
+							has_country_flag = Rhunic_Civil_War
+						}
+					}
+					FROM = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+				}
+				if = { # Vanilla Wars
+					limit = {
+						OR = {
+							ROOT = { is_in_faction = no }
+							ROOT = {
+								all_allied_country = {
+									if = {
+										limit = {
+											has_war_with = FROM
+											is_major = yes
+										}
+										has_capitulated = yes
+									}
+								}
+							}
+						}
+					}
+					if = { # IML Defeats ERG
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = IML
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							ROOT = {
+								original_tag = ERG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						IML = {
+							annex_country = {
+								target = ERG
+								transfer_troops = no
+							}
+						}
+			
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ERG Defeats DUN
+						limit = {
+							FROM = {
+								original_tag = ERG
+							}
+							ROOT = {
+								original_tag = DUN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+			
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ERG Defeats IML
+						limit = {
+							FROM = {
+								original_tag = ERG
+							}
+							ROOT = {
+								original_tag = IML
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ERG = {
+							annex_country = {
+								target = IML
+								transfer_troops = no
+							}
+						}
+			
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # HRD Defeats HRZ
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = HRD
+									is_in_faction_with = HRD
+								}
+							}
+							ROOT = {
+								original_tag = HRZ
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						HRD = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+			
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # HRZ Defeats HRD
+						limit = {
+							FROM = {
+								original_tag = HRZ
+							}
+							ROOT = {
+								original_tag = HRD
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						HRZ = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # HRD Defeats ERY
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = HRD
+									is_in_faction_with = HRD
+								}
+							}
+							ROOT = {
+								original_tag = ERY
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						HRD = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+			
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ERY Defeats HRD
+						limit = {
+							FROM = {
+								original_tag = ERY
+							}
+							ROOT = {
+								original_tag = HRD
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ERY = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ISN Defeats LAU
+						limit = {
+							FROM = {
+								original_tag = ISN
+							}
+							ROOT = {
+								original_tag = LAU
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ISN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # LAU defeats ISN
+						limit = {
+							FROM = {
+								original_tag = LAU
+							}
+							ROOT = {
+								original_tag = ISN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats MRK
+						limit = {
+							FROM = {
+								original_tag = ANR
+							}
+							ROOT = {
+								original_tag = MRK
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # MRK defeats ANR
+						limit = {
+							FROM = {
+								original_tag = MRK
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # EUC defeats TRE
+						limit = {
+							FROM = {
+								original_tag = EUC
+							}
+							ROOT = {
+								original_tag = TRE
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						EUC = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # TRE defeats EUC
+						limit = {
+							FROM = {
+								original_tag = TRE
+							}
+							ROOT = {
+								original_tag = EUC
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # EUC defeats COR
+						limit = {
+							FROM = {
+								original_tag = EUC
+							}
+							ROOT = {
+								original_tag = COR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						EUC = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # COR defeats EUC
+						limit = {
+							FROM = {
+								original_tag = COR
+							}
+							ROOT = {
+								original_tag = EUC
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DUN defeats RED
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							ROOT = {
+								original_tag = RED
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						BRE = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # RED defeats DUN
+						limit = {
+							FROM = {
+								original_tag = RED
+							}
+							ROOT = {
+								original_tag = DUN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ITL defeats MRG
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ITL
+									is_in_faction_with = ITL
+								}
+							}
+							ROOT = {
+								original_tag = MRG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # MRG defeats ITL
+						limit = {
+							FROM = {
+								original_tag = MRG
+								is_in_faction_with = MRG
+							}
+							ROOT = {
+								original_tag = ITL
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						MRG = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats LIT
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = LIT
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # LIT defeats ANR
+						limit = {
+							FROM = {
+								original_tag = LIT
+								is_in_faction_with = LIT
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DUN defeats FAR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							ROOT = {
+								original_tag = FAR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DUN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # FAR defeats DUN
+						limit = {
+							FROM = {
+								original_tag = FAR
+								is_in_faction_with = FAR
+							}
+							ROOT = {
+								original_tag = DUN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ISN defeats CAI
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ISN
+									is_in_faction_with = ISN
+								}
+							}
+							ROOT = {
+								original_tag = CAI
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ISN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # CAI defeats ISN
+						limit = {
+							FROM = {
+								original_tag = CAI
+								is_in_faction_with = CAI
+							}
+							ROOT = {
+								original_tag = ISN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # UMA defeats ANA
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = UMA
+									is_in_faction_with = UMA
+								}
+							}
+							ROOT = {
+								original_tag = ANA
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						UMA = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANA defeats UMA
+						limit = {
+							FROM = {
+								original_tag = ANA
+								is_in_faction_with = ANA
+							}
+							ROOT = {
+								original_tag = UMA
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # EUC defeats MUR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = EUC
+									is_in_faction_with = EUC
+								}
+							}
+							ROOT = {
+								original_tag = MUR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						EUC = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # MUR defeats EUC
+						limit = {
+							FROM = {
+								original_tag = MUR
+								is_in_faction_with = MUR
+							}
+							ROOT = {
+								original_tag = EUC
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # CRL defeats ARD
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = CRL
+									is_in_faction_with = CRL
+								}
+							}
+							ROOT = {
+								original_tag = ARD
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						CRL = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ARD defeats CRL
+						limit = {
+							FROM = {
+								original_tag = ARD
+								is_in_faction_with = ARD
+							}
+							ROOT = {
+								original_tag = CRL
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DUN defeats ANU
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							ROOT = {
+								original_tag = ANU
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DUN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANU defeats DUN
+						limit = {
+							FROM = {
+								original_tag = ANU
+								is_in_faction_with = ANU
+							}
+							ROOT = {
+								original_tag = DUN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						if = {
+							limit = {
+								SHR = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = SHR
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								BRE = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = BRE
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								RED = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = RED
+									transfer_troops = no
+								}
+							}
+						}
+						ANR = {
+							puppet = {
+								target = ANU
+								end_wars = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # EUC defeats DRG
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = EUC
+									is_in_faction_with = EUC
+								}
+							}
+							ROOT = {
+								original_tag = DRG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						EUC = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DRG defeats EUC
+						limit = {
+							FROM = {
+								original_tag = DRG
+								is_in_faction_with = DRG
+							}
+							ROOT = {
+								original_tag = EUC
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DUN defeats FRN
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							ROOT = {
+								original_tag = FRN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DUN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # FRN defeats DUN
+						limit = {
+							FROM = {
+								original_tag = FRN
+								is_in_faction_with = FRN
+							}
+							ROOT = {
+								original_tag = DUN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						if = {
+							limit = {
+								SHR = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = SHR
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								BRE = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = BRE
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								RED = {
+									is_subject_of = DUN
+								}
+							}
+							ANU = {
+								annex_country = {
+									target = RED
+									transfer_troops = no
+								}
+							}
+						}
+						ANR = {
+							puppet = {
+								target = FRN
+								end_wars = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DRA defeats DRW
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DRA
+									is_in_faction_with = DRA
+								}
+							}
+							ROOT = {
+								original_tag = DRW
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DRA = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DRW defeats DRA
+						limit = {
+							FROM = {
+								original_tag = DRW
+								is_in_faction_with = DRW
+							}
+							ROOT = {
+								original_tag = DRA
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats FAL
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = FAL
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # FAL defeats ANR
+						limit = {
+							FROM = {
+								original_tag = FAL
+								is_in_faction_with = FAL
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats ASH
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = ASH
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ASH defeats ANR
+						limit = {
+							FROM = {
+								original_tag = ASH
+								is_in_faction_with = ASH
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # UMA defeats HAS
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = UMA
+									is_in_faction_with = UMA
+								}
+							}
+							ROOT = {
+								original_tag = HAS
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						UMA = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # HAS defeats UMA
+						limit = {
+							FROM = {
+								original_tag = HAS
+								is_in_faction_with = HAS
+							}
+							ROOT = {
+								original_tag = UMA
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ISN defeats FAN
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ISN
+									is_in_faction_with = ISN
+								}
+							}
+							ROOT = {
+								original_tag = FAN
+							}
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ISN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # FAN defeats ISN
+						limit = {
+							FROM = {
+								original_tag = FAN
+								is_in_faction_with = FAN
+							}
+							ROOT = {
+								original_tag = ISN
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						FAN = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats LOS
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = LOS
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # LOS defeats ANR
+						limit = {
+							FROM = {
+								original_tag = LOS
+								is_in_faction_with = LOS
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats GIR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = LOS
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # GIR defeats ANR
+						limit = {
+							FROM = {
+								original_tag = GIR
+								is_in_faction_with = GIR
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # ANR defeats SIR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANR
+									is_in_faction_with = ANR
+								}
+							}
+							ROOT = {
+								original_tag = SIR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						ANR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # SIR defeats ANR
+						limit = {
+							FROM = {
+								original_tag = SIR
+								is_in_faction_with = SIR
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # GND defeats BGR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = GND
+									is_in_faction_with = GND
+								}
+							}
+							ROOT = {
+								original_tag = BGR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						GND = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # BGR defeats GND
+						limit = {
+							FROM = {
+								original_tag = BGR
+								is_in_faction_with = BGR
+							}
+							ROOT = {
+								original_tag = ANR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # GND defeats EST
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = GND
+									is_in_faction_with = GND
+								}
+							}
+							ROOT = {
+								original_tag = EST
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						GND = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # EST defeats GND
+						limit = {
+							FROM = {
+								original_tag = EST
+								is_in_faction_with = EST
+							}
+							ROOT = {
+								original_tag = GND
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DUR defeats LOR
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUR
+									is_in_faction_with = DUR
+								}
+							}
+							ROOT = {
+								original_tag = LOR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DUR = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # LOR defeats DUR
+						limit = {
+							FROM = {
+								original_tag = LOR
+								is_in_faction_with = LOR
+							}
+							ROOT = {
+								original_tag = DUR
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DLG defeats AST
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DLG
+									is_in_faction_with = DLG
+								}
+							}
+							ROOT = {
+								original_tag = AST
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DLG = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # AST defeats DLG
+						limit = {
+							FROM = {
+								original_tag = AST
+								is_in_faction_with = AST
+							}
+							ROOT = {
+								original_tag = DLG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DLG defeats WOD
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DLG
+									is_in_faction_with = DLG
+								}
+							}
+							ROOT = {
+								original_tag = WOD
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DLG = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # WOD defeats DLG
+						limit = {
+							FROM = {
+								original_tag = WOD
+								is_in_faction_with = WOD
+							}
+							ROOT = {
+								original_tag = DLG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # DLG defeats BEO
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DLG
+									is_in_faction_with = DLG
+								}
+							}
+							ROOT = {
+								original_tag = BEO
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+						DLG = {
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+						if = {
+							limit = {
+								country_exists = GND
+							}
+							GND = {
+								transfer_state = 197
+							}
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+					if = { # BEO defeats DLG
+						limit = {
+							FROM = {
+								original_tag = BEO
+								is_in_faction_with = BEO
+							}
+							ROOT = {
+								original_tag = DLG
+							}
+						}
+						
+						every_country = {
+							limit = {
+								has_war_with = FROM
+								is_in_faction_with = ROOT
+							}
+							white_peace = ROOT
+						}
+						FROM = {
+							white_peace = ROOT
+						}
+
+						set_global_flag = skip_default_capitulation
+					}
+
+				}
+
+				## HYPOTHETICAL WARS
+
+				if = { # MRD defeats KHA
+					limit = {
+						FROM = {
+							original_tag = MRD
+						}
+						ROOT = {
+							original_tag = KHA
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					MRD = {
+						puppet = {
+							target = ROOT
+							end_wars = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # KHA defeats MRD
+					limit = {
+						FROM = {
+							original_tag = KHA
+						}
+						ROOT = {
+							original_tag = MRD
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # MRD defeats DRA
+					limit = {
+						FROM = {
+							original_tag = MRD
+						}
+						ROOT = {
+							original_tag = DRA
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					MRD = {
+						puppet = {
+							target = ROOT
+							end_wars = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # DRA defeats MRD
+					limit = {
+						FROM = {
+							original_tag = DRA
+						}
+						ROOT = {
+							original_tag = MRD
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # ANR defeats RDU
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = ANR
+								is_in_faction_with = ANR
+							}
+						}
+						ROOT = {
+							original_tag = DRG
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					ANR = {
+						puppet = {
+							target = RDU
+							end_wars = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # RDU defeats ANR
+					limit = {
+						FROM = {
+							original_tag = RDU
+							is_in_faction_with = RDU
+						}
+						ROOT = {
+							original_tag = ANR
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # WDR defeats SHA
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = WDR
+								is_in_faction_with = WDR
+							}
+						}
+						ROOT = {
+							original_tag = SHA
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					WDR = {
+						puppet = {
+							target = SHA
+							end_wars = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # SHA defeats WDR
+					limit = {
+						FROM = {
+							original_tag = SHA
+							is_in_faction_with = SHA
+						}
+						ROOT = {
+							original_tag = WDR
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = { # EUC defeats ANR
+					limit = {
+						FROM = {
+							original_tag = EUC
+							is_in_faction_with = EUC
+						}
+						ROOT = {
+							original_tag = ANR
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					EUC = {
+						annex_country = {
+							target = ANR
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = { # AMR defeats EUC
+					limit = {
+						FROM = {
+							original_tag = ANR
+							is_in_faction_with = ANR
+						}
+						ROOT = {
+							original_tag = EUC
+						}
+						
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					ANR = {
+						annex_country = {
+							target = EUC
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = { # URU defeats ANR
+					limit = {
+						FROM = {
+							original_tag = URU
+							is_in_faction_with = URU
+						}
+						ROOT = {
+							original_tag = ANR
+						}
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					URU = {
+						annex_country = {
+							target = ANR
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = { # AMR defeats URU
+					limit = {
+						FROM = {
+							original_tag = ANR
+							is_in_faction_with = ANR
+						}
+						ROOT = {
+							original_tag = URU
+						}
+						
+					}
+					
+					every_country = {
+						limit = {
+							has_war_with = FROM
+							is_in_faction_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					ANR = {
+						annex_country = {
+							target = URU
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				## GREAT WARS
+
+				if = { # War of the Ring # Mordor Defeated 
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DUN
+								is_in_faction_with = DUN
+								original_tag = STE
+								is_in_faction_with = STE
+								has_country_flag = TA_MEN_OF_THE_WEST
+							}
+						}
+						ROOT = {
+							original_tag = MRD
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = { # how it actually should look like
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = STE
+									is_in_faction_with = STE
+									has_country_flag = TA_MEN_OF_THE_WEST
+								}
+							}
+							country_exists = STE
+						}
+						NUR = {
+							transfer_state = 7
+							transfer_state = 8
+							transfer_state = 9
+							transfer_state = 187
+							transfer_state = 3
+							transfer_state = 122
+							transfer_state = 121
+							transfer_state = 120
+							transfer_state = 11
+							transfer_state = 185
+						}
+						if = {
+							limit = {
+								DRA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							STE = {
+								transfer_state = 203
+								transfer_state = 104
+								transfer_state = 208
+								transfer_state = 137
+								transfer_state = 124
+								transfer_state = 131
+								transfer_state = 130
+								transfer_state = 129
+								transfer_state = 128
+							}
+						}
+						if = {
+							limit = {
+								UMA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							STE = {
+								annex_country = {
+									target = UMA
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								HRD = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							STE = {
+								transfer_state = 107
+								transfer_state = 110
+							}
+						}
+						annex_country = {
+							target = MRD
+							transfer_troops = no
+						}
+					}
+					if = { # foolproof if gondor dies
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DUN
+									is_in_faction_with = DUN
+								}
+							}
+							NOT = {
+								country_exists = STE
+							}
+						}
+						NUR = {
+							transfer_state = 7
+							transfer_state = 8
+							transfer_state = 9
+							transfer_state = 187
+							transfer_state = 3
+							transfer_state = 122
+							transfer_state = 121
+							transfer_state = 120
+							transfer_state = 11
+							transfer_state = 185
+						}
+						if = {
+							limit = {
+								DRA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							DUN = {
+								transfer_state = 203
+								transfer_state = 104
+								transfer_state = 208
+								transfer_state = 137
+								transfer_state = 124
+								transfer_state = 131
+								transfer_state = 130
+								transfer_state = 129
+								transfer_state = 128
+							}
+						}
+						if = {
+							limit = {
+								UMA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							DUN = {
+								annex_country = {
+									target = UMA
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								HRD = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							DUN = {
+								transfer_state = 107
+								transfer_state = 110
+							}
+						}
+						DUN = {
+							transfer_state =
+						}
+						annex_country = {
+							target = MRD
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # War of the Ring # Stewards Defeated # Mordor Vanilla
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = MRD
+								is_in_faction_with = MRD
+								has_country_flag = TA_MEN_OF_THE_WEST
+							}
+						}
+						ROOT = {
+							original_tag = STE
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							BEL = {
+								is_in_faction_with = STE
+								has_country_flag = TA_Dependant_On_Gondor
+							}
+						}
+						MRD = {
+							annex_country = {
+								target = BEL
+								transfer_troops = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							UMA = {
+								has_country_flag = TA_Dependant_On_Mordor
+							}
+						}
+						UMA = {
+							transfer_state = 15
+							transfer_state = 14
+						}
+					}
+					MRD = {
+						annex_country = {
+							target = STE
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # War of the Ring # Stewards Defeated # King's Path # Umbar did it
+					limit = {
+						FROM = {
+							original_tag = UMA
+							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
+						}
+						ROOT = {
+							original_tag = STE
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						annex_country = {
+							target = STE
+							transfer_troops = no
+						}
+						annex_country = {
+							target = BEL
+							transfer_troops = no
+						}
+						transfer_state = 15
+					}
+					MRD = {
+						annex_country = {
+							target = ITL
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # War of the Ring # Stewards Defeated # King's Path # Mordor did it
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = MRD
+								is_in_faction_with = MRD
+							}
+						}
+						ROOT = {
+							original_tag = STE
+						}
+						UMA = {
+							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					FROM = {
+						annex_country = {
+							target = STE
+							transfer_troops = no
+						}
+						annex_country = {
+							target = ITL
+							transfer_troops = no
+						}
+					}
+					UMA = {
+						transfer_state = 15
+						transfer_state = 224
+						transfer_state = 223
+						transfer_state = 169
+						transfer_state = 13
+						transfer_state = 170
+						transfer_state = 14
+						transfer_state = 19
+						transfer_state = 176
+						transfer_state = 105
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # War in the North # Dunedain Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = ANR
+								is_in_faction_with = ANR
+							}
+						}
+						ROOT = {
+							original_tag = DUN
+						}
+					}
+					FROM = {
+						white_peace = DUN
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							SHR = {
+								is_in_faction_with = DUN
+							}
+						}
+						ANR = {
+							annex_country = {
+								target = SHR
+								transfer_troops = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							BRE = {
+								is_in_faction_with = DUN
+							}
+						}
+						ANR = {
+							annex_country = {
+								target = BRE
+								transfer_troops = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							RED = {
+								is_in_faction_with = DUN
+							}
+						}
+						ANR = {
+							annex_country = {
+								target = RED
+								transfer_troops = no
+							}
+						}
+					}
+					ANR = {
+						annex_country = {
+							target = DUN
+							transfer_troops = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # War in the North # Angmar Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DUN
+								is_in_faction_with = DUN
+							}
+						}
+						ROOT = {
+							original_tag = ANR
+						}
+					}
+					FROM = {
+						white_peace = DUN
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							RDU = {
+								is_subject_of = ANR
+							}
+						}
+						DUN = {
+							annex_country = {
+								target = RDU
+								transfer_troops = no
+							}
+						}
+					}
+					DUN = {
+						annex_country = {
+							target = ANR
+							transfer_troops = no
+						}
+					}
+					FOR = {
+						transfer_state = 57
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # Isengard - Rohan Wars # Isengard Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = RID
+								is_in_faction_with = RID
+								has_country_flag = TA_MEN_OF_THE_WEST
+							}
+						}
+						ROOT = {
+							original_tag = ISN
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = RID
+									is_in_faction_with = RID
+									has_country_flag = TA_MEN_OF_THE_WEST
+								}
+							}
+							country_exists = RID
+						}
+						if = {
+							limit = {
+								FAN = {
+									is_in_faction_with = RID
+								}
+							}
+							RID = {
+								remove_from_faction = FAN
+							}
+						}
+						if = {
+							limit = {
+								country_exists = STE
+							}
+							STE = {
+								transfer_state = 20
+								transfer_state = 136
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									country_exists = STE
+								}
+							}
+							LAU = {
+								transfer_state = 20
+								transfer_state = 136
+							}
+							RID = {
+								give_guarantee = LAU
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									EUC = {
+										is_subject_of = ISN
+									}
+									EUC = {
+										is_in_faction_with = ISN
+									}
+								}
+								has_global_flag = War_In_The_North_Ended_Dunedain_Victory
+							}
+							DUN = {
+								annex_country = {
+									target = EUC
+									trasfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									EUC = {
+										is_subject_of = ISN
+									}
+									EUC = {
+										is_in_faction_with = ISN
+									}
+								}
+								has_global_flag = War_In_The_North_Ended_Angmar_Victory
+							}
+							RID = {
+								annex_country = {
+									target = EUC
+									trasfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									EUC = {
+										is_subject_of = ISN
+									}
+									EUC = {
+										is_in_faction_with = ISN
+									}
+								}
+								NOT = {
+									has_global_flag = War_In_The_North_Ended_Angmar_Victory
+									has_global_flag = War_In_The_North_Ended_Dunedain_Victory
+								}
+							}
+							DUN = {
+								puppet = {
+									target = EUC
+									end_wars = no
+								}
+							}
+						}
+						RID = {
+							transfer_state = 217
+							transfer_state = 221
+							transfer_state = 218
+							annex_country = {
+								target = ISN
+								transfer_troops = no
+							}
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # Isengard - Rohan Wars # Rohan Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = ISN
+								is_in_faction_with = ISN
+							}
+						}
+						ROOT = {
+							original_tag = RID
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							FAN = {
+								is_in_faction_with = RID
+							}
+						}
+						annex_country = {
+							target = FAN
+							transfer_troops = no
+						}
+					}
+					ISN = {
+						annex_country = {
+							target = RID
+							transfer_troops = no
+						}
+					}
+				}
+				if = { # Imladris - Angmar War # Imladris
+					limit = {
+						FROM  = {
+							OR = {
+								original_tag = IML
+								is_in_faction_with = IML
+							}
+						}
+						ROOT = {
+							original_tag = IML
+						}
+					}
+					ERG = {
+						transfer_state = 201
+						transfer_state = 200
+						transfer_state = 67
+						transfer_state = 66
+						transfer_state = 202
+						transfer_state = 65
+					}
+					ANR = {
+						puppet = {
+							target = ERG
+							end_wars = no
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = { # Gundabad - Erebor War # Erebor Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = GND
+								original_tag = DRA
+								is_in_faction_with = DRA
+								is_in_faction_with = GND
+							}
+						}
+						ROOT = {
+							original_tag = DUR
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							DLE = {
+								is_in_faction_with = DUR
+							}
+						}
+						DRA = {
+							annex_country = {
+								target = DLE
+								transfer_troops = no
+							}
+						} 
+					}
+					DRA = {
+						transfer_state = 92
+						transfer_state = 89
+						transfer_state = 192
+						transfer_state = 194
+						transfer_state = 95
+						transfer_state = 93
+						transfer_state = 91
+
+					}
+					GND = {
+						annex_country = {
+							target = DUR
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = BEO
+							}
+						}
+						GND = {
+							transfer_state = 197
+						}
+					}
+				}
+				if = { # Gundabad - Erebor War # Erebor Defeated But Gundabad Died
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DRA
+								is_in_faction_with = DRA
+							}
+						}
+						ROOT = {
+							original_tag = DUR
+						}
+						NOT = {
+							country_exists = GND
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					DRA = {
+						transfer_state = 92
+						transfer_state = 89
+						transfer_state = 192
+						transfer_state = 194
+						transfer_state = 95
+						transfer_state = 93
+						transfer_state = 91
+
+					}
+					GND = {
+						transfer_state = 61
+						transfer_state = 68
+						transfer_state = 88
+						transfer_state = 219
+						transfer_state = 220
+						transfer_state = 90
+						transfer_state = 193
+						transfer_state = 196
+						transfer_state = 69
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = BEO
+							}
+						}
+						GND = {
+							transfer_state = 197
+						}
+					}
+				}
+				if = { # Gundabad - Erebor War # Gundabad Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DUR
+								is_in_faction_with = DUR
+							}
+						}
+						ROOT = {
+							original_tag = GND
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					DUR = {
+						annex_country = {
+							target = GND
+							transfer_troops = no
+						}
+					} 
+				}
+				if = { # Dol Gudur - Lothlorien War # Lothlorien Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DLG
+								is_in_faction_with = DLG
+							}
+						}
+						ROOT = {
+							original_tag = CRS
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					DLG = {
+						annex_country = {
+							target = CRS
+							transfer_troops = no
+						}
+					} 
+				}
+				if = { # Dol Gudur - Lothlorien War # Mirkwood Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = DLG
+								is_in_faction_with = DLG
+							}
+						}
+						ROOT = {
+							original_tag = WDR
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					DLG = {
+						annex_country = {
+							target = WDR
+							transfer_troops = no
+						}
+					}
+				}
+				if = { # Dol Gudur - Lothlorien War # Dol Gudur Falls Defeated
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = WDR
+								original_tag = CRS
+								is_in_faction_with = WDR
+								is_in_faction_with = CRS
+							}
+						}
+						ROOT = {
+							original_tag = DLG
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					DLG = {
+						annex_country = {
+							target = WDR
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							country_exists = CRS
+						}
+						CRS = {
+							transfer_state = 191
+							transfer_state = 87
+							set_province_name = { id = 4266 name = "Amon Lanc"} 
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = CRS
+							}
+						}
+						CRS = {
+							transfer_state = 74
+							transfer_state = 222
+							transfer_state = 75
+							transfer_state = 191
+							transfer_state = 87
+							set_province_name = { id = 4266 name = "Amon Lanc"} 
+						}
+					}
+					if = {
+						limit = {
+							country_exists = WDR
+						}
+						WDR = {
+							transfer_state = 82
+							transfer_state = 84
+							transfer_state = 85
+							transfer_state = 190
+							transfer_state = 86
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = WDR
+							}
+						}
+						WDR = {
+							transfer_state = 80
+							transfer_state = 83
+							transfer_state = 81
+							transfer_state = 82
+							transfer_state = 84
+							transfer_state = 85
+							transfer_state = 190
+							transfer_state = 86
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = AST
+							}
+						}
+						AST = {
+							transfer_state = 99
+						}
+						CRS = {
+							give_guarantee = AST
+						}
+						MRK = {
+							give_guarantee = AST
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = WOD
+							}
+						}
+						WOD = {
+							transfer_state = 195
+							transfer_state = 72
+							transfer_state = 198
+							transfer_state = 76
+							transfer_state = 160
+						}
+						CRS = {
+							give_guarantee = WOD
+						}
+						MRK = {
+							give_guarantee = WOD
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = BEO
+							}
+						}
+						BEO = {
+							transfer_state = 70
+							transfer_state = 71
+							transfer_state = 199
+						}
+						CRS = {
+							give_guarantee = BEO
+						}
+						MRK = {
+							give_guarantee = BEO
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = GND
+							}
+						}
+						BEO = {
+							transfer_state = 197
+						}
+					}
+					if = {
+						limit = {
+							country_exists = GND
+						}
+						GND = {
+							transfer_state = 197
+						}
+					}
+				}
+				if = { # Umbar Kings Path Won Against Mordor
+					limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = UMA
+								original_tag = UMA
+							}
+						}
+						ROOT = {
+							original_tag = MRD
+						}
+						UMA = {
+							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					NUR = {
+							transfer_state = 7
+							transfer_state = 8
+							transfer_state = 9
+							transfer_state = 187
+							transfer_state = 3
+							transfer_state = 122
+							transfer_state = 121
+							transfer_state = 120
+							transfer_state = 11
+							transfer_state = 185
+						}
+						if = {
+							limit = {
+								DRA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							UMA = {
+								transfer_state = 203
+								transfer_state = 104
+								transfer_state = 208
+								transfer_state = 137
+								transfer_state = 124
+								transfer_state = 131
+								transfer_state = 130
+								transfer_state = 129
+								transfer_state = 128
+							}
+						}
+						if = {
+							limit = {
+								UMA = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							UMA = {
+								annex_country = {
+									target = UMA
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								HRD = {
+									is_in_faction_with = MRD
+									has_country_flag = TA_Dependant_On_Mordor
+								}
+							}
+							UMA = {
+								transfer_state = 107
+								transfer_state = 110
+							}
+						}
+						annex_country = {
+							target = MRD
+							transfer_troops = no
+						}
+
+				}
+				if = { # Umbar Lost to Mordor Kings Path
+					limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = MRD
+								original_tag = MRD
+							}
+						}
+						ROOT = {
+							original_tag = UMA
+						}
+						UMA = {
+							has_country_flag = TA_UMA_Numenorean_Supremacy_Path
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = ROOT
+					}
+					annex_country = {
+						target = MRD
+						transfer_troops = no
+					}
+
+				}
+				clr_global_flag = skip_default_capitulation
+			}
+			
+		}
+		#Armchair historian of wars
+		on_declare_war = {
+			effect = {
+				log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+﻿l_english:
+ occupation_decisions:0 "Occupation Decisions"
+
+
+ MRD_ITL_Occupation:0 "Anorien Occupation"
+ lotrmrdoccupation.1:0 "Occupation of Anorien"
+ lotrmrdoccupation.1.t:0 "Occupation of Anorien"
+ lotrmrdoccupation.1.d:0 "In a chilling turn of destiny, Mordor's foreboding powers have unleashed their malevolent might against the domain of Gondor, sinking the once-proud city of Minas Tirith and the wealthy fields of Anorien into an ocean of darkness. As the sun sets over Middle-earth's City of Kings, battle drums ring through the air, foretelling a bleak story of despair and defiance."
+ lotrmrdoccupation.1.a:0 "Establish a Vassal-Kingdom"
+ MRDOCCUPATION1A:0 "Permanently Occupies Anorien and Eastern Lebenin, allowing Sauron's most trusted lieutenants to reign over these lands."
+ lotrmrdoccupation.1.b:0 "Direct Rule"
+ MRDOCCUPATION1B:0 "No Longer shall we give the mannish races rule over it's own lands, as the banner of the Great Eye flies over those who have opposed against us."
+
+
+
+ MRD_ITL_Border:0 "Ithilien Occupation"
+ lotrmrdborder.1:0 "Fate of Ithilien"
+ lotrmrdborder.1.t:0 "Fate of Ithilien"
+ lotrmrdborder.1.d:0 "In the wake of Sauron's resounding triumph, the malevolent forces of Mordor extend their dark dominion to the once-beautiful realm of Ithilien. now transformed into a desolate landscape where the shadows of Mordor loom large. The once-verdant forests now echo with the twisted cries of fell creatures, and the sweet fragrance of blossoms has been replaced by the acrid stench of decay."
+ lotrmrdborder.1.a:0 "A Worthy Prize for a Worthy Lieutenant"
+ MRDBORDER1A:0 "As the sun sets over the city of Osgiliath, marking the beginning of a new era. Sauron has granted the once majestic lands of Ithilien to the overlord of Anorien."
+ lotrmrdborder.1.b:0 "A Punishment, A Retribution, A Dominion."
+ MRDBORDER1B:0 "Punishment and Retribution shall come to those who make settlement in the cursed lands of Ithilien, where the masters enemy lies."
+
+
+
+ MRD_LEB_Occupation:0 "Belfalas Occupation"
+ lotrmrdborder.2:0 "Occupation of Belfalas"
+ lotrmrdoccupation.2.t:0 "Occupation of Belfalas"
+ lotrmrdoccupation.2.d:0 "As the residents of Dol Amroth slumbered, unaware of the impending doom, a dark fleet silently approached. The emissaries, draped in the colors of Mordor, stepped ashore like shadowy specters. The once vibrant streets of Dol Amroth now echoed with an eerie silence as the emissaries unfurled a banner bearing the emblem of their dark lord."
+ lotrmrdoccupation.2.a:0 "Establish a Vassal-Kingdom"
+ MRDOCCUPATION2A:0 "Amidst the chaos, a proclamation rang out. Mordor declared the establishment of a vassal kingdom, a puppet realm to administer the shattered remnants of Belfalas."
+ lotrmrdoccupation.2.b:0 "Direct Rule"
+ MRDOCCUPATION2B:0 "In the stillness of the night, Mordor's forces sailed silently across the bay. Their intent was unmistakable.. to seize direct control over Belfalas and its crown jewel, Dol Amroth."
+
+
+
+ lotrmrdborder.2.t:0 "The Towers of Belfalas"
+ lotrmrdborder.2.d:0 "With the establisment of a vassal-kingdom upon the ruins of Dol Amroth, now we must decide what must be done to the once proud capital of the seafarers of Gondor."
+ lotrmrdborder.2.a:0 "Establish a Humiliating Occupation"
+ MRDBORDER2A:0 "Will establish a new puppet state"
+ lotrmrdborder.2.b:0 "A Legitimate Rule!"
+ MRDBORDER2B:0 "In order to further legitimize our vassal-kingdom, the capital shall be theirs to keep!"
+ lotrmrdborder.2.c:0 "Direct Rule"
+ MRDBORDER2C:0 "We shall sieze the city, rename it and use it as a staging ground for further naval activities!"

@@ -1,0 +1,327 @@
+ideas = {
+
+	country = {
+
+		HAR_endeavour = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				political_power_factor = 0.15
+				research_speed_factor = 0.05
+			 	production_speed_buildings_factor = 0.2
+			}			
+		}
+
+		HAR_joined_recruitment = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+			}			
+		}
+
+		HAR_joined_production = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				 industrial_capacity_factory = 0.15
+			}			
+		}
+
+		HAR_merciless_union = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+			  	justify_war_goal_time = 0.25  
+			 	conscription_factor = -0.1
+			}			
+		}
+		
+		HAR_fractured_nation = {
+
+			picture = generic_disjointed_gov
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.2
+			  	justify_war_goal_time = 0.25  
+			 	conscription_factor = -0.3
+				stability_factor = -0.30
+				war_support_factor = -0.2 
+			}			
+		}
+
+		HAR_common_interests = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+			  	justify_war_goal_time = -0.1  
+			 	generate_wargoal_tension = -0.3
+			}			
+		}
+
+		HAR_subject_taxation = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1 
+			}			
+		}
+
+		HAR_follower_of_the_dark_lord = {
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				belligerent_drift = 0.1
+				war_support_factor = 0.1
+			}
+        }
+
+		HAR_invest_in_military = {
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+
+		HAR_invest_in_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.10
+				industry_repair_factor = 0.15
+			}
+		}
+
+		HAR_mobile_supply = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_build_infrastructure
+
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor  = -0.15
+				attrition  = -0.15
+				supply_node_range = 0.1
+			}
+		}
+
+		HAR_ready_the_army = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.10
+				mobilization_speed = 0.1
+				conscription = 0.025
+			}
+		}
+
+		HAR_unrest_in_rhun = {
+			allowed = {
+				always = no
+			}
+
+			cancel  = {
+				RHU = {
+					NOT = {
+						is_puppet_of = HAR 
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				conscription = -0.002
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		HAR_unrest_in_rhun_1 = {
+			allowed = {
+				always = no
+			}
+
+			cancel  = {
+				RHU = {
+					NOT = {
+						is_puppet_of = HAR 
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				conscription = -0.002
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		HAR_unrest_in_rhun_2 = {
+			allowed = {
+				always = no
+			}
+
+			cancel  = {
+				RHU = {
+					NOT = {
+						is_puppet_of = HAR 
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+				conscription = -0.002
+			}
+		}
+	}
+}

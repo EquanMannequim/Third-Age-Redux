@@ -1,0 +1,223 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ 
+ Heirs_of_Numenor:0 "Heir's of Numenor"
+ Heirs_of_Numenor_desc:0 "Gondor and the Elindili are traitors to the old way's of Numenor. Only we are worthy to call ourselfs the Heirs of Numenor
+ Castamir's_Failure:0 "Castamir's Failure"
+ Castamir's_Failure_desc:0 "Castamir's rebellion accomplished nothing but spilling Numenorian blood across the sea's of Arda. He shall forever be known as a failure."
+ The_Sack_of_Umbar:0 "The_Sack of Umbar"
+ The_Sack_of_Umbar_desc:0 "With the main Corsair fleet destroyed it is time for the true Numenorians to rise again."
+ The_Haven_of_Umbar:0 "The Haven of Umbar"
+ The_Haven_of_Umbar_desc:0 "Umbar was once one of Numenors most prosperous colonies. Decades of war and neglect have let things fall to ruin. No more, from this day forward Umbar will become the Capital of our new Empire."
+ The_Corsair_Fleet:0 "The Corsair Fleet"
+ The_Corsair_Fleet_desc:0 "The main Corsair fleet was destroyed in 2980 T.A but many of the tools used to repair and build new ships still remain intact."
+ The_Corsair_Armories:0 "The Corsair Armories"
+ The_Corsair_Armories_desc:0 "The Corsair's had built up a formidable armory before the Sack of Umbar. Most of it sank to the bottom of the bay but much still remains intact locked inside the armories."
+ The_Umbar_Trade_Market:0 "The Umbar Trade Market"
+ The_Umbar_Trade_Market_desc:0 "With our recent repairs to critical infastructure the merchant ships and trade routes long thouught gone forever have begun to flood back to Umbar with new goods and equipment."
+ Seek_Trade_Routes_South:0 "Seek Trade Routes South"
+ Seek_Trade_Routes_South_desc:0 "There are many city states and smaller nations to our south past Pelladur if we seek to expand we will require more resources."
+ Seek_Increased_Trade_With_Harad:0 "Seek Increased Trade With Harad"
+ Seek_Increased_Trade_With_Harad_desc:0 "The Haradrim tribes come to Umbar to trade frequently maybe we should set up a trade agreement with those Oliphant Caravans next time they come."
+ The_Enemy_to_our_South:0 "The Enemy To Our South"
+ The_Enemy_to_our_South_desc:0 "Pelladur was once a vassal trading resources and manpower for protection under Numenorian rule it's time we reinstate this agreemeant."
+ A_New_Class_of_Officer:0 "A New Class of Officer"
+ A_New_Class_of_Officer_desc:0 "We will require qualified officers to lead the new army before we can purse and territorial expansion."
+ A_Loyal_General:0 "A Loyal General"
+ A_Loyal_General_desc:0 "A strange man named Gimilzagar has come to the court at Umbar seeking an audience with the king."
+ Numenorian_Equipment:0 "Numenorian Equipment"
+ Numenorian_Equipment_desc:0 "Many of the remaining Numenorians in Umbar carry ancient weapons dating all the way back to before the Down Fall of Numenor. Although the techniques to make these legendary weapons are long lost by studying these artifacts the haven smiths may be able to further improve the current weapons for the army."
+ Numenorian_Training_Methods:0 "Numenorian Training Methods"
+ Numenorian_Training_Methods_desc:0 "Numenorian marines once ruled the seas of Arda. Though this was not done by blood alone it's time we started to train the army like the Numenorians of old."
+ A_Visitor_from_the_South:0 "A Visitor From The South"
+ A_Visitor_from_the_South_desc:0 "A strange man has appeared in the court refusing to speak to any one other than the King of Umbar."
+ Numenorian_Bow_Designs:0 "Numenorian Steelbows"
+ Numenorian_Bow_Designs_desc:0 "A few of the legendary Numenorian Steelbows still remain in Umbar although the technique to making these weapons are long lost. The designs behind them cans still be applied to the bows of the Umbar army. "
+ Desert_Training:0 "Desert Training"
+ Desert_Training_desc:0 "The harsh Desert's of Harad and Haronder breed a fine soldier."
+ Mountain_Training:0 "Mountain Training"
+ Mountain_Training_desc:0 "If we ever plan to attack the traitorious Elindili then we will need strong soldiers to climb Mountains."
+ Secure_The_Southern_Coast:0 "Secure The Southern Coast"
+ Secure_The_Southern_Coast_desc:0 "It's time to reinstate order in the former colony of Pelladur."
+ Integrate_The_Coast:0 "Integrate The Coast"
+ Integrate_The_Coast_desc:0 "With Pelladur defeated we can begin integrating them into the core structure of our expanding empire."
+ The_Third_Kingdom_of_Men:0 "The Third Kingdom of Men"
+ The_Third_Kingdom_of_Men_desc:0 "The time has come for the world to know the TRUE Numenorians have risin again. And we have come to take our birthright back from the traitors in Gondor."
+ Deal_With_The_Disloyal_Corsairs:0 "Deal With The Disloyal Corsairs"
+ Deal_With_The_Disloyal_Corsairs_desc:0 "Many of the Corsairs we rely on to help crew the fleets and bring logistics to the front lines have allegiance to Sauron. They must be shown who their true master's are."
+ Prepare_For_War_With_Gondor:0 "Prepare For War With Gondor"
+ Prepare_For_War_With_Gondor_desc:0 "It is time to reclaim our birthright and force the traitourous Elidili out of Gondor."
+ Prepare_The_Armada:0 "Prepare The Armada"
+ Prepare_The_Armada_desc:0 "The Numenorian Armada must be ready to face the traitor fleets if we ever plan to cross the Anduin."
+ Lighting_Raid_Tolfalas:0 "Lighting Raid Tolfalas"
+ Lighting_Raid_Tolfalas_desc:0 "The fleet is ready and a raiding detachment is already in bound to raid the port city of Gobel Tolfalas."
+ Rally_The_KING'S_Men:0 "Rally The KING'S Men"
+ Rally_The_KING'S_Men_desc:0 "Men of Umbar the time is almost upon us to reclaim our birthright. Remember we are the SON'S OF NUMENOR WE ARE THE §Y KING'S MEN§!!!."
+ Form_A_Royal_Guard:0 "Form A Royal Guard"
+ Form_A_Royal_Guard_desc:0 "A royal guard of only the best will be able to face the Swan Knights of Dol Amroth and the Citadel Guards of Minas Tirith."
+ Prepare_To_Storm_The_Ethir_Anduin:0 "Prepare To Raid The Belfalas Coast"
+ Prepare_To_Storm_The_Ethir_Anduin_desc:0 "If we set sail during the night we may be able to catch the Amrothian fleet off guard or at least raid there coastal cities."
+ Lighting_Raid_Anduin:0 "Raid The Belfalas Coast"
+ Lighting_Raid_Anduin_desc:0 "A small portion of the fleet is ready to set out to attack the coast of Belfalas it's time to avenge the defeat of 2980 T.A."
+ UMA_Prepare_To_Raid_Lebennin:0 "Prepare To Raid Lebennin"
+ UMA_prepare_To_Raid_Lebennin_desc:0 "A small portion of the fleet is ready to set out to attack the coast of Gondor it's time to avenge the defeat of 2980 T.A."
+ UMA_Lighting_Raid_Pelargir:0 "Lighting Raid Pelargir"
+ UMA_Lighting_Raid_Pelargir_desc:0 "A small portion of the fleet is ready to set out to attack the coast of Gondor it's time to avenge the defeat of 2980 T.A."
+ UMA_War_With_The_Faithful:0 "War With The Faithful"
+ UMA_War_With_The_Faithful_desc:0 "The time has come to end the lineage of the Swan. To reclaim what was our's and to defeat the traitors who doomed Numenor so long ago."
+ The_Enemy_to_our_North:0 "The Enemy to our North"
+ The_Enemy_to_our_North_desc:0 "The Haronder tribes to our north are perfect raiding targets to aquire new labor and land."
+ Find_The_Infamous_Sea_Dog's:0 "Find The Infamous Sea Dog's"
+ Find_The_Infamous_Sea_Dog's_desc:0 "The Sea Dog's have terrorized the Coast of Haronder for twently years now if we can convince them to join us securing Haronder will be much easier."
+ A_Visitor_From_Mordor:0 "A Visitor From Mordor"
+ A_Visitor_From_Mordor_desc:0 "A thing clad in black and red with teath pointed like a shark has come to the Court calling himself The Mouth of Sauron"
+ Corsair_Capital_Ships:0 "Corsair Capital Ships"
+ Corsair_Capital_Ships_desc:0 "The Corsairs of Umbar have been battling the traitors in Minas Ithil for centurys and the design for the Black Corsair ships have proven a challenging foe even for the Swan Ships of Dol Amroth "
+ Prepare_for_War_in_Haronder:0 "Prepare For War in Haronder"
+ Prepare_for_War_in_Haronder_desc:0 "If we plan to expand north then we must improve our supply sitiuation going north."
+ Conquer_Southern_Haronder:0 "Never Again"
+ Conquer_Southern_Haronder_desc:0 "Much of our fleet was destroyed in 2980 T.A in a suprise attack we must reinforce our coastal defenses to make sure this never happens again"
+ Corsair_Screening_Vessels:0 "Corsair Screening Vessels"
+ Corsair_Screening_Vessels_desc:0 "The Corsairs war's of the last century have proven that smaller more nimble ships will be neccesary if we are to defeat the Amrothian and Gondorian fleets in a pitched battle."
+ A_Numenorian_Armada:0 "A Numenorian Armada"
+ A_Numenorian_Armada_desc:0 "Many Numenorian ships were at Umbar when Numenor was flooded decades of neglect and rot have left these large vessels in ruins. But if repaird they may turn the tide on the waves."
+ A_Pirate_Fleet:0 "A Pirate Fleet"
+ A_Pirate_Fleet_desc:0 "The Corsair Fleet was mostly destroyed in the sacking fourty years ago. But with time and effort we could rebuild the once feared Corsair Fleet and begin raiding Gondor's shores again."
+ Conquer_Harondor:0 "Conquer Harondor"
+ Conquer_Horondor_desc:0 "The Province of Haronder was once a vassal trading resources and manpower for protection under Numenorian rule it's time we reinstate this agreemeant."
+ Integrate_Harondor:0 "Integrate Harondor"
+ Integrate_Harondor_desc:0 "With the Haronder tribes defeated we can begin integrating them into the core structure of our expanding empire."
+ The_Corsair_Stronghold:0 "The Corsair Stronghold"
+ The_Corsair_Stronghold_desc:0 "Only the Dark Lord can defeat The Ellindili and we his faithful servants shall support him in this holy goal."
+ Deal_With_The_Disloyal_Numenorians:0 "Deal With The Disloyal Numenorians"
+ Deal_With_The_Disloyal_Numenorians_desc:0 "Many of the Numenorians who once loyally served have turned TRAITOR to our Dark Lord Sauron they must be executed for their crimes."
+ Seek_The_Dark_Lords_Favor:0 "Seek The Dark Lords Favor Once More"
+ Seek_The_Dark_Lords_Favordesc:0 "The Dark Lord of Mordor is powerful and with his aid we can rid the Elendili of Gondor."
+ Rally_Corsairs:0 "Rally Corsairs"
+ Rally_Corsairs_desc:0 "Men, Women, Degenerates of Umbar the time is upon us to destroy the great enemy. With the forces of Mordor by our side we shall attack the coast and destroy the Gondorians. And there will be TONS'S OF LOOT!"
+ Request_Mordor_Forces:0 "Request Mordor Forces"
+ Request_Mordor_Forces_desc:0 "If we are to destroy Gondor we will require more soldiers. We must beg the Dark Lord for aid if we ever plan to defeat the Gondorians."
+ Prepare_The_Great_Corsair_Fleet:0 "Prepare The Great Corsair Fleet"
+ Prepare_The_Great_Corsair_Fleet_desc:0 "The Corsair fleet that was once destroyed has been rebuilt and the time is almost upon us to destroy the traitors."
+ Confinscate_Horondor_Trade_Vessels:0 "Confinscate Horondor Trade Vessels"
+ Confinscate_Horondor_Trade_Vessels_desc:0 "By confiscating local trade vessels we may transport our troops to Gondor while our combat ships destroy their navy."
+ Hire_Haradrim_Mercenaries:0 "Hire Haradrim Mercenaries"
+ Hire_Haradrim_Mercenaries_desc:0 "The Haradrim serve the Dark Lord as we do maybe we can cooperate our attack on Gondor"
+ Seek_The_Oliphant_Lords:0 "Seek The Oliphant Lords"
+ Seek_The_Oliphant_Lords_desc:0 "The Oliphant Lords of the Haradrim would make foe a formidable friend in our war against the Gondorians."
+ War_With_Gondor:0 "War With Gondor"
+ War_With_Gondor_desc:0 "The time has come DEATH TO THE ELENDILI... DEATH TO GONDOR."
+ The_True_Threat_To_Mankind:0 "The True Threat To Mankind"
+ The_True_Threat_To_Mankind_desc:0 "The true threat to mankind is not the Elendili or even the Noldoran themselves. No the Great Deciever awaits inside the dark mountains of Mordor. If he is left to achieve his goals all of Arda may fall to his corrupting grasp."
+ Send_a_Delegation_to_Gondor:0 "Send a Delegation to Gondor"
+ Send_a_Delegation_to_Gondor_desc:0 "Century's of war and raids have left us and the Elindili of Gondor on bad terms it's time we rectafy this mistake."
+ Seek_Appeasment_With_Gondor:0 "Seek Appeasment With Gondor"
+ Seek_Appeasment_With_Gondor_desc:0 "By proposing subjegation to Gondor we can make right all the century's of mistakes."
+ Send_a_Delegation_to_Dol_Amroth:0 "Send a Delegation to Dol Amroth"
+ Send_a_Delegation_to_Dol_Amroth_desc:0 "The People of Dol Amroth have long been the Concentrated target of the many Corsair raids lauched from Umbar. It is time to we send an Ambassador to rectify our mistake."
+ Seek_Appeasment_With_Dol_Amroth:0 "Seek Appeasment With Dol Amroth"
+ Seek_Appeasment_With_Dol_Amroth_desc:0 "By guarenteeing the independece of Dol Amroth and promising to come to their aid we may begin to rectify our century's of mistakes."
+ Form_An_Alliance_Against_Mordor:0 "Form An Alliance Against Mordor"
+ Form_An_Alliance_Against_Mordor_desc:0 "With the Kingdom of Umbar and The Kingdom of Gondor under one banner we can protect all of those of Numenorian blood and in turn all of mankind from the forces of The Greawt Deciever."
+ UMA_Raise_The_Banner_Over_Minas_Tirith:0 "Raise The Banner Over Minas Tirith"
+ UMA_Raise_The_Banner_Over_Minas_Tirith_desc:0 ""
+ UMA_Raise_The_Banner_Over_Pelargir:0 "Raise The Banner Over Pelargir"
+ UMA_Raise_The_Banner_Over_Pelargir_desc:0 ""
+ UMA_Rally_The_Dunedain_Against_Mordor:0 "Rally The Dunedain Against Mordor"
+ UMA_Rally_The_Dunedain_Against_Mordor_desc:0 ""
+ UMA_Raise_Militia_Battalions:0 "Raise Militia Battalions"
+ UMA_Raise_Militia_Battalions_desc:0 ""
+ UMA_Rally_The_Proffesional_Soldiers:0 "Rally The Proffesional Soldiers"
+ UMA_Rally_The_Proffesional_Soldiers_desc:0 ""
+ UMA_Raise_The_Reserves:0 "Raise The Reserves"
+ UMA_Raise_The_Reserves_desc:0 ""
+ UMA_The_Dol_Amroth_Nobility:0 "The Dol Amroth Nobility"
+ UMA_The_Dol_Amroth_Nobility_desc:0 ""
+ UMA_The_Gondorian_Nobility:0 "The Gondorian Nobility"
+ UMA_The_Gondorian_Nobility_desc:0 ""
+ UMA_Take_The_Fight_To_Mordor:0 "Take The Fight To Mordor"
+ UMA_Take_The_Fight_To_Mordor_desc:0 ""
+ 
+################################### IDEAS                       \n      §H§!
+
+ UMA_heir_of_numenor:0 "Heir's of Numenor"
+ UMA_thin_blood_of_numenor:0 "Thin Blood of Numenor"
+ UMA_sack_of_umbar:0 "The Sack of Umbar"
+ UMA_the_umbar_trade_fleet:0 "The Umbar Trade Fleet"
+ UMA_numenorian_training:0 "Numenorian Training"
+ UMA_the_crown_of_numenor:0 "The Crown of Numenor"
+ UMA_restored_blood_of_numenor:0 "Restored Blood Of Numenor"
+ UMA_the_gift_from_mordor:0 "A Gift From Mordor"
+ UMA_black_numenorians:0 "Black Numenorians of Umbar"
+ UMA_tolfalas_raided:0 "Tolfalas Raided"
+ UMA_belfalas_raided:0 "Pelargir Raided"
+
+
+################################### DECISIONS                   \n      §H§! 
+ 
+ UMA_Raid_Gondor:0 "Raid Gondor"
+ UMA_Raid_Gondor_desc:0 "We Should raid the Gondor Coast and weaken them while our navy is superior."
+ 
+ UMA_Raid_Dol_Amroth:0 "Raid Dol Amroth"
+ UMA_Raid_Dol_Amroth_desc:0 "We Should raid the Amrothian Coast and weaken them while our navy is superior."
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ UMA.1.t:0 "The Glory of Numenor"
+ UMA.1.d:0 "During the Second Age Numenor was the most powerful nation on Arda. At the height of it's power's even the forces of the Dark Lord Fled at the sight of the Legions of Numenor. But afraid of what Numenor would achieve if left to proseper the cowardly Valar struck out with their Dark Magics and flooded our homeland. Now all that remains of the Great Island of Numenor is the tip of Menatarma. A century later in the Third Age we are all that remains of the true Numenorian Lords of old."
+ UMA.2.t:0 "The King of Failure"
+ UMA.2.d:0 "In 1437 T.A Castamir the Usurper revolted from the traitors in Gondor. He fled to Umbar and many of those with true Numenorian blood joined his cause in attempt to regain their birthright. But not even ten years after gaining power he suffered defeat to the forces of the Elendili where many of those of those who were of true Numenorian blood were lost.\n\nMany years of raiding the coast and shipping lanes of Gondor insued but in the end all this led to was the dwindiling of the remaining Numenorians of Umbar. "
+ UMA.3.t:0 "The Sack of Umbar"
+ UMA.3.d:0 "By 2900 T.A the Kingdom of Umbar had lost much of it's remaining Numenorian Blood. The Numenorian Nobility had been destroyed and replaced by a new group calling themselves Corsairs. In 2980 T.A A small Elindili fleet led by a man known as Thorongil attacked the Port of Umbar as it was preparing for another raiding expedion. Caught off guard The Corsair Captain of The Haven was killed and most of the Black Corsair ships were sunk with many of there crewmen dragged to the bottom of the sea with them. \n\nNow with the Corsair's reduced in number many of the remaining Numenorians have begone to assert there influence over the Haven of Umbar again."
+ UMA.4.t:0 "A New General"
+ UMA.4.d:0 "Word has gotten out that we are back in control of The Haven of Umbar. A man calling himself Gimilzagar has come to the court proclaiming himself to be a leader of men. By his own words he led a band of Numenorian marines and Haradrim tribesmen in a assult on a city known as Balkhuzor further south and has come seeking glory in the reborn Numenorian legion. "
+ UMA.5.t:0 "A Strange Visitor"
+ UMA.5.d:0 "A strange man wearing ornate golden plate armor appears before the throne. "My Liege i represent a alliance of Numenorian city states beyond the Haradrim dessert. I have the honor to present you with the Crown of Numenor once thought lost by our kind during Drowning of Numenor but since recovered. With this Crown my king you could reunite our peoples into one nation and the armies of the south will make haste to come to your aid."\n\n §RTHIS WILL HAVE CONSEQUENCES IF YOU PLAN TO SIDE WITH MORDOR!!!!!"
+ UMA.6.t:0 "A Visitor From Mordor"
+ UMA.6.d:0 "A strange man clad in black and red robes and an iron helm enters the Royal Court and begins to speak. "My Master Sauron the Great bids the greetings Great King Balkubâr. I am the Mouth of Sauron and and I have been bidden to grant you this gift from the Dark Lord. It shall bring you great power, strength and influence over your fellow men. \n\n §RTHIS WILL HAVE CONSEQUENCES IF YOU PLAN TO SIDE WITH THE NUMENORIANS!!!!!"
+ UMA.7.t:0 "The Sea Dog's of Haronder"
+ UMA.7.d:0 "A ragged man in a tattered red shirt enters the Royal Court. "King Balkubâr I heard you were looking for me and my lad's i figured i would save you the time and come here myself. I know when the tides of fate are changing and i can feel it in this very room. If you have the gold then we will serve you as loyally as any other captain. Well if you make ME the admiral of the fleet.""
+ UMA.8.t:0 "The Umbaran Civil War"
+ UMA.8.d:0 "By accepting the gift from Sauron and The Crown of Numenor the two largest faction in Umbar The Numenorian Remnants and the Corsairs have been thrown into chaos and there is fighting in streets one side must prevail if Umbar is to stand strong again."
+ UMA.9.t:0 "The Umbaran Civil War"
+ UMA.9.d:0 "By accepting the gift from Sauron and The Crown of Numenor the two largest faction in Umbar The Numenorian Remnants and the Corsairs have been thrown into chaos and there is fighting in streets one side must prevail if Umbar is to stand strong again."
+ UMA.10.t:0 "The Kingdom of Umbar Want's an Alliance"
+ UMA.10.d:0 "After century's of war the Kingdom of Umbar has thrown off the shackles of the Dark Lord and has come to us asking for a mutual alliance to defeat Sauron and his Dark Pact. Maybe it's time the Third Numenorian Kingdom was brought back into the light of Eru."
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!

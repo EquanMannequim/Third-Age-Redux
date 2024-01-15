@@ -1,0 +1,30 @@
+
+MRG_cat = {
+	MRG_Ithilian_Failure = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = { MRG = { has_completed_focus = Sieze_The_Eastern_Anduin } }
+		available = { MRG = { exists = no } }
+		days_mission_timeout = 365
+		timeout_effect = {
+			MRG = { white_peace = ITL }
+		complete_effect = {
+				MRG = { annex_country = { target = ITL transfer_troops = no } }
+			}
+		}
+	}
+	MRG_Victory_in_Ithilian = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 90
+		ai_will_do = { factor = 999 }
+		activation = { MRG = { has_completed_focus = Sieze_The_Eastern_Anduin } }
+		available = { MRG = { controls_state = 173 } }
+		complete_effect = {
+			hidden_effect = { MRG = { white_peace = ITL } }
+			MRG = { annex_country = { target = ITL transfer_troops = no } }
+			
+			}
+		}
+	}

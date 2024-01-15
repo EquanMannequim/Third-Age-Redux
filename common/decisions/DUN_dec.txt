@@ -1,0 +1,31 @@
+
+DUN_cat = {
+	DUN_Shadow_Expands_From_Cardolan = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = { has_completed_focus = DUN_Ignore_The_Cardolan_Wights }
+		available = { always = no }
+		days_mission_timeout = 280
+		timeout_effect = {
+			FAR = { declare_war_on = { type = annex_everything    target = DUN }
+		}
+		complete_effect = {
+			}
+		}
+	}
+	DUN_Shadow_Expands_From_The_Mountain = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = { has_completed_focus = DUN_The_Threat_From_The_Cold_North }
+		available = { ERG = { exists = no }
+		days_mission_timeout = 280
+		timeout_effect = {
+			ERG = { declare_war_on = { type = annex_everything    target = DUN }
+		}
+		complete_effect = {
+			}
+		}
+	}
+}

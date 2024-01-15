@@ -1,0 +1,54 @@
+
+DRA_cat = {
+	DRA_Rhunic_Civil_War = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = {
+				has_completed_focus = DRA_The_Eastern_Kingdom
+			}
+		available = {
+			has_completed_focus = DRA_The_Kingdom_of_Rhun
+			}
+		days_mission_timeout = 70
+		timeout_effect = {
+			if = {
+			limit = { original_tag = DRA } 
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = ASD }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = URG }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = ASD }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = ASD }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = SAG } }
+		if = {
+			limit = { original_tag = SAG }
+		 add_state_claim = 209 add_state_claim = 128 add_state_claim = 129
+		 add_state_claim = 130 add_state_claim = 132 add_state_claim = 131
+		 add_state_claim = 124 add_state_claim = 104
+		 add_ideas = DRA_Rhunic_Civil_War
+		 declare_war_on = { type = annex_everything    target = DRA }
+		 declare_war_on = { type = annex_everything    target = URG }
+		 declare_war_on = { type = annex_everything    target = ASD } }
+			}
+		complete_effect = {
+			}
+		}
+	}

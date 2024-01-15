@@ -1,0 +1,345 @@
+ideas = {
+
+	country = {
+
+		STE_a_disunited_kingdom1 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.35
+				political_power_factor = -0.35
+				war_support_factor = -0.35
+			}
+		}
+		STE_a_disunited_kingdom2 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.30
+				political_power_factor = -0.30
+				war_support_factor = -0.30
+			}
+		}
+		STE_a_disunited_kingdom3 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.25
+				war_support_factor = -0.25
+			}
+		}
+		STE_a_disunited_kingdom4 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.20
+				political_power_factor = -0.20
+				war_support_factor = -0.20
+			}
+		}
+		STE_a_disunited_kingdom5 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		STE_a_disunited_kingdom6 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		STE_a_united_kingdom = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.05
+				war_support_factor = 0.15
+			}
+		}
+		STE_denethors_paranoia1 = {
+			allowed = { always = no }
+			cancel = { STE = { has_completed_focus = The_Return_of_The_King } }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.10
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		}
+		STE_denethors_paranoia2 = {
+			allowed = { always = no }
+			cancel = { STE = { has_completed_focus = The_Return_of_The_King } }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.15
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		STE_denethors_paranoia3 = {
+			allowed = { always = no }
+			cancel = { STE = { has_completed_focus = The_Return_of_The_King } }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.20
+				political_power_factor = -0.25
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		STE_denethors_paranoia4 = {
+			allowed = { always = no }
+			cancel = { STE = { has_completed_focus = The_Return_of_The_King } }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.30
+				political_power_factor = -0.35
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		STE_denethors_paranoia5 = {
+			allowed = { always = no }
+			cancel = { STE = { has_completed_focus = The_Return_of_The_King } }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.35
+				political_power_factor = -0.40
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.40
+			}
+		}
+		STE_realm_in_exile = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.05
+				army_morale_factor = 0.03
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+
+		STE_victory_of_the_last_alliance = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				conscription_factor = -0.15
+				political_power_factor = 0.10
+			}
+		}
+
+		STE_a_kingless_kingdom = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				land_bunker_effectiveness_factor = -0.5
+				production_speed_bunker_factor = -0.5
+			}
+		}
+		STE_bond_amongst_men = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		STE_alone_against_the_darkness = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = -0.05
+				army_morale_factor = -0.03
+				army_defence_factor = 0.09
+			}
+		}
+		STE_bastion_of_freedom = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.05
+				army_defence_factor = 0.10
+			}
+		}
+
+		STE_the_ithilian_crisis = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				army_morale = -0.10
+			}
+		}
+
+		STE_the_gondorian_heavy_infantry = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		STE_gondorian_rangers = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				war_support_factor = 0.03
+				army_morale = 0.10
+				army_core_defence_factor = 0.08
+				special_forces_min = 40
+				special_forces_cap = 0.15
+			}
+		}
+		
+		STE_the_return_of_the_king = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_sack_of_umbar 				
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		STE_the_new_king_of_gondor = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_sack_of_umbar 				
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.02
+				army_core_defence_factor = 0.02
+			}
+		}
+		STE_the_rightful_heir_to_the_palantir = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			targeted_modifier = {
+				tag = MRD
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04
+		}
+	}
+		STE_prepared_defenses = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.08
+				army_core_defence_factor = 0.02
+			}
+			targeted_modifier = {
+				tag = MRD
+				defense_bonus_against = 0.10
+		}
+	}
+		
+		STE_prepared_for_the_offense = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = MRD
+				attack_bonus_against = 0.10
+		}
+	}
+	STE_prepared_for_umbar = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.08
+			}
+			targeted_modifier = {
+				tag = UMA
+				defense_bonus_against = 0.10
+		}
+	}
+	STE_Professional_Navy = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.06
+				experience_gain_destroyer_training_factor = 0.06
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+	}
+}

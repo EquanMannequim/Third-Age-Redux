@@ -1,0 +1,35 @@
+capital = 144
+
+oob = "FAR_3015"
+
+set_research_slots = 1
+
+recruit_character = FAR_karsh
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	convoy_tech = 1
+	transport = 1
+	superior_firepower = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = belligerent
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cooperative = 0
+	belligerent = 100
+}
+add_manpower = 10000

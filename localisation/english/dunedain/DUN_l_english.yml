@@ -1,0 +1,362 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+#################################### Laws                       \n      §H§!
+ 
+
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+
+
+################################### FOCUSES                     \n      §H§!
+ 
+ DUN_The_War_of_The_Last_Alliance:0 "The War of The Last Alliance"
+ DUN_The_War_of_The_Last_Alliance_desc:0 "Much of Eriador's population was drafted into the military during the War of The Last Alliance and not many came home even after Mordor was defeated."
+ 
+ DUN_The_Time_of_Three_Kings:0 "The Time of Three Kings"
+ DUN_The_Time_of_Three_Kings_desc:0 "Arnor after decades of peace began to fracture and eventully collapsed into the three kingdoms known as Rhudar, Cardolan, Arthedain."
+ 
+ DUN_The_War_In_The_North:0 "The War In The_North"
+ DUN_The_War_In_The_North_desc:0 "The Kingdom of Angmar was to much for the fractured Northern Kingdom to handle after decades of back and forth war eventully Angamr destroyed the Arnorian Remnants in Fornost."
+ 
+ DUN_The_Shirefolk:0 "The Shirefolk"
+ DUN_The_Shirefolk_desc:0 "The Shirefolk need to be protected from evils that lurk in the shadows."
+ 
+ DUN_The_Elves_of_Rivendell:0 "The Elves of Rivendell"
+ DUN_The_Elves_of_Rivendell_desc:0 "Lord Elrond is a close ally and friend of the Dunedain and if needed he will come to our aid."
+ 
+ DUN_The_Free_Peoples_of_Bree:0 "The Free Peoples of Bree"
+ DUN_The_Free_Peoples_of_Bree_desc:0 "The scattered peoples of Bree have no formal army they must be protected."
+ 
+ DUN_Halbarads_Mission:0 "Halbarads Mission"
+ DUN_Halbarads_Mission_desc:0 "Halbarad has been gone on his mission for Strider for quite a while. It's time we check in on him."
+ 
+ DUN_Send_Swordsmiths_To_Halbarad:0 "Send Swordsmiths To Halbarad"
+ DUN_Send_Swordsmiths_To_Halbarad_desc:0 "Halbarad has requested aid to equip the Northmen in Cardolan."
+ 
+ DUN_Equip_Halbarads_Forces:0 "Equip Halbarads Forces"
+ DUN_Equip_Halbarads_Forces_desc:0 "Halbarad has requested extra manpower to help fortify the Northmen in Cardolan."
+ 
+ DUN_The_Red_Hill_Raiders:0 "The Red Hill Raiders"
+ DUN_The_Red_Hill_Raiders_desc:0 "The Red Hill Raiders have long raided the areas of eastern Eriador it's time they were dealt with."
+ 
+ DUN_Transfer_Administation_To_Bree:0 "Transfer Administation To Bree"
+ DUN_Transfer_Administation_To_Bree_desc:0 ""
+ 
+ DUN_Aid_Elladan_and_Elrohir:0 "Aid Elladan and Elrohir"
+ DUN_Aid_Elladan_and_Elrohir_desc:0 "Elladan and Elrohir have sent word that Imladris is in dire need of help."
+ 
+ DUN_Send_Aid_To_Rivendell:0 "Send Aid To Rivendell"
+ DUN_Send_Aid_To_Rivendell_desc:0 "Rivendell is in dire need of equipment, its not much but we should send what we can."
+ 
+ DUN_Rivendell_Swordmiths:0 "Rivendell Swordmiths"
+ DUN_Rivendell_Swordmiths_desc:0 "Although not as skilled as their Elven counterparts we should send whatver smiths we can to help defend Rivendell."
+ 
+ DUN_Orcs_Across_The_Gwathlo:0 "Orcs Across The Gwathlo"
+ DUN_Orcs_Across_The_Gwathlo_desc:0 "The Orcs of the former territories of Eregion have gone into a full scale war with Imladris we need to help them."
+ 
+ DUN_Transfer_Control_To_Rivendell:0 "Transfer Control To Rivendell"
+ DUN_Transfer_Control_To_Rivendell_desc:0 ""
+ 
+ DUN_Expell_The_Darkness_In_Cardolan:0 "Expell The Darkness In Cardolan"
+ DUN_Expell_The_Darkness_In_Cardolan_desc:0 "The Barrow Weights of Cardolan have long troubled the areas it's time someone dealt with them."
+ 
+ DUN_Ignore_The_Cardolan_Wights:0 "Ignore The Cardolan Wights"
+ DUN_Ignore_The_Cardolan_Wights_desc:0 "A problem for a later time"
+ 
+ DUN_Whispers_Of_An_Old_Threat:0 "Whispers Of An Old Threat"
+ DUN_Whispers_Of_An_Old_Threat_desc:0 "Word is spreading across Eriador of an Old Threat back to haunt the Free Peoples."
+ 
+ DUN_Recall_Halbarad_Home:0 "Recall Halbarad Home"
+ DUN_Recall_Halbarad_Home_desc:0 "It's time Halbarad report home and bring the resources he's gathered with him."
+ 
+ DUN_Leave_Halbarad_In_Weatherhills:0 "Leave albarad In Weatherhills"
+ DUN_Leave_Halbarad_In_Weatherhills_desc:0 "halbarad has done a great job in Cardolan we should leave him in control of the area."
+ 
+ DUN_Call_Forth_The_Dunedain:0 "Call Forth The Dunedain"
+ DUN_Call_Forth_The_Dunedain_desc:0 "It's time for the Dunedain to come out of the shadow's and back into the light of Eriador."
+ 
+ DUN_Rhudar_Defenses:0 "Prepare Rhudar Defenses"
+ DUN_Rhudar_Defenses_desc:0 "The border near Rhudar must be defended if we are to hold off any threats to the North."
+ 
+ DUN_Rally_The_Locals:0 "Rally The Locals"
+ DUN_Rally_The_Locals_desc:0 "We should send Rangers out to rally any locals that want to help defend their homes."
+ 
+ DUN_Reclaim_The_Ancient_Fortress_of_Fornost:0 "Reclaim The Ancient Fortress of Fornost"
+ DUN_Reclaim_The_Ancient_Fortress_of_Fornost_desc:0 "The Ancient Fortress of Fornost was once the Capital of Arthedain it's time we controlled it once again."
+ 
+ DUN_Fortify_Fornost:0 "Fortify Fornost"
+ DUN_Fortify_Fornost_desc:0 "We should refortify the Fornost region"
+ 
+ DUN_Reclaim_The_Old_Capital_of_Annuminas:0 "Reclaim The Old Capital of Annuminas"
+ DUN_Reclaim_The_Old_Capital_of_Annuminas_desc:0 "The Ancient city of Annuminas was once the Capital of all of Arnor it's time we controlled it once again.""
+ 
+ DUN_Restore_Annuminas:0 "Restore Annuminas"
+ DUN_Restore_Annuminas_desc:0 "Annuminas was once the gem of the Northern Kingdom we should begin to repair it so it may serve it's purpose once more."
+ 
+ DUN_Build_Makeshift_Workshops:0 "Build Makeshift Workshops"
+ DUN_Build_Makeshift_Workshops_desc:0 ""
+ 
+ DUN_Build_Bridges_Across_The_Rivers:0 "Build Bridges Across The Rivers"
+ DUN_Build_Bridges_Across_The_Rivers_desc:0 ""
+ 
+ DUN_Restored_Civillian_Infastructure:0 "Restored Civillian Infastructure"
+ DUN_Restored_Civillian_Infastructure_desc:0 ""
+ 
+ DUN_Build_Makeshift_Forges:0 "Build Makeshift Forges"
+ DUN_Build_Makeshift_Forges_desc:0 ""
+ 
+ DUN_Restore_The_Cardolan_Armorys:0 "Restore The Cardolan Armorys"
+ DUN_Restore_The_Cardolan_Armorys_desc:0 ""
+ 
+ DUN_Rebuild_Roads_Along_The_Greenroad:0 "Rebuild Roads Along The Greenroad"
+ DUN_Rebuild_Roads_Along_The_Greenroad_desc:0 ""
+ 
+ DUN_Restore_The_Cardolan_Archery_Ranges:0 "Restore The Cardolan Archery Ranges"
+ DUN_Restore_The_Cardolan_Archery_Ranges_desc:0 ""
+ 
+ DUN_Restored_Military_Buildings:0 "Restored Military Buildings"
+ DUN_Restored_Military_Buildings_desc:0 ""
+ 
+ DUN_The_Threat_From_The_Cold_North:0 "The Threat From The Cold_North"
+ DUN_The_Threat_From_The_Cold_North_desc:0 "The threat is real and it's coming for all of Eriador we have to stop it at all cost."
+ 
+ DUN_Man_The_Defenses:0 "Man The Defenses"
+ DUN_Man_The_Defenses_desc:0 "We need to send more men to fortify our border regions if we are to hold."
+ 
+ DUN_Prepare_To_March_North:0 "Prepare To March North"
+ DUN_Prepare_To_March_North_desc:0 "We should rally our men together and prepare to march north to defeat the Great Enemy."
+ 
+ DUN_Destroy_Angmar_Once_and_For_All:0 "Destroy Angmar Once and For All"
+ DUN_Destroy_Angmar_Once_and_For_All_desc:0 "Angamr must be destroted once and for all."
+ 
+ DUN_Send_Rangers_To_The_Shire:0 "Send Rangers To The Shire"
+ DUN_Send_Rangers_To_The_Shire_desc:0 "We should send Rangers to fortify the Shire."
+ 
+ DUN_Take_Direct_Control_of_The_Shire:0 "Take Direct Control of The Shire"
+ DUN_Take_Direct_Control_of_The_Shire_desc:0 "We should annex the Shire into our territory."
+ 
+ DUN_Increase_Influence_In_The_Shire:0 "Increase Influence In The Shire"
+ DUN_Increase_Influence_In_The_Shire_desc:0 "We should take control of the Shire but let them rule their dwellings."
+ 
+ DUN_Send_Rangers_To_Bree:0 "Send Rangers To Bree"
+ DUN_Send_Rangers_To_Bree_desc:0 "We should send Rangers to fortify Bree."
+ 
+ DUN_Take_Direct_Control_of_Bree:0 "Take Direct Control of Bree"
+ DUN_Take_Direct_Control_of_Bree_desc:0 "We should annex Bree into our territory."
+ 
+ DUN_Increase_Influence_In_Bree:0 "Increase Influence In Bree"
+ DUN_Increase_Influence_In_Bree_desc:0 "We should take control of the Bree but let them rule their dwellings."
+ 
+ DUN_Seek_Influence_In_Southern_Arnor:0 "Seek Influence In Southern Arnor"
+ DUN_Seek_Influence_In_Southern_Arnor_desc:0 "With the North finally firmly under our control we should look south to reclaim the territories of old Arnor."
+ 
+ DUN_Send_Rangers_To_Sirgale:0 "Send Rangers To Sirgale"
+ DUN_Send_Rangers_To_Sirgale_desc:0 "We should send Rangers to dicuss negotiations with Sirgale."
+ 
+ DUN_Take_Direct_Control_of_Sirgale:0 "Take Direct Control of Sirgale"
+ DUN_Take_Direct_Control_of_Sirgale_desc:0 "We should annex Sirgale into our territory."
+ 
+ DUN_Increase_Influence_In_Sirgale:0 "Increase Influence In Sirgale"
+ DUN_Increase_Influence_In_Sirgale_desc:0 "We should take control of Sirgale but let them rule their dwellings."
+ 
+ DUN_Send_Rangers_To_Girithlin:0 "Send Rangers To Girithlin"
+ DUN_Send_Rangers_To_Girithlin_desc:0 "We should send Rangers to dicuss negotiations with Girithlin."
+ 
+ DUN_Take_Direct_Control_of_Girithlin:0 "Take Direct Control of Girithlin"
+ DUN_Take_Direct_Control_of_Girithlin_desc:0 "We should annex Girithlin into our territory."
+ 
+ DUN_Increase_Influence_In_Girithlin:0 "Increase Influence In Girithlin"
+ DUN_Increase_Influence_In_Girithlin_desc:0 "We should take control of Girithlin but let them rule their dwellings."
+ 
+ DUN_Send_Rangers_To_Enedwaith:0 "Send Rangers To Enedwaith"
+ DUN_Send_Rangers_To_Enedwaith_desc:0 "We should send Rangers to dicuss negotiations with the Enedwaith Riverlords"
+ 
+ DUN_Take_Direct_Control_of_Enedwaith:0 "Take Direct Control of Enedwaith"
+ DUN_Take_Direct_Control_of_Enedwaith_desc:0 "We should annex Enedwaith into our territory."
+ 
+ DUN_Ally_With_Enedwaith:0 "Ally With Enedwaith"
+ DUN_Ally_With_Enedwaith_desc:0 "We should ally with Enedwaith to combat the evils of Middle Earth."
+ 
+ DUN_Increase_Influence_In_Enedwaith:0 "Increase Influence In Enedwaith"
+ DUN_Increase_Influence_In_Enedwaith_desc:0 "We should take control of Enedwaith but let them rule their dwellings."
+ 
+ DUN_The_Kingdom_of_Arnor:0 "The Kingdom of Arnor"
+ DUN_The_Kingdom_of_Arnor_desc:0 " It's time we reform are civil infastructure to better reflect our new territories. We are the heirs to Arnor and we have reclaimed our Birthright."
+ 
+ DUN_Rebuilding_Arnor:0 "Rebuilding Arnor"
+ DUN_Rebuilding_Arnor_desc:0 ""
+ 
+ DUN_The_Arnorian_Military:0 "The Arnorian Military"
+ DUN_The_Arnorian_Military_desc:0 ""
+ 
+ DUN_The_Arnorian_Cavalry:0 "The Arnorian Cavalry"
+ DUN_The_Arnorian_Cavalry_desc:0 ""
+ 
+ DUN_Arnorian_Heavy_Cavalry:0 "Arnorian Heavy Cavalry"
+ DUN_Arnorian_Heavy_Cavalry_desc:0 ""
+ 
+ DUN_Arnorian_Light_Cavalry:0 "Arnorian Light Cavalry"
+ DUN_Arnorian_Light_Cavalry_desc:0 ""
+ 
+ DUN_The_Arnorian_Infantry:0 "The Arnorian Infantry"
+ DUN_The_Arnorian_Infantry_desc:0 ""
+ 
+ DUN_The_Arnorian_Navy:0 "The Arnorian Navy"
+ DUN_The_Arnorian_Navy_desc:0 ""
+ 
+ DUN_Arnorian_Screening_Vessels:0 " Arnorian Screening Vessels"
+ DUN_Arnorian_Screening_Vessels_desc:0 ""
+ 
+ DUN_Arnorian_Capital_Ships:0 "Arnorian Capital Ships"
+ DUN_Arnorian_Capital_Ships_desc:0 ""
+ 
+ DUN_The_Threats_of_Middle_Earth:0 "The Threats of Middle Earth"
+ DUN_The_Threats_of_Middle_Earth_desc:0 ""
+ 
+ DUN_The_Traitor_In_Orthanc:0 "The Traitor In Orthanc"
+ DUN_The_Traitor_In_Orthanc_desc:0 ""
+ 
+ DUN_The_Barbarians_of_Dunland:0 "The Barbarians of Dunland"
+ DUN_The_Barbarians_of_Dunland_desc:0 ""
+ 
+ DUN_The_Dark_Lord_of_Mordor:0 "The Dark Lord of Mordor"
+ DUN_The_Dark_Lord_of_Mordor_desc:0 ""
+ 
+ DUN_The_Southern_Kingdom:0 "The Southern Kingdom"
+ DUN_The_Southern_Kingdom_desc:0 "The Southern Kingdom of Gondor is in dire need of help."
+ 
+ DUN_Send_Arnorian_Envoys:0 "Send Arnorian Envoys"
+ DUN_Send_Arnorian_Envoys_desc:0 "We should send Envoys to inform Gondor what has transpired in the north and inform them were coming to help."
+ 
+ DUN_Send_Military_Advisors:0 "Send Military Advisors"
+ DUN_Send_Military_Advisors_desc:0 "Many of our best Rangers want to leave to go to Gondor ahead of the main army to help stabalize the front line and help prepare the Gondorians."
+ 
+ DUN_Prepare_Intervention_Forces:0 "Prepare Intervention Forces"
+ DUN_Prepare_Intervention_Forces_desc:0 "The Arnorian army must be reinforced if we are to fight side by side with our Gondorian brothers and defeat Mordor"
+ 
+ DUN_Send_Aid_to_Gondor:0 "Send Aid to Gondor"
+ DUN_Send_Aid_to_Gondor_desc:0 "Gondor is in dire need of aid we should send them some of our stockpiles."
+ 
+ DUN_Two_Kingdoms_One_Peoples:0 "Two Kingdoms One Peoples"
+ DUN_Two_Kingdoms_One_Peoples_desc:0 "It's time the Dunedain of Gondor and Arnor were united to fight off the Darkness coming from Mordor."
+ 
+ DUN_Send_Arnorian_Reinforcements:0 "Send Arnorian Reinforcements"
+ DUN_Send_Arnorian_Reinforcements_desc:0 "We should send a forward detachment of the Arnorian army to reinforce Gondor while we prepare the main forces."
+ 
+ DUN_Send_Ranger_Reinforcements:0 "Send Ranger Reinforcements"
+ DUN_Send_Ranger_Reinforcements_desc:0 "We should send a forward detachment of the Arnorian Rangers to reinforce Godnor while we prepare the main forces."
+ 
+ DUN_Propose_Uniting_The_Two_Kingdoms:0 "Propose Uniting The Two Kingdoms"
+ DUN_Propose_Uniting_The_Two_Kingdoms_desc:0 "It's time the two Kingdoms of Men were brought together under one flag and one King to defeat Mordor."
+ 
+ DUN_Propose_A_Formal_Alliance:0 "Propose A Formal Alliance"
+ DUN_Propose_A_Formal_Alliance_desc:0 "We should make a formal alliance with Gondor and ride south to aid them against Mordor."
+ 
+ DUN_Arnorian_Dominion_Over_Gondor:0 "Arnorian Dominion Over Gondor"
+ DUN_Arnorian_Dominion_Over_Gondor_desc:0 "Arnor was alwasy the High Kingdom of Men when Elendil ruled it's time for Arnor to take control of the Southern Kingdom and reinstate control once more."
+ 
+################################### IDEAS                       \n      §H§!
+ DUN_war_of_the_last_alliance:0 "War of The Last Alliance"
+
+ DUN_shattered_kingdom:0 "Shattered Kingdom"
+
+ DUN_last_of_the_dunedain:0 "Last of The Dunedain"
+
+ DUN_ranger_kingdom:0 "Ranger Kingdom"
+
+ DUN_arnor_reborn:0 "Arnor Reborn"
+
+ DUN_restored_civillan_industry:0 "Restored Civillan Workshops"
+
+ DUN_restored_military_industry:0 "Restored Military Industry"
+
+ DUN_angmar_defenses:0 "Angmar Defenses"
+
+ DUN_angmar_offensive:0 "Angmar Offensive"
+
+################################### DECISIONS                   \n      §H§! 
+ 
+ DUN_Shadow_Expands_From_Cardolan:0 "Shadow Expands From Cardolan"
+ 
+ DUN_Shadow_Expands_From_The_Mountain:0 "Shadow Expands From The Mountain"
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ DUN.1.t:0 "The War of The Last Alliance"
+ DUN.1.d:0 "In 3430 T.A The Last Alliance was an union of the free peoples of middle earth to counter Sauron and his growing threat.\n\n The Kingdom of Arnor sent many soldiers to fight Mordor and never recovered from the losses gathered throughout the war."
+ 
+ DUN.2.t:0 "The Shattering of Arnor"
+ DUN.2.d:0 "With the death of Elindil during the War of The Last Alliance and the death of Isildur at the Gladden Fields the youngest son of Isildur, Valandil took over as the King of Arnor but never attempted to claim the Kingdom of Gondor as his birthright entailed. \n\n After eight hundred years of peace, High King Eärendur died in T.A 861 and his three sons divided the realm into the three kingdoms known as Arthedain, Cardolan and Rhudaur. Petty wars between brothers soon raged as the strength of the Northern Kingdom faltered."
+
+ DUN.3.t:0 "The War in The North"
+ DUN.3.d:0 "In T.A 1356 Angmar and Rhudaur attacked the kingdoms of Arthedain and Cardolan. This attack was repelled, but in T.A 1409 Angmar annexed Rhudaur and launched a great assault that overcame Cardolan and resulted in the Destruction of Amon Sûl. Still Angmar was repelled from Fornost and was for a time subdued by reinforcements from Lindon and Lothlórien. \n\nHowever, the North Kingdom's strength continued to dwindle, and in T.A 1974 the end came; Annuminas was abandoned and the new capital in Fornost was captured by Angmar and with that last defeat The Kingdom of Arnor fell. "
+ 
+ DUN.4.t:0 "Halbarad's Mission"
+ DUN.4.d:0 "Halbarad is the greatest ranger in Eriador beyond Strider himself has been sent on a mission to rally the Northmen near Amon Sul seek allies willing to aid our cause in defending Eriador."
+ 
+ DUN.5.t:0 "The Two Elven Brothers"
+ DUN.5.d:0 "Elladan and Elohir the two twin sons of Lord Elrond have requested more cooperation with the Rangers in containing the Orcs that keep raiding down on Eraidor from the Misty Mountains."
+
+ DUN.6.t:0 "Whispers of an Old Threat"
+ DUN.6.d:0 "Word has reached us that that the long thought scattered Evil Men and Orcs of the North have united under a new leader and have been raiding south from somwhere in the north. "
+ 
+ DUN.7.t:0 "Bring The Dunedain Out of Hiding"
+ DUN.7.d:0 "With the ever increasing Orc attacks and the dangers in Eriador becoming more and more common maybe it's time for the Dunedain to come out of hiding and begin to take our place as the protectors of Eriador."
+
+ DUN.8.t:0 "Our Greatest Fear Incarnate"
+ DUN.8.d:0 "Our greatest fear has come true the Kigdom of Angamr once thought destroyed by the forces of Gondor and Lindon centuries ago has returned under a Black Numenorian calling himself Agandur. He leads thousands of corrupted men and tens of thousands of orcs on a campaign south to conquer Eriador. \n \n We must muster every soldier we can and begin rallying the Free Peoples of Eriador to our side if we are to stop this rising threat from destroying Eriador."
+ 
+ DUN.9.t:0 "The Dunedain Seek Subjagation"
+ DUN.9.d:0 ""
+ 
+ DUN.10.t:0 "The Dunedain Establish Control"
+ DUN.10.d:0 ""
+ 
+ DUN.11.t:0 "The Dunedain Establish Control"
+ DUN.11.d:0 ""
+ 
+ DUN.12.t:0 "The Dunedain Want An Allliance"
+ DUN.12.d:0 ""
+ 
+ DUN.13.t:0 "The Seek Subjagation"
+ DUN.13.d:0 ""
+ 
+ DUN.14.t:0 "Arnor Seeks To Reunite The Kingdoms"
+ DUN.14.d:0 ""
+ 
+ DUN.15.t:0 "Arnor Wants To Form An Alliance"
+ DUN.15.d:0 ""
+ 
+ DUN.16.t:0 "Arnor Seeks Dominion over Gondor"
+ DUN.16.d:0 ""
+ 
+################################### Nation Name\n                     \n      §H§!
+
+
+
+ ################################### OTHER\n                     \n      §H§!

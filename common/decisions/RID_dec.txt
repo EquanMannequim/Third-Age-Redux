@@ -1,0 +1,55 @@
+
+RID_cat = {
+	RID_Grima_Scheming1 = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = {
+				has_completed_focus = The_Disaster_at_the_Fords_of_Isen
+			}
+		available = {
+			has_completed_focus = The_Prince_Lives
+			}
+		days_mission_timeout = 280
+		timeout_effect = {
+			RID_theodred = { retire = yes }
+			complete_national_focus = A_Day_of_Sorrow
+		}
+		complete_effect = {
+			}
+		}
+	RID_Grima_Scheming2 = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = {
+				has_completed_focus = The_Marshal_of_Eastmark
+			}
+		available = {
+			has_completed_focus = The_Heir_Apparent
+			}
+		days_mission_timeout = 280
+		timeout_effect = {
+			complete_national_focus = The_Forsaken_Heir
+		}
+		complete_effect = {
+			}
+		}
+		RID_Grima_Scheming3 = {
+		icon = military_operation
+		fire_only_once = YES
+		priority = 30
+		activation = {
+				has_completed_focus = The_Chief_Advisor
+			}
+		available = {
+			has_completed_focus = RID_The_White_Wizard
+			}
+		days_mission_timeout = 360
+		timeout_effect = {
+			complete_national_focus = RID_An_Arranged_Marriage
+		}
+		complete_effect = {
+			}
+		}
+	}

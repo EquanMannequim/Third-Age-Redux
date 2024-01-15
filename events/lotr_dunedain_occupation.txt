@@ -1,0 +1,65 @@
+add_namespace = lotrdunoccupation
+
+
+country_event = { # Gondor Occupation of Umbar
+	id = lotrdunoccupation.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrdunoccupation.1"}
+	title = lotrdunoccupation.1.t
+	desc = lotrdunoccupation.1.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrdunoccupation.1.a
+		lotrdunoccupation = DUNOCCUPATION1A
+		hidden_effect = {
+			UMA = {
+				every_core_state = {
+					remove_core_of = PREV
+				}
+				add_state_core = 108
+				add_state_core = 225
+				add_state_core = 58
+				add_state_core = 112
+				add_state_core = 119
+				set_capital = {
+  					state = 108
+  					remember_old_capital = no
+				}
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_UMA
+			}
+			release = UMA
+			puppet = UMA
+			STE = {
+				set_autonomy = {
+					target = UMA
+					autonomy_state = autonomy_fiefdom
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			set_global_flag = UMA_OCCUPATION_FLAG
+		}
+	}
+	option = {
+		name = lotrdunoccupation.1.b
+		custom_effect_tooltip = DUNOCCUPATION1B
+		add_political_power = -150
+		add_stability = -0.1
+		add_war_support = 0.2
+		add_manpower = -20000
+		army_experience = 30
+		hidden_effect = {
+			STE = {
+				add_state_core = 108
+				add_state_core = 225
+				add_state_core = 58
+				add_state_core = 112
+				add_state_core = 119
+			}
+			UMA = {
+				set_country_flag = UMA_OCCUPATION_FLAG
+			}
+		}
+	}
+}

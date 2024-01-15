@@ -1,0 +1,126 @@
+ideas = {
+
+	country = {
+		
+		MRD_The_Necromancer = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		MRD_The_Nine = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				army_morale = 0.10
+				war_support_factor = 0.02
+			}
+		}
+
+		MRD_Mordor_Orcs = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+			conscription_factor = 0.15
+			army_morale_factor = -0.05
+			army_org_factor = -0.02
+			}
+		}
+		MRD_Black_Uruks = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				conscription_factor = -0.05
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		MRD_The_Morgul_Vale_War = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				war_support_factor = 0.10
+				political_power_factor = -0.05
+			}
+		}
+
+		MRD_Prepared_For_Rohan = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			targeted_modifier = {
+			tag = RID
+			defense_bonus_against = 0.10
+			}
+		}
+
+		MRD_infantry = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				war_support_factor = 0.03
+				army_core_defence_factor = 0.03
+				army_org_factor = -0.01
+			}
+		}
+
+		MRD_archers = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				war_support_factor = 0.03
+				army_core_defence_factor = 0.02
+			}
+		}
+		
+		MRD_The_End_of_Men = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			targeted_modifier = { tag = STE attack_bonus_against = 0.05	}
+			targeted_modifier = { tag = RID attack_bonus_against = 0.05 }
+		}
+		MRD_Dark_Clouds = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+				war_support_factor = 0.15
+				army_morale_factor = 0.01
+				army_defence_factor = 0.08
+				army_attack_factor = 0.08
+			}
+		}
+		MRD_Orc_Scouts = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes} 
+			removal_cost = -1
+			picture = GFX_idea_UMA_the_umbar_trade_fleet
+			modifier = {
+			 	supply_factor = 0.1
+				supply_consumption_factor = -0.1
+				attrition = -0.1
+			}
+		}
+	}
+}

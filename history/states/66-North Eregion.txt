@@ -1,0 +1,34 @@
+
+state={
+	id=66
+	name="STATE_66"
+	resources={
+		oil=5.000
+	}
+
+	history={
+		owner = ERG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			anti_air_building = 1
+
+		}
+		add_core_of = ERG
+		victory_points = {
+			557 15 
+		}
+		victory_points = {
+			6111 1 
+		}
+
+	}
+
+	provinces={
+		557 1404 4664 4686 5058 5496 
+	}
+	manpower=800000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

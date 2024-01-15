@@ -1,0 +1,634 @@
+characters={
+	MOR_sauron_eye={
+		name="Sauron"
+		portraits={
+			civilian={
+				large="GFX_portrait_mordor_sauron_eye"
+			}
+		}
+		country_leader={
+			ideology=domineering
+			expire="1980.1.1.1"
+			traits = { all_seeing_eye }
+			id=-1
+		}
+	}
+	MOR_council={
+		name="Council of Orc Syndicates"
+		portraits={
+			civilian={
+				large="GFX_portrait_mordor_orc_council"
+			}
+		}
+		country_leader={
+			ideology=unchained
+			traits={ }
+			expire="1980.1.1.1"
+			traits = { lackofauthority }
+			id=-1
+		}
+	}
+
+	MOR_shelob = {
+		name="Shelob"
+		portraits={
+			army={
+				large="GFX_portrait_mirkwood_shelob"
+				small="GFX_idea_portrait_mirkwood_shelob"
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_global_flag = MOR_allow_shelob
+				MIR = {
+					NOT = {
+						has_completed_focus = arachnidanarchy
+					}
+				}
+			}
+		}
+	}
+
+	## Nazgull
+	MOR_Witch_king = {
+		name="Witch King"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_witch"
+				small="GFX_idea_portrait_mordor_witch"
+			}
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+			visible = {
+				has_completed_focus = gatherthenazgl
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				ANG = {
+					NOT = {
+						has_completed_focus = ANG_welcome_back_the_old_master
+					}
+				}
+			}
+		}
+		advisor = {
+			idea_token = MOR_Witch_king
+			slot = chief_advisor 
+			cost = 150
+			traits = { lord_of_the_nazgul }
+			available = {
+				always = yes
+			}
+			visible = {
+				has_completed_focus = gatherthenazgl
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				ANG = {
+					NOT = {
+						has_completed_focus = ANG_welcome_back_the_old_master
+					}
+				}
+			}
+		}
+	}
+
+	MOR_Khamul = {
+		name="Khamûl"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_khamul"
+				small="GFX_idea_portrait_mordor_khamul"
+			}
+		}
+		corps_commander={
+			traits = { desert_fox swamp_fox }
+			skill=4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		advisor = {
+			idea_token = MOR_Khamul
+			slot = political_advisor 
+			cost = 150
+			traits = { shadow_of_the_east }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Uvantha = {
+		name="Uvantha"
+		portraits={
+			army = {
+				large="GFX_portrait_mordor_uvantha"
+				small="GFX_idea_portrait_mordor_uvantha"
+			}
+		}
+		advisor={
+			idea_token = MOR_Uvantha
+			slot = political_advisor
+			traits  = {
+				prince_of_terror
+			}
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		corps_commander={
+			traits = { hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Hoarmurath = {
+		name="Hoarmurath"
+		portraits={
+			army = {
+				large="GFX_portrait_mordor_hoarmurath"
+				small="GFX_idea_portrait_mordor_hoarmurath"
+			}
+		}
+		advisor={
+			idea_token = MOR_Hoarmurath
+			slot = political_advisor
+			traits  = {
+				ideological_crusader
+			}
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		corps_commander={
+			traits = { ranger panzer_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Dwar = {
+		name="Dwar"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_dwar"
+				small="GFX_idea_portrait_mordor_dwar"
+			}
+		}
+		advisor={
+			idea_token = MOR_Dwar
+			slot = army_chief
+			cost = 150
+			traits = {
+				experienced_general
+			}
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Adunaphel = {
+		name="Adunaphel"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_adunaphel"
+				small="GFX_idea_portrait_mordor_adunaphel"
+			}
+		}
+		corps_commander={
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		advisor = {
+			idea_token = MOR_Adunaphel
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_entrenchment_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Akhorahil = {
+		name="Akhorahil"
+		portraits={
+			civilian={
+				large="GFX_portrait_mordor_akhorahil"
+				small="GFX_idea_portrait_mordor_akhorahil"
+			}
+		}
+		corps_commander={
+			traits = { naval_invader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		advisor = {
+			idea_token = MOR_Akhorahil
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_maneuver_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Ji_Indur = {
+		name="Ji Indur"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_indur"
+				small="GFX_idea_portrait_mordor_indur"
+			}
+		}
+		corps_commander={
+			traits = { jungle_rat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		advisor = {
+			idea_token = MOR_Ji_Indur
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_planning_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MOR_Ren = {
+		name="Ren"
+		portraits={
+			civilian={
+				large="GFX_portrait_mordor_ren"
+				small="GFX_idea_portrait_mordor_ren"
+			}
+		}
+		corps_commander={
+			traits = { bearer_of_artillery }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		advisor = {
+			idea_token = MOR_Ren
+			slot = high_command
+			cost = 150
+			traits = { ring_catcher }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	## Generals
+	MOR_gothmog={
+		name="Gothmog"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_gothmog"
+				small="GFX_idea_portrait_mordor_gothmog"
+			}
+		}
+		field_marshal={
+			traits = { offensive_doctrine }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=4
+		}
+		advisor = {
+			idea_token = MOR_gothmog
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_drill_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MOR_muzgash={
+		name="Muzgash"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_muzgash"
+				small="GFX_idea_portrait_mordor_muzgash"
+			}
+		}
+		field_marshal={
+			traits = { }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = MOR_muzgash
+			slot = high_command
+			cost = 150
+			traits = { army_entrenchment_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MOR_shagrat={
+		name="Shagrat"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_shagrat"
+				small="GFX_idea_portrait_mordor_shagrat"
+			}
+		}
+		field_marshal={
+			traits = { old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+		advisor = {
+			idea_token = MOR_shagrat
+			slot = army_chief
+			cost = 150
+			traits = { army_chief_old_guard }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MOR_grishnakh={
+		name="Grishnákh"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_grishnakh"
+				small="GFX_idea_portrait_mordor_grishnakh"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+		advisor = {
+			idea_token = MOR_grishnakh
+			slot = high_command
+			cost = 150
+			traits = { army_concealment_1 }
+			available = {
+				always = yes
+			}
+		}
+	}
+	MOR_gorbag={
+		name="Gorbag"
+		portraits={
+			army={
+				large="GFX_portrait_mordor_gorbag"
+				small="GFX_idea_portrait_mordor_gorbag"
+			}
+		}
+		corps_commander={
+			traits = { }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	MOR_acrif={
+		name="Acrif"
+		portraits={
+			army = { small = GFX_idea_portrait_orcs_generic_39 }
+		}
+	}
+
+	### Political advisors 
+	# Communism
+	MOR_gun_chin={
+		name="Gun Chin Shatterer"
+
+		advisor={
+			idea_token = MOR_gun_chin
+			slot = chief_advisor
+			cost = 150
+			available  = {
+				original_tag  = MOR
+				has_completed_focus = resistsauron
+			}
+			traits  = {
+				orc_insurgent
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_portrait_orcs_generic_15"
+				large="GFX_portrait_orcs_generic_15"
+			}
+		}
+	}
+	MOR_umak={
+		name="Umak The Putrid"
+
+		advisor={
+			idea_token = MOR_umak
+			slot = political_advisor
+			idea_token = MOR_umak
+			available  = {
+				original_tag  = MOR
+				has_government = revolutionary
+				has_civil_war = no
+			}
+			traits  = {
+				great_survivor
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_portrait_orcs_generic_82"
+				large="GFX_portrait_orcs_generic_82"
+			}
+		}
+	}
+
+	#fascist
+	MOR_mouth_of_sauron={
+		advisor={
+			idea_token = MOR_mouth_of_sauron
+			slot = chief_advisor
+			cost = 150
+			available  = {
+				original_tag  = MOR
+				has_government = belligerent
+			}
+			traits  = {
+				follower_of_morgoth
+			}
+		}
+
+		name="Mouth of Sauron"
+		portraits={
+			army={
+				small="GFX_idea_portrait_mordor_mouth"
+				large="GFX_portrait_mordor_mouth"
+			}
+		}
+	}
+}
+

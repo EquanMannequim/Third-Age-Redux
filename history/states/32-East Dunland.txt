@@ -1,0 +1,25 @@
+
+state={
+	id=32
+	name="STATE_32"
+
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = EUC
+
+	}
+
+	provinces={
+		754 1203 1209 2717 2838 4284 4923 5243 5483 5530 6430 6431 6479 
+	}
+	manpower=250000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

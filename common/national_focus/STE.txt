@@ -1,0 +1,1604 @@
+focus_tree = {
+id = gondor
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = STE
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = The_Drowning_of_Numenor
+		icon = GFX_goal_mor_wargoal_gondor
+		ai_will_do = { factor = 30 }
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = STE.1
+			add_ideas = STE_realm_in_exile
+		}
+	}
+	focus = {
+		id = The_War_of_the_Last_Alliance
+		icon = GFX_goal_lotr_The_War_of_the_Last_Alliance
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Drowning_of_Numenor}
+		relative_position_id = The_Drowning_of_Numenor
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = STE.2
+			add_ideas = STE_victory_of_the_last_alliance
+			add_ideas = STE_a_kingless_kingdom
+		}
+	}
+	focus = {
+		id = The_Time_of_Stewards
+		icon = GFX_goal_lotr_The_Time_of_Stewards
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_War_of_the_Last_Alliance}
+		relative_position_id = The_War_of_the_Last_Alliance
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = STE.3
+			add_ideas = STE_a_disunited_kingdom1
+			add_ideas = STE_denethors_paranoia1
+		}
+	}
+	focus = {
+		id = The_Kingdom_of_Gondor
+		icon = GFX_goal_lotr_The_Kingdom_of_Gondor
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Time_of_Stewards}
+		relative_position_id = The_Time_of_Stewards
+		x = 0
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = The_Fiefdom_of_Lamedon
+		icon = GFX_goal_lotr_The_Fiefdom_of_Lamedon
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Kingdom_of_Gondor}
+		relative_position_id = The_Kingdom_of_Gondor
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom1
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom1
+					add_idea = STE_a_disunited_kingdom2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom2
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom2
+					add_idea = STE_a_disunited_kingdom3
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Clansmen_of_Lamedon
+		icon = GFX_goal_lotr_The_Clansmen_of_Lamedon
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Fiefdom_of_Lamedon}
+		relative_position_id = The_Fiefdom_of_Lamedon
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			163 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			17 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Integrate_Lamedon
+		icon = GFX_goal_lotr_Integrate_Lamedon
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Clansmen_of_Lamedon }
+		prerequisite = { focus = The_Lords_of_The_Swan }
+		relative_position_id = The_Clansmen_of_Lamedon
+		x = -1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			annex_country = { target = LAM transfer_troops = yes }
+			add_state_core = 172
+			add_state_core = 17
+			add_state_core = 18
+		}
+	}
+	focus = {
+		id = The_Province_of_Lebennin
+		icon = GFX_goal_lotr_The_Province_of_Lebennin
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Kingdom_of_Gondor}
+		relative_position_id = The_Kingdom_of_Gondor
+		x = -1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom1
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom1
+					add_idea = STE_a_disunited_kingdom2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom2
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom2
+					add_idea = STE_a_disunited_kingdom3
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Marines_of_Pelegir
+		icon = GFX_goal_lotr_The_Marines_of_Pelegir
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Province_of_Lebennin}
+		relative_position_id = The_Province_of_Lebennin
+		x = -1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			164 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			17 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		
+		}
+	}
+	focus = {
+		id = The_Lords_of_The_Swan
+		icon = GFX_goal_lotr_The_Lords_of_The_Swan
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Province_of_Lebennin }
+		prerequisite = { focus = The_Fiefdom_of_Lamedon } 
+		relative_position_id = The_Province_of_Lebennin
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 35
+			163 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			224 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = Integrate_Lebennin
+		icon = GFX_goal_lotr_Integrate_Lebennin
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Marines_of_Pelegir }
+		prerequisite = { focus = The_Lords_of_The_Swan }
+		relative_position_id = The_Lords_of_The_Swan
+		x = -1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			annex_country = { target = LEB transfer_troops = yes }
+			add_state_core = 164
+			add_state_core = 19
+			add_state_core = 176
+		}
+	}
+	focus = {
+		id = The_Blackroot_Vale
+		icon = GFX_goal_lotr_The_Blackroot_Vale
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Integrate_Lebennin }
+		prerequisite = { focus = Integrate_Lamedon }
+		relative_position_id = Integrate_Lebennin
+		x = -1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom3
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom3
+					add_idea = STE_a_disunited_kingdom4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom4
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom4
+					add_idea = STE_a_disunited_kingdom5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom5
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom5
+					add_idea = STE_a_disunited_kingdom6
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Province_of_Anfalas
+		icon = GFX_goal_lotr_The_Province_of_Anfalas
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Integrate_Lebennin }
+		prerequisite = { focus = Integrate_Lamedon }
+		relative_position_id = Integrate_Lebennin
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom3
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom3
+					add_idea = STE_a_disunited_kingdom4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom4
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom4
+					add_idea = STE_a_disunited_kingdom5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom5
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom5
+					add_idea = STE_a_disunited_kingdom6
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Fiefdom_of_Pinnath_Gelin
+		icon = GFX_goal_lotr_The_Fiefdom_of_Pinnath_Gelin
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Integrate_Lebennin }
+		prerequisite = { focus = Integrate_Lamedon }
+		relative_position_id = Integrate_Lebennin
+		x = 3
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom3
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom3
+					add_idea = STE_a_disunited_kingdom4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom4
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom4
+					add_idea = STE_a_disunited_kingdom5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_a_disunited_kingdom5
+				}
+				swap_ideas = {
+					remove_idea = STE_a_disunited_kingdom5
+					add_idea = STE_a_disunited_kingdom6
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Pinnath_Geliin_Cavalry
+		icon = GFX_goal_lotr_The_Pinnath_Geliin_Cavalry
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Blackroot_Vale }
+		prerequisite = { focus = The_Province_of_Anfalas }
+		prerequisite = { focus = The_Fiefdom_of_Pinnath_Gelin }
+		relative_position_id = The_Blackroot_Vale
+		relative_position_id = The_Blackroot_Vale
+		x = 3
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		
+		}
+	}
+	focus = {
+		id = The_Archers_of_The_Vale
+		icon = GFX_goal_lotr_The_Archers_of_The_Vale
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Blackroot_Vale }
+		prerequisite = { focus = The_Province_of_Anfalas }
+		prerequisite = { focus = The_Fiefdom_of_Pinnath_Gelin }
+		relative_position_id = The_Blackroot_Vale
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		
+		}
+	}
+	focus = {
+		id = Integrate_The_West
+		icon = GFX_goal_lotr_Integrate_The_West
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Archers_of_The_Vale }
+		prerequisite = { focus = The_Pinnath_Geliin_Cavalry }
+		relative_position_id = The_Archers_of_The_Vale
+		x = 1
+		y = 1
+ 
+		cost = 6
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = STE.4
+			swap_ideas = {
+				remove_idea = STE_a_disunited_kingdom6
+				add_idea = STE_a_united_kingdom
+			}
+			annex_country = { target = BLA transfer_troops = yes }
+			annex_country = { target = ANF transfer_troops = yes }
+			annex_country = { target = PIN transfer_troops = yes }
+			add_state_core = 162
+			add_state_core = 166
+			add_state_core = 174
+			add_state_core = 171
+			add_state_core = 168
+			add_state_core = 16
+			add_state_core = 165
+		}
+	}
+	focus = {
+		id = The_Ithilian_Crisis
+		icon = GFX_goal_lotr_The_Ithilian_Crisis
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = The_Time_of_Stewards}
+		relative_position_id = The_Time_of_Stewards
+		x = 6
+		y = 1
+ 
+		cost = 5
+		bypass = { ITL = { exists = no } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = STE.5
+			add_ideas = STE_the_ithilian_crisis
+		}
+	}
+	focus = {
+		id = Send_Additional_Soldiers
+		icon = GFX_goal_lotr_Send_Additional_Soldiers
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = The_Ithilian_Crisis}
+		relative_position_id = The_Ithilian_Crisis
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_manpower = -10000
+			ITL = {
+				add_manpower = 10000
+				}
+			}
+		}
+	focus = {
+		id = Send_Blacksmiths_To_Support_The_War_Effort
+		icon = GFX_goal_lotr_Send_Blacksmiths_To_Support_The_War_Effort
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = Send_Additional_Soldiers}
+		relative_position_id = Send_Additional_Soldiers
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			173		= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+
+			}
+		}
+	}
+	focus = {
+		id = Send_Additional_Equipment
+		icon = GFX_goal_lotr_Send_Additional_Equipment
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = The_Ithilian_Crisis}
+		relative_position_id = The_Ithilian_Crisis
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ITL = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+					}
+				}
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -1000
+			}
+		}
+	}
+	focus = {
+		id = Build_Fortification_Around_Osgiliath
+		icon = GFX_goal_lotr_Build_Fortification_Around_Osgiliath
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = Send_Additional_Equipment}
+		relative_position_id = Send_Additional_Equipment
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			173 = {
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 6966 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 1600 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 7008 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 9062 }
+			}
+		}
+	}
+	focus = {
+		id = Send_Volunteers_to_Faramir
+		icon = GFX_goal_lotr_Send_Volunteers_to_Faramir
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = Build_Fortification_Around_Osgiliath}
+		prerequisite = { focus = Send_Blacksmiths_To_Support_The_War_Effort}
+		relative_position_id = Build_Fortification_Around_Osgiliath
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			ITL = { load_oob = STE_Faramir_Volunteers }
+		}
+	}
+	focus = {
+		id = Victory_In_Ithilian
+		icon = GFX_goal_lotr_Victory_In_Ithilian
+		ai_will_do = { factor = 999 }
+		prerequisite = { focus = Send_Volunteers_to_Faramir}
+		mutually_exclusive = {focus = Faramirs_Failure }
+		relative_position_id = Send_Volunteers_to_Faramir
+		x = -1
+		y = 1
+ 
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { date > 3017.4.1 }
+		completion_reward = {
+				annex_country = { target = ITL transfer_troops = yes }
+					add_state_core = 22
+					add_state_core = 173
+					add_state_core = 175
+					add_state_core = 135
+				remove_ideas = STE_the_ithilian_crisis
+				if = {
+				limit = {
+					has_idea = STE_denethors_paranoia1
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia1
+					add_idea = STE_denethors_paranoia2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia2
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia2
+					add_idea = STE_denethors_paranoia1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia3
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia3
+					add_idea = STE_denethors_paranoia2
+					}
+				}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia4
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia4
+					add_idea = STE_denethors_paranoia3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia5
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia5
+					add_idea = STE_denethors_paranoia4
+				}
+			}
+		}
+	}
+	focus = {
+		id = Faramirs_Failure
+		icon = GFX_goal_lotr_Faramirs_Failure
+		ai_will_do = { factor = 999 }
+		prerequisite = { focus = Send_Volunteers_to_Faramir}
+		mutually_exclusive = {focus = Victory_In_Ithilian }
+		relative_position_id = Send_Volunteers_to_Faramir
+		x = 1
+		y = 1
+ 
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { ITL = { exists = no } }
+		completion_reward = { 
+			remove_ideas = STE_the_ithilian_crisis
+			if = {
+				limit = {
+					has_idea = STE_denethors_paranoia1
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia1
+					add_idea = STE_denethors_paranoia2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia2
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia2
+					add_idea = STE_denethors_paranoia3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia3
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia3
+					add_idea = STE_denethors_paranoia4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia4
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia4
+					add_idea = STE_denethors_paranoia5
+				}
+			}
+		}
+	focus = {
+		id = Integrate_The_Ithilian_Rangers
+		icon = GFX_goal_lotr_Integrate_The_Ithilian_Rangers
+		ai_will_do = { factor = 45 }
+		prerequisite = { focus = Victory_In_Ithilian focus = Faramirs_Failure }
+		relative_position_id = Victory_In_Ithilian
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			load_oob = STE_Ithilien_Rangers
+		}
+	}
+	focus = {
+		id = The_Gondorian_Navy
+		icon = GFX_goal_lotr_The_Gondorian_Navy
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Time_of_Stewards}
+		relative_position_id = The_Time_of_Stewards
+		x = 10
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			navy_experience = 25 
+		}
+	}
+	focus = {
+		id = Capital_Ships
+		icon = GFX_goal_lotr_Capital_Ships
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Gondorian_Navy}
+		mutually_exclusive = { focus = Screening_Ships }
+		relative_position_id = The_Gondorian_Navy
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			navy_experience = 10
+		}
+	}
+	focus = {
+		id = Amrothian_Designs
+		icon = GFX_goal_lotr_Amrothian_Designs
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Capital_Ships}
+		relative_position_id = Capital_Ships
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.5
+				uses = 2
+				category = lotr_sailing_sailingship
+			}
+		}
+	}
+	focus = {
+		id = Screening_Ships
+		icon = GFX_goal_lotr_Screening_Ships
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Gondorian_Navy}
+		mutually_exclusive = { focus = Capital_Ships }
+		relative_position_id = The_Gondorian_Navy
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			navy_experience = 10
+		}
+	}
+	focus = {
+		id = Peligir_Designs
+		icon = GFX_goal_lotr_Peligir_Designs
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Screening_Ships}
+		relative_position_id = Screening_Ships
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 0.5
+				uses = 2
+				category = lotr_sailing_longship
+			}
+		}
+	}
+	focus = {
+		id = A_Professional_Navy
+		icon = GFX_goal_lotr_A_Professional_Navy
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Peligir_Designs focus = Amrothian_Designs }
+		relative_position_id = Peligir_Designs
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_Professional_Navy
+		}
+	}
+	focus = {
+		id = The_Gondorian_Army
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Time_of_Stewards}
+		relative_position_id = The_Time_of_Stewards
+		x = -10
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = The_Heavy_Infantry
+		icon = GFX_goal_lotr_The_Heavy_Infantry
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Gondorian_Army}
+		mutually_exclusive = { focus = Gondorian_Rangers }
+		relative_position_id = The_Gondorian_Army
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_the_gondorian_heavy_infantry
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.50
+				uses = 1
+				category = lotr_infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = Standardize_Plate_Armor
+		icon = GFX_goal_lotr_Standardize_Plate_Armor
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Heavy_Infantry}
+		relative_position_id = The_Heavy_Infantry
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			army_experience = 15
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = lotr_infantry_weapons
+				}
+			}
+		}
+	focus = {
+		id = Gondorian_Rangers
+		icon = GFX_goal_lotr_Gondorian_Rangers
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = The_Gondorian_Army}
+		mutually_exclusive = { focus = The_Heavy_Infantry }
+		relative_position_id = The_Gondorian_Army
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_gondorian_rangers
+			add_tech_bonus = {
+				name = ROH_artillery_modernisation
+				bonus = 0.50
+				uses = 1
+				category = lotr_infantry_archery
+			}
+			
+		}
+	}
+	focus = {
+		id = Camouflage_cloaks
+		icon = GFX_goal_lotr_Camouflage_cloaks
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Gondorian_Rangers}
+		relative_position_id = Gondorian_Rangers
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			army_experience = 15
+			add_tech_bonus = {
+				name = tech_mountaineers
+				bonus = 0.6
+				uses = 1
+				category = lotr_infantry_specialforces
+				}
+			}
+		}
+	focus = {
+		id = The_Citadel_Guard
+		icon = GFX_goal_lotr_The_Citadel_Guard
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = Camouflage_cloaks focus = Standardize_Plate_Armor }
+		relative_position_id = Camouflage_cloaks
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			army_experience = 25
+			load_oob = STE_Citadel_Guard
+		}
+	}
+	focus = {
+		id = The_Rohirrim 
+		icon = GFX_goal_lotr_The_Rohirrim 
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = The_Time_of_Stewards}
+		relative_position_id = The_Time_of_Stewards
+		x = -6
+		y = 1
+ 
+		cost = 5
+		available = {
+			RID = {		
+				has_war_with = ISN } 
+			}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = The_Bond_Among_Men
+		icon = GFX_goal_lotr_The_Bond_Among_Men
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Rohirrim }
+		mutually_exclusive = {focus = Where_Was_Rohan }
+		relative_position_id = The_Rohirrim
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+					STE = { add_ideas = STE_bond_amongst_men }
+					RID = { add_ideas = STE_bond_amongst_men }
+
+			if = {
+				limit = {
+					has_idea = STE_denethors_paranoia1
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia1
+					add_idea = STE_denethors_paranoia2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia2
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia2
+					add_idea = STE_denethors_paranoia3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia3
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia3
+					add_idea = STE_denethors_paranoia4
+					}
+				}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia4
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia4
+					add_idea = STE_denethors_paranoia5
+				}
+			}
+		}
+	}
+	focus = {
+		id = Send_Weapons_To_Rohan
+		icon = GFX_goal_lotr_Send_Weapons_To_Rohan
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = The_Bond_Among_Men }
+		relative_position_id = The_Bond_Among_Men
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			RID = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+					}
+				}
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -1000
+			}
+		}
+	}
+	focus = {
+		id = Send_Men_To_Rohan
+		icon = GFX_goal_lotr_Send_Men_To_Rohan
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Send_Weapons_To_Rohan }
+		relative_position_id = Send_Weapons_To_Rohan
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_manpower = -10000
+			RID = {
+				add_manpower = 10000
+				}
+			}
+		}
+	focus = {
+		id = Send_Volunteers_to_Rohan
+		icon = GFX_goal_lotr_Send_Volunteers_to_Rohan
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = Send_Men_To_Rohan }
+		relative_position_id = Send_Men_To_Rohan
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			RID = { load_oob = STE_Rohan_Volunteers }
+		}
+	}
+	focus = {
+		id = Where_Was_Rohan
+		icon = GFX_goal_lotr_Where_Was_Rohan
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = The_Rohirrim }
+		mutually_exclusive = {focus = The_Bond_Among_Men }
+		relative_position_id = The_Rohirrim
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_alone_against_the_darkness
+		}
+	}
+	focus = {
+		id = Defend_North_Western_Anorian
+		icon = GFX_goal_lotr_Defend_North_Western_Anorian
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Where_Was_Rohan }
+		relative_position_id = Where_Was_Rohan
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			167 = {
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 1299 }
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 5324 }
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 726 }
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 4147 }
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 6888 }
+				add_building_construction = {	type = bunker level = 3 instant_build = yes province = 5062 }
+			}
+			163 = {
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 1712 }
+			}
+		}
+	}
+	focus = {
+		id = Build_Palisades_In_The_Gap
+		icon = GFX_goal_lotr_Build_Palisades_In_The_Gap
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Defend_North_Western_Anorian }
+		relative_position_id = Defend_North_Western_Anorian
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			16 = {
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 2504 }
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 2250 }
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 6937 }
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 41 }
+			}
+		}
+	}
+	focus = {
+		id = Defend_Against_Isengard
+		icon = GFX_goal_lotr_Defend_Against_Isengard
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = Build_Palisades_In_The_Gap }
+		relative_position_id = Build_Palisades_In_The_Gap
+		x = 0
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			if = {
+				limit = {
+					has_idea = STE_alone_against_the_darkness
+				}
+				swap_ideas = {
+					remove_idea = STE_alone_against_the_darkness
+					add_idea = STE_bastion_of_freedom 
+				}
+			}
+		}
+	}
+	focus = {
+		id = Lessons_From_Rohan
+		icon = GFX_goal_lotr_Lessons_From_Rohan
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = Send_Volunteers_to_Rohan focus = Defend_Against_Isengard }
+		prerequisite = {  }
+		relative_position_id = Send_Volunteers_to_Rohan
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = The_Dark_Lord_of_Mordor
+		icon = GFX_goal_unleash_sauron
+		ai_will_do = { factor = 60 }
+		x = 20
+		y = 11
+ 
+		cost = 5
+		available = { date > 3019.1.1 }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = { limit = { DUN = { exists = yes } }
+				DUN = { country_event = STE.7 } }
+			else = { complete_national_focus = The_Return_of_The_King }
+		}
+	}
+	focus = {
+		id = The_Return_of_The_King
+		icon = GFX_goal_lotr_The_Return_of_The_King
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Dark_Lord_of_Mordor }
+		mutually_exclusive = {focus = A_Stewardship_of_a_Thousand_Years }
+		relative_position_id = The_Dark_Lord_of_Mordor
+		x = -4
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_cosmetic_tag = TKG
+				swap_ideas = {
+					remove_idea = STE_a_kingless_kingdom
+					add_idea = STE_the_return_of_the_king
+				}
+			retire_character = STE_denethor
+			}
+		}
+	focus = {
+		id = The_Heir_of_Isildur
+		icon = GFX_goal_lotr_The_Heir_of_Isildur
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Return_of_The_King }
+		relative_position_id = The_Return_of_The_King
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = The_Crown_of_Gondor
+		icon = GFX_goal_lotr_The_Crown_of_Gondor
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Return_of_The_King }
+		relative_position_id = The_Return_of_The_King
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = Proclaim_A_New_Steward
+		icon = GFX_goal_lotr_Proclaim_A_New_Steward
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Heir_of_Isildur }
+		prerequisite = { focus = The_Crown_of_Gondor }
+		relative_position_id = The_Heir_of_Isildur
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.10
+
+		}
+	}
+	focus = {
+		id = Rally_The_Men_of_Middle_Earth
+		icon = GFX_goal_lotr_Rally_The_Men_of_Middle_Earth
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Heir_of_Isildur }
+		prerequisite = { focus = The_Crown_of_Gondor }
+		relative_position_id = The_Heir_of_Isildur
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		if = { limit = { RID = { exists = yes } }
+				RID = { country_event = STE.6 }
+				add_manpower = 35000
+				}
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = Challenge_Sauron_in_the_Anorian_Palantir
+		icon = GFX_goal_lotr_Challenge_Sauron_in_the_Anorian_Palantir
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Crown_of_Gondor }
+		relative_position_id = The_Crown_of_Gondor
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_ideas = STE_the_rightful_heir_to_the_palantir
+		}
+	}
+	focus = {
+		id = Prepare_The_Defenses
+		icon = GFX_goal_lotr_Prepare_The_Defenses
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Rally_The_Men_of_Middle_Earth  }
+		prerequisite = { focus = Proclaim_A_New_Steward  }
+		prerequisite = { focus = Challenge_Sauron_in_the_Anorian_Palantir  }
+		mutually_exclusive = {focus = Take_To_The_Offense }
+		relative_position_id = Rally_The_Men_of_Middle_Earth
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_prepared_defenses
+		}
+	}
+	focus = {
+		id = Take_To_The_Offense
+		icon = GFX_goal_lotr_Take_To_The_Offense
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Rally_The_Men_of_Middle_Earth  }
+		prerequisite = { focus = Proclaim_A_New_Steward  }
+		prerequisite = { focus = Challenge_Sauron_in_the_Anorian_Palantir  }
+		mutually_exclusive = {focus = Prepare_The_Defenses }
+		relative_position_id = Rally_The_Men_of_Middle_Earth
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = STE_prepared_for_the_offense
+		}
+	}
+	focus = {
+		id = Destroy_Mordor
+		icon = GFX_goal_lotr_Destroy_Mordor
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = Prepare_The_Defenses focus = Take_To_The_Offense }
+		relative_position_id = Prepare_The_Defenses
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		will_lead_to_war_with = MRD
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = MRD }
+				if = { limit = { MRD = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRD }
+			}
+		}
+	}
+	focus = {
+		id = STE_The_Upper_Anduin_Defenses
+		icon = GFX_goal_lotr_The_Return_of_The_King
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Dark_Lord_of_Mordor }
+		relative_position_id = The_Dark_Lord_of_Mordor
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		163 = {
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 6928 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 1271 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 6954 }
+				add_building_construction = {	type = bunker level = 2 instant_build = yes province = 1778 }
+			}
+		}
+	}
+	focus = {
+		id = STE_The_Lower_Anduin_Defenses
+		icon = GFX_goal_lotr_The_Return_of_The_King
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Dark_Lord_of_Mordor }
+		relative_position_id = The_Dark_Lord_of_Mordor
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			164 = {
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 4492 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 1065 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 1516 }
+				add_building_construction = {	type = bunker level = 1 instant_build = yes province = 7230 }
+			}
+		}
+	}
+	focus = {
+		id = Fortify_Minas_Tirith
+		icon = GFX_goal_lotr_The_Return_of_The_King
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = STE_The_Upper_Anduin_Defenses }
+		prerequisite = { focus = STE_The_Lower_Anduin_Defenses }
+		relative_position_id = STE_The_Upper_Anduin_Defenses
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		163 = {
+				add_building_construction = {	type = bunker level = 4 instant_build = yes province = 6980 }
+			}
+		}
+	}
+	focus = {
+		id = A_Stewardship_of_a_Thousand_Years
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 50 }
+		prerequisite = { focus = The_Dark_Lord_of_Mordor }
+		mutually_exclusive = {focus = The_Return_of_The_King }
+		relative_position_id = The_Dark_Lord_of_Mordor
+		x = 4
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = STE_a_kingless_kingdom
+					add_idea = STE_the_new_king_of_gondor
+				}
+
+		}
+	}
+	focus = {
+		id = The_New_Royal_Family
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = A_Stewardship_of_a_Thousand_Years }
+		relative_position_id = A_Stewardship_of_a_Thousand_Years
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = The_Marble_Throne
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = A_Stewardship_of_a_Thousand_Years }
+		relative_position_id = A_Stewardship_of_a_Thousand_Years
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = -0.02
+
+		}
+	}
+	focus = {
+		id = The_Prince_of_Gondor
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = The_New_Royal_Family }
+		relative_position_id = The_New_Royal_Family
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 20000
+
+		}
+	}
+	focus = {
+		id = Our_Most_Loyal_Subjects
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = The_New_Royal_Family }
+		prerequisite = { focus = The_Marble_Throne }
+		relative_position_id = The_New_Royal_Family
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			annex_country = { target = BEL transfer_troops = yes }
+			add_state_core = 13
+			add_state_core = 14
+			add_state_core = 223
+			add_state_core = 224
+			add_state_core = 169
+			add_state_core = 170
+		}
+	}
+	focus = {
+		id = The_Corsairs_In_Umbar
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = The_Marble_Throne }
+		relative_position_id = The_New_Royal_Family
+		x = 3
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = { limit = { UMA = { has_government = cooperative } } 
+				   add_manpower = 25000
+				}
+			add_ideas = STE_prepared_for_umbar
+		}
+	}
+	focus = {
+		id = Faramirs_Sacrifice
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = Our_Most_Loyal_Subjects }
+		prerequisite = { focus = The_Prince_of_Gondor }
+		prerequisite = { focus = The_Corsairs_In_Umbar }
+		mutually_exclusive = {focus = Boromirs_Sacrifice }
+		relative_position_id = The_Prince_of_Gondor
+		x = 1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = Boromirs_Sacrifice
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = Our_Most_Loyal_Subjects }
+		prerequisite = { focus = The_Prince_of_Gondor }
+		prerequisite = { focus = The_Corsairs_In_Umbar }
+		mutually_exclusive = {focus = Faramirs_Sacrifice }
+		relative_position_id = The_Prince_of_Gondor
+		x = 3
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = Defeat_Mordor
+		icon = GFX_goal_lotr_The_Gondorian_Army
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = Boromirs_Sacrifice focus = Faramirs_Sacrifice }
+		relative_position_id = Boromirs_Sacrifice
+		x = -1
+		y = 1
+ 
+		cost = 5
+		available_if_capitulated = yes
+		will_lead_to_war_with = MRD
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = MRD }
+				if = { limit = { MRD = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = MRD }
+			}
+		}
+	}
+}

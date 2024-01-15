@@ -1,0 +1,34 @@
+
+state={
+	id=13
+	name="STATE_13"
+	resources={
+		oil=9.000
+		rubber=6.000
+	}
+
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			dockyard = 3
+			infrastructure = 3
+			industrial_complex = 1
+			7286 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			7286 3 
+		}
+	}
+
+	provinces={
+		888 1361 1868 2730 3921 4559 5309 7184 7211 7232 7244 7256 7269 7286 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

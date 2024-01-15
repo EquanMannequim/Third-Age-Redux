@@ -1,0 +1,67 @@
+characters={
+	ANR_agandur = {
+		name = "Aganadûr"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Agandur_animated
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = { }
+			id=-1
+		}
+		field_marshal={
+			traits = { offensive_doctrine winter_specialist }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ANR_witch_king_of_angmar = {
+		name = "Witch King of Angmar"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Witch_King_of_Angmar
+			}
+		}
+	}
+	ANR_mordirith={
+		name="Mordirith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Mordirith"
+				small="GFX_Portrait_Mordirith"
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ANR_hwaldar={
+		name="Hwaldar"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Hwaldar"
+				small="GFX_Portrait_Hwaldar"
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+}

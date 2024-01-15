@@ -1,0 +1,26 @@
+state={
+	id=226
+	name="STATE_226"
+	resources={
+		steel=6.000
+		aluminium=4.000
+		chromium=2.000
+	}
+	history={
+		owner = KDU
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = KDU
+		victory_points = { 1377 }
+	}
+	provinces={
+		1377 1490 1659 1806 2304 3154 3167 3266 3471 3490 3549 3914 4029 4313 4818 4919 5202 5329 5544 6434 6453 6497 6498 6515 6534 6552 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

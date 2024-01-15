@@ -1,0 +1,357 @@
+focus_tree = {
+id = Imladris
+country = {
+	factor=0
+	modifier = {
+		add = 10
+		original_tag = IML
+	}
+}
+default = no
+
+continuous_focus_position = { x = 10 y = 10 }
+
+
+#Custom focuses start here
+
+	focus = {
+		id = IML_The_Fall_of_Eregion
+		icon = GFX_goal_riv_elrond_ring_vilya
+		ai_will_do = { factor = 3 }
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = IML_The_Fallen_Kingdom
+		}
+	}
+
+	focus = {
+		id = IML_The_Fall_of_Gilgalad
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Fall_of_Eregion }
+		relative_position_id = IML_The_Fall_of_Eregion
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = IML_The_Last_King_of_The_Noldor
+		}
+	}
+	focus = {
+		id = IML_The_Call_of_Valinor
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Fall_of_Gilgalad }
+		relative_position_id = IML_The_Fall_of_Gilgalad
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = IML_The_Call_of_Valinor
+		}
+	}
+	focus = {
+		id = IML_Fortify_The_Southern_Border
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Call_of_Valinor }
+		mutually_exclusive = { focus = IML_Fortify_The_River }
+		relative_position_id = IML_The_Call_of_Valinor
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			202 = {
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 5226}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 6078}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 2819}
+					add_building_construction = {type = bunker level = 1 instant_build = yes province = 3660}
+				}
+			}
+		}
+	focus = {
+		id = IML_Fortify_The_River
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Call_of_Valinor }
+		mutually_exclusive = { focus = IML_Fortify_The_Southern_Border }
+		relative_position_id = IML_The_Call_of_Valinor
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			65 = {
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 1088}
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 2528}
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 6033}
+					add_building_construction = {type = bunker level = 2 instant_build = yes province = 6039}
+			}
+		}
+	}
+	focus = {
+		id = IML_Mobilize_The_Remaining_Elves
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_Fortify_The_Southern_Border focus = IML_Fortify_The_River }
+		relative_position_id = IML_Fortify_The_Southern_Border
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			add_war_support  = -0.05
+		}
+	}
+	focus = {
+		id = IML_The_Orcs_of_Eregion
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_Mobilize_The_Remaining_Elves }
+		relative_position_id = IML_Mobilize_The_Remaining_Elves
+		x = 0
+		y = 1
+		cost = 10
+		will_lead_to_war_with = ERG
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			DUN = { add_to_faction = IML }
+			IML = { add_state_claim = 200 }
+			IML = { add_state_claim = 66 }
+			IML = { add_state_claim = 201 }
+			IML = { add_state_claim = 67 }
+			create_wargoal = { type = annex_everything target = ERG }
+				if = { limit = { IML = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ERG }
+			}
+		}
+	}
+	focus = {
+		id = IML_The_Kingdom_Eregion_Reborn
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Orcs_of_Eregion }
+		relative_position_id = IML_The_Orcs_of_Eregion
+		x = 0
+		y = 1
+		cost = 10
+		available = { IML = { has_war = { no } } } 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = { if = { ERG = { exist = yes } annex_country = { target = ERG transfer_troops = no } } }
+			set_cosmetic_tag = IMG
+			IML = { add_state_core = 200 }
+			IML = { add_state_core = 66 }
+			IML = { add_state_core = 201 }
+			IML = { add_state_core = 67 }
+			swap_ideas = {
+					remove_idea = IML_The_Fallen_Kingdom
+					add_idea = IML_The_Reborn_Kingdom
+				}
+		}
+	}
+	focus = {
+		id = IML_The_Elven_Workshops
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Kingdom_Eregion_Reborn }
+		relative_position_id = IML_The_Kingdom_Eregion_Reborn
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability  = 0.05
+		}
+	}
+	focus = {
+		id = IML_Ancient_Elven_Techniques
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Kingdom_Eregion_Reborn }
+		relative_position_id = IML_The_Kingdom_Eregion_Reborn
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+			add_stability  = 0.05
+		}
+	}
+	focus = {
+		id = IML_Ancient_Elven_Smiths
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Elven_Workshops }
+		prerequisite = { focus = IML_Ancient_Elven_Techniques }
+		relative_position_id = IML_The_Elven_Workshops
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			65 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			add_war_support  = 0.05
+		}
+		}
+	focus = {
+		id = IML_The_Elven_Forges
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Kingdom_Eregion_Reborn }
+		relative_position_id = IML_The_Kingdom_Eregion_Reborn
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_war_support  = 0.05
+		}
+	}
+	focus = {
+		id = IML_Ancient_Elven_Swordsmiths
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_The_Elven_Forges }
+		prerequisite = { focus = IML_Ancient_Elven_Techniques }
+		relative_position_id = IML_The_Elven_Forges
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			65 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_war_support  = 0.05
+		}
+	}
+	focus = {
+		id = IML_The_New_King_of_The_High_Elves
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = IML_Ancient_Elven_Smiths }
+		prerequisite = { focus = IML_Ancient_Elven_Swordsmiths }
+		relative_position_id = IML_Ancient_Elven_Smiths
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 25000
+			swap_ideas = {
+					remove_idea = IML_The_Last_King_of_The_Noldor
+					add_idea = IML_The_New_King_of_The_Elves
+				}
+		}
+	}
+	focus = {
+		id = IML_Protect_All_of_Eriador
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 90 }
+		prerequisite = { focus = IML_The_New_King_of_The_High_Elves }
+		mutually_exclusive = {focus = IML_Protect_Rivendell }
+		relative_position_id = IML_The_New_King_of_The_High_Elves
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 10000
+			}
+		}
+	focus = {
+		id = IML_Protect_Rivendell
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = IML_The_New_King_of_The_High_Elves }
+		mutually_exclusive = {focus = IML_Protect_All_of_Eriador }
+		relative_position_id = IML_The_New_King_of_The_High_Elves
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 15000
+				add_ideas = IML_Self_Preservation
+			}
+		}
+	focus = {
+		id = IML_The_Death_of_The_Dunedain
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 90 }
+		prerequisite = { focus = IML_Protect_All_of_Eriador }
+		mutually_exclusive = {focus = IML_Victory_over_Angmar }
+		available = { DUN = { exists = no } }
+		relative_position_id = IML_Protect_All_of_Eriador
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = IML_One_Final_Battle
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 90 }
+		prerequisite = { focus = IML_The_Death_of_The_Dunedain }
+		available = { LND = { has_war = { yes } } }
+		relative_position_id = IML_The_Death_of_The_Dunedain
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ANR }
+				if = { limit = { IML = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = ANR }
+				}
+			
+			}
+		}
+		focus = {
+		id = IML_Victory_over_Angmar
+		icon = GFX_goal_lotr_Imladris
+		ai_will_do = { factor = 90 }
+		prerequisite = { focus = IML_Protect_All_of_Eriador }
+		mutually_exclusive = {focus = IML_The_Death_of_The_Dunedain }
+		available = { IML = { has_war = { no } }
+			OR = { 
+				ANR = { exists = no } 
+				ANR = { has_government = cooperative }
+			}
+		}
+		relative_position_id = IML_Protect_All_of_Eriador
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = IML_The_Call_of_Valinor
+			}
+		}
+	}
+}

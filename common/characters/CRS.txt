@@ -1,0 +1,25 @@
+characters={
+	CRS_galadriel = {
+		name = "Galadriel"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Galadriel
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+			traits = { indomitable_perseverance }
+		}
+		field_marshal={
+			traits = { offensive_doctrine winter_specialist }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

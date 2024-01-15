@@ -1,0 +1,155 @@
+characters={
+	ISE_saruman={
+		name="Saruman"
+		portraits={
+			civilian={
+				large="GFX_portrait_isengard_saruman"
+			}
+		}
+		country_leader={
+			ideology=protective
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=collectivist
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=domineering
+			expire="1980.1.1.12"
+			id=-1
+		}
+		country_leader={
+			ideology=isolationist
+			traits={ }
+			expire="1980.1.1.12"
+			id=-1
+		}
+	}
+	ISE_fernysr={
+		name="Ferny Sr"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_fernysr"
+				small="GFX_idea_portrait_isengard_fernysr"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		advisor = {
+			idea_token = ISE_fernysr
+			slot = spymaster 
+			cost = 150
+			traits = { strict_supervisor }
+			available = {
+				always = yes
+			}
+		}
+	}
+	ISE_ferny={
+		name="Bill Ferny"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_ferny"
+				small="GFX_idea_portrait_isengard_ferny"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+		}
+		advisor = {
+			idea_token = ISE_ferny
+			slot = political_advisor 
+			cost = 150
+			traits = { military_lobbyist }
+			available = {
+				always = yes
+			}
+		}
+	}
+	ISE_ugluk={
+		name = "Uglúk"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_ugluk"
+				small="GFX_idea_portrait_isengard_ugluk"
+			}
+		}
+	}
+	ISE_lurtz={
+		name = "Lurtz"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_lurtz"
+				small="GFX_idea_portrait_isengard_lurtz"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			visible = { has_completed_focus = selectthestrongesfew }
+		}
+	}
+	ISE_hargor={
+		name = "Hargor"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_hargor"
+				small="GFX_idea_portrait_isengard_hargor"
+			}
+		}
+	}
+	ISE_mauhur={
+		name = "Mauhur"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_mauhur"
+				small="GFX_idea_portrait_isengard_mauhur"
+			}
+		}
+	}
+	ISE_gara={
+		name = "Gara"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_gara"
+				small="GFX_idea_portrait_isengard_gara"
+			}
+		}
+	}
+	ISE_lugdush={
+		name = "Lugdush"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_lugdush"
+				small="GFX_idea_portrait_isengard_lugdush"
+			}
+		}
+	}
+	ISE_grima={
+		name = "Grima Wormtongue"
+		portraits={
+			army={
+				large="GFX_portrait_isengard_grima"
+				small="GFX_idea_portrait_isengard_grima"
+			}
+		}
+	}
+}

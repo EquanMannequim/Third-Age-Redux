@@ -1,0 +1,23 @@
+state={
+	id=228
+	name="STATE_228"
+	resources={
+		steel=8.000
+	}
+	history={
+		owner = KDU
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+		}
+		add_core_of = KDU
+		victory_points = { 1428 }
+	}
+	provinces={
+		1428 2776 2819 3321 3660 3787 3812 4153 4315 4319 4580 4779 5463 5519 6098 6111 6129 6185 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,645 @@
+occupation_decisions_mordor = {
+	MRD_ITL_Occupation = { # Anorien Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			167 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			163 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			21 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			164 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			135 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			175 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			173 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			22 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				167 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				163 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				21 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				164 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				135 = {
+				is_owned_and_controlled_by = ROOT
+				}
+				175 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				173 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				22 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_ITL_Occupation"
+			country_event = lotrmrdoccupation.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_ITL_Occupation"
+			country_event = lotrmrdoccupation.1
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_LEB_Occupation = { # Belfalas Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			19 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			176 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			170 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			13 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			169 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			223 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				19 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				176 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				170 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				13 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				169 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				223 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_LEB_Occupation"
+			country_event = lotrmrdoccupation.2
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_LEB_Occupation"
+			country_event = lotrmrdoccupation.2
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_ANF_Occupation = { # Anfalas Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			166 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			162 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				166 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				162 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_ANF_Occupation"
+			country_event = lotrmrdoccupation.3
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_ANF_Occupation"
+			country_event = lotrmrdoccupation.3
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_PIN_Occupation = { # Pinnath Gelin Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			165 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			168 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			16 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				165 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				168 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				16 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_PIN_Occupation"
+			country_event = lotrmrdoccupation.4
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_PIN_Occupation"
+			country_event = lotrmrdoccupation.4
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_BLA_Occupation = { # Blackroot Vale Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			167 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			163 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			21 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			164 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			135 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			175 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			173 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			22 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				167 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				163 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				21 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				164 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				135 = {
+				is_owned_and_controlled_by = ROOT
+				}
+				175 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				173 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				22 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_ITL_Occupation"
+			country_event = lotrmrdoccupation.5
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_ITL_Occupation"
+			country_event = lotrmrdoccupation.5
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_LAM_Occupation = { # Lamedon Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			17 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			18 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				17 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				18 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_LAM_Occupation"
+			country_event = lotrmrdoccupation.6
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_LAM_Occupation"
+			country_event = lotrmrdoccupation.6
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_RID_Occupation = { # Riddemark Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			167 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			163 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			21 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			164 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			135 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			175 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			173 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			22 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				167 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				163 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				21 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				164 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				135 = {
+				is_owned_and_controlled_by = ROOT
+				}
+				175 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				173 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				22 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_RID_Occupation"
+			country_event = lotrmrdoccupation.7
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_RID_Occupation"
+			country_event = lotrmrdoccupation.7
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	MRD_ITL_Border = { # Ithilien Border Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+			ITL = {
+				is_puppet_of = MRD
+			}
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			22 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			173 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			175 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			135 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			limit = { }
+			country_exists  = ITL
+			ITL = {
+				OR = {
+					is_subject_of  = MRD
+					is_puppet_of = MRD
+				}
+				is_puppet = yes
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				22 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				173 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				175 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				135 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				ITL = {
+					is_puppet_of = MRD
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_LEB_Occupation"
+			country_event = lotrmrdborder.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_LEB_Occupation"
+			country_event = lotrmrdborder.1
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	MRD_LAM_Border = { # Lamedon Border Occupation
+		icon = generic_flags
+		allowed = {
+			tag = MRD
+			OR = {
+				ITL = {
+					is_puppet_of = MRD
+				}
+				LEB = {
+					is_puppet_of = MRD
+				}
+			}
+		}
+		visible = {
+			tag = MRD
+		}
+		activation = {
+			tag = MRD
+			172 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			OR = {
+				ITL = {
+					OR = {
+						is_subject_of  = MRD
+						is_puppet_of = MRD
+					}
+					is_puppet = yes
+				}
+				LEB = {
+					OR = {
+						is_subject_of  = MRD
+						is_puppet_of = MRD
+					}
+					is_puppet = yes
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				172 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MRD_LAM_Border"
+			country_event = lotrmrdborder.3
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MRD_LAM_Border"
+			country_event = lotrmrdborder.3
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	STE_UMA_Occupation = { # Umbar Occupation
+		icon = generic_flags
+		allowed = {
+			tag = STE
+		}
+		visible = {
+			tag = STE
+		}
+		activation = {
+			tag = STE
+			119 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			112 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			58 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			108 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			225 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 10
+		is_good = no
+		cost = freedec?0
+		fire_only_once = yes
+		cancel_trigger = {
+			NOT = {
+				119 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				112 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				58 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				108 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				225 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STE_UMA_Occupation"
+			country_event = lotrsteoccupation.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout STE_UMA_Occupation"
+			country_event = lotrsteoccupation.1
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

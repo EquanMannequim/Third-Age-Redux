@@ -1,0 +1,24 @@
+
+state={
+	id=197
+	name="STATE_197"
+
+	history={
+		owner = BEO
+		add_core_of = BEO
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		279 2015 4108 4911 5887 5921 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

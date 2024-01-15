@@ -1,0 +1,268 @@
+# ID/Name
+defined_text = {
+	name = GetCountryRace
+	text = {
+		trigger = {
+			is_edain = yes
+		}
+		localization_key = race_edain
+	}
+	text = {
+		trigger = {
+			is_noldor = yes
+		}
+		localization_key = race_noldor
+	}
+	text = {
+		trigger = {
+			is_sindar = yes
+		}
+		localization_key = race_sindar
+	}
+	text = {
+		trigger = {
+			is_silvan = yes
+		}
+		localization_key = race_silvan
+	}
+	text = {
+		trigger = {
+			is_entling = yes
+		}
+		localization_key = race_entling
+	}
+	text = {
+		trigger = {
+			is_firebeard = yes
+		}
+		localization_key = race_firebeard
+	}
+	text = {
+		trigger = {
+			is_broadbeam = yes
+		}
+		localization_key = race_broadbeam
+	}
+	text = {
+		trigger = {
+			is_longbeard = yes
+		}
+		localization_key = race_longbeard
+	}
+	text = {
+		trigger = {
+			is_black_uruk = yes
+		}
+		localization_key = race_black_uruk
+	}
+	text = {
+		trigger = {
+			is_hobbitling = yes
+		}
+		localization_key = race_hobbitling
+	}
+	text = {
+		trigger = {
+			is_spiderling = yes
+		}
+		localization_key = race_spiderling
+	}
+	text = {
+		trigger = {
+			is_easterling = yes
+		}
+		localization_key = race_easterling
+	}
+	text = {
+		trigger = {
+			is_uruk_hai = yes
+		}
+		localization_key = race_uruk_hai
+	}
+	text = {
+		trigger = {
+			is_dunedain = yes
+		}
+		localization_key = race_dunedain
+	}
+}
+
+# ICON
+defined_text = {
+	name = GetCountryRaceIcon
+	
+	text = {
+		trigger = {
+			is_edain = yes
+		}
+		localization_key = "GFX_race_edain"
+	}
+	text = {
+		trigger = {
+			is_noldor = yes
+		}
+		localization_key = "GFX_race_noldor"
+	}
+	text = {
+		trigger = {
+			is_sindar = yes
+		}
+		localization_key = "GFX_race_sindar"
+	}
+	text = {
+		trigger = {
+			is_silvan = yes
+		}
+		localization_key = "GFX_race_silvan"
+	}
+	text = {
+		trigger = {
+			is_entling = yes
+		}
+		localization_key = "GFX_race_entling"
+	}
+	text = {
+		trigger = {
+			is_firebeard = yes
+		}
+		localization_key = "GFX_race_firebeard"
+	}
+	text = {
+		trigger = {
+			is_broadbeam = yes
+		}
+		localization_key = "GFX_race_broadbeam"
+	}
+	text = {
+		trigger = {
+			is_longbeard = yes
+		}
+		localization_key = "GFX_race_longbeard"
+	}
+	text = {
+		trigger = {
+			is_black_uruk = yes
+		}
+		localization_key = "GFX_race_black_uruk"
+	}
+	text = {
+		trigger = {
+			is_hobbitling = yes
+		}
+		localization_key = "GFX_race_hobbitling"
+	}
+	text = {
+		trigger = {
+			is_spiderling = yes
+		}
+		localization_key = "GFX_race_spiderling"
+	}
+	text = {
+		trigger = {
+			is_easterling = yes
+		}
+		localization_key = "GFX_race_easterling"
+	}
+	text = {
+		trigger = {
+			is_uruk_hai = yes
+		}
+		localization_key = "GFX_race_uruk_hai"
+	}
+	text = {
+		trigger = {
+			is_dunedain = yes
+		}
+		localization_key = "GFX_race_dunedain"
+	}
+}
+
+# MODIFIER
+defined_text = {
+	name = GetCountryRaceModifier
+	
+	text = {
+		trigger = {
+			is_edain = yes
+		}
+		localization_key = "race_edain_modifier"
+	}
+	text = {
+		trigger = {
+			is_noldor = yes
+		}
+		localization_key = "race_noldor_modifier"
+	}
+	text = {
+		trigger = {
+			is_sindar = yes
+		}
+		localization_key = "race_sindar_modifier"
+	}
+	text = {
+		trigger = {
+			is_silvan = yes
+		}
+		localization_key = "race_silvan_modifier"
+	}
+	text = {
+		trigger = {
+			is_entling = yes
+		}
+		localization_key = "race_entling_modifier"
+	}
+	text = {
+		trigger = {
+			is_firebeard = yes
+		}
+		localization_key = "race_firebeard_modifier"
+	}
+	text = {
+		trigger = {
+			is_broadbeam = yes
+		}
+		localization_key = "race_broadbeam_modifier"
+	}
+	text = {
+		trigger = {
+			is_longbeard = yes
+		}
+		localization_key = "race_longbeard_modifier"
+	}
+	text = {
+		trigger = {
+			is_black_uruk = yes
+		}
+		localization_key = "race_black_uruk_modifier"
+	}
+	text = {
+		trigger = {
+			is_hobbitling = yes
+		}
+		localization_key = "race_hobbitling_modifier"
+	}
+	text = {
+		trigger = {
+			is_spiderling = yes
+		}
+		localization_key = "race_spiderling_modifier"
+	}
+	text = {
+		trigger = {
+			is_easterling = yes
+		}
+		localization_key = "race_easterling_modifier"
+	}
+	text = {
+		trigger = {
+			is_uruk_hai = yes
+		}
+		localization_key = "race_uruk_hai_modifier"
+	}
+	text = {
+		trigger = {
+			is_dunedain = yes
+		}
+		localization_key = "race_dunedain_modifier"
+	}
+}

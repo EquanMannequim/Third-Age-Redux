@@ -1,0 +1,40 @@
+
+state={
+	id=74
+	name="STATE_74"
+	resources={
+		chromium=16.000
+		steel=8.000
+	}
+
+	history={
+		owner = CRS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 1
+			anti_air_building = 1
+			1406 = {
+				bunker = 3
+
+			}
+
+		}
+		add_core_of = CRS
+		victory_points = {
+			1406 3 
+		}
+		victory_points = {
+			6387 8 
+		}
+
+	}
+
+	provinces={
+		678 1406 2227 2353 2607 2885 3198 3285 4051 4080 4411 4655 4812 4844 5439 6354 6357 6383 6387 6400 6410 6417 
+	}
+	manpower=800000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

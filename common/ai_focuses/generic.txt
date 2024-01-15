@@ -1,0 +1,91 @@
+
+ai_focus_defense = {
+	research = {
+		defensive = 5.0	
+		lotr_labour_construction = 2.0
+		lotr_infantry_archery = 2.0
+		lotr_infantry_weapons = 2.0
+		lotr_infantry = 2.0
+		lotr_infantry_supportweapons = 2.0
+		lotr_support_tech = 1.0
+	}
+}
+
+ai_focus_aggressive = {
+	research = {
+		offensive = 5.0
+		lotr_infantry_archery = 2.0
+		lotr_infantry_weapons = 2.0
+		lotr_infantry = 1.0
+		lotr_elven_secrets_bow = 1.0
+	}
+}
+
+ai_focus_war_production = {
+	research = {
+		lotr_labour_construction_industry = 10.0
+		lotr_labour_construction = 2.0
+		lotr_infantry_archery = 2.0
+		lotr_infantry_weapons = 2.0
+		lotr_support_tech = 1.0
+	}
+}
+
+ai_focus_military_equipment = {
+	research = {
+		lotr_support_tech = 2.0
+		lotr_infantry_archery = 2.0
+		lotr_infantry_weapons = 2.0
+		lotr_infantry = 1.0
+		lotr_cavalry = 1.0
+		lotr_elven_secrets_bow = 1.0
+		lotr_machines = 1.0
+	}
+}
+
+ai_focus_military_advancements = {
+	research = {
+		lotr_cavalry = 2.0
+		land_doctrine = 100.0
+		lotr_infantry_archery = 2.0
+		lotr_infantry_weapons = 2.0
+		lotr_infantry = 1.0
+		lotr_knowledge_scriptorium = 1.0
+	}
+}
+
+ai_focus_peaceful = {
+	research = {
+		lotr_labour_construction_industry = 10.0
+		lotr_labour_construction = 10.0
+		lotr_knowledge_alchemy = 10.0
+		lotr_labour_metalworking = 15.0
+		lotr_knowledge_scriptorium = 10.0
+		lotr_labour = 1.0
+		lotr_knowledge = 1.0
+		lotr_men_secrets = 1.0
+		lotr_elven_secrets = 1.0
+		lotr_orcs_secrets = 1.0
+		lotr_dwarven_secrets = 1.0
+	}
+}
+
+ai_focus_naval = {
+	research = {
+		lotr_sailing = 10.0
+	}
+}
+
+ai_focus_naval_air = {
+	research = {
+		lotr_eagles = 10.0
+		lotr_fellbeasts = 10.0
+	}
+}
+
+ai_focus_aviation = {
+	research = {
+		lotr_eagles = 10.0
+		lotr_fellbeasts = 10.0
+	}
+}

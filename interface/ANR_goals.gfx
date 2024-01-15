@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+      name = "GFX_goal_lotr_Angmar"
+      texturefile = "gfx/interface/goals/ANR/lotr_Angmar.dds"
+    }
+}

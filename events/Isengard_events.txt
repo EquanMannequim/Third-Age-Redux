@@ -1,0 +1,81 @@
+﻿###########################
+# Isengard Events
+###########################
+
+add_namespace = ISN
+country_event = {
+	id = ISN.1
+	title = ISN.1.t
+	desc = ISN.1.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = { 
+		name = "Our Ancestors Watch Over Us"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = ISN.2
+	title = ISN.2.t
+	desc = ISN.2.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = { 
+		name = "A New Land For Our Peoples"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = ISN.3
+	title = ISN.3.t
+	desc = ISN.3.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = { 
+		name = "Darkness Creeps Around The Halls of Edoras"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = ISN.4
+	title = ISN.4.t
+	desc = ISN.4.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = {
+		name = "We Must Send A Search Party"
+		 ai_chance = { base = 5 }
+		WST_theodred = { retire = yes }
+		}
+	}
+	country_event = {
+	id = ISN.5
+	title = ISN.5.t
+	desc = ISN.5.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = {
+		name = "A Story as Old as Time"
+		 ai_chance = { base = 5 }
+		}
+	}
+	country_event = {
+	id = ISN.6
+	title = ISN.6.t
+	desc = ISN.6.d
+	picture = GFX_report_event_numenor
+	is_triggered_only = yes
+	option = { 
+		name = "We Will Die For Saruman"
+		 ai_chance = { base = 65 }
+		 ISN = { puppet = EUC }
+		}
+		option = { 
+		name = "Yeah Thats Not Happening"
+		 ai_chance = { base = 10 }
+		 ISN = { create_wargoal = { type = annex_everything target = EUC } }
+				if = { limit = { ISN = { is_ai = yes } }
+					declare_war_on = { type = annex_everything    target = EUC }
+			}
+		}
+	}

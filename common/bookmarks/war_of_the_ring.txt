@@ -1,0 +1,326 @@
+bookmarks = {
+	bookmark = {
+		name = "WAR_OF_THE_RING_1_NAME"
+		desc = "WAR_OF_THE_RING_1_DESC"
+		date = 3015.1.1.12
+		picture = "GFX_lotr_first_movie"
+		default_country = "MRD"
+		default = yes
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+		
+		#### MAJORS ####
+		# ROW 1 MAJOR #
+		# ROW 2 MAJOR #
+		
+		# ROW 3 MAJOR #
+
+		# ROW 3 MAJOR #
+
+		#### MAJORS ####
+
+		#### MINORS ####
+		### ROW 1 ###
+		# Buffer
+
+		## OFN ##
+		"MRD" = {
+			minor = yes
+			history = "MRD_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				SAF_The_Empty_Throne
+				SAF_Desperate_Neutrality
+				SAF_Divided_Nation
+			}
+			focuses = {
+				SAF_maintain_the_status_quo
+				SAF_south_africas_situation
+				SAF_the_african_national_congress
+			}
+		}
+
+		"STE" = {
+			minor = yes
+			history = "STE_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				SAF_The_Empty_Throne
+				SAF_Desperate_Neutrality
+				SAF_Divided_Nation
+			}
+			focuses = {
+				SAF_maintain_the_status_quo
+				SAF_south_africas_situation
+				SAF_the_african_national_congress
+			}
+		}
+
+		"ISN" = {
+			minor = yes
+			history = "ISN_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				SAF_The_Empty_Throne
+				SAF_Desperate_Neutrality
+				SAF_Divided_Nation
+			}
+			focuses = {
+				SAF_maintain_the_status_quo
+				SAF_south_africas_situation
+				SAF_the_african_national_congress
+			}
+		}
+
+		"RID" = {
+			minor = yes
+			history = "RID_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				IRE_there_will_be_blood
+				IRE_humiliation_of_a_giant
+				IRE_not_much_to_gain_mr_hitler
+			}
+			focuses = {
+				IRE_shame_of_the_giant
+				IRE_erin_go_bragh
+				IRE_on_the_peoples_side
+			}
+		}
+
+		"ANR" = {
+			minor = yes
+			history = "ANR_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				IRE_there_will_be_blood
+				IRE_humiliation_of_a_giant
+				IRE_not_much_to_gain_mr_hitler
+			}
+			focuses = {
+				IRE_shame_of_the_giant
+				IRE_erin_go_bragh
+				IRE_on_the_peoples_side
+			}
+		}
+
+		"DUN" = {
+			minor = yes
+			history = "DUN_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				BRG_the_shadow_state
+				BRG_purge_the_rot
+				BRG_the_three_realms
+			}
+			focuses = {
+				BRG_unter_der_schwarzen_sonne
+				BRG_a_wise_leader
+				BRG_the_last_hope_for_germania
+			}
+		}
+		"GND" = {
+			minor = yes
+			history = "GND_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				RUS_terror_bombing
+				WRS_veterans_of_the_long_war
+				WRS_agricultural_insecurity
+			}
+			focuses = {
+				WRS_initial_enduring
+				WRS_the_red_bonaparte
+				WRS_the_peoples_marshal
+			}
+		}
+
+		"DUR" = {
+			minor = yes
+			history = "DUR_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				SAM_Turncoat_General
+				SAM_german_bootlickers
+				SAM_The_Smolensk_Manifesto
+			}
+			focuses = {
+				SAM_Our_Guide
+				SAM_Our_Loyalty
+				SAM_Who_Shall_Stand_Beside_Vlasov
+			}
+		}
+		"MRG" = {
+			minor = yes
+			history = "MRG_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+		"ITL" = {
+			minor = yes
+			history = "ITL_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+		"DLG" = {
+			minor = yes
+			history = "DLG_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+		"WDR" = {
+			minor = yes
+			history = "WDR_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+		"UMA" = {
+			minor = yes
+			history = "UMA_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				VYT_the_tsar_and_himself
+				VYT_officer_infighting
+				VYT_unrepentant_reaction
+			}
+			focuses = {
+				VYT_return_of_the_tsar
+				VYT_legacy_of_the_tsardom
+				VYT_the_eagle_flies_once_more
+			}
+		}
+
+		"BEL" = {
+			minor = yes
+			history = "BEL_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				KOM_syvtyvkartsi
+				KOM_clash_of_shadows_c_1
+				RUS_syktyvkar_arsenal
+			}
+			focuses = {
+				KOM_the_last_years_of_the_voznesentsi
+				KOM_something_wicked_this_way_comes
+				KOM_the_affairs_of_the_legislature
+			}
+		}
+
+		"EUC" = {
+			minor = yes
+			history = "EUC_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+
+		"CRL" = {
+			minor = yes
+			history = "CRL_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				OMS_fueled_by_revenge
+				OMS_nothing_left_to_lose
+				OMS_karbyshev_figurehead
+			}
+			focuses = {
+				OMS_initial_last_days_of_comrade_karbyshev
+				OMS_initial_against_the_old_guard
+				OMS_initial_the_shield_of_the_motherland
+			}
+		}
+		"DRA" = {
+			minor = yes
+			history = "DRA_COUNTRY_DESC"
+			ideology = belligerent
+			ideas = {
+				PRM_aryan_cult
+				PRM_aryan_control_3
+				PRM_aryan_schematics
+			}
+			focuses = {
+				PRM_AB_initial_beneath_cross
+				PRM_AB_initial_ubermensch
+				PRM_AB_initial_brotherhood
+			}
+		}
+
+		"HRD" = {
+			minor = yes
+			history = "HRD_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				OMS_fueled_by_revenge
+				OMS_nothing_left_to_lose
+				OMS_karbyshev_figurehead
+			}
+			focuses = {
+				OMS_initial_last_days_of_comrade_karbyshev
+				OMS_initial_against_the_old_guard
+				OMS_initial_the_shield_of_the_motherland
+			}
+		}
+		"IML" = {
+			minor = yes
+			history = "IML_COUNTRY_DESC"
+			ideology = cooperative
+			ideas = {
+				OMS_fueled_by_revenge
+				OMS_nothing_left_to_lose
+				OMS_karbyshev_figurehead
+			}
+			focuses = {
+				OMS_initial_last_days_of_comrade_karbyshev
+				OMS_initial_against_the_old_guard
+				OMS_initial_the_shield_of_the_motherland
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+STE_MRD_war_of_the_ring_category = {
+	icon = GFX_decision_header_war_of_the_ring
+	allowed = {
+		original_tag = STE
+	}
+	visible = {
+	}
+	scripted_gui = war_of_the_ring_ste_mrd_decision_gui
+}
+
+occupation_decisions = {
+	allowed = {
+		original_tag = MRD
+	}
+	visible = {
+	}
+}

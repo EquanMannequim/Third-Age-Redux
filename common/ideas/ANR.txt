@@ -1,0 +1,90 @@
+ideas = {
+
+	country = {
+
+		ANR_the_war_in_the_north = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.10
+				mobilization_speed = 0.05
+				
+			}
+		}
+
+		ANR_the_fall_angmar = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				stability_factor = -0.25
+				local_resources_factor = -0.25
+				political_power_factor = -0.20
+			}
+		}
+
+		ANR_the_numenorian_sorcerer = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				political_power_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.02
+				army_attack_factor = 0.02
+			}
+		}
+		ANR_angmar_reborn = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				stability_factor = 0.10
+				local_resources_factor = 0.10
+				political_power_factor = 0.10
+			}
+		}
+
+		ANR_restored_civillan_industry = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		ANR_restored_military_industry = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		ANR_angmar_defenses = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			targeted_modifier = { tag = ANR defense_bonus_against = 0.10 }
+		}
+
+		ANR_angmar_offensive = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			cancel = { denethor_is_leader = no }
+			targeted_modifier = { tag = ANR attack_bonus_against = 0.10 }
+		}
+	}

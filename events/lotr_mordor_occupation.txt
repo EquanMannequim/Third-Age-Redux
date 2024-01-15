@@ -1,0 +1,463 @@
+add_namespace = lotrmrdoccupation
+
+
+country_event = { # Mordor Occupation of Minas Tirith
+	id = lotrmrdoccupation.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.1"}
+	title = lotrmrdoccupation.1.t
+	desc = lotrmrdoccupation.1.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.1.a
+		custom_effect_tooltip = MRDOCCUPATION1A
+		hidden_effect = {
+			ITL = {
+				remove_state_core = 135
+				remove_state_core = 175
+				remove_state_core = 173
+				remove_state_core = 22
+				add_state_core = 167
+				add_state_core = 163
+				add_state_core = 21
+				add_state_core = 164
+				set_capital = {
+  					state = 163
+  					remember_old_capital = no
+				}
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_ITL
+			}
+			release = ITL
+			puppet = ITL
+			MRD = {
+				set_autonomy = {
+					target = ITL
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			every_owned_state = {
+				limit = {
+					region = 6
+					region = 71
+				}
+				add_core_of = ITL
+				ITL = {
+					transfer_state = PREV
+				}
+			}
+			set_global_flag = ITL_OCCUPATION_FLAG
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.1.b
+		custom_effect_tooltip = MRDOCCUPATION1B
+		add_political_power = -150
+		add_stability = -0.1
+		add_war_support = 0.2
+		add_manpower = -20000
+		army_experience = 30
+		hidden_effect = {
+			MRD = {
+				add_state_core = 135
+				add_state_core = 175
+				add_state_core = 173
+				add_state_core = 22
+			}
+			ITL = {
+				set_country_flag = ITL_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Belfalas
+	id = lotrmrdoccupation.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.2"}
+	title = lotrmrdoccupation.2.t
+	desc = lotrmrdoccupation.2.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.2.a
+		custom_effect_tooltip = MRDOCCUPATION2A
+		hidden_effect = {
+			LEB = {
+				remove_state_core = 22
+				add_state_core = 19
+				add_state_core = 176
+				add_state_core = 170
+				add_state_core = 169
+				add_state_core = 223
+				add_state_core = 13
+				add_state_core = 14
+				set_capital = {
+  					state = 13
+  					remember_old_capital = no
+				}
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_LEB
+			}
+			BEL = {
+				every_owned_state = {
+					limit = {
+						region = 33
+						region = 71
+						region = 106
+						region = 143
+						region = 40
+					}
+					remove_state_core = BEL
+				}
+			}
+			release = LEB
+			puppet = LEB
+			MRD = {
+				set_autonomy = {
+					target = LEB
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			LEB = {
+				set_country_flag = LEB_OCCUPATION_FLAG
+			}
+		}
+		country_event = lotrmrdborder.2
+	}
+	option = {
+		name = lotrmrdoccupation.2.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION2B
+		hidden_effect = {
+			LEB = {
+				set_country_flag = LEB_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Anfalas
+	id = lotrmrdoccupation.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.3"}
+	title = lotrmrdoccupation.3.t
+	desc = lotrmrdoccupation.3.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.3.a
+		custom_effect_tooltip = MRDOCCUPATION3A
+		hidden_effect = {
+			STE = {
+				remove_state_core = 162
+				remove_state_core = 166
+			}
+			ANF = {
+				add_state_core = 162
+				add_state_core = 166
+				add_state_core = 17
+				transfer_state = 162
+				transfer_state = 166
+				transfer_state = 17
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_ANF
+			}
+			release = ANF
+			puppet = ANF
+			MRD = {
+				set_autonomy = {
+					target = ANF
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			ANF = {
+				set_country_flag = ANF_OCCUPATION_FLAG
+			}
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.3.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION3B
+		hidden_effect = {
+			ANF = {
+				set_country_flag = ANF_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Pinnath Gelin
+	id = lotrmrdoccupation.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.4"}
+	title = lotrmrdoccupation.4.t
+	desc = lotrmrdoccupation.4.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.4.a
+		custom_effect_tooltip = MRDOCCUPATION4A
+		hidden_effect = {
+			STE = {
+				remove_state_core = 165
+				remove_state_core = 168
+				remove_state_core = 16
+			}
+			PIN = {
+				add_state_core = 165
+				add_state_core = 168
+				add_state_core = 16
+				transfer_state = 165
+				transfer_state = 168
+				transfer_state = 16
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_PIN
+			}
+			release = PIN
+			puppet = PIN
+			MRD = {
+				set_autonomy = {
+					target = PIN
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			PIN = {
+				set_country_flag = PIN_OCCUPATION_FLAG
+			}
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.4.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION4B
+		hidden_effect = {
+			PIN = {
+				set_country_flag = PIN_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Blackroot Vale
+	id = lotrmrdoccupation.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.5"}
+	title = lotrmrdoccupation.5.t
+	desc = lotrmrdoccupation.5.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.5.a
+		custom_effect_tooltip = MRDOCCUPATION5A
+		hidden_effect = {
+			STE = {
+				remove_state_core = 174
+				remove_state_core = 171
+			}
+			BLA = {
+				remove_state_core = 171
+				add_state_core = 174
+				transfer_state = 174
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_BLA
+			}
+			release = BLA
+			puppet = BLA
+			MRD = {
+				set_autonomy = {
+					target = BLA
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			BLA = {
+				set_country_flag = BLA_OCCUPATION_FLAG
+			}
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.5.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION5B
+		hidden_effect = {
+			BLA = {
+				set_country_flag = BLA_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Lamedon
+	id = lotrmrdoccupation.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.6"}
+	title = lotrmrdoccupation.6.t
+	desc = lotrmrdoccupation.6.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.6.a
+		custom_effect_tooltip = MRDOCCUPATION6A
+		hidden_effect = {
+			STE = {
+				remove_state_core = 18
+				remove_state_core = 17
+				remove_state_core = 171
+			}
+			LAM = {
+				remove_state_core = 172
+				remove_state_core = 17
+				add_state_core = 18
+				add_state_core = 171
+				transfer_state = 18
+				transfer_state = 171
+				set_capital = {
+					state = 18
+					remember_old_capital = no
+			  	}
+				set_cosmetic_tag = COSMETICTAG_OCCUPATION_LAM
+			}
+			release = LAM
+			puppet = LAM
+			MRD = {
+				set_autonomy = {
+					target = LAM
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			LAM = {
+				set_country_flag = LAM_OCCUPATION_FLAG
+			}
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.6.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION6B
+		hidden_effect = {
+			LAM = {
+				set_country_flag = LAM_OCCUPATION_FLAG
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Riddemark
+	id = lotrmrdoccupation.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdoccupation.7"}
+	title = lotrmrdoccupation.7.t
+	desc = lotrmrdoccupation.7.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdoccupation.7.a
+		custom_effect_tooltip = MRDOCCUPATION7A
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					region = 15
+					region = 84
+					region = 60
+					region = 79
+					region = 93
+					region = 53
+					region = 48
+				}
+				remove_core_of = RID
+			}
+			RID = {
+				add_state_core = 20
+				add_state_core = 23
+				add_state_core = 159
+				add_state_core = 218
+				add_state_core = 31
+				add_state_core = 158
+				add_state_core = 24
+				add_state_core = 184
+				add_state_core = 221
+				add_state_core = 26
+				add_state_core = 183
+				add_state_core = 217
+				add_state_core = 177
+				add_state_core = 25
+				add_state_core = 182
+				add_state_core = 181
+				add_state_core = 136
+
+				transfer_state = 20
+				transfer_state = 23
+				transfer_state = 159
+				transfer_state = 218
+				transfer_state = 31
+				transfer_state = 158
+				transfer_state = 24
+				transfer_state = 184
+				transfer_state = 221
+				transfer_state = 26
+				transfer_state = 183
+				transfer_state = 217
+				transfer_state = 177
+				transfer_state = 25
+				transfer_state = 182
+				transfer_state = 181
+				transfer_state = 136
+				set_capital = {
+					state = 31
+					remember_old_capital = no
+			  	}
+				  set_cosmetic_tag = COSMETICTAG_OCCUPATION_RID
+			}
+			release = RID
+			puppet = RID
+			MRD = {
+				set_autonomy = {
+					target = RID
+					autonomy_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			RID = {
+				set_country_flag = RID_OCCUPATION_FLAG
+			}
+		}
+	}
+	option = {
+		name = lotrmrdoccupation.7.b
+		add_political_power = -150
+		add_stability = -0.2
+		add_war_support = 0.1
+		add_manpower = -30000
+		army_experience = 30
+		custom_effect_tooltip = MRDOCCUPATION7B
+		hidden_effect = {
+			RID = {
+				set_country_flag = RID_OCCUPATION_FLAG
+			}
+		}
+	}
+}

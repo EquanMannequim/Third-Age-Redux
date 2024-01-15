@@ -1,0 +1,185 @@
+add_namespace = lotrmrdborder
+
+
+
+country_event = { # Mordor Occupation of Ithilien
+	id = lotrmrdborder.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdborder.1"}
+	title = lotrmrdborder.1.t
+	desc = lotrmrdborder.1.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdborder.1.a
+		custom_effect_tooltip = MRDBORDER1A
+		hidden_effect = {
+			ITL = {
+				add_state_core = 135
+				add_state_core = 175
+				add_state_core = 173
+				add_state_core = 22
+				transfer_state = 135
+				transfer_state = 175
+				transfer_state = 173
+				transfer_state = 22
+			}
+			every_owned_state = {	
+				limit = {
+					region = 77
+					region = 73
+				}
+				add_core_of = ITL
+				ITL = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	option = {
+		name = lotrmrdborder.1.b
+		custom_effect_tooltip = MRDBORDER1B
+		hidden_effect = {
+			MRD = {
+				add_state_core = 135
+				add_state_core = 175
+				add_state_core = 173
+				add_state_core = 22
+			}
+			every_owned_state = {
+				limit = {
+					region = 77
+					region = 73
+				}
+				add_core_of = MRD
+				MRD = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+}
+country_event = { # Mordor Occupation of Dol Amroth City
+	id = lotrmrdborder.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdborder.2"}
+	title = lotrmrdborder.2.t
+	desc = lotrmrdborder.2.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdborder.2.a
+		custom_effect_tooltip = MRDBORDER2A
+		hidden_effect = {
+			BEL = {
+				add_state_core = 224
+				transfer_state = 224
+			}
+			release = BEL
+			puppet = BEL
+			set_autonomy = {
+    			target = BEL
+    			autonomy_state = autonomy_dominion
+    			end_wars = no
+    			end_civil_wars = no
+			}
+			set_province_name = { id = 3570 name = "Tol-i-Min"} 
+			set_province_name = { id = 4079 name = "Hitrenfalas"}
+			set_global_flag = BEL_cities_renamed
+		}
+	}
+	option = {
+		name = lotrmrdborder.2.b
+		custom_effect_tooltip = MRDBORDER2B
+		hidden_effect = {
+			LEB = {
+				add_state_core = 224
+				transfer_state = 224
+			}
+			set_province_name = { id = 3570 name = "Tol-i-Min"} 
+			set_province_name = { id = 4079 name = "Hitrenfalas"}
+			set_global_flag = BEL_cities_renamed
+		}
+	}
+	option = {
+		name = lotrmrdborder.2.c
+		add_political_power = 10
+		add_stability = 0.1
+		add_war_support = 0.2
+		add_manpower = -15000
+		army_experience = 45
+		custom_effect_tooltip = MRDBORDER2C
+		hidden_effect = {
+			MRD = {
+				add_state_core = 224
+				transfer_state = 224
+				set_global_flag = BEL_cities_renamed
+			}
+			set_province_name = { id = 3570 name = "Tol-i-Min"} 
+			set_province_name = { id = 4079 name = "Hitrenfalas"}
+			set_global_flag = BEL_cities_renamed
+		}
+	}
+}
+country_event = { # Mordor Occupation of Lamedon
+	id = lotrmrdborder.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lotrmrdborder.3"}
+	title = lotrmrdborder.3.t
+	desc = lotrmrdborder.3.d
+	picture = GFX_report_event_axis_europe_map
+	is_triggered_only = yes
+	
+	option = {
+		name = lotrmrdborder.3.a
+		custom_effect_tooltip = MRDBORDER3A
+		hidden_effect = {
+			if = {
+				limit = {
+					ITL = {
+						is_puppet_of = MRD
+					}
+				}
+				ITL = {
+					add_state_core = 172
+					transfer_state = 172
+				}
+			}
+			else_if = {	
+				limit = {
+					NOT = {
+						ITL = {
+							is_puppet_of = MRD
+						}
+					}
+				}
+				MRD = {
+					add_state_core = 172
+					transfer_state = 172
+				}
+			}
+		}
+	}
+	option = {
+		name = lotrmrdborder.3.b
+		custom_effect_tooltip = MRDBORDER3B
+		hidden_effect = {
+			if = {
+				limit = {
+					BEL = {
+						is_puppet_of = MRD
+					}
+				}
+				LEB = {
+					add_state_core = 172
+					transfer_state = 172
+				}
+			}
+			else_if = {
+				MRD = {
+					add_state_core = 172
+					transfer_state = 172
+				}
+			}
+		}
+	}
+}

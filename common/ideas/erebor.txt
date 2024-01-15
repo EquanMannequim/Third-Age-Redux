@@ -1,0 +1,107 @@
+ideas = {
+
+	country = {
+
+		ERE_at_home_underground = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_generic_agrarian_society
+
+			modifier = {
+				army_core_attack_factor = 0.02
+				army_core_defence_factor = 0.02
+			}
+		}
+
+		ERE_induction_furnaces = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		ERE_maceration_techniques = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				local_resources_factor = 0.12
+			}
+		}
+
+		ERE_home_of_the_dwarves = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				stability_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+
+		ERE_a_fighting_king = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				conscription_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+	}
+}

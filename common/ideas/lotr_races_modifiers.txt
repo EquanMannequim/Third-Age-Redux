@@ -1,0 +1,338 @@
+ideas = {
+
+	# IMPORTANT NOTE: THE LOCALIZATION OF THESE MODIFIERS IS *HARD-CODED* (There was no other way to get the tooltip to work :<)
+	# This means that even if you change the modifiers in here, the old values will still be displayed.
+	# When making changes, please be sure to update the localization in parties_l_english.yml respectively!
+
+	# IMPORTANT NOTE 2: IF YOU ADD/REMOVE THESE, ADJUST lotr_apply_subideology_modifier (IN scripted_effects/00_lotr_ideologies_scripted_effects.txt)
+
+	hidden_ideas = {
+		idea_race_men_modifier = {
+			cancel = {
+			    NOT = { is_men = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				initiative_factor = 0.1
+				drift_defence_factor = -0.15
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_edain_modifier = {
+			cancel = {
+			    NOT = { is_edain = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				conscription_factor = -0.25
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_noldor_modifier = {
+			cancel = {
+			    NOT = { is_noldor = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.10
+				army_attack_factor = 0.10
+				conscription_factor = -0.75
+				production_factory_max_efficiency_factor = 0.10
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_sindar_modifier = {
+			cancel = {
+			    NOT = { is_sindar = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.08
+				army_attack_factor = 0.08
+				conscription_factor = -0.55
+				production_speed_dockyard_factor  = 0.20
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_silvan_modifier = {
+			cancel = {
+			    NOT = { is_silvan = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.07
+				army_attack_factor = 0.07
+				conscription_factor = -0.40
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_entling_modifier = {
+			cancel = {
+			    NOT = { is_entling = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.15
+				army_attack_factor = 0.15
+				conscription_factor = -0.30
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_firebeard_modifier = {
+			cancel = {
+			    NOT = { is_firebeard = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.06
+				army_attack_factor = 0.06
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_broadbeam_modifier = {
+			cancel = {
+			    NOT = { is_broadbeam = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.06
+				army_attack_factor = 0.06
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_longbeard_modifier = {
+			cancel = {
+			    NOT = { is_longbeard = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.06
+				army_attack_factor = 0.06
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_black_uruk_modifier = {
+			cancel = {
+			    NOT = { is_black_uruk = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.02
+				army_attack_factor = 0.02
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_hobbitling_modifier = {
+			cancel = {
+			    NOT = { is_hobbitling = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				recruitable_population_factor = 0.05
+				trade_opinion_factor = 0.10
+				faction_trade_opinion_factor = 0.03
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_spiderling_modifier = {
+			cancel = {
+			    NOT = { is_spiderling = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				recruitable_population_factor = 0.40
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_easterling_modifier = {
+			cancel = {
+			    NOT = { is_easterling = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.06
+				army_attack_factor = 0.06
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_uruk_hai_modifier = {
+			cancel = {
+			    NOT = { is_uruk_hai = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				recruitable_population_factor = 0.20
+				army_defence_factor = 0.06
+				land_night_attack = 0.3
+				mobilization_speed = 0.5
+				research_speed_factor = 0.6
+				production_speed_buildings_factor = 0.5
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+		idea_race_dunedain_modifier = {
+			cancel = {
+			    NOT = { is_dunedain = yes }
+			}
+
+			on_remove = {
+                lotr_apply_race_modifier = yes
+            }
+
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				conscription_factor = -0.25S
+
+				# These are hidden, and based on availabilty of generic portraits (see portraits.txt)
+				female_random_country_leader_chance = -0.8	# base chance 0.5 -> 0.1
+				female_random_operative_chance = 0.0 		# base chance 0.5 -> 0.5
+				female_random_admiral_chance = -1.0 		# base chance 0.5 -> 0.0
+				female_random_army_leader_chance = -1.0		# irrelevant
+				female_divisional_commander_chance = 0.0 	# Paradox logic: give this value +50% and you get the ACTUAL value
+			}			
+		}
+	}
+}

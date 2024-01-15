@@ -1,0 +1,88 @@
+##### Division Templates #####
+division_template = {
+	name = "Iron Crown Infantry"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		artillery = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+	}
+}
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Iron Crown Infantry"
+		location = 306
+		division_template = "Iron Crown Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

@@ -1,0 +1,297 @@
+##### Division Templates #####
+division_template = {
+	name = "Orc Infantry"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+	}
+}
+
+division_template = {
+	name = "Gundabad Orcs"		# Motor Rifle Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		# Engineer bn
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+		division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Gundabad Orcs"
+		location = 4824
+		division_template = "Gundabad Orcs"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Orc Infantry"
+		location = 4824
+		division_template = "Orc Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MOR"
+		}
+		requested_factories = 3
+		progress = 0.66
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "MOR"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 35
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_tank_equipment
+			creator = "MOR"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 35
+	}
+}

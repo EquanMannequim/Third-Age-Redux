@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Elrond"
+		textureFile = "gfx/leaders/IML/Portrait_Elrond.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Glorfindel"
+		textureFile = "gfx/leaders/IML/Portrait_Glorfindel.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_elladan"
+		textureFile = "gfx/leaders/IML/Portrait_elladan.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_elrohir"
+		textureFile = "gfx/leaders/IML/Portrait_elrohir.dds"
+	}
+}

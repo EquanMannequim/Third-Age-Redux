@@ -1,0 +1,101 @@
+###########################
+# Ithilian Events
+###########################
+
+add_namespace = ITL
+
+	country_event = {
+	id = ITL.1
+	title = ITL.1.t
+	desc = ITL.1.d
+	picture = GFX_report_event_numenor
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "We Have Our Own Problems"
+		 ai_chance = { base = 5 }
+		 stability_factor = 0.05
+		}
+	option = {
+		name = "Faramir Will Have What He Needs"
+		 ai_chance = { base = 0 }
+		 STE = {
+				add_manpower = -10000
+				add_war_support = -0.15
+				stability_factor = -0.05
+				}
+		 ITL = {
+				add_manpower = 10000
+				add_war_support = 0.05
+				stability_factor = 0.05
+
+				}
+				if = {
+				limit = {
+					has_idea = STE_denethors_paranoia1
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia1
+					add_idea = STE_denethors_paranoia2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia2
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia2
+					add_idea = STE_denethors_paranoia3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia3
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia3
+					add_idea = STE_denethors_paranoia4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = STE_denethors_paranoia4
+				}
+				swap_ideas = {
+					remove_idea = STE_denethors_paranoia4
+					add_idea = STE_denethors_paranoia5
+				}
+			}
+		}
+	}
+	country_event = {
+	id = ITL.2
+	title = ITL.2.t
+	desc = ITL.2.d
+	picture = GFX_report_event_fight
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "And they shall have it"
+		ai_chance = { base = 2 }
+		ITL = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+					}
+					add_manpower = 1000
+				}
+				
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -1000
+			}
+					add_manpower = -1000
+		}
+		option = { 
+		name = "We have our own problems"
+		ai_chance = { base = 7 }
+		}
+	}

@@ -1,0 +1,298 @@
+characters={
+	MRD_sauron_eye={
+		name = "Sauron"
+		portraits={
+			civilian={
+				large="GFX_Portrait_sauron"
+			}
+		}
+		country_leader = {
+			ideology = melkorist
+			expire="1980.1.1.1"
+			traits = { all_seeing_eye }
+			id=-1
+		}
+	}
+	MRD_Gothmog={
+		name="Gothmog"
+		portraits={
+			army={
+				large="GFX_Portrait_Gothmog"
+				small="GFX_Portrait_Gothmog"
+			}
+		}
+	}
+
+	## Nazgull
+	MRD_Witch_king = {
+		name = "Witch King"
+		portraits={
+			army={
+				large="GFX_Portrait_the_witch_king"
+				small="GFX_idea_portrait_mordor_witch"
+			}
+		}
+		advisor = {
+			idea_token = MRD_Witch_king
+			slot = chief_advisor 
+			cost = 150
+			traits = { lord_of_the_nazgul }
+			available = {
+				always = yes
+			}
+		}
+	}
+
+	MRD_Khamul = {
+		name="Khamûl The Easterling"
+		portraits={
+			army={
+				large="GFX_Portrait_khamul_the_easterling"
+				small="GFX_idea_portrait_mordor_khamul"
+			}
+		}
+		corps_commander={
+			traits = { desert_fox }
+			skill=4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+			 
+		}
+		advisor = {
+			idea_token = MRD_Khamul
+			slot = political_advisor 
+			cost = 150
+			traits = { shadow_of_the_east }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			 
+		}
+	}
+
+	MRD_Al_Khey_Sart = {
+		name="Al Khey Sart"
+		portraits={
+			army = {
+				large="GFX_Portrait_al_khey_sart"
+				small="GFX_idea_portrait_mordor_hoarmurath"
+			}
+		}
+		advisor={
+			idea_token = MRD_Hoarmurath
+			slot = political_advisor
+			traits  = {
+				ideological_crusader
+			}
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+		corps_commander={
+			traits = { hill_fighter  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=-1
+			 
+		}
+	}
+
+	MRD_Dendra_Dwar = {
+		name="Dendra Dwar"
+		portraits={
+			army={
+				large="GFX_Portrait_dendra_dwar"
+				small="GFX_idea_portrait_mordor_dwar"
+			}
+		}
+		advisor={
+			idea_token = MRD_Dwar
+			slot = army_chief
+			cost = 150
+			traits = {
+				experienced_general
+			}
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+			 
+		}
+	}
+
+	MRD_Adunaphel = {
+		name="Adunaphel"
+		portraits={
+			army={
+				large="GFX_Portrait_adunaphel"
+				small="GFX_idea_portrait_mordor_adunaphel"
+			}
+		}
+		corps_commander={
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+			 
+		}
+		advisor = {
+			idea_token = MRD_Adunaphel
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_entrenchment_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MRD_Akhorahil = {
+		name="Akhorahil"
+		portraits={
+			civilian={
+				large="GFX_Portrait_akhorahil"
+				small="GFX_idea_portrait_mordor_akhorahil"
+			}
+		}
+		corps_commander={
+			traits = { naval_invader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=-1
+			 
+		}
+		advisor = {
+			idea_token = MRD_Akhorahil
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_maneuver_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MRD_Ji_Indur = {
+		name="Ji Indur"
+		portraits={
+			army={
+				large="GFX_Portrait_ji_amaav"
+				small="GFX_idea_portrait_mordor_indur"
+			}
+		}
+		corps_commander={
+			traits = { jungle_rat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id=-1
+			 
+		}
+		advisor = {
+			idea_token = MRD_Ji_Indur
+			slot = army_chief 
+			cost = 150
+			traits = { army_chief_planning_1 }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+
+	MRD_Uvathe_Achef = {
+		name="Uvathe Achef"
+		portraits={
+			civilian={
+				large="GFX_Portrait_uvathe_achef"
+				small="GFX_idea_portrait_mordor_ren"
+			}
+		}
+		corps_commander={
+			traits = { bearer_of_artillery }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id=-1
+			 
+		}
+		advisor = {
+			idea_token = MRD_Ren
+			slot = high_command
+			cost = 150
+			traits = { ring_catcher }
+			available = {
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+			visible = {
+				NOT = { has_global_flag = fs_nazgul_sent_to_shire }
+				NOT = { has_global_flag = fs_ring_destroyed }
+				has_government = belligerent
+				has_completed_focus = gatherthenazgl
+			}
+		}
+	}
+}

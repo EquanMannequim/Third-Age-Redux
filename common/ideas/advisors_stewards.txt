@@ -1,0 +1,107 @@
+ideas = {
+	chief_researcher = {
+		designer = yes
+
+		STE_servant_of_the_steward_advisor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_servant_of_the_steward_advisor
+
+			modifier = {
+				research_speed_factor = 0.10
+				local_resources_factor = 0.20
+			}
+
+			traits = {
+				servant_of_the_stewards_advisor
+			}
+		}
+
+	}
+	architect = {
+		designer = yes
+
+		STE_ithilien_smithsman_advisor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_ithilien_smithsman_advisor
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor  = 0.10
+			}
+
+			traits = {
+				ithilien_smithsman_advisor
+			}
+		}
+	}
+	research_advisor = {
+		designer = yes
+
+		STE_lord_regent_of_pelargir_advisor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_lord_regent_of_pelargir_advisor
+
+			modifier = {
+				research_speed_factor = 0.05	
+				research_bonus = {
+					industry = 0.10
+				}		
+			}
+
+			traits = {
+				lord_regent_of_pelargir_advisor
+			}
+		}
+		STE_ranger_captain_advisor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -100
+
+			picture = GFX_STE_ranger_captain_advisor
+
+			modifier = {
+				research_speed_factor = 0.02
+				research_bonus = {
+					infantry = 0.10
+				}		
+			}
+
+			traits = {
+				ranger_captain_advisor
+			}
+		}
+	}
+}

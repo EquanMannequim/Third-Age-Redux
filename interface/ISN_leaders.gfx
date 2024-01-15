@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_saruman"
+		textureFile = "gfx/leaders/ISN/Portrait_saruman.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_lugdush"
+		textureFile = "gfx/leaders/ISN/Portrait_lugdush.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ugluk"
+		textureFile = "gfx/leaders/ISN/Portrait_ugluk.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_lurtz"
+		textureFile = "gfx/leaders/ISN/Portrait_lurtz.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_mauhur"
+		textureFile = "gfx/leaders/ISN/Portrait_mauhur.dds"
+	}
+}

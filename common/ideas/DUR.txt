@@ -1,0 +1,69 @@
+ideas = {
+
+	country = {
+
+		DUR_war_of_the_dwarves_and_orcs = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_heir_of_numenor
+			modifier = {
+				war_support_factor = 0.10
+				conscription_factor = -0.10
+				mobilization_speed = -0.05
+				
+			}
+		}
+
+		DUR_erebor_reclamation = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				stability_factor = 0.15
+				local_resources_factor = 0.25
+				mobilization_speed = 0.02
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		DUR_the_last_expedition = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				political_power_factor = -0.05
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		DUR_the_erebor_industry = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_UMA_thin_blood_of_numenor
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.10 
+				consumer_goods_factor = -0.12
+				land_bunker_effectiveness_factor = 0.08
+			}
+		}
+
+		DUR_prepared_for_rhun = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_crown_of_numenor
+			targeted_modifier = { tag = DRA defense_bonus_against = 0.10 }
+		}
+
+		DUR_the_purging_of_gundabad = {
+			allowed = {always = no }
+			allowed_civil_war = { always = no }
+			picture = GFX_idea_UMA_the_gift_from_mordor
+			cancel = { denethor_is_leader = no }
+			targeted_modifier = { tag = DUR attack_bonus_against = 0.15 }
+		}
+	}

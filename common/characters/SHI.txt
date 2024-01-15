@@ -1,0 +1,206 @@
+characters={
+	SHI_paladin={
+		name="Paladin II Took"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Shire_Paladin"
+			}
+		}
+		country_leader={
+			ideology=collectivist
+			traits={ }
+			expire="1980.1.1.1"
+			id=-1
+		}
+	}
+	SHI_lotho={
+		name="Lotho Sackville-Baggins"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Shire_Lotho"
+			}
+		}
+		country_leader={
+			ideology = expansionist
+			traits={ }
+			expire="1980.1.1.1"
+			id=-1
+		}
+	}
+	SHI_gerontius={
+		name="Gerontius Took"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Shire_Gerontius"
+			}
+		}
+		country_leader={
+			ideology = mercantile
+			traits={ }
+			expire="1980.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology = isolationist
+			traits={ }
+			expire="1980.1.1.1"
+			id=-1
+		}
+	}
+	SHI_hayward={
+		name="Hod Hayward"
+		portraits={
+			army={
+				large="GFX_Portrait_Shire_Hayward"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	SHI_diamond={
+		name = "Diamond Took"
+		advisor = {
+			idea_token = SHI_diamond
+			slot = treasurer
+			cost = 150
+			traits = { level_headed_financier }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		portraits = {
+			army = { small = GFX_idea_portrait_shire_diamondtook }
+		}
+	}
+
+	SHI_rosie={
+		name = "Rosie Cotton"
+		advisor = {
+			idea_token = SHI_rosie
+			slot = political_advisor
+			cost = 150
+			traits = { reluctant_interventionist }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		portraits = {
+			army = { small = GFX_idea_portrait_shire_rosiecotton }
+		}
+	}
+
+	SHI_odo={
+		name = "Odo Proudfoot"
+		advisor = {
+			idea_token = SHI_odo
+			slot = political_advisor
+			cost = 150
+			traits = { status_quo_maintainer }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		portraits = {
+			army = { small = GFX_idea_portrait_shire_odoproudfoot }
+		}
+	}
+
+	SHI_fredegar={
+		name = "Fredegar Bolger"
+		advisor = {
+			idea_token = SHI_fredegar
+			slot = political_advisor
+			cost = 150
+			traits = { patriotic_guerilla }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+		portraits = {
+			army = {
+				small = GFX_idea_portrait_shire_fredegarbolger
+				large = GFX_portrait_shire_fredegarbolger
+			}
+		}
+	}
+
+	SHI_robin={
+		name = "Robin Smallburrow"
+		advisor = {
+			idea_token = SHI_robin
+			slot = high_command
+			cost = 150
+			traits = { commando_expert }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+		portraits = {
+			army = {
+				small = GFX_idea_portrait_shire_robinsmallburrow
+				large = GFX_portrait_shire_robinsmallburrow
+			}
+		}
+	}
+
+	SHI_tolman={
+		name = "Tolman Cotton"
+		advisor = {
+			idea_token = SHI_tolman
+			slot = theorist
+			cost = 150
+			traits = { military_theorist }
+			available = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		portraits = {
+			army = {
+				small = GFX_idea_portrait_shire_tolmancotton
+				large = GFX_portrait_shire_tolmancotton
+			}
+		}
+	}
+
+	
+}
