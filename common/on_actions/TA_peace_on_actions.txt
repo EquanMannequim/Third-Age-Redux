@@ -98,7 +98,7 @@ on_actions = {
 							}
 						}
 					}
-					if = { # IML Defeats ERG
+					if = { # DUN IML Defeats ERG
 						limit = {
 							FROM = {
 								OR = {
@@ -121,6 +121,7 @@ on_actions = {
 						FROM = {
 							white_peace = ROOT
 						}
+						remove_from_faction = IML
 						IML = {
 							annex_country = {
 								target = ERG
@@ -142,11 +143,10 @@ on_actions = {
 						
 						every_country = {
 							limit = {
-								has_war_with = FROM
-								is_in_faction_with = ROOT
+								is_subject_of = DUN
 							}
 							white_peace = ROOT
-						}
+						}					
 						FROM = {
 							white_peace = ROOT
 						}
