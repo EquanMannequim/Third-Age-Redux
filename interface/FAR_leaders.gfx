@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_Portrait_karsh"
-		textureFile = "gfx/leaders/FAR/Portrait_karsh.dds"
-	}
-}

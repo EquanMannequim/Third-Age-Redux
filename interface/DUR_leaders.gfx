@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_Portrait_Dain"
-		textureFile = "gfx/leaders/DUR/Portrait_Dain.dds"
-	}
-}

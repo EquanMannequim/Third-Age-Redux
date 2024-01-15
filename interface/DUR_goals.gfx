@@ -1,6 +1,0 @@
-spriteTypes = {
-    SpriteType = {
-      name = "GFX_goal_lotr_Durinsfolk"
-      texturefile = "gfx/interface/goals/DUR/lotr_Durinsfolk.dds"
-    }	
-}

@@ -1,6 +1,0 @@
-spriteTypes = {
-    SpriteType = {
-      name = "GFX_goal_lotr_WoodlandRealm"
-      texturefile = "gfx/interface/goals/WRD/lotr_WoodlandRealm.dds"
-    }
-}

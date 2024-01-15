@@ -1,2 +1,0 @@
-spriteTypes = {
-	spriteType = { name = "GFX_report_event_numenor" texturefile = "gfx/event_pictures/report_events/report_event_numenor.dds" }
