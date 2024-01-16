@@ -842,7 +842,7 @@ guiTypes = {
 			position = { x = 370 y = 455 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 444
+			maxWidth = 400
 			maxHeight = 250
 			format = left
 		}

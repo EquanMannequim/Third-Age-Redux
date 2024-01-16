@@ -8,7 +8,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			forest_infantry
@@ -22,7 +22,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			ent_infantry
@@ -37,7 +37,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			riders_of_the_naith
@@ -52,7 +52,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			marchwardens_of_lothlorien
@@ -67,7 +67,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			sindar_pathstalkers
@@ -82,7 +82,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		enable_subunits = {
 			spider_infantry
@@ -97,7 +97,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 3018
+		start_year = 3014
 
 		penal_battalion = {
 			soft_attack = 0.15

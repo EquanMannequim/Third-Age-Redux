@@ -97,7 +97,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = air_techs_folder
@@ -139,7 +139,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "3022.1.1"
+				date > "3018.1.1"
 			}
 		}
 	}
@@ -152,7 +152,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1 #Carrier Variant
-		start_year = 3018
+		start_year = 3014
 
 		categories = {
 			naval_air
@@ -195,7 +195,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
@@ -225,7 +225,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "3021.1.1"
+				date > "3017.1.1"
 			}
 
 			modifier = {
@@ -240,7 +240,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 		}
 	}
@@ -253,7 +253,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3022
+		start_year = 3018
 
 		categories = {
 			naval_air
@@ -265,7 +265,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				date > "3021.6.1"
+				date > "3017.6.1"
 			}
 
 			modifier = {
@@ -299,7 +299,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 
 		folder = {
 			name = air_techs_folder
@@ -326,7 +326,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "3027.1.1"
+				date > "3023.1.1"
 			}
 
 			modifier = {
@@ -354,7 +354,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3026
+		start_year = 3022
 
 		categories = {
 			naval_air
@@ -366,7 +366,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				date > "3027.1.1"
+				date > "3023.1.1"
 			}
 			modifier = {
 				factor = 2.5
@@ -396,7 +396,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3027
+		start_year = 3023
 
 		folder = {
 			name = air_techs_folder
@@ -456,7 +456,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = air_techs_folder
@@ -486,7 +486,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3018
+		start_year = 3014
 
 		categories = {
 			naval_air
@@ -532,7 +532,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 
 		folder = {
 			name = air_techs_folder
@@ -574,7 +574,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3022
+		start_year = 3018
 
 		categories = {
 			naval_air
@@ -620,7 +620,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 		folder = {
 			name = air_techs_folder
 			position = { x = -4 y = 8 }
@@ -657,7 +657,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3026
+		start_year = 3022
 
 		categories = {
 			naval_air
@@ -696,7 +696,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 4 }
@@ -725,7 +725,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3018
+		start_year = 3014
 
 		categories = {
 			naval_air
@@ -766,7 +766,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 6 }
@@ -802,7 +802,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3022
+		start_year = 3018
 
 		categories = {
 			naval_air
@@ -843,7 +843,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 8 }
@@ -879,7 +879,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.0 #Carrier Variant
-		start_year = 3026
+		start_year = 3022
 
 		categories = {
 			naval_air
@@ -951,7 +951,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 4 }
@@ -981,7 +981,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 6 }
@@ -1011,7 +1011,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 8 }
@@ -1080,7 +1080,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 6 }
@@ -1124,11 +1124,65 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "3014.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "3018.1.1"
+			}
+		}
+	}
+
+	tactical_bomber2 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_2
+		}
+
+		path = {
+			leads_to_tech = tactical_bomber3
+			research_cost_coeff = 1
+		}
+
+		allow = { always = no}
+		research_cost = 2
+		start_year = 3018
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 6 }
 		}
 
 		categories = {
@@ -1155,67 +1209,13 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1938.1.1"
+				date > "3017.1.1"
 			}
 
 			modifier = {
 				factor = 5
 				is_major = yes
 				date > "3022.1.1"
-			}
-		}
-	}
-
-	tactical_bomber2 = {
-
-		enable_equipments = {
-			tac_bomber_equipment_2
-		}
-
-		path = {
-			leads_to_tech = tactical_bomber3
-			research_cost_coeff = 1
-		}
-
-		allow = { always = no}
-		research_cost = 2
-		start_year = 3022
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 6 }
-		}
-
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "3022.1.1"
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "3021.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				is_major = yes
-				date > "3026.1.1"
 			}
 		}
 	}
@@ -1233,7 +1233,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 8 }
@@ -1251,7 +1251,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "3026.1.1"
+				date > "3022.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -1263,7 +1263,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "3027.1.1"
+				date > "3023.1.1"
 			}
 		}
 	}
@@ -1285,7 +1285,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3027
+		start_year = 3023
 
 		folder = {
 			name = air_techs_folder
@@ -1346,7 +1346,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3018
+		start_year = 3014
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 4 }
@@ -1376,7 +1376,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3022
+		start_year = 3018
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
@@ -1406,7 +1406,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 2
-		start_year = 3026
+		start_year = 3022
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 8 }
@@ -1468,7 +1468,7 @@ technologies = {
 
 		allow = { always = no}
 		research_cost = 1.5 #Carrier Variant
-		start_year = 3026
+		start_year = 3022
 
 		# only from focus!!! #####
 		allow = {
