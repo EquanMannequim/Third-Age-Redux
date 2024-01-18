@@ -2895,7 +2895,7 @@ on_actions = {
 							DUN = {
 								annex_country = {
 									target = EUC
-									trasfer_troops = no
+									transfer_troops = no
 								}
 							}
 						}
@@ -2914,7 +2914,7 @@ on_actions = {
 							RID = {
 								annex_country = {
 									target = EUC
-									trasfer_troops = no
+									transfer_troops = no
 								}
 							}
 						}

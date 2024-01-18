@@ -57,30 +57,6 @@ country_event = {
 }
 
 # Fascists vs Communists
-country_event = {
-	id = war_justification.3
-	title = war_justification.3.t
-	desc = war_justification.3.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = belligerent
-		FROM = { has_government = revolutionary }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.3.a
-		FROM = { country_event = { id = war_justification.203 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Fascists vs Fascists
 country_event = {
@@ -109,108 +85,11 @@ country_event = {
 }
 
 # Communists vs Neutrals
-country_event = {
-	id = war_justification.5
-	title = war_justification.5.t
-	desc = war_justification.5.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = revolutionary
-		FROM = { has_government = unaligned }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.5.a
-		FROM = { country_event = { id = war_justification.205 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
 # Communists vs Democrats
-country_event = {
-	id = war_justification.6
-	title = war_justification.6.t
-	desc = war_justification.6.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = revolutionary
-		FROM = { has_government = cooperative }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.6.a
-		FROM = { country_event = { id = war_justification.206 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Communists vs Communists
-country_event = {
-	id = war_justification.7
-	title = war_justification.7.t
-	desc = war_justification.7.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = revolutionary
-		FROM = { has_government = revolutionary }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.7.a
-		FROM = { country_event = { id = war_justification.207 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Communists vs Fascists
-country_event = {
-	id = war_justification.8
-	title = war_justification.8.t
-	desc = war_justification.8.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = revolutionary
-		FROM = { has_government = belligerent }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.8.a
-		FROM = { country_event = { id = war_justification.208 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Democrats vs Neutrals
 country_event = {
@@ -265,30 +144,6 @@ country_event = {
 }
 
 # Democrats vs Communists
-country_event = {
-	id = war_justification.11
-	title = war_justification.11.t
-	desc = war_justification.11.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = cooperative
-		FROM = { has_government = revolutionary }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.11.a
-		FROM = { country_event = { id = war_justification.211 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Democrats vs Fascists
 country_event = {
@@ -369,30 +224,6 @@ country_event = {
 }
 
 # Neutrals vs Communists
-country_event = {
-	id = war_justification.15
-	title = war_justification.15.t
-	desc = war_justification.15.d
-	picture = GFX_report_event_paper
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = unaligned
-		FROM = { has_government = revolutionary }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-
-	option = {
-		name = war_justification.15.a
-		FROM = { country_event = { id = war_justification.215 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
 
 # Neutrals vs Fascists
 country_event = {
@@ -838,17 +669,6 @@ country_event = {
 		add_war_support = -0.05
 		add_popularity = {
 			ideology = cooperative
-			popularity = -0.05
-		}
-	}
-
-	option = {
-		name = war_justification.301.b
-		trigger = { has_government = revolutionary }
-		add_political_power = -30
-		add_war_support = -0.05
-		add_popularity = {
-			ideology = revolutionary
 			popularity = -0.05
 		}
 	}

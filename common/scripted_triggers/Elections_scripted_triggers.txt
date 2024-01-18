@@ -24,7 +24,6 @@ can_lose_unity = {
 }
 
 can_lose_democracy_support = {
-	revolutionary < 0.18
 	belligerent < 0.18
 	cooperative > 0.65
 }

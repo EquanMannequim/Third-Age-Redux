@@ -25,7 +25,6 @@ has_unsupported_centralization_law = {
 		}
 		has_idea = very_strong_centralization
 		NOT = {
-			NOT = { has_government = revolutionary }
 			has_war_support > 0.5
 			threat > 0.5
 		}
@@ -38,7 +37,6 @@ has_unsupported_centralization_law = {
 		NOT = {
 			has_war = yes
 			has_war_support > 0.8
-			NOT = { has_government = revolutionary }
 		}
 	}
 	else_if = {
@@ -67,7 +65,6 @@ has_unsupported_manpower_law = {
 			has_war_support > 0.2
 		}
 		NOT = { has_government = belligerent }
-		NOT = { has_government = revolutionary }
 	}
 	else_if = {
 		limit = {
@@ -78,7 +75,6 @@ has_unsupported_manpower_law = {
 			has_war_support > 0.6
 		}
 		NOT = { has_government = belligerent }
-		NOT = { has_government = revolutionary }
 	}
 	else_if = {
 		limit = {
@@ -89,14 +85,6 @@ has_unsupported_manpower_law = {
 			has_war_support > 0.7
 		}
 		NOT = { has_government = belligerent }
-		NOT = { has_government = revolutionary }
-	}
-	else_if = {
-		limit = {
-			has_idea = horde
-		}
-		has_idea = horde
-		NOT = { has_government = revolutionary }
 	}
 	else_if = {
 		limit = {
@@ -107,52 +95,5 @@ has_unsupported_manpower_law = {
 	}
 	else = {
 		always = no
-	}
-}
-
-has_excessive_army_size = { #not currently used due to AI concerns
-	OR = {
-		AND = {
-			num_of_factories < 25
-			has_army_manpower = { size = 250000 }
-			has_manpower < 1
-			NOT = {
-				has_government = revolutionary
-			}
-		}
-		AND = {
-			num_of_factories < 50
-			has_army_manpower = { size = 500000 }
-			has_manpower < 1
-			NOT = {
-				has_government = revolutionary
-			}
-		}
-		AND = {
-			num_of_factories < 75
-			has_army_manpower = { size = 750000 }
-			has_manpower < 1
-			NOT = {
-				has_government = revolutionary
-			}
-		}
-		AND = {
-			num_of_factories < 100
-			has_army_manpower = { size = 1000000 }
-			has_manpower < 1
-			NOT = {
-				has_government = revolutionary
-			}
-		}
-		AND = {
-			has_army_manpower = { size = 2500000 }
-			has_manpower < 1
-			has_government = cooperative
-		}
-		AND = {
-			has_army_manpower = { size = 3000000 }
-			has_manpower < 1
-			has_government = belligerent
-		}
 	}
 }

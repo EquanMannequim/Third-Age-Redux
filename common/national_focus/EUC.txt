@@ -281,3 +281,4 @@ continuous_focus_position = { x = 10 y = 10 }
 			set_capital = 78
 		}
 	}
+}

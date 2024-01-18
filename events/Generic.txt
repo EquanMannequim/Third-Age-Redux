@@ -64,17 +64,6 @@ country_event = {
 			}
 		}
 	}
-	desc = { # FROM and ROOT are Communist
-		text = generic.2.d.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
 	desc = { # FROM and ROOT are different ideologies
 		text = generic.2.d.e
 		trigger = {
@@ -90,12 +79,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -155,27 +138,6 @@ country_event = {
 			news_event = { id = news.289 hours = 12 }
 		}
 	}
-	option = { #Agree / Both Communist
-		name = generic.2.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-		ai_chance = {
-			base = 100
-		}
-		add_to_faction = FROM
-		FROM = { country_event = { id = generic.3 hours = 6 } }
-		hidden_effect = {
-			set_country_flag = alliance_inviter@ROOT
-			FROM = { set_country_flag = alliance_applicant@ROOT }
-			news_event = { id = news.289 hours = 12 }
-		}
-	}
 	option = { #Agree / Both different
 		name = generic.2.e
 		trigger = {
@@ -191,12 +153,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -256,17 +212,6 @@ country_event = {
 
 	}
 	option = {
-		name = generic.3.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
-	option = {
 		name = generic.3.e
 		trigger = {
 			NOT = {
@@ -281,12 +226,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -326,17 +265,6 @@ country_event = {
 		}
 	}
 	option = {
-		name = generic.4.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
-	option = {
 		name = generic.4.e
 		trigger = {
 			NOT = {
@@ -351,12 +279,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -392,17 +314,6 @@ country_event = {
 			}
 		}
 	}
-	desc = { # FROM and ROOT are Communist
-		text = generic.5.d.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
 	desc = { # FROM and ROOT are different ideologies
 		text = generic.5.d.e
 		trigger = {
@@ -418,12 +329,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -487,29 +392,6 @@ country_event = {
 			news_event = { id = news.289 hours = 12 }
 		}
 	}
-	option = { #Agree / Both Communist
-		name = generic.5.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-		ai_chance = {
-			base = 100
-		}
-		FROM = { 
-			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 }
-		}
-		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
-		}
-	}
 	option = { #Agree / Both different
 		name = generic.5.e
 		trigger = {
@@ -525,12 +407,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -592,17 +468,6 @@ country_event = {
 
 	}
 	option = {
-		name = generic.3.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
-	option = {
 		name = generic.3.e
 		trigger = {
 			NOT = {
@@ -617,12 +482,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -662,17 +521,6 @@ country_event = {
 		}
 	}
 	option = {
-		name = generic.4.c
-		trigger = {
-			AND = {
-				FROM = {
-					has_government = revolutionary
-				}
-				has_government = revolutionary
-			}
-		}
-	}
-	option = {
 		name = generic.4.e
 		trigger = {
 			NOT = {
@@ -687,12 +535,6 @@ country_event = {
 						has_government = belligerent
 					}
 					has_government = belligerent
-				}
-				AND = {
-					FROM = {
-						has_government = revolutionary
-					}
-					has_government = revolutionary
 				}
 			}
 		}
@@ -928,48 +770,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_belligerent_tt
-			add_stability = -0.1
-		}
-		if = {
-			limit = {
-				FROM = { has_government = revolutionary }
-				revolutionary > 0.1
-				NOT = { revolutionary > 0.2 }
-				strength_ratio = { tag = FROM ratio < 1.2 }
-			}
-			custom_effect_tooltip = attache_revolutionary_tt
-			add_stability = -0.025
-		}
-		if = {
-			limit = {
-				FROM = { has_government = revolutionary }
-				NOT = { has_government = revolutionary }
-				revolutionary > 0.2
-				NOT = { revolutionary > 0.3 }
-				strength_ratio = { tag = FROM ratio < 1.2 }
-			}
-			custom_effect_tooltip = attache_revolutionary_tt
-			add_stability = -0.05
-		}
-		if = {
-			limit = {
-				FROM = { has_government = revolutionary }
-				NOT = { has_government = revolutionary }
-				revolutionary > 0.3
-				NOT = { revolutionary > 0.4 }
-				strength_ratio = { tag = FROM ratio < 1.2 }
-			}
-			custom_effect_tooltip = attache_revolutionary_tt
-			add_stability = -0.075
-		}
-		if = {
-			limit = {
-				FROM = { has_government = revolutionary }
-				NOT = { has_government = revolutionary }
-				revolutionary > 0.4
-				strength_ratio = { tag = FROM ratio < 1.2 }
-			}
-			custom_effect_tooltip = attache_revolutionary_tt
 			add_stability = -0.1
 		}
 		if = {

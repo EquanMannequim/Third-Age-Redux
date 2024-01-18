@@ -33,32 +33,6 @@ has_belligerent_path = {
     }
 }
 
-has_revolutionary_path = {
-    OR = {
-        has_focus_tree = generic_focus
-        AND = {
-            NOT = { tag = ROH }
-            NOT = { tag = ANG }
-            NOT = { tag = RHU }
-            NOT = { tag = HAR }
-            NOT = { tag = ISE }
-            NOT = { tag = MOA }
-        }
-    }
-}
-
-has_unaligned_path = {
-    OR = {
-        has_focus_tree = generic_focus
-        tag = ART
-        tag = LTH
-        tag = ENT
-        tag = RIV
-        tag = ANG
-        tag = MIR
-    }
-}
-
 
 
 is_going_cooperative = {
@@ -67,14 +41,6 @@ is_going_cooperative = {
 
 is_going_belligerent = {
     has_country_flag = gameplan_going_belligerent
-}
-
-is_going_revolutionary = {
-    has_country_flag = gameplan_going_revolutionary
-}
-
-is_going_unaligned = {
-    has_country_flag = gameplan_going_unaligned
 }
 
 # Runs for THIS and ROOT
@@ -87,14 +53,6 @@ is_going_same_path_as_root = {
         AND = {
             THIS = { is_going_belligerent = yes }
             ROOT = { is_going_belligerent = yes }
-        }
-        AND = {
-            THIS = { is_going_revolutionary = yes }
-            ROOT = { is_going_revolutionary = yes }
-        }
-        AND = {
-            THIS = { is_going_unaligned = yes }
-            ROOT = { is_going_unaligned = yes }
         }
     }
 }

@@ -17,7 +17,6 @@ guiTypes = {
 		clipping = no
 		fade_time = 500
 		fade_type = linear
-		centerposition = yes
 		moveable = no
 		Orientation = CENTER
 		Origo = center

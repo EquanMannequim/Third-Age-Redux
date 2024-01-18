@@ -11,7 +11,7 @@ country_event = { # Gondor Occupation of Umbar
 	
 	option = {
 		name = lotrsteoccupation.1.a
-		lotrsteoccupation = STEOCCUPATION1A
+		custom_effect_tooltip = STEOCCUPATION1A
 		hidden_effect = {
 			UMA = {
 				every_core_state = {
@@ -73,7 +73,7 @@ country_event = { # Gondor Occupation of Harnendor
 	
 	option = {
 		name = lotrsteoccupation.2.a
-		lotrsteoccupation = STEOCCUPATION2A
+		custom_effect_tooltip = STEOCCUPATION2A
 		hidden_effect = {
 			HAS = {
 				every_core_state = {
@@ -131,7 +131,7 @@ country_event = { # Gondor Occupation of Lithlad
 	
 	option = {
 		name = lotrsteoccupation.3.a
-		lotrsteoccupation = STEOCCUPATION3A
+		custom_effect_tooltip = STEOCCUPATION3A
 		hidden_effect = {
 			MRD = {
 				every_core_state = {
@@ -189,7 +189,7 @@ country_event = { # Watch on Mordor
 	
 	option = {
 		name = lotrsteoccupation.4.a
-		lotrsteoccupation = STEOCCUPATION4A
+		custom_effect_tooltip = STEOCCUPATION4A
 		hidden_effect = {
 			MRG = {
 				every_core_state = {
@@ -242,7 +242,7 @@ country_event = { # Gondor Occupation of Sagath
 	
 	option = {
 		name = lotrsteoccupation.5.a
-		lotrsteoccupation = STEOCCUPATION5A
+		custom_effect_tooltip = STEOCCUPATION5A
 		hidden_effect = {
 			SAG = {
 				every_core_state = {
@@ -295,7 +295,7 @@ country_event = { # Gondor Occupation of Asdriag
 	
 	option = {
 		name = lotrsteoccupation.6.a
-		lotrsteoccupation = STEOCCUPATION6A
+		custom_effect_tooltip = STEOCCUPATION6A
 		hidden_effect = {
 			ASD = {
 				every_core_state = {
@@ -347,7 +347,7 @@ country_event = { # Gondor Occupation of Urgath
 	
 	option = {
 		name = lotrsteoccupation.7.a
-		lotrsteoccupation = STEOCCUPATION7A
+		custom_effect_tooltip = STEOCCUPATION7A
 		hidden_effect = {
 			DRA = {
 				every_core_state = {
@@ -400,7 +400,7 @@ country_event = { # Gondor Occupation of Dorwinion
 	
 	option = {
 		name = lotrsteoccupation.8.a
-		lotrsteoccupation = STEOCCUPATION8A
+		custom_effect_tooltip = STEOCCUPATION8A
 		hidden_effect = {
 			DRW = {
 				every_core_state = {
@@ -452,7 +452,7 @@ country_event = { # Gondor Occupation of Methir
 	
 	option = {
 		name = lotrsteoccupation.9.a
-		lotrsteoccupation = STEOCCUPATION9A
+		custom_effect_tooltip = STEOCCUPATION9A
 		hidden_effect = {
 			MET = {
 				every_core_state = {
