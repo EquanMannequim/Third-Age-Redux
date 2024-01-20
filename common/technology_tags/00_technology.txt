@@ -258,4 +258,9 @@ technology_folders = {
 			}
 		}
 	}
+	gondor_folder_tab = {
+		available = {
+			original_tag = STE
+		}
+	}
 }

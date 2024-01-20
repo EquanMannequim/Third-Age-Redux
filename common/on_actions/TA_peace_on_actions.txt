@@ -2194,12 +2194,11 @@ on_actions = {
 						white_peace = ROOT
 					}
 					WDR = {
-						puppet = {
+						annex_country = {
 							target = SHA
-							end_wars = no
+							transfer_troops = no
 						}
 					}
-
 					set_global_flag = skip_default_capitulation
 				}
 				if = { # SHA defeats WDR
@@ -3080,6 +3079,8 @@ on_actions = {
 							transfer_state = 197
 						}
 					}
+
+					set_global_flag = skip_default_capitulation
 				}
 				if = { # Gundabad - Erebor War # Erebor Defeated But Gundabad Died
 					limit = {
@@ -3133,6 +3134,8 @@ on_actions = {
 							transfer_state = 197
 						}
 					}
+
+					set_global_flag = skip_default_capitulation
 				}
 				if = { # Gundabad - Erebor War # Gundabad Defeated
 					limit = {
@@ -3157,7 +3160,9 @@ on_actions = {
 							target = GND
 							transfer_troops = no
 						}
-					} 
+					}
+
+					set_global_flag = skip_default_capitulation 
 				}
 				if = { # Dol Gudur - Lothlorien War # Lothlorien Defeated
 					limit = {
@@ -3182,7 +3187,9 @@ on_actions = {
 							target = CRS
 							transfer_troops = no
 						}
-					} 
+					}
+
+					set_global_flag = skip_default_capitulation
 				}
 				if = { # Dol Gudur - Lothlorien War # Mirkwood Defeated
 					limit = {
@@ -3208,6 +3215,8 @@ on_actions = {
 							transfer_troops = no
 						}
 					}
+
+					set_global_flag = skip_default_capitulation
 				}
 				if = { # Dol Gudur - Lothlorien War # Dol Gudur Falls Defeated
 					limit = {

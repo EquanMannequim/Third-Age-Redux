@@ -135,7 +135,7 @@ country_event = { # Gondor Occupation of Lithlad
 		hidden_effect = {
 			MRD = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = MRD
 				}
 				add_state_core = 188
 				add_state_core = 186
@@ -193,7 +193,7 @@ country_event = { # Watch on Mordor
 		hidden_effect = {
 			MRG = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = MRG
 				}
 				add_state_core = 204
 				add_state_core = 2
@@ -246,7 +246,7 @@ country_event = { # Gondor Occupation of Sagath
 		hidden_effect = {
 			SAG = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = SAG
 				}
 				add_state_core = 203
 				add_state_core = 104
@@ -299,7 +299,7 @@ country_event = { # Gondor Occupation of Asdriag
 		hidden_effect = {
 			ASD = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = ASD
 				}
 				add_state_core = 124
 				add_state_core = 131
@@ -351,7 +351,7 @@ country_event = { # Gondor Occupation of Urgath
 		hidden_effect = {
 			DRA = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = DRA
 				}
 				add_state_core = 130
 				add_state_core = 129
@@ -404,7 +404,7 @@ country_event = { # Gondor Occupation of Dorwinion
 		hidden_effect = {
 			DRW = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = DRW
 				}
 				add_state_core = 137
 				add_state_core = 103
@@ -456,7 +456,7 @@ country_event = { # Gondor Occupation of Methir
 		hidden_effect = {
 			MET = {
 				every_core_state = {
-					remove_core_of = PREV
+					remove_core_of = MET
 				}
 				add_state_core = 105
 				set_capital = {
