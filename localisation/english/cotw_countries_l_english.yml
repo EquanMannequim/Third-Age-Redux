@@ -843,6 +843,16 @@
  DUR_DEF:0 "Durins Folk"
  DUR_ADJ:0 "Durins Folk"
  ##############################
+ KZD_belligerent:0 "Khazad-Dûm"
+ KZD_belligerent_DEF:0 "Khazad-Dûm"
+ KZD_cooperative:0 "Khazad-Dûm"
+ KZD_cooperative_DEF:0 "Khazad-Dûm"
+ KZD_belligerent_ADJ:0 "Khazad-Dûm"
+ KZD_cooperative_ADJ:0 "Khazad-Dûm"
+ KZD:0 "Khazad-Dûm"
+ KZD_DEF:0 "Khazad-Dûm"
+ KZD_ADJ:0 "Khazad-Dûm"
+ ##############################
  DLE_belligerent:0 "Mannish Kingdom of Dale"
  DLE_belligerent_DEF:0 "The Mannish Kingdom of Dale"
  DLE_cooperative:0 "Mannish Kingdom of Dale"

@@ -1,0 +1,133 @@
+
+# MAIN THEME
+music = {
+	name = "1spreadinghope"
+	file = "01 - Spreading Hope.ogg"
+	volume = 1
+}
+
+music = {
+	name = "2forcesofgood"
+	file = "02 - Forces Of Good.ogg"
+	volume = 1
+}
+
+music = {
+	name = "3hordesattack"
+	file = "03 - Hordes Attack.ogg"
+	volume = 1
+}
+
+music = {
+	name = "4alliesunite"
+	file = "04 - Allies Unite.ogg"
+	volume = 1
+}
+
+music = {
+	name = "5battleofthedead"
+	file = "05 - Battle Of The Dead.ogg"
+	volume = 1
+}
+
+music = {
+	name = "6buildinganempire"
+	file = "06 - Building An Empire.ogg"
+	volume = 1
+}
+
+music = {
+	name = "7castingtheshadow"
+	file = "07 - Casting The Shadow.ogg"
+	volume = 1
+}
+
+music = {
+	name = "8newlands"
+	file = "08 - New Lands.ogg"
+	volume = 1
+}
+
+music = {
+	name = "9unstoppableevil"
+	file = "09 - Unstoppable Evil.ogg"
+	volume = 1
+}
+
+music = {
+	name = "10thefellowshipcontinues"
+	file = "10 - The Fellowship Continues.ogg"
+	volume = 1
+}
+
+music = {
+	name = "11darktimes"
+	file = "11 - Dark Times.ogg"
+	volume = 1
+}
+
+music = {
+	name = "12devastation"
+	file = "12 - Devastation.ogg"
+	volume = 1
+}
+
+music = {
+	name = "13doomedtofall"
+	file = "13 - Doomed To Fall.ogg"
+	volume = 1
+}
+
+music = {
+	name = "14expansionofdarkness"
+	file = "14 - Expansion Of Darkness.ogg"
+	volume = 1
+}
+
+music = {
+	name = "15warchant"
+	file = "15 - War Chant.ogg"
+	volume = 1
+}
+
+music = {
+	name = "16fightforfreedom"
+	file = "16 - Fight For Freedom.ogg"
+	volume = 1
+}
+
+music = {
+	name = "17heroesshallrise"
+	file = "17 - Heroes Shall Rise.ogg"
+	volume = 1
+}
+
+music = {
+	name = "18ridingtheplains"
+	file = "18 - Riding The Plains.ogg"
+	volume = 1
+}
+
+music = {
+	name = "19swordsdrawn"
+	file = "19 - Swords Drawn.ogg"
+	volume = 1
+}
+
+music = {
+	name = "20valiantfight"
+	file = "20 - Valliant Fight.ogg"
+	volume = 1
+}
+
+music = {
+	name = "21pathofdestruction"
+	file = "21 - Path Of Destruction.ogg"
+	volume = 1
+}
+
+music = {
+	name = "22victoryisnear"
+	file = "22 - Victory Is Near.ogg"
+	volume = 1
+}

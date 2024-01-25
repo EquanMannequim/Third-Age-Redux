@@ -348,7 +348,6 @@ continuous_focus_position = { x = 10 y = 10 }
 		icon = GFX_goal_lotr_Angmar
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = Destroy_The_Arnorian_Remnants }
-		available = { ANR = { is_neighbor_of = DUN } }
 		relative_position_id = Destroy_The_Arnorian_Remnants
 		x = 0
 		y = 1

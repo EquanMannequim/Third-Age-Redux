@@ -509,3 +509,7 @@ DRG = {
 	color = rgb { 140 122 0 }
 	color_ui = rgb { 140 122 0 }
 }
+KZD = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 50 50 50 }
+}

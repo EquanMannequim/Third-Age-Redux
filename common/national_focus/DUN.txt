@@ -31,7 +31,7 @@ continuous_focus_position = { x = 10 y = 10 }
 
 	focus = {
 		id =  DUN_The_Time_of_Three_Kings
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_time_of_three_kings
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_The_War_of_The_Last_Alliance }
 		relative_position_id = DUN_The_War_of_The_Last_Alliance
@@ -46,7 +46,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_War_In_The_North
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_War_In_The_North
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_The_Time_of_Three_Kings }
 		relative_position_id = DUN_The_Time_of_Three_Kings
@@ -61,7 +61,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_Shirefolk
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Shirefolk
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_The_War_In_The_North }
 		relative_position_id = DUN_The_War_In_The_North
@@ -82,7 +82,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_Elves_of_Rivendell
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Elves_of_Rivendell
 		ai_will_do = { factor = 50 }
 		prerequisite = { focus = DUN_The_War_In_The_North }
 		relative_position_id = DUN_The_War_In_The_North
@@ -102,7 +102,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	focus = {
 		id = DUN_The_Free_Peoples_of_Bree
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Free_Peoples_of_Bree
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_The_War_In_The_North }
 		relative_position_id = DUN_The_War_In_The_North
@@ -123,7 +123,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Halbarads_Mission
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Halbarads_Mission
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_The_Elves_of_Rivendell }
 		relative_position_id = DUN_The_Elves_of_Rivendell
@@ -140,7 +140,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Equip_Halbarads_Forces
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Equip_Halbarads_Forces
 		ai_will_do = { factor = 15 }
 		prerequisite = { focus = DUN_Halbarads_Mission }
 		relative_position_id = DUN_Halbarads_Mission
@@ -159,7 +159,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Swordsmiths_To_Halbarad
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Swordsmiths_To_Halbarad
 		ai_will_do = { factor = 15 }
 		prerequisite = { focus = DUN_Halbarads_Mission }
 		relative_position_id = DUN_Halbarads_Mission
@@ -173,7 +173,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_Red_Hill_Raiders
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Red_Hill_Raiders
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = DUN_Equip_Halbarads_Forces }
 		prerequisite = { focus = DUN_Send_Swordsmiths_To_Halbarad }
@@ -193,24 +193,8 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	}
 	focus = {
-		id = DUN_Transfer_Administation_To_Bree
-		icon = GFX_goal_lotr_The_Dunedain
-		ai_will_do = { factor = 100 }
-		prerequisite = { focus = DUN_The_Red_Hill_Raiders }
-		relative_position_id = DUN_The_Red_Hill_Raiders
-		x = -1
-		y = 1
-		cost = 5
-		available = { BRE = { exists = yes } }
-		available = { owns_state = 150 }
-		completion_reward = {
-			BRE = { transfer_state = 150  }
-			add_political_power = 100
-			}
-		}
-	focus = {
 		id = DUN_Aid_Elladan_and_Elrohir
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Aid_Elladan_and_Elrohir
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_The_Elves_of_Rivendell }
 		relative_position_id = DUN_The_Elves_of_Rivendell
@@ -225,7 +209,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Aid_To_Rivendell
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Aid_To_Rivendell
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Aid_Elladan_and_Elrohir }
 		relative_position_id = DUN_Aid_Elladan_and_Elrohir
@@ -246,7 +230,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Rivendell_Swordmiths
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Rivendell_Swordmiths
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Aid_Elladan_and_Elrohir }
 		relative_position_id = DUN_Aid_Elladan_and_Elrohir
@@ -260,7 +244,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Orcs_Across_The_Gwathlo
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Orcs_Across_The_Gwathlo
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_Send_Aid_To_Rivendell }
 		prerequisite = { focus = DUN_Rivendell_Swordmiths }
@@ -283,29 +267,8 @@ continuous_focus_position = { x = 10 y = 10 }
 			}
 		}
 	focus = {
-		id = DUN_Transfer_Control_To_Rivendell
-		icon = GFX_goal_lotr_The_Dunedain
-		ai_will_do = { factor = 100 }
-		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
-		relative_position_id = DUN_Orcs_Across_The_Gwathlo
-		x = 1
-		y = 1
-		cost = 5
-		available = { ERG = { exists = no }}
-		available = { 
-			or = { 
-				DUN = { owns_state = 202  }
-				DUN = { owns_state = 201  }
-				DUN = { owns_state = 200  }
-				DUN = { owns_state = 67  }
-				DUN = { owns_state = 66  } } }
-		completion_reward = {
-			IML = { transfer_state = 202 transfer_state = 201 transfer_state = 200 transfer_state = 67 transfer_state = 66  }
-			}
-		}
-	focus = {
 		id = DUN_Expell_The_Darkness_In_Cardolan
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Expell_The_Darkness_In_Cardolan
 		ai_will_do = { factor = 30 }
 		will_lead_to_war_with = FAR
 		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
@@ -325,7 +288,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Ignore_The_Cardolan_Wights
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Ignore_The_Cardolan_Wights
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
 		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
@@ -341,7 +304,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Whispers_Of_An_Old_Threat
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Whispers_Of_An_Old_Threat
 		ai_will_do = { factor = 20 }
 		prerequisite = { focus = DUN_The_Red_Hill_Raiders } 
 		prerequisite = { focus = DUN_Orcs_Across_The_Gwathlo }
@@ -358,7 +321,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Recall_Halbarad_Home
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Recall_Halbarad_Home
 		ai_will_do = { factor = 75 }
 		prerequisite = { focus = DUN_Whispers_Of_An_Old_Threat }
 		mutually_exclusive = { focus = DUN_Leave_Halbarad_In_Weatherhills }
@@ -383,7 +346,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	focus = {
 		id = DUN_Leave_Halbarad_In_Weatherhills
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Leave_Halbarad_In_Weatherhills
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Whispers_Of_An_Old_Threat }
 		mutually_exclusive = { focus = DUN_Recall_Halbarad_Home }
@@ -399,7 +362,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Call_Forth_The_Dunedain
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Call_Forth_The_Dunedain
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
 		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
@@ -419,7 +382,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 		focus = {
 		id = DUN_Rhudar_Defenses
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Rhudar_Defenses
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
 		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
@@ -447,7 +410,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 		focus = {
 		id = DUN_Rally_The_Locals
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Rally_The_Locals
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
 		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
@@ -460,7 +423,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	focus = {
 		id = DUN_Reclaim_The_Ancient_Fortress_of_Fornost
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Reclaim_The_Ancient_Fortress_of_Fornost
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
 		relative_position_id = DUN_Call_Forth_The_Dunedain
@@ -479,7 +442,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Fortify_Fornost
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Fortify_Fornost
 		ai_will_do = { factor = 40  }
 		prerequisite = { focus = DUN_Reclaim_The_Ancient_Fortress_of_Fornost }
 		prerequisite = { focus = DUN_Restore_The_Cardolan_Armorys }
@@ -501,7 +464,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	focus = {
 		id = DUN_Reclaim_The_Old_Capital_of_Annuminas
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Reclaim_The_Old_Capital_of_Annuminas
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
 		relative_position_id = DUN_Call_Forth_The_Dunedain
@@ -520,7 +483,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Restore_Annuminas
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Restore_Annuminas
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Reclaim_The_Old_Capital_of_Annuminas }
 		prerequisite = { focus = DUN_Build_Bridges_Across_The_Rivers }
@@ -545,7 +508,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Build_Makeshift_Workshops
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Build_Makeshift_Workshops
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
 		relative_position_id = DUN_Leave_Halbarad_In_Weatherhills
@@ -561,7 +524,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Rebuild_Roads_Along_The_Greenroad
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Rebuild_Roads_Along_The_Greenroad
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Build_Makeshift_Workshops }
 		relative_position_id = DUN_Build_Makeshift_Workshops
@@ -579,7 +542,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		}
 	focus = {
 		id = DUN_Build_Bridges_Across_The_Rivers
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Build_Bridges_Across_The_Rivers
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Build_Makeshift_Workshops }
 		relative_position_id = DUN_Build_Makeshift_Workshops
@@ -596,7 +559,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Restored_Civillian_Infastructure
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Restored_Civillian_Infastructure
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Rebuild_Roads_Along_The_Greenroad }
 		prerequisite = { focus = DUN_Build_Bridges_Across_The_Rivers }
@@ -610,7 +573,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Build_Makeshift_Forges
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Build_Makeshift_Forges
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Leave_Halbarad_In_Weatherhills focus = DUN_Recall_Halbarad_Home }
 		relative_position_id = DUN_Recall_Halbarad_Home
@@ -626,7 +589,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Restore_The_Cardolan_Armorys
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Restore_The_Cardolan_Armorys
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Build_Makeshift_Forges }
 		relative_position_id = DUN_Build_Makeshift_Forges
@@ -642,7 +605,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Restore_The_Cardolan_Archery_Ranges
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Restore_The_Cardolan_Archery_Ranges
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Build_Makeshift_Forges }
 		relative_position_id = DUN_Build_Makeshift_Forges
@@ -658,7 +621,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Restored_Military_Buildings
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Restored_Military_Buildings
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Restore_The_Cardolan_Archery_Ranges }
 		prerequisite = { focus = DUN_Restore_The_Cardolan_Armorys }
@@ -672,7 +635,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_Threat_From_The_Cold_North
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Threat_From_The_Cold_North
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Call_Forth_The_Dunedain }
 		relative_position_id = DUN_Call_Forth_The_Dunedain
@@ -686,7 +649,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Man_The_Defenses
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Man_The_Defenses
 		ai_will_do = { factor = 30 }
 		prerequisite = { focus = DUN_The_Threat_From_The_Cold_North }
 		mutually_exclusive = { focus = DUN_Prepare_To_March_North }
@@ -700,7 +663,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Prepare_To_March_North
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Prepare_To_March_North
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_The_Threat_From_The_Cold_North }
 		mutually_exclusive = { focus = DUN_Man_The_Defenses }
@@ -714,7 +677,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Destroy_Angmar_Once_and_For_All
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Destroy_Angmar_Once_and_For_All
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Prepare_To_March_North focus = DUN_Man_The_Defenses }
 		relative_position_id = DUN_Man_The_Defenses
@@ -738,7 +701,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Rangers_To_The_Shire	
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Rangers_To_The_Shire
 		ai_will_do = { factor = 50 }
 		prerequisite = { focus = DUN_Destroy_Angmar_Once_and_For_All }
 		relative_position_id = DUN_Destroy_Angmar_Once_and_For_All
@@ -753,7 +716,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Take_Direct_Control_of_The_Shire	
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Take_Direct_Control_of_The_Shire
 		ai_will_do = { factor = 30 }
 		prerequisite = { focus = DUN_Send_Rangers_To_The_Shire }
 		mutually_exclusive = { focus = DUN_Increase_Influence_In_The_Shire }
@@ -769,7 +732,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Increase_Influence_In_The_Shire
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Increase_Influence_In_The_Shire
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Send_Rangers_To_The_Shire }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_The_Shire }
@@ -787,7 +750,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Rangers_To_Bree
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Rangers_To_Bree
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Destroy_Angmar_Once_and_For_All }
 		relative_position_id = DUN_Destroy_Angmar_Once_and_For_All
@@ -802,7 +765,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Take_Direct_Control_of_Bree
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Take_Direct_Control_of_Bree
 		ai_will_do = { factor = 30 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Bree }
 		mutually_exclusive = { focus = DUN_Increase_Influence_In_Bree }
@@ -818,7 +781,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Increase_Influence_In_Bree
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Increase_Influence_In_Bree
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Bree }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Bree }
@@ -836,7 +799,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Seek_Influence_In_Southern_Arnor
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Seek_Influence_In_Southern_Arnor
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Increase_Influence_In_Bree focus = DUN_Take_Direct_Control_of_Bree }
 		prerequisite = { focus = DUN_Increase_Influence_In_The_Shire focus = DUN_Take_Direct_Control_of_The_Shire }
@@ -869,7 +832,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Rangers_To_Sirgale
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Rangers_To_Sirgale
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
 		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
@@ -883,7 +846,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Take_Direct_Control_of_Sirgale
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Take_Direct_Control_of_Sirgale
 		ai_will_do = { factor = 30 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Sirgale }
 		mutually_exclusive = { focus = DUN_Increase_Influence_In_Sirgale }
@@ -897,7 +860,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Increase_Influence_In_Sirgale
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Increase_Influence_In_Sirgale
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Sirgale }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Sirgale }
@@ -911,7 +874,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Rangers_To_Girithlin
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Rangers_To_Girithlin
 		ai_will_do = { factor = 20 }
 		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
 		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
@@ -925,7 +888,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Take_Direct_Control_of_Girithlin
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Take_Direct_Control_of_Girithlin
 		ai_will_do = { factor = 30 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Girithlin }
 		mutually_exclusive = { focus = DUN_Increase_Influence_In_Girithlin }
@@ -940,7 +903,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Increase_Influence_In_Girithlin
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Increase_Influence_In_Girithlin
 		ai_will_do = { factor = 5 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Girithlin }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Girithlin }
@@ -955,7 +918,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Send_Rangers_To_Enedwaith
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Send_Rangers_To_Enedwaith
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUN_Seek_Influence_In_Southern_Arnor }
 		relative_position_id = DUN_Seek_Influence_In_Southern_Arnor
@@ -969,7 +932,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Take_Direct_Control_of_Enedwaith
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Take_Direct_Control_of_Enedwaith
 		ai_will_do = { factor = 20 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
 		mutually_exclusive = { focus = DUN_Ally_With_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
@@ -984,7 +947,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Ally_With_Enedwaith
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Ally_With_Enedwaith
 		ai_will_do = { factor = 50 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
@@ -998,7 +961,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_Increase_Influence_In_Enedwaith
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_Increase_Influence_In_Enedwaith
 		ai_will_do = { factor = 20 }
 		prerequisite = { focus = DUN_Send_Rangers_To_Enedwaith }
 		mutually_exclusive = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Ally_With_Enedwaith }
@@ -1012,7 +975,7 @@ continuous_focus_position = { x = 10 y = 10 }
 	}
 	focus = {
 		id = DUN_The_Kingdom_of_Arnor
-		icon = GFX_goal_lotr_The_Dunedain
+		icon = GFX_goal_lotr_The_Kingdom_of_Arnor
 		ai_will_do = { factor = 100 }
 		prerequisite = { focus = DUN_Take_Direct_Control_of_Enedwaith focus = DUN_Ally_With_Enedwaith focus = DUN_Increase_Influence_In_Enedwaith }
 		prerequisite = { focus = DUN_Take_Direct_Control_of_Sirgale focus = DUN_Increase_Influence_In_Sirgale }

@@ -1,6 +1,6 @@
 ﻿l_english:
 ################################### TRAITS                      \n      §H§!
- ##### Peoples
+ ##### LEADERS
  
  ##### ADVISORS
  
@@ -94,7 +94,7 @@
  DUN_Recall_Halbarad_Home:0 "Recall Halbarad Home"
  DUN_Recall_Halbarad_Home_desc:0 "It's time Halbarad report home and bring the resources he's gathered with him."
  
- DUN_Leave_Halbarad_In_Weatherhills:0 "Leave albarad In Weatherhills"
+ DUN_Leave_Halbarad_In_Weatherhills:0 "Leave Halbarad In Weatherhills"
  DUN_Leave_Halbarad_In_Weatherhills_desc:0 "halbarad has done a great job in Cardolan we should leave him in control of the area."
  
  DUN_Call_Forth_The_Dunedain:0 "Call Forth The Dunedain"

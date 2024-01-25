@@ -24,6 +24,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { 
+			country_event = DUR.1
 			add_ideas = DUR_war_of_the_dwarves_and_orcs
 			add_political_power = 35
 		}
@@ -38,6 +39,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			country_event = DUR.2
 			add_ideas = DUR_erebor_reclamation
 			add_political_power = 35
 		}
@@ -52,6 +54,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			country_event = DUR.3
 			add_ideas = DUR_the_last_expedition
 			add_political_power = 35
 		}
@@ -66,6 +69,7 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			country_event = DUR.4
 		}
 	}
 	focus = {
@@ -78,6 +82,18 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			DUR = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -1500
+				}
+			}
+			KZD = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				}
+			}
 		}
 	}
 	focus = {
@@ -90,10 +106,12 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			DUR = { add_manpower = -5000 }
+			KZD = { add_manpower = 5000 }
 		}
 	}
 	focus = {
-		id = DUR_Send_The_Expedition
+		id = DUR_Final_Expedition_Preparation
 		icon = GFX_goal_lotr_Durinsfolk
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUR_Prepare_More_Dwarves_For_The_Expedition }
@@ -103,30 +121,21 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_war_support  = 0.05
+			add_stability  = 0.05
 		}
 	}
 	focus = {
-		id = DUR_Continue_The_Support
+		id = DUR_Send_The_Expedition
 		icon = GFX_goal_lotr_Durinsfolk
 		ai_will_do = { factor = 60 }
-		prerequisite = { focus = DUR_Send_The_Expedition }
-		relative_position_id = DUR_Send_The_Expedition
+		prerequisite = { focus = DUR_Final_Expedition_Preparation }
+		relative_position_id = DUR_Final_Expedition_Preparation
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = DUR_Final_Reinforcements
-		icon = GFX_goal_lotr_Durinsfolk
-		ai_will_do = { factor = 60 }
-		prerequisite = { focus = DUR_Continue_The_Support }
-		relative_position_id = DUR_Continue_The_Support
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = {
+			country_event = DUR.5
 		}
 	}
 	focus = {
@@ -134,12 +143,14 @@ continuous_focus_position = { x = 10 y = 10 }
 		icon = GFX_goal_lotr_Durinsfolk
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUR_Prepare_Equipment_For_The_Expedition }
-		mutually_exclusive = {focus = DUR_Send_The_Expedition }
+		mutually_exclusive = {focus = DUR_Final_Expedition_Preparation }
 		relative_position_id = DUR_Prepare_Equipment_For_The_Expedition
 		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_war_support  = -0.02
+			add_stability  = -0.02
 		}
 	}
 	focus = {
@@ -152,6 +163,8 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			DUR = { add_manpower = -5000 }
+			KZD = { add_manpower = 5000 }
 		}
 	}
 	focus = {
@@ -164,10 +177,22 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			DUR = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -1500
+				}
+			}
+			KZD = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				}
+			}
 		}
 	}
 	focus = {
-		id = DUR_Finally_Send_The_Expedition
+		id = DUR_Finally_DUR_Send_The_Expedition
 		icon = GFX_goal_lotr_Durinsfolk
 		ai_will_do = { factor = 60 }
 		prerequisite = { focus = DUR_Prepare_Even_More_Dwarves }
@@ -177,6 +202,79 @@ continuous_focus_position = { x = 10 y = 10 }
 		y = 1
 		cost = 5
 		completion_reward = {
+			country_event = DUR.5
+		}
+	}
+	focus = {
+		id = DUR_Final_Reinforcements
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUR_Send_The_Expedition focus = DUR_Finally_DUR_Send_The_Expedition }
+		relative_position_id = DUR_Send_The_Expedition
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUR = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -2500
+				}
+			}
+			DUR = { add_manpower = -10000 }
+			KZD = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2500
+				}
+			}
+			KZD = { add_manpower = 10000 }
+		}
+	}
+	focus = {
+		id = DUR_Dwarven_Tomb
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 60 }
+		mutually_exclusive = { focus = DUR_Khazad_Reclaimation }
+		prerequisite = { focus = DUR_Final_Reinforcements }
+		relative_position_id = DUR_Final_Reinforcements
+		x = -2
+		y = 1
+		cost = 5
+		available = { KZD = { exists = no } }
+		completion_reward = {
+			add_war_support  = -0.10
+			add_stability  = -0.15
+		}
+	}
+	focus = {
+		id = DUR_Search_For_Survivors
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 60 }
+		prerequisite = { focus = DUR_Dwarven_Tomb }
+		relative_position_id = DUR_Dwarven_Tomb
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			DUR = { add_manpower = 15000 }
+			add_war_support  = -0.10
+		}
+	}
+	focus = {
+		id = DUR_Khazad_Reclaimation
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 60 }
+		mutually_exclusive = { focus = DUR_Dwarven_Tomb }
+		prerequisite = { focus = DUR_Final_Reinforcements }
+		relative_position_id = DUR_Final_Reinforcements
+		x = 2
+		y = 1
+		cost = 5
+		available = { KDU = { exists = no } }
+		completion_reward = {
+			add_war_support  = 0.15
+			add_stability  = 0.15
 		}
 	}
 	focus = {
@@ -452,6 +550,83 @@ continuous_focus_position = { x = 10 y = 10 }
 				add_ideas = DUR_prepared_for_rhun
 			}
 		}
+		focus = {
+		id = DUR_The_Dwarven_Clans
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUR_Fortify_The_Southern_Borders }
+		prerequisite = { focus = DUR_War_With_Gundabad }
+		relative_position_id = DUR_Fortify_The_Southern_Borders
+		x = -2
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DUR_The_Last_Expedition
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUR_The_Dwarven_Clans  }
+		prerequisite = { focus = DUR_Khazad_Reclaimation }
+		relative_position_id = DUR_The_Dwarven_Clans
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			DUR = { add_manpower = 50000 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+	}
+	focus = {
+		id = DUR_The_Dwarves_of_The_Red_Mountains
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUR_The_Dwarven_Clans }
+		relative_position_id = DUR_The_Dwarven_Clans
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			DUR = { add_manpower = 20000 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
+		}
+	}
+	focus = {
+		id = DUR_The_Dwarves_of_Ered_Luin
+		icon = GFX_goal_lotr_Durinsfolk
+		ai_will_do = { factor = 20 }
+		prerequisite = { focus = DUR_The_Dwarven_Clans }
+		relative_position_id = DUR_The_Dwarven_Clans
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			DUR = { add_manpower = 15000 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
 	focus = {
 		id = DUR_The_Mines_of_Erebor
 		icon = GFX_goal_lotr_Durinsfolk

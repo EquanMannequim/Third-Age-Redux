@@ -1,0 +1,22 @@
+music_station = "bfme_1_music"
+
+# BFME ##################
+music = {
+	song = "general_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "general_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}

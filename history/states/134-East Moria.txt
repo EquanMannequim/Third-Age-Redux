@@ -17,6 +17,7 @@ state={
 
 		}
 		add_core_of = KDU
+		add_core_of = KZD
 
 		add_dynamic_modifier = { modifier = moria_loose_balrog }
 

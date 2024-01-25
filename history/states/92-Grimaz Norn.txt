@@ -2,29 +2,24 @@
 state={
 	id=92
 	name="STATE_92"
-	resources={
-		steel=10.000
-	}
 
 	history={
-		owner = LOR
-		add_core_of = LOR
+		owner = NEP
+		add_core_of = NEP
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-
 
 		}
+		victory_points = {
+			1463 1 
+		}
 
-
-		victory_points = { 1463 1 }
 	}
 
 	provinces={
-		36 83 109 222 644 671 819 1463 1469 1513 1517 1544 1804 2102 2279 2372 2658 2737 3064 3707 3843 4210 4746 5089 5200 5592 5606 5619 5643 5664
+		36 83 109 137 154 159 222 333 558 639 644 671 674 819 851 1022 1161 1237 1463 1469 1513 1517 1544 1672 1693 1804 1858 1878 2102 2230 2279 2293 2372 2570 2658 2725 2737 3064 3569 3707 3843 3877 4000 4005 4206 4210 4218 4512 4746 5089 5159 5200 5263 5359 5384 5456 5592 5606 5619 5643 5664 5690 
 	}
-	manpower=600000
+	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=wasteland
 	local_supplies=0.000
 }

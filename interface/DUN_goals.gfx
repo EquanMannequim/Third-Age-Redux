@@ -3,4 +3,224 @@ spriteTypes = {
       name = "GFX_goal_lotr_The_Dunedain"
       texturefile = "gfx/interface/goals/DUN/lotr_The_Dunedain.dds"
     }
+    SpriteType = {
+      name = "GFX_goal_lotr_time_of_three_kings"
+      texturefile = "gfx/interface/goals/DUN/lotr_time_of_three_kings.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_War_In_The_North"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_War_In_The_North.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Elves_of_Rivendell"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Elves_of_Rivendell.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Free_Peoples_of_Bree"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Free_Peoples_of_Bree.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Shirefolk"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Shirefolk.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Aid_Elladan_and_Elrohir"
+      texturefile = "gfx/interface/goals/DUN/lotr_Aid_Elladan_and_Elrohir.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Halbarads_Mission"
+      texturefile = "gfx/interface/goals/DUN/lotr_Halbarads_Mission.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Rivendell_Swordmiths"
+      texturefile = "gfx/interface/goals/DUN/lotr_Rivendell_Swordmiths.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Aid_To_Rivendell"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Aid_To_Rivendell.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Orcs_Across_The_Gwathlo"
+      texturefile = "gfx/interface/goals/DUN/lotr_Orcs_Across_The_Gwathlo.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Equip_Halbarads_Forces"
+      texturefile = "gfx/interface/goals/DUN/lotr_Equip_Halbarads_Forces.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Swordsmiths_To_Halbarad"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Swordsmiths_To_Halbarad.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Red_Hill_Raiders"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Red_Hill_Raiders.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Ignore_The_Cardolan_Wights"
+      texturefile = "gfx/interface/goals/DUN/lotr_Ignore_The_Cardolan_Wights.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Expell_The_Darkness_In_Cardolan"
+      texturefile = "gfx/interface/goals/DUN/lotr_Expell_The_Darkness_In_Cardolan.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Whispers_Of_An_Old_Threat"
+      texturefile = "gfx/interface/goals/DUN/lotr_Whispers_Of_An_Old_Threat.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Recall_Halbarad_Home"
+      texturefile = "gfx/interface/goals/DUN/lotr_Recall_Halbarad_Home.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Leave_Halbarad_In_Weatherhills"
+      texturefile = "gfx/interface/goals/DUN/lotr_Leave_Halbarad_In_Weatherhills.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Call_Forth_The_Dunedain"
+      texturefile = "gfx/interface/goals/DUN/lotr_Call_Forth_The_Dunedain.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Rhudar_Defenses"
+      texturefile = "gfx/interface/goals/DUN/lotr_Rhudar_Defenses.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Rally_The_Locals"
+      texturefile = "gfx/interface/goals/DUN/lotr_Rally_The_Locals.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Build_Makeshift_Forges"
+      texturefile = "gfx/interface/goals/DUN/lotr_Build_Makeshift_Forges.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Build_Makeshift_Workshops"
+      texturefile = "gfx/interface/goals/DUN/lotr_Build_Makeshift_Workshops.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Restore_Annuminas"
+      texturefile = "gfx/interface/goals/DUN/lotr_Restore_Annuminas.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Reclaim_The_Old_Capital_of_Annuminas"
+      texturefile = "gfx/interface/goals/DUN/lotr_Reclaim_The_Old_Capital_of_Annuminas.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Reclaim_The_Ancient_Fortress_of_Fornost"
+      texturefile = "gfx/interface/goals/DUN/lotr_Reclaim_The_Ancient_Fortress_of_Fornost.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Fortify_Fornost"
+      texturefile = "gfx/interface/goals/DUN/lotr_Fortify_Fornost.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Restore_The_Cardolan_Armorys"
+      texturefile = "gfx/interface/goals/DUN/lotr_Restore_The_Cardolan_Armorys.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Restore_The_Cardolan_Archery_Ranges"
+      texturefile = "gfx/interface/goals/DUN/lotr_Restore_The_Cardolan_Archery_Ranges.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Restored_Military_Buildings"
+      texturefile = "gfx/interface/goals/DUN/lotr_Restored_Military_Buildings.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Rebuild_Roads_Along_The_Greenroad"
+      texturefile = "gfx/interface/goals/DUN/lotr_Rebuild_Roads_Along_The_Greenroad.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Build_Bridges_Across_The_Rivers"
+      texturefile = "gfx/interface/goals/DUN/lotr_Build_Bridges_Across_The_Rivers.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Restored_Civillian_Infastructure"
+      texturefile = "gfx/interface/goals/DUN/lotr_Restored_Civillian_Infastructure.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Threat_From_The_Cold_North"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Threat_From_The_Cold_North.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Prepare_To_March_North"
+      texturefile = "gfx/interface/goals/DUN/lotr_Prepare_To_March_North.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Destroy_Angmar_Once_and_For_All"
+      texturefile = "gfx/interface/goals/DUN/lotr_Destroy_Angmar_Once_and_For_All.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Rangers_To_The_Shire"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Rangers_To_The_Shire.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Take_Direct_Control_of_The_Shire"
+      texturefile = "gfx/interface/goals/DUN/lotr_Take_Direct_Control_of_The_Shire.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Increase_Influence_In_The_Shire"
+      texturefile = "gfx/interface/goals/DUN/lotr_Increase_Influence_In_The_Shire.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Rangers_To_Bree"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Rangers_To_Bree.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Increase_Influence_In_Bree"
+      texturefile = "gfx/interface/goals/DUN/lotr_Increase_Influence_In_Bree.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Take_Direct_Control_of_Bree"
+      texturefile = "gfx/interface/goals/DUN/lotr_Take_Direct_Control_of_Bree.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Seek_Influence_In_Southern_Arnor"
+      texturefile = "gfx/interface/goals/DUN/lotr_Seek_Influence_In_Southern_Arnor.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Rangers_To_Enedwaith"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Rangers_To_Enedwaith.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Take_Direct_Control_of_Enedwaith"
+      texturefile = "gfx/interface/goals/DUN/lotr_Take_Direct_Control_of_Enedwaith.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Increase_Influence_In_Enedwaith"
+      texturefile = "gfx/interface/goals/DUN/lotr_Increase_Influence_In_Enedwaith.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Ally_With_Enedwaith"
+      texturefile = "gfx/interface/goals/DUN/lotr_Ally_With_Enedwaith.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Rangers_To_Girithlin"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Rangers_To_Girithlin.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Increase_Influence_In_Girithlin"
+      texturefile = "gfx/interface/goals/DUN/lotr_Increase_Influence_In_Girithlin.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Take_Direct_Control_of_Girithlin"
+      texturefile = "gfx/interface/goals/DUN/lotr_Take_Direct_Control_of_Girithlin.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Send_Rangers_To_Sirgale"
+      texturefile = "gfx/interface/goals/DUN/lotr_Send_Rangers_To_Sirgale.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Increase_Influence_In_Sirgale"
+      texturefile = "gfx/interface/goals/DUN/lotr_Increase_Influence_In_Sirgale.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Take_Direct_Control_of_Sirgale"
+      texturefile = "gfx/interface/goals/DUN/lotr_Take_Direct_Control_of_Sirgale.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_Man_The_Defenses"
+      texturefile = "gfx/interface/goals/DUN/lotr_Man_The_Defenses.dds"
+    }
+    SpriteType = {
+      name = "GFX_goal_lotr_The_Kingdom_of_Arnor"
+      texturefile = "gfx/interface/goals/DUN/lotr_The_Kingdom_of_Arnor.dds"
+    }
 }

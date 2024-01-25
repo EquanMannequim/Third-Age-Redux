@@ -1,0 +1,146 @@
+###########################
+# Mordor Events
+###########################
+
+add_namespace = MRD
+
+	country_event = {
+	id = MRD.1
+	title = MRD.1.t
+	desc = MRD.1.d
+	picture = GFX_report_event_numenor
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "One ring to find them"
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = MRD.2
+	title = MRD.2.t
+	desc = MRD.2.d
+	picture = GFX_report_event_fight
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "One ring to bring them all in"
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = MRD.3
+	title = MRD.3.t
+	desc = MRD.3.d
+	picture = GFX_report_event_peasant_revolt2
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "and in the darkness bind them."
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = MRD.4
+	title = MRD.4.t
+	desc = MRD.4.d
+	picture = GFX_report_event_generic_king
+
+	is_triggered_only = yes
+
+	option = {
+		name = "."
+		ai_chance = {
+			base = 50
+				}
+			}
+		}
+	country_event = {
+	id = MRD.5
+	title = MRD.5.t
+	desc = MRD.5.d
+	picture = GFX_report_event_negotiations
+
+	is_triggered_only = yes
+	
+		option = {
+			name = "Yes My Lord"
+			ai_chance = { factor = 70 }
+				if = {
+					limit = {
+					original_tag = HRD
+					}
+				MRD = {
+					puppet = HRD
+					}
+				}
+				else_if = {
+					limit = {
+					original_tag = KHA
+					}
+					MRD = {
+					puppet = KHA
+					}
+				}
+				else = {
+					limit = {
+					original_tag = DRA
+					}
+					MRD = {
+					puppet = DRA
+						}
+					}
+				}
+		option = {
+			name = "Never"
+			ai_chance = { base = 5 }
+					if = {
+					limit = {
+					original_tag = HRD
+					}
+					MRD = {
+					create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HRD
+						}
+					}
+				}
+				else_if = {
+					limit = {
+					original_tag = KHA
+					}
+					MRD = {
+					create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KHA
+						}
+					}
+				}
+				else = {
+					limit = {
+					original_tag = DRA
+					}
+					MRD = {
+					create_wargoal = {
+					type = puppet_wargoal_focus
+					target = DRA
+					}
+				}
+			}
+		}
+	}

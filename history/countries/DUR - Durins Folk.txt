@@ -7,7 +7,6 @@ recruit_character = DUR_dain
 set_research_slots = 3
 
 set_country_flag = TA_MEN_OF_THE_WEST
-s
 
 # Starting tech
 set_technology = {

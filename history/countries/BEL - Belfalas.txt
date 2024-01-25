@@ -8,6 +8,8 @@ recruit_character = BEL_imrahil
 recruit_character = BEL_elphir
 recruit_character = BEL_erchirion
 
+set_country_flag = TA_MEN_OF_THE_WEST
+
 
 # Starting tech
 set_technology = {

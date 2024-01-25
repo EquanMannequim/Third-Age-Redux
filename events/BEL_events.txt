@@ -1,0 +1,75 @@
+###########################
+# Dol Amroth Events
+###########################
+
+add_namespace = BEL
+
+# Light the beacons
+	country_event = {
+	id = BEL.1
+	title = BEL.1.t
+	desc = BEL.1.d
+	picture = GFX_report_event_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "The Elves of Edhellond are long gone now."
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = BEL.2
+	title = BEL.2.t
+	desc = BEL.2.d
+	picture = GFX_report_event_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "And it still stands"
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = BEL.3
+	title = BEL.3.t
+	desc = BEL.3.d
+	picture = GFX_report_event_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "Dol Amroth Will Stand Ready"
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
+	country_event = {
+	id = BEL.4
+	title = BEL.4.t
+	desc = BEL.4.d
+	picture = GFX_report_event_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = "Our Greatest Victory"
+		ai_chance = {
+			base = 50
+			modifier = {
+				}
+			}
+		}
+	}
